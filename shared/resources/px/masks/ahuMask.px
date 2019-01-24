@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibVision"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<properties>
+
+  <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  </property>
+
+  <property name="headerBackgroundColor" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="headerBackgroundColorShade" type="gx:Brush" value="#02669c">
+  </property>
+
+  <property name="headerBackgroundColorTint" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="headerForegroundColor" type="gx:Brush" value="white">
+  </property>
+
+  <property name="leftForegroundColor" type="gx:Brush" value="white">
+  </property>
+
+  <property name="leftBackgroundColor" type="gx:Brush" value="#19212b">
+  </property>
+
+  <property name="leftBackgroundColorShade" type="gx:Brush" value="#0d1116">
+  </property>
+
+  <property name="leftBackgroundColorTint" type="gx:Brush" value="#3c5069">
+  </property>
+
+  <property name="siteName" type="baja:String" value="Building">
+  </property>
+
+  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/gD14vW">
+  </property>
+
+</properties>
+<content>
+<EdgePane>
+
+  <PxInclude name="top" ord="file:^px/menu/top.px"/>
+
+  <PxInclude name="left" ord="file:^px/menu/left.px"/>
+
+  <ScrollPane name="center" borderPolicy="never">
+
+    <GridPane name="content" columnCount="1" valign="top" halign="fill" rowAlign="fill" columnAlign="fill" rowGap="0.0" stretchRow="1" stretchColumn="0">
+
+      <GridPane columnCount="4" halign="left" columnGap="64.0" colorRows="true" bandBrush="#039be5">
+
+        <CanvasPane viewSize="0.0,100.0"/>
+
+        <OverCanvasPane viewSize="150.0,120.0">
+
+          <Ellipse stroke="white" pen="3.0" geom="45.0,5.0,60.0,60.0"/>
+
+          <Picture layout="60.0,20.0,30.0,30.0" image="module://themeActive/image/svg/timePlanning_w.svg" scale="fitRatio">
+            <PopupBinding ord="slot:schedules/ProgrammeHoraireBool$e9en" title="Schedule" size="1200.0,800.0"/>
+          </Picture>
+
+          <Label layout="0.0,80.0,150.0,20.0" text="Schedule" font="16.0pt Trebuchet MS" foreground="white" wordWrapEnabled="true">
+            <PopupBinding ord="slot:schedules/ProgrammeHoraireBool$e9en" title="Schedule" size="1200.0,800.0"/>
+          </Label>
+
+          <PopupBinding ord="slot:schedules/ProgrammeHoraireBool$e9en" title="Schedule" size="1200.0,800.0"/>
+
+        </OverCanvasPane>
+
+        <OverCanvasPane viewSize="150.0,120.0">
+
+          <Ellipse stroke="white" pen="3.0" geom="45.0,5.0,60.0,60.0"/>
+
+          <Picture layout="60.0,20.0,30.0,30.0" image="module://themeActive/image/svg/settings_w.svg" scale="fitRatio"/>
+
+          <Label layout="0.0,80.0,150.0,20.0" text="Parameters" font="16.0pt Trebuchet MS" foreground="white" wordWrapEnabled="true"/>
+
+        </OverCanvasPane>
+
+        <OverCanvasPane visible="false" viewSize="150.0,120.0">
+
+          <Ellipse stroke="white" pen="3.0" geom="45.0,5.0,60.0,60.0"/>
+
+          <Picture layout="60.0,20.0,30.0,30.0" image="module://themeActive/image/svg/day_w.svg" scale="fitRatio">
+            <PopupBinding ord="slot:points/Setpoint/TemperatureReset" title="Temperature Reset" size="1200.0,800.0"/>
+          </Picture>
+
+          <Label layout="0.0,80.0,150.0,20.0" text="Heat law" image="" font="16.0pt Trebuchet MS" foreground="white" wordWrapEnabled="true"/>
+
+          <PopupBinding ord="slot:points/Setpoint/TemperatureReset" degradeBehavior="hide" title="Heat law" size="1200.0,800.0"/>
+
+        </OverCanvasPane>
+
+      </GridPane>
+
+      <BorderPane padding="20.0" fill="#eceff1">
+
+        <CanvasPane name="content" viewSize="1150.0,450.0" halign="left" valign="top">
+
+          <BoundLabel layout="130.0,90.0,510.0,249.0" image="file:^px/kitPxGraphics/Ductwork/Duct_Horz_Dual_Long.png"/>
+
+          <BoundLabel layout="330.0,90.0,510.0,249.0" image="file:^px/kitPxGraphics/Ductwork/Duct_Horz_Dual_Long.png"/>
+
+          <BoundLabel layout="390.0,210.0,150.0,129.0" image="file:^px/kitPxGraphics/Ductwork/Duct_Connector_T_Up.png"/>
+
+          <BoundLabel layout="390.0,90.0,150.0,130.0" image="file:^px/kitPxGraphics/Ductwork/Duct_Connector_T_Down.png"/>
+
+          <BoundLabel layout="80.0,90.0,120.0,99.0" image="file:^px/kitPxGraphics/Ductwork/Duct_Horz_End_Left.png"/>
+
+          <BoundLabel layout="80.0,240.0,120.0,99.0" image="file:^px/kitPxGraphics/Ductwork/Duct_Horz_End_Left.png"/>
+
+          <BoundLabel layout="940.0,90.0,119.0,99.0" image="file:^px/kitPxGraphics/Ductwork/Duct_Horz_End_Right.png"/>
+
+          <BoundLabel layout="520.0,90.0,510.0,249.0" image="file:^px/kitPxGraphics/Ductwork/Duct_Horz_Dual_Long.png"/>
+
+          <BoundLabel layout="940.0,240.0,119.0,99.0" image="file:^px/kitPxGraphics/Ductwork/Duct_Horz_End_Right.png"/>
+
+          <IdBinding id="AHU"/>
+
+        </CanvasPane>
+
+      </BorderPane>
+
+    </GridPane>
+
+  </ScrollPane>
+
+</EdgePane>
+</content>
+</px>

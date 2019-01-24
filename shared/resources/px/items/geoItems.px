@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibStructure"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<properties>
+
+  <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  </property>
+
+  <property name="headerBackgroundColor" type="gx:Brush" value="#02d10e">
+  </property>
+
+  <property name="headerBackgroundColorShade" type="gx:Brush" value="#119c02">
+  </property>
+
+  <property name="headerBackgroundColorTint" type="gx:Brush" value="#03e519">
+  </property>
+
+  <property name="headerForegroundColor" type="gx:Brush" value="white">
+  </property>
+
+  <property name="leftForegroundColor" type="gx:Brush" value="white">
+  </property>
+
+  <property name="leftBackgroundColor" type="gx:Brush" value="#19212b">
+  </property>
+
+  <property name="leftBackgroundColorShade" type="gx:Brush" value="#0d1116">
+  </property>
+
+  <property name="leftBackgroundColorTint" type="gx:Brush" value="#3c5069">
+  </property>
+
+</properties>
+<content>
+<ScrollPane>
+
+  <CanvasPane name="content" viewSize="1000.0,800.0" scale="fitRatio" minScaleFactor="0.5" maxScaleFactor="1.0">
+
+    <Polygon name="Polygon" fill="#b32326b8" stroke="white" pen="0.0" geom="50.0,140.0 50.0,210.0 470.0,150.0 770.0,180.0 770.0,110.0 471.0,30.0 ">
+      <ValueBinding name="ValueBinding" hyperlink="$(floorOrd)"/>
+      <String name="id" value="widget83a7"/>
+      <IdBinding name="IdBinding" id="floorInBuildingItem"/>
+    </Polygon>
+
+    <Label name="Label" layout="260.0,290.0,80.0,60.0" image="file:^px/themeActive/image/x32/devices/electricity/powerMeasurementDevice_ok.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+      <IdBinding name="IdBinding" id="Meter"/>
+      <SourceBinding name="SourceBinding" ord="station:|$(slotPathOrd)"/>
+      <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)">
+        <ObjectToString name="text" format="%displayName%"/>
+      </ValueBinding>
+    </Label>
+
+    <Label name="Label1" layout="360.0,290.0,80.0,60.0" image="file:^px/themeActive/image/x32/devices/hvac/ahu_ok.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+      <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)" hyperlink="station:|$(slotPathOrd)">
+        <ObjectToString name="text" format="%displayName%"/>
+      </ValueBinding>
+      <IdBinding name="IdBinding" id="AHU"/>
+    </Label>
+
+    <Label name="Label2" layout="460.0,290.0,80.0,60.0" image="file:^images/icons/lightSensorOcc.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+      <IdBinding name="IdBinding" id="Occupancy Sensor"/>
+      <SourceBinding name="SourceBinding" ord="station:|$(slotPathOrd)"/>
+    </Label>
+
+    <GridPane name="GridPane" layout="160.0,290.0,80.0,60.0" columnCount="1" columnAlign="center" rowGap="4.0">
+
+      <Label name="Label" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+        <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/points/Space$20Temp">
+          <ObjectToString name="text" format="%out.value%"/>
+        </ValueBinding>
+      </Label>
+
+      <Label name="Label1" image="module://themeActive/image/x32/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+        <PopupBinding name="PopupBinding" ord="station:|$(slotPathOrd)|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
+        <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/master"/>
+      </Label>
+
+      <SourceBinding name="SourceBinding" ord="station:|$(slotPathOrd)"/>
+
+      <IdBinding name="IdBinding" id="FCU"/>
+
+    </GridPane>
+
+    <Label name="Label3" layout="560.0,290.0,80.0,60.0" image="file:^images/icons/roomControllerSlave.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+      <IdBinding name="IdBinding" id="Light Controller"/>
+      <SourceBinding name="SourceBinding" ord="station:|$(slotPathOrd)"/>
+    </Label>
+
+    <Label name="Label4" layout="660.0,290.0,80.0,60.0" image="module://themeActive/image/x32/metiers/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+      <IdBinding name="IdBinding" id="Lamp"/>
+      <SourceBinding name="SourceBinding" ord="station:|$(slotPathOrd)"/>
+    </Label>
+
+  </CanvasPane>
+
+</ScrollPane>
+</content>
+</px>

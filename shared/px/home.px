@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<properties>
+
+  <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  </property>
+
+  <property name="headerBackgroundColor" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="headerBackgroundColorShade" type="gx:Brush" value="#02669c">
+  </property>
+
+  <property name="headerBackgroundColorTint" type="gx:Brush" value="#039be5">
+    <target ord="slot:center/CanvasPane/background"/>
+  </property>
+
+  <property name="headerForegroundColor" type="gx:Brush" value="white">
+  </property>
+
+  <property name="leftForegroundColor" type="gx:Brush" value="white">
+  </property>
+
+  <property name="leftBackgroundColor" type="gx:Brush" value="#19212b">
+  </property>
+
+  <property name="leftBackgroundColorShade" type="gx:Brush" value="#0d1116">
+  </property>
+
+  <property name="leftBackgroundColorTint" type="gx:Brush" value="#3c5069">
+  </property>
+
+  <property name="siteName" type="baja:String" value="Building">
+  </property>
+
+  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/gD14vW">
+  </property>
+
+</properties>
+<content>
+<EdgePane>
+
+  <PxInclude name="top" ord="file:^px/menu/top.px"/>
+
+  <PxInclude name="left" ord="file:^px/menu/left.px"/>
+
+  <CanvasPane name="center" viewSize="1600.0,800.0" halign="left" valign="top" background="#eceff1">
+
+    <CanvasPane layout="0.0,0.0,100.0%,420.0" viewSize="1600.0,420.0" halign="fill" background="#039be5">
+
+      <Label layout="120.0,80.0,460.0,50.0" text="Welcome to the Active Framework &#x2665;" font="22.0pt Calibri" foreground="white" halign="left"/>
+
+      <Label layout="120.0,120.0,460.0,50.0" text="Get started!" font="bold 48.0pt Calibri" foreground="white" halign="left"/>
+
+      <Ellipse stroke="white" pen="3.0" geom="125.0,215.0,100.0,100.0"/>
+
+      <Label layout="120.0,320.0,110.0,50.0" text="Create your model" font="16.0pt Trebuchet MS" foreground="white" wordWrapEnabled="true">
+        <PopupBinding ord="slot:schedules/ProgrammeHoraireBool$e9en" title="Schedule" size="1200.0,800.0"/>
+      </Label>
+
+      <Ellipse stroke="white" pen="3.0" geom="460.0,215.0,100.0,100.0"/>
+
+      <Ellipse stroke="white" pen="3.0" geom="295.0,215.0,100.0,100.0"/>
+
+      <Picture layout="150.0,245.0,50.0,40.0" image="file:^images/icons/hierarchy.svg" scale="fitRatio">
+        <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer"/>
+      </Picture>
+
+      <Label layout="290.0,320.0,110.0,50.0" text="Assign your devices" font="16.0pt Trebuchet MS" foreground="white" wordWrapEnabled="true">
+        <PopupBinding ord="slot:schedules/ProgrammeHoraireBool$e9en" title="Schedule" size="1200.0,800.0"/>
+      </Label>
+
+      <Picture layout="320.0,245.0,50.0,40.0" image="file:^images/icons/device.svg" scale="fitRatio"/>
+
+      <Label layout="460.0,320.0,110.0,60.0" text="Deploy your avanced functions" font="16.0pt Trebuchet MS" foreground="white" wordWrapEnabled="true">
+        <PopupBinding ord="slot:schedules/ProgrammeHoraireBool$e9en" title="Schedule" size="1200.0,800.0"/>
+      </Label>
+
+      <Picture layout="485.0,245.0,50.0,40.0" image="file:^images/icons/engine.svg" scale="fitRatio"/>
+
+    </CanvasPane>
+
+  </CanvasPane>
+
+</EdgePane>
+</content>
+</px>

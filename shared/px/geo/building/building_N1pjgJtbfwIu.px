@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="gx"/>
+</import>
+<content>
+<EdgePane>
+
+  <PxInclude name="top" ord="file:^px/menu/top.px"/>
+
+  <PxInclude name="left" ord="file:^px/menu/left.px"/>
+
+  <BorderPane name="center" padding="0.0">
+
+    <EdgePane name="content">
+
+      <CanvasPane name="top" viewSize="1000.0,40.0" halign="left" background="#f2f2f2">
+
+        <GridPane layout="10.0,0.0,640.0,40.0" columnCount="10" halign="left" stretchColumn="0">
+
+          <Label text="Le Rabelais /" image="" font="18.0pt SansSerif" foreground="#3c3c3c">
+            <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/geography/building/N1pjgJtbfwIu"/>
+          </Label>
+
+        </GridPane>
+
+      </CanvasPane>
+
+      <CanvasPane name="center" viewSize="1000.0,800.0" halign="left" valign="top" background="image( source(file:^images/backgrounds/building.jpg) halign(left) valign(top) )">
+
+        <IdBinding id="building"/>
+
+      </CanvasPane>
+
+    </EdgePane>
+
+  </BorderPane>
+
+</EdgePane>
+</content>
+</px>

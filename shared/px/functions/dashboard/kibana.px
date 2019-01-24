@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="workbench"/>
+</import>
+<properties>
+
+  <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  </property>
+
+  <property name="headerBackgroundColor" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="headerBackgroundColorShade" type="gx:Brush" value="#02669c">
+  </property>
+
+  <property name="headerBackgroundColorTint" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="headerForegroundColor" type="gx:Brush" value="white">
+  </property>
+
+  <property name="leftForegroundColor" type="gx:Brush" value="white">
+  </property>
+
+  <property name="leftBackgroundColor" type="gx:Brush" value="#19212b">
+  </property>
+
+  <property name="leftBackgroundColorShade" type="gx:Brush" value="#0d1116">
+  </property>
+
+  <property name="leftBackgroundColorTint" type="gx:Brush" value="#3c5069">
+  </property>
+
+  <property name="siteName" type="baja:String" value="Building">
+  </property>
+
+  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/gD14vW">
+  </property>
+
+</properties>
+<content>
+<EdgePane>
+
+  <PxInclude name="top" ord="file:^px/menu/top.px"/>
+
+  <PxInclude name="left" ord="file:^px/menu/left.px"/>
+
+  <WebBrowser name="center" title="Kibana" ord="http://localhost:5601/app/kibana-dashboard-manager#/?_g=()"/>
+
+</EdgePane>
+</content>
+</px>

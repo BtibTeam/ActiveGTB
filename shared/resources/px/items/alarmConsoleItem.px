@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibVision"/>
+  <module name="gx"/>
+</import>
+<properties>
+
+  <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  </property>
+
+  <property name="headerBackgroundColor" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="headerBackgroundColorShade" type="gx:Brush" value="#02669c">
+  </property>
+
+  <property name="headerBackgroundColorTint" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="headerForegroundColor" type="gx:Brush" value="white">
+  </property>
+
+  <property name="leftForegroundColor" type="gx:Brush" value="white">
+  </property>
+
+  <property name="leftBackgroundColor" type="gx:Brush" value="#19212b">
+  </property>
+
+  <property name="leftBackgroundColorShade" type="gx:Brush" value="#0d1116">
+  </property>
+
+  <property name="leftBackgroundColorTint" type="gx:Brush" value="#3c5069">
+  </property>
+
+  <property name="siteName" type="baja:String" value="Building">
+  </property>
+
+  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/gD14vW">
+  </property>
+
+</properties>
+<content>
+<OverCanvasPane viewSize="250.0,200.0" background="#039be5" overBackground="#02669c">
+
+  <Label layout="0.0,30.0,250.0,40.0" text="$(displayName)" font="20.0pt Calibri" foreground="#f2f2f2"/>
+
+  <ValueBinding ord="station:|slot:/" hyperlink="station:|slot:/Services/AlarmService/$(escapedDisplayName)"/>
+
+  <Picture layout="100.0,90.0,50.0,50.0" image="module://themeActive/image/svg/alarm_w.svg" scale="fitRatio"/>
+
+  <Label layout="80.0,75.0,90.0,80.0"/>
+
+</OverCanvasPane>
+</content>
+</px>

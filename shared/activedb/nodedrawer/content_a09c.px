@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibStructure"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<content>
+<CanvasPane layout="50.0,80.0,1100.0,670.0" viewSize="1100.0,670.0" halign="left" valign="top" background="image( source(file:^images/plans/btibOffice.PNG) halign(left) valign(top) )">
+
+  <IdBinding id="canvasForNodeDrawer"/>
+
+  <GridPane layout="240.0,380.0,80.0,60.0" columnCount="1" columnAlign="center" rowGap="4.0">
+
+    <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+      <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_01/sccFanCoil/points/Space$20Temp">
+        <ObjectToString name="text" format="%out.value%"/>
+      </ValueBinding>
+    </Label>
+
+    <Label image="module://themeActive/image/x32/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+      <PopupBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_01/sccFanCoil|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
+      <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_01/sccFanCoil/master"/>
+    </Label>
+
+    <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_01/sccFanCoil"/>
+
+    <IdBinding id="FCU"/>
+
+    <String name="id" value="widget8da5"/>
+
+  </GridPane>
+
+  <Label layout="160.0,370.0,80.0,60.0" image="module://themeActive/image/x32/metiers/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+    <IdBinding id="Lamp"/>
+    <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_01/Lamp1"/>
+    <String name="id" value="widget8f2a"/>
+  </Label>
+
+  <Label layout="170.0,430.0,80.0,60.0" image="module://themeActive/image/x32/metiers/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+    <IdBinding id="Lamp"/>
+    <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_01/Lamp2"/>
+    <String name="id" value="widget8f33"/>
+  </Label>
+
+  <Label layout="270.0,320.0,80.0,60.0" image="file:^images/icons/roomControllerSlave.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+    <IdBinding id="Light Controller"/>
+    <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_01/LightSbCmd"/>
+    <String name="id" value="widget8f3b"/>
+  </Label>
+
+  <Label layout="330.0,340.0,70.0,60.0" image="module://themeActive/image/x32/metiers/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+    <IdBinding id="Lamp"/>
+    <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_01/Lamp8"/>
+    <String name="id" value="widget8f35"/>
+  </Label>
+
+  <GridPane layout="405.0,345.0,80.0,60.0" columnCount="1" columnAlign="center" rowGap="4.0">
+
+    <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+      <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_02/sccFanCoil/points/Space$20Temp">
+        <ObjectToString name="text" format="%out.value%"/>
+      </ValueBinding>
+    </Label>
+
+    <Label image="module://themeActive/image/x32/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+      <PopupBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_02/sccFanCoil|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
+      <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_02/sccFanCoil/master"/>
+    </Label>
+
+    <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_02/sccFanCoil"/>
+
+    <IdBinding id="FCU"/>
+
+    <String name="id" value="widgeta903"/>
+
+  </GridPane>
+
+  <Label layout="520.0,270.0,80.0,60.0" image="file:^images/icons/roomControllerSlave.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+    <IdBinding id="Light Controller"/>
+    <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_02/LightSbCmd"/>
+    <String name="id" value="widgeta919"/>
+  </Label>
+
+  <Label layout="255.0,400.0,80.0,60.0" image="file:^images/icons/lightSensorOcc.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+    <IdBinding id="Occupancy Sensor"/>
+    <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_01/OccupSensor1"/>
+    <String name="id" value="widget8da7"/>
+  </Label>
+
+  <Label layout="780.0,260.0,80.0,60.0" image="file:^images/icons/lightSensorOcc.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+    <IdBinding id="Occupancy Sensor"/>
+    <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_02/OccupSensor2"/>
+    <String name="id" value="widgeta931"/>
+  </Label>
+
+  <Label layout="350.0,390.0,65.0,60.0" image="module://themeActive/image/x32/metiers/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+    <IdBinding id="Lamp"/>
+    <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_02/Lamp1"/>
+    <String name="id" value="widgeta940"/>
+  </Label>
+
+  <Label layout="650.0,310.0,80.0,60.0" image="module://themeActive/image/x32/metiers/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+    <IdBinding id="Lamp"/>
+    <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_02/Lamp2"/>
+    <String name="id" value="widgeta94f"/>
+  </Label>
+
+  <Label layout="840.0,250.0,80.0,60.0" image="module://themeActive/image/x32/metiers/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+    <IdBinding id="Lamp"/>
+    <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_02/Lamp8"/>
+    <String name="id" value="widgeta95e"/>
+  </Label>
+
+  <Label layout="680.0,60.0,80.0,60.0" image="file:^px/themeActive/image/x32/devices/electricity/powerMeasurementDevice_ok.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+    <IdBinding id="Meter"/>
+    <SourceBinding ord="station:|slot:/Drivers/ModbusTcpNetwork/Submeters/SubMeter$201"/>
+    <ValueBinding ord="station:|slot:/Drivers/ModbusTcpNetwork/Submeters/SubMeter$201">
+      <ObjectToString name="text" format="%displayName%"/>
+    </ValueBinding>
+    <String name="id" value="widget9c1d"/>
+  </Label>
+
+  <Label layout="580.0,90.0,80.0,60.0" image="file:^px/themeActive/image/x32/devices/electricity/powerMeasurementDevice_ok.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+    <IdBinding id="Meter"/>
+    <SourceBinding ord="station:|slot:/Drivers/ModbusTcpNetwork/Submeters/SubMeter$202"/>
+    <ValueBinding ord="station:|slot:/Drivers/ModbusTcpNetwork/Submeters/SubMeter$202">
+      <ObjectToString name="text" format="%displayName%"/>
+    </ValueBinding>
+    <String name="id" value="widget9d0e"/>
+  </Label>
+
+  <Label layout="380.0,230.0,80.0,60.0" image="file:^px/themeActive/image/x32/devices/electricity/powerMeasurementDevice_ok.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+    <IdBinding id="Meter"/>
+    <SourceBinding ord="station:|slot:/Drivers/ModbusTcpNetwork/Submeters/SubMeter$204"/>
+    <ValueBinding ord="station:|slot:/Drivers/ModbusTcpNetwork/Submeters/SubMeter$204">
+      <ObjectToString name="text" format="%displayName%"/>
+    </ValueBinding>
+    <String name="id" value="widget9d20"/>
+  </Label>
+
+  <Label layout="245.0,130.0,80.0,60.0" image="file:^px/themeActive/image/x32/devices/electricity/powerMeasurementDevice_ok.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+    <IdBinding id="Meter"/>
+    <SourceBinding ord="station:|slot:/Drivers/ModbusTcpNetwork/Submeters/SubMeter$205"/>
+    <ValueBinding ord="station:|slot:/Drivers/ModbusTcpNetwork/Submeters/SubMeter$205">
+      <ObjectToString name="text" format="%displayName%"/>
+    </ValueBinding>
+    <String name="id" value="widget9d29"/>
+  </Label>
+
+  <GridPane layout="565.0,305.0,80.0,60.0" columnCount="1" columnAlign="center" rowGap="4.0">
+
+    <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+      <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_03/sccFanCoil/points/Space$20Temp">
+        <ObjectToString name="text" format="%out.value%"/>
+      </ValueBinding>
+    </Label>
+
+    <Label image="module://themeActive/image/x32/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+      <PopupBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_03/sccFanCoil|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
+      <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_03/sccFanCoil/master"/>
+    </Label>
+
+    <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_03/sccFanCoil"/>
+
+    <IdBinding id="FCU"/>
+
+    <String name="id" value="widgetab9c"/>
+
+  </GridPane>
+
+  <Label layout="625.0,265.0,80.0,60.0" image="module://themeActive/image/x32/metiers/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+    <IdBinding id="Lamp"/>
+    <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_03/Lamp1"/>
+    <String name="id" value="widgetabd9"/>
+  </Label>
+
+  <Label layout="475.0,300.0,80.0,60.0" image="module://themeActive/image/x32/metiers/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+    <IdBinding id="Lamp"/>
+    <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_03/Lamp2"/>
+    <String name="id" value="widgetabe8"/>
+  </Label>
+
+  <Label layout="420.0,360.0,80.0,60.0" image="file:^images/icons/lightSensorOcc.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+    <IdBinding id="Occupancy Sensor"/>
+    <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_01/OccupSensor2"/>
+    <String name="id" value="widget8db0"/>
+  </Label>
+
+  <Label layout="580.0,320.0,80.0,60.0" image="file:^images/icons/lightSensorOcc.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+    <IdBinding id="Occupancy Sensor"/>
+    <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_02/OccupSensor1"/>
+    <String name="id" value="widgeta925"/>
+  </Label>
+
+  <Label layout="495.0,350.0,80.0,60.0" image="module://themeActive/image/x32/metiers/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+    <IdBinding id="Lamp"/>
+    <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_03/Lamp8"/>
+    <String name="id" value="widgetabf7"/>
+  </Label>
+
+</CanvasPane>
+</content>
+</px>
