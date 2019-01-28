@@ -60,7 +60,7 @@ Lorsque vous avez un fichier '.px' include créer un dossier 'includes' à la ra
 		* **include.px** : votre fichier include
 	
 
-Le nom des fichiers doit suivre la charte suivante
+Le nom des fichiers doit suivre la charte suivante :
 * Utilisation du camelCase pour le nom du fichier
 * Pas de caractères spéciaux
 
