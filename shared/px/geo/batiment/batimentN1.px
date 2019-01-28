@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0">
+<px version="1.0" media="workbench:WbPxMedia">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
   <module name="btibCore"/>
+  <module name="converters"/>
   <module name="gx"/>
+  <module name="kitPx"/>
+  <module name="vykonPro"/>
 </import>
 <content>
 <EdgePane>
 
-  <PxInclude name="top" ord="file:^px/menu/top.px"/>
+  <PxInclude name="top" ord="file:^px/menus/haut.px"/>
 
-  <PxInclude name="left" ord="file:^px/menu/left.px"/>
+  <PxInclude name="left" ord="file:^px/menus/gauche.px"/>
 
   <BorderPane name="center" padding="0.0">
 

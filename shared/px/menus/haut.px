@@ -59,7 +59,7 @@
     <CanvasPane name="content" viewSize="250.0,50.0">
 
       <Picture name="Picture" layout="0.0,-5.0,200.0,70.0" image="file:^images/logos/logo_w.svg" scale="fitRatio" halign="left">
-        <ValueBinding name="ValueBinding" ord="station:|slot:/" hyperlink="station:|slot:/Home"/>
+        <ValueBinding name="ValueBinding" ord="station:|slot:/" hyperlink="station:|slot:/Accueil"/>
       </Picture>
 
     </CanvasPane>
