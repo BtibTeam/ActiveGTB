@@ -45,7 +45,7 @@ Voici les dossiers par défaut :
     * **geo/metier** etc. shortname des apects créés dans la station qui contiendront les vues associées à chaque aspect. Exemple : *toutes les vues de la navigation géographique dans le répertoire geo*
     * **menu** : vues utilisées en tant que menu. Exemples : `gauche.px`, `haut.px`
     * **sources** : toutes les vues relatives aux équipements/dossiers de points etc. à organiser en sous-dossier selon l'usage. A bien dissocier des fonctions.
-* **ressources** : tout ce qui est utilisé comme ressources (nom anglais gardé)
+* **ressources** : tout ce qui est utilisé comme ressources
     * **bog** : tous les .bog. A organiser par sous-dossiers si besoin.
     * **macro** : implémenté automatiquement lors de la création de macros.
     * **px** : à organiser en sous-dossier avec deux principaux
