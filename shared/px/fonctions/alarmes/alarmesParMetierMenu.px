@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="gx"/>
+</import>
+<properties>
+
+  <property name="bqlToWidgetsHandle" type="baja:String" value="7b53">
+  </property>
+
+</properties>
+<content>
+<ScrollPane viewportBackground="transparent" borderPolicy="never">
+
+  <GridPane name="content" columnCount="5" valign="top" halign="left" rowGap="24.0" columnGap="24.0"/>
+
+</ScrollPane>
+</content>
+</px>

@@ -45,13 +45,24 @@ Voici les dossiers par défaut :
     * **geo/metier** etc. shortname des apects créés dans la station qui contiendront les vues associées à chaque aspect. Exemple : *toutes les vues de la navigation géographique dans le répertoire geo*
     * **menu** : vues utilisées en tant que menu. Exemples : `gauche.px`, `haut.px`
     * **sources** : toutes les vues relatives aux équipements/dossiers de points etc. à organiser en sous-dossier selon l'usage. A bien dissocier des fonctions.
-* **resources** : tout ce qui est utilisé comme ressources (nom anglais gardé)
+* **ressources** : tout ce qui est utilisé comme ressources
     * **bog** : tous les .bog. A organiser par sous-dossiers si besoin.
     * **macro** : implémenté automatiquement lors de la création de macros.
     * **px** : à organiser en sous-dossier avec deux principaux
         * **items** : tous les petits éléments. Voir la charte associée au nommage des items.
         * **masques** : tous les masques de la station. Voir la charte associée au nommage des masques.
 * **webservice** : généré automatiquement par la personalisation du css du login
+
+Lorsque vous avez un fichier '.px' include créer un dossier 'includes' à la racine du dossier où se trouve votre fichier '.px'
+* **dossier_de_px** : votre dossier avec le fichier '.px' et le dossier 'includes'
+	* **px.px** : votre fichier '.px'
+	* **includes** : votre dossier contenant vos includes
+		* **include.px** : votre fichier include
+	
+
+Le nom des fichiers doit suivre la charte suivante :
+* Utilisation du camelCase pour le nom du fichier
+* Pas de caractères spéciaux
 
 # Organisation du modèle
 * Les Aspects doivent être nommés en minuscule. Leur displayName doit commencer par une majuscule.

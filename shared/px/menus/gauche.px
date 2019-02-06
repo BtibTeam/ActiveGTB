@@ -79,25 +79,25 @@
       <Label name="Label" text="General" font="bold 19.0pt Calibri" foreground="white" halign="left"/>
 
       <Label name="Label1" image="module://themeActive/image/x16/buildings_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
-        <ValueBinding name="ValueBinding" ord="station:|slot:/Home" hyperlink="station:|slot:/Home">
+        <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil" hyperlink="station:|slot:/Accueil">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>
       </Label>
 
       <Label name="Label2" image="module://themeActive/image/x16/alarm_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
-        <ValueBinding name="ValueBinding" ord="station:|slot:/Home/Alarms" hyperlink="station:|slot:/Home/Alarms/Consoles$20per$20field">
+        <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil/Alarmes" hyperlink="station:|slot:/Accueil/Alarmes/Consoles$20par$20m$e9tier">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>
       </Label>
 
-      <Label name="Label3" image="file:^images/icons/map_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
-        <ValueBinding name="ValueBinding" ord="station:|slot:/Home/Map" hyperlink="station:|slot:/Home/Map">
+      <Label name="Label3" image="file:^images/icones/carte_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+        <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil/Cartes" hyperlink="station:|slot:/Accueil/Cartes">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>
       </Label>
 
       <Label name="Label4" image="module://themeActive/image/x16/geoNav_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
-        <ValueBinding name="ValueBinding" ord="station:|slot:/Home/Geographic$20navigation">
+        <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil/Navigation$20G$e9ographique">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>
         <EnhancedHyperlinkBinding name="EnhancedHyperlinkBinding" ord="station:|slot:/Services/BtibService/pxProperties/siteOrd" hyperlinkFormat="%propertyValue%"/>
@@ -114,19 +114,19 @@
       <Label name="Label" text="Data" font="bold 19.0pt Calibri" foreground="white" halign="left"/>
 
       <Label name="Label1" image="module://themeActive/image/x16/alarm_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
-        <ValueBinding name="ValueBinding" ord="station:|slot:/Home/Data/Alarm$20dashboard" hyperlink="station:|slot:/Home/Data/Alarm$20dashboard">
+        <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil/Donn$e9es/Tableau$20de$20bord" hyperlink="station:|slot:/Accueil/Donn$e9es/Tableau$20de$20bord">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>
       </Label>
 
       <Label name="Label2" image="module://themeActive/image/x16/status/overridden_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
-        <ValueBinding name="ValueBinding" ord="station:|slot:/Home/Data/Point$20synthesis" hyperlink="station:|slot:/Home/Data/Point$20synthesis">
+        <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil/Donn$e9es/Synth$e8se$20des$20points" hyperlink="station:|slot:/Accueil/Donn$e9es/Synth$e8se$20des$20points">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>
       </Label>
 
       <Label name="Label3" image="module://themeActive/image/x16/pie-chart_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
-        <ValueBinding name="ValueBinding" ord="station:|slot:/Home/Data/Dashboard">
+        <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil/Donn$e9es/Tableau$20de$20bord">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>
       </Label>

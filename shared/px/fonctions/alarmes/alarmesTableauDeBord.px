@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0">
+<px version="1.0" media="workbench:WbPxMedia">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
@@ -8,7 +8,9 @@
   <module name="btibVision"/>
   <module name="converters"/>
   <module name="gx"/>
+  <module name="jxBrowser"/>
   <module name="kitPx"/>
+  <module name="vykonPro"/>
   <module name="workbench"/>
 </import>
 <properties>
@@ -50,9 +52,9 @@
 <content>
 <EdgePane>
 
-  <PxInclude name="top" ord="file:^px/menu/top.px"/>
+  <PxInclude name="top" ord="file:^px/menus/haut.px"/>
 
-  <PxInclude name="left" ord="file:^px/menu/left.px"/>
+  <PxInclude name="left" ord="file:^px/menus/gauche.px"/>
 
   <OverBorderPane name="center" padding="20.0" fill="#fafafa" overFill="#fafafa">
 
@@ -62,33 +64,33 @@
 
         <GridPane name="content" columnCount="1" valign="top" halign="fill" rowAlign="fill" columnAlign="fill" stretchRow="2" stretchColumn="0">
 
-          <EdgePane>
+          <EdgePane name="EdgePane">
 
-            <Label name="left" text="Alarms on temperature filtered on hs:temp" font="18.0pt Calibri" foreground="#424242" halign="left">
-              <ValueBinding ord="slot:"/>
+            <Label name="left" text="Alarmes sur temp&#xe9;rature, filtr&#xe9; sur hs:temp" font="18.0pt Calibri" foreground="#424242" halign="left">
+              <ValueBinding name="ValueBinding" ord="slot:"/>
             </Label>
 
             <GridPane name="right" columnGap="8.0">
 
-              <Label font="24.0pt Calibri" foreground="#5e5e5e" halign="left">
-                <ValueBinding ord="slot:overridenPointsCount">
+              <Label name="Label" font="24.0pt Calibri" foreground="#5e5e5e" halign="left">
+                <ValueBinding name="ValueBinding" ord="slot:Point$20synthesis/Nombre$20de$20points$20d$e9rog$e9s">
                   <ObjectToString name="text" format="%size% points"/>
                 </ValueBinding>
               </Label>
 
-              <ImageButton styleClasses="hyperlink" image="module://icons/x16/sync.png" buttonStyle="hyperlink">
-                <ActionBinding ord="slot:nombrePointsDeroges/execute" widgetEvent="actionPerformed"/>
+              <ImageButton name="ImageButton" styleClasses="hyperlink" image="module://icons/x16/sync.png" buttonStyle="hyperlink">
+                <ActionBinding name="ActionBinding" ord="slot:Point$20synthesis/Nombre$20de$20points$20d$e9rog$e9s/execute" widgetEvent="actionPerformed"/>
               </ImageButton>
 
             </GridPane>
 
           </EdgePane>
 
-          <Line stroke="darkGrey" pen="0.5" geom="0.0,0.0 1800.0,0.0"/>
+          <Line name="Line" stroke="darkGrey" pen="0.5" geom="0.0,0.0 1800.0,0.0"/>
 
-          <WebWidget js="view:btibVision:EnhancedBoundTable">
-            <WbViewBinding ord="slot:"/>
-            <Ord name="query" f="3" value="alarm:|bql:select timestamp, alarmClass, alarmData.building, alarmData.floor, alarmData.sourceName where alarmData.temp = &#x27;M&#x27;"/>
+          <WebWidget name="WebWidget" js="view:btibVision:EnhancedBoundTable">
+            <WbViewBinding name="WbViewBinding" ord="slot:"/>
+            <Ord name="query" f="3" value="alarm:|bql:select timestamp as &#x27;Date&#x27;, alarmClass as &#x27;Classe alarme&#x27;, alarmData.building as &#x27;B&#xe2;timent&#x27;, alarmData.floor as &#x27;Etage&#x27;, alarmData.sourceName as &#x27;Nom source&#x27; where alarmData.temp = &#x27;M&#x27;"/>
             <Ord name="hyperlink" f="3" value="slot:"/>
             <Double name="rowCount" f="3" value="10.0"/>
             <Boolean name="showRowCountSelector" f="3" value="true"/>
