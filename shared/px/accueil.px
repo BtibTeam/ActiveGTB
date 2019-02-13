@@ -1,93 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0">
+<px version="1.0" media="workbench:WbPxMedia">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibVision"/>
+  <module name="converters"/>
   <module name="gx"/>
   <module name="kitPx"/>
+  <module name="vykonPro"/>
+  <module name="workbench"/>
 </import>
 <properties>
 
-  <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
   </property>
 
-  <property name="headerBackgroundColor" type="gx:Brush" value="#0288d1">
+  <property name="vueCentraleBackgroundBlanc" type="gx:Brush" value="white">
+    <target ord="slot:center/background"/>
   </property>
 
-  <property name="headerBackgroundColorShade" type="gx:Brush" value="#02669c">
+  <property name="vueCentraleForegroundCouleur" type="gx:Brush" value="white">
   </property>
 
-  <property name="headerBackgroundColorTint" type="gx:Brush" value="#039be5">
-    <target ord="slot:center/CanvasPane/background"/>
+  <property name="vueCentraleBackgroundCouleurClaire" type="gx:Brush" value="#546e7a">
   </property>
 
-  <property name="headerForegroundColor" type="gx:Brush" value="white">
+  <property name="vueCentraleBackgroundCouleur" type="gx:Brush" value="#455a64">
   </property>
 
-  <property name="leftForegroundColor" type="gx:Brush" value="white">
+  <property name="vueCentraleBackgroundCouleurSombre" type="gx:Brush" value="#37474f">
   </property>
 
-  <property name="leftBackgroundColor" type="gx:Brush" value="#19212b">
+  <property name="vueCentraleElementForegroundCouleur" type="gx:Brush" value="white">
   </property>
 
-  <property name="leftBackgroundColorShade" type="gx:Brush" value="#0d1116">
+  <property name="vueCentraleElementBackgroundCouleurClaire" type="gx:Brush" value="#1e88e5">
   </property>
 
-  <property name="leftBackgroundColorTint" type="gx:Brush" value="#3c5069">
+  <property name="vueCentraleElementBackgroundCouleur" type="gx:Brush" value="#1976d2">
   </property>
 
-  <property name="siteName" type="baja:String" value="Building">
-  </property>
-
-  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/gD14vW">
+  <property name="vueCentraleElementBackgroundCouleurSombre" type="gx:Brush" value="#1565c0">
   </property>
 
 </properties>
 <content>
 <EdgePane>
 
-  <PxInclude name="top" ord="file:^px/menu/top.px"/>
+  <PxInclude name="top" ord="file:^px/menus/haut.px"/>
 
-  <PxInclude name="left" ord="file:^px/menu/left.px"/>
+  <PxInclude name="left" ord="file:^px/menus/gauche.px"/>
 
-  <CanvasPane name="center" viewSize="1600.0,800.0" halign="left" valign="top" background="#eceff1">
+  <CanvasPane name="center" viewSize="1400.0,800.0" halign="left" valign="top" background="white">
 
-    <CanvasPane layout="0.0,0.0,100.0%,420.0" viewSize="1600.0,420.0" halign="fill" background="#039be5">
+    <CanvasPane name="CanvasPane" layout="0.0,0.0,1400.0,420.0" viewSize="1400.0,420.0" halign="fill" background="#455a64">
 
-      <Label layout="120.0,80.0,460.0,50.0" text="Welcome to the Active Framework &#x2665;" font="22.0pt Calibri" foreground="white" halign="left"/>
+      <Label name="Label" layout="120.0,80.0,460.0,50.0" text="Bienvenue dans Active Framework &#x2665;" font="22.0pt Calibri" foreground="white" halign="left"/>
 
-      <Label layout="120.0,120.0,460.0,50.0" text="Get started!" font="bold 48.0pt Calibri" foreground="white" halign="left"/>
+      <Label name="Label1" layout="120.0,120.0,460.0,50.0" text="D&#xe9;marrons!" font="bold 48.0pt Calibri" foreground="white" halign="left"/>
 
-      <Ellipse stroke="white" pen="3.0" geom="125.0,215.0,100.0,100.0"/>
+      <Ellipse name="Ellipse" stroke="white" pen="3.0" geom="125.0,215.0,100.0,100.0"/>
 
-      <Label layout="120.0,320.0,110.0,50.0" text="Create your model" font="16.0pt Trebuchet MS" foreground="white" wordWrapEnabled="true">
-        <PopupBinding ord="slot:schedules/ProgrammeHoraireBool$e9en" title="Schedule" size="1200.0,800.0"/>
+      <Label name="Label2" layout="120.0,320.0,110.0,50.0" text="Cr&#xe9;&#xe9; votre mod&#xe8;le" font="16.0pt Trebuchet MS" foreground="white" wordWrapEnabled="true">
+        <PopupBinding name="PopupBinding" ord="slot:schedules/ProgrammeHoraireBool$e9en" title="Schedule" size="1200.0,800.0"/>
       </Label>
 
-      <Ellipse stroke="white" pen="3.0" geom="460.0,215.0,100.0,100.0"/>
+      <Ellipse name="Ellipse1" stroke="white" pen="3.0" geom="460.0,215.0,100.0,100.0"/>
 
-      <Ellipse stroke="white" pen="3.0" geom="295.0,215.0,100.0,100.0"/>
+      <Ellipse name="Ellipse2" stroke="white" pen="3.0" geom="295.0,215.0,100.0,100.0"/>
 
-      <Picture layout="150.0,245.0,50.0,40.0" image="file:^images/icons/hierarchy.svg" scale="fitRatio">
-        <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer"/>
+      <Picture name="Picture" layout="150.0,245.0,50.0,40.0" image="file:^images/icones/hierarchie.svg" scale="fitRatio">
+        <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Services/BtibService/aspectContainer"/>
       </Picture>
 
-      <Label layout="290.0,320.0,110.0,50.0" text="Assign your devices" font="16.0pt Trebuchet MS" foreground="white" wordWrapEnabled="true">
-        <PopupBinding ord="slot:schedules/ProgrammeHoraireBool$e9en" title="Schedule" size="1200.0,800.0"/>
+      <Label name="Label3" layout="290.0,320.0,110.0,50.0" text="Affecter vos &#xe9;quipements" font="16.0pt Trebuchet MS" foreground="white" wordWrapEnabled="true">
+        <PopupBinding name="PopupBinding" ord="slot:schedules/ProgrammeHoraireBool$e9en" title="Schedule" size="1200.0,800.0"/>
       </Label>
 
-      <Picture layout="320.0,245.0,50.0,40.0" image="file:^images/icons/device.svg" scale="fitRatio"/>
+      <Picture name="Picture1" layout="320.0,245.0,50.0,40.0" image="file:^images/icones/equipement.svg" scale="fitRatio"/>
 
-      <Label layout="460.0,320.0,110.0,60.0" text="Deploy your avanced functions" font="16.0pt Trebuchet MS" foreground="white" wordWrapEnabled="true">
-        <PopupBinding ord="slot:schedules/ProgrammeHoraireBool$e9en" title="Schedule" size="1200.0,800.0"/>
+      <Label name="Label4" layout="460.0,320.0,110.0,60.0" text="D&#xe9;ployez vos fonctions avanc&#xe9;es" font="16.0pt Trebuchet MS" foreground="white" wordWrapEnabled="true">
+        <PopupBinding name="PopupBinding" ord="slot:schedules/ProgrammeHoraireBool$e9en" title="Schedule" size="1200.0,800.0"/>
       </Label>
 
-      <Picture layout="485.0,245.0,50.0,40.0" image="file:^images/icons/engine.svg" scale="fitRatio"/>
+      <Picture name="Picture2" layout="485.0,245.0,50.0,40.0" image="file:^images/icones/moteur.svg" scale="fitRatio"/>
 
     </CanvasPane>
 
   </CanvasPane>
+
+  <PxInclude name="right" ord="file:^px/menus/droite.px"/>
 
 </EdgePane>
 </content>

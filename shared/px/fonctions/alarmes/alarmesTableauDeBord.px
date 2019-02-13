@@ -4,6 +4,8 @@
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibVision"/>
   <module name="converters"/>
   <module name="gx"/>
   <module name="kitPx"/>
@@ -78,53 +80,61 @@
 <content>
 <EdgePane>
 
-  <PxInclude name="top" ord="file:^px/menu/top.px"/>
+  <PxInclude name="top" ord="file:^px/menus/haut.px"/>
 
-  <PxInclude name="left" ord="file:^px/menu/left.px"/>
+  <PxInclude name="left" ord="file:^px/menus/gauche.px"/>
 
-  <BorderPane name="center">
+  <OverBorderPane name="center" padding="20.0" fill="#fafafa" overFill="#fafafa">
 
-    <GridPane name="content" columnCount="1" valign="top" halign="fill" rowAlign="fill" columnAlign="fill" stretchRow="2" stretchColumn="0">
+    <OverBorderPane name="content" padding="0.0">
 
-      <EdgePane>
+      <OverBorderPane name="content" padding="24.0" fill="white" overFill="white">
 
-        <Label name="left" text="Overridden Point List" font="18.0pt Calibri" foreground="#424242" halign="left">
-          <ValueBinding ord="slot:"/>
-        </Label>
+        <GridPane name="content" columnCount="1" valign="top" halign="fill" rowAlign="fill" columnAlign="fill" stretchRow="2" stretchColumn="0">
 
-        <GridPane name="right" columnGap="8.0">
+          <EdgePane>
 
-          <Label font="24.0pt Calibri" foreground="#5e5e5e" halign="left">
-            <ValueBinding ord="slot:overridenPointsCount">
-              <ObjectToString name="text" format="%size% points"/>
-            </ValueBinding>
-          </Label>
+            <Label name="left" text="Alarmes sur temp&#xe9;rature, filtr&#xe9; sur hs:temp" font="18.0pt Calibri" foreground="#424242" halign="left">
+              <ValueBinding ord="slot:"/>
+            </Label>
 
-          <ImageButton styleClasses="hyperlink" image="module://icons/x16/sync.png" buttonStyle="hyperlink">
-            <ActionBinding ord="slot:overridenPointsCount/execute" widgetEvent="actionPerformed"/>
-          </ImageButton>
+            <GridPane name="right" columnGap="8.0">
+
+              <Label font="24.0pt Calibri" foreground="#5e5e5e" halign="left">
+                <ValueBinding ord="slot:Point$20synthesis/Nombre$20de$20points$20d$e9rog$e9s">
+                  <ObjectToString name="text" format="%size% points"/>
+                </ValueBinding>
+              </Label>
+
+              <ImageButton styleClasses="hyperlink" image="module://icons/x16/sync.png" buttonStyle="hyperlink">
+                <ActionBinding ord="slot:Point$20synthesis/Nombre$20de$20points$20d$e9rog$e9s/execute" widgetEvent="actionPerformed"/>
+              </ImageButton>
+
+            </GridPane>
+
+          </EdgePane>
+
+          <Line stroke="darkGrey" pen="0.5" geom="0.0,0.0 1800.0,0.0"/>
+
+          <WebWidget js="view:btibVision:EnhancedBoundTable">
+            <WbViewBinding ord="slot:"/>
+            <Ord name="query" f="3" value="alarm:|bql:select timestamp as &#x27;Date&#x27;, alarmClass as &#x27;Classe alarme&#x27;, alarmData.building as &#x27;B&#xe2;timent&#x27;, alarmData.floor as &#x27;Etage&#x27;, alarmData.sourceName as &#x27;Nom source&#x27; where alarmData.temp = &#x27;M&#x27;"/>
+            <Ord name="hyperlink" f="3" value="slot:"/>
+            <Double name="rowCount" f="3" value="10.0"/>
+            <Boolean name="showRowCountSelector" f="3" value="true"/>
+            <Boolean name="showSearching" f="3" value="true"/>
+            <Boolean name="showColumnSelector" f="3" value="true"/>
+            <Boolean name="showInfo" f="3" value="true"/>
+            <Boolean name="showExporting" f="3" value="true"/>
+          </WebWidget>
 
         </GridPane>
 
-      </EdgePane>
+      </OverBorderPane>
 
-      <Line stroke="darkGrey" pen="0.5" geom="0.0,0.0 1800.0,0.0"/>
+    </OverBorderPane>
 
-      <WebWidget js="view:btibVision:EnhancedBoundTable">
-        <WbViewBinding ord="slot:"/>
-        <Ord name="query" f="3" value="station:|slot:/|bql: select displayName as &#x27;Nom affich&#xe9;&#x27;, vykonPro:Lib.tagValue(&#x27;b:building&#x27;) as &#x27;B&#xe2;timent&#x27;, vykonPro:Lib.tagValue(&#x27;b:floor&#x27;) as &#x27;Etage&#x27;, out as &#x27;Sortie&#x27; from control:ControlPoint where out.status.isOverridden and !(displayName like &#x27;%ocale%&#x27;)"/>
-        <Ord name="hyperlink" f="3" value="slot:"/>
-        <Double name="rowCount" f="3" value="10.0"/>
-        <Boolean name="showRowCountSelector" f="3" value="true"/>
-        <Boolean name="showSearching" f="3" value="true"/>
-        <Boolean name="showColumnSelector" f="3" value="true"/>
-        <Boolean name="showInfo" f="3" value="true"/>
-        <Boolean name="showExporting" f="3" value="true"/>
-      </WebWidget>
-
-    </GridPane>
-
-  </BorderPane>
+  </OverBorderPane>
 
   <PxTemplateInfo name="templateInfo" templateName="BilanPointsDeroges" vendor="BTIB" version="1.0"/>
 

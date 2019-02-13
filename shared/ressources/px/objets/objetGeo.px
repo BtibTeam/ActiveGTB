@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibStructure"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<properties>
+
+  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/N1pjgJtbfwIu">
+  </property>
+
+  <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
+  </property>
+
+  <property name="vueCentraleBackgroundBlanc" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleurClaire" type="gx:Brush" value="#546e7a">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleur" type="gx:Brush" value="#455a64">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleurSombre" type="gx:Brush" value="#37474f">
+  </property>
+
+  <property name="vueCentraleElementForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleurClaire" type="gx:Brush" value="#1e88e5">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleur" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleurSombre" type="gx:Brush" value="#1565c0">
+  </property>
+
+  <property name="siteName" type="baja:String" value="Le Rabelais">
+  </property>
+
+  <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  </property>
+
+  <property name="headerBackgroundColor" type="gx:Brush" value="#02d10e">
+  </property>
+
+  <property name="headerBackgroundColorShade" type="gx:Brush" value="#119c02">
+  </property>
+
+  <property name="headerBackgroundColorTint" type="gx:Brush" value="#03e519">
+  </property>
+
+  <property name="headerForegroundColor" type="gx:Brush" value="white">
+  </property>
+
+  <property name="leftForegroundColor" type="gx:Brush" value="white">
+  </property>
+
+  <property name="leftBackgroundColor" type="gx:Brush" value="#19212b">
+  </property>
+
+  <property name="leftBackgroundColorShade" type="gx:Brush" value="#0d1116">
+  </property>
+
+  <property name="leftBackgroundColorTint" type="gx:Brush" value="#3c5069">
+  </property>
+
+</properties>
+<content>
+<ScrollPane>
+
+  <CanvasPane name="content" viewSize="1000.0,800.0" scale="fitRatio" minScaleFactor="0.5" maxScaleFactor="1.0">
+
+    <Polygon fill="#b32326b8" stroke="white" pen="0.0" geom="50.0,140.0 50.0,210.0 470.0,150.0 770.0,180.0 770.0,110.0 471.0,30.0 ">
+      <ValueBinding hyperlink="$(floorOrd)"/>
+      <String name="id" value="widget83a7"/>
+      <IdBinding id="floorInBuildingItem"/>
+    </Polygon>
+
+    <Label layout="260.0,290.0,80.0,60.0" image="file:^px/themeActive/image/x32/devices/electricity/powerMeasurementDevice_ok.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+      <IdBinding id="Meter"/>
+      <SourceBinding ord="station:|$(slotPathOrd)"/>
+      <ValueBinding ord="station:|$(slotPathOrd)">
+        <ObjectToString name="text" format="%displayName%"/>
+      </ValueBinding>
+    </Label>
+
+    <Label layout="360.0,290.0,80.0,60.0" image="file:^px/themeActive/image/x32/devices/hvac/ahu_ok.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+      <ValueBinding ord="station:|$(slotPathOrd)" hyperlink="station:|$(slotPathOrd)">
+        <ObjectToString name="text" format="%displayName%"/>
+      </ValueBinding>
+      <IdBinding id="AHU"/>
+    </Label>
+
+    <Label layout="460.0,290.0,80.0,60.0" image="file:^images/icons/lightSensorOcc.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+      <IdBinding id="Occupancy Sensor"/>
+      <SourceBinding ord="station:|$(slotPathOrd)"/>
+    </Label>
+
+    <GridPane layout="160.0,290.0,80.0,60.0" columnCount="1" columnAlign="center" rowGap="4.0">
+
+      <Label font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+        <ValueBinding ord="station:|$(slotPathOrd)/points/Space$20Temp">
+          <ObjectToString name="text" format="%out.value%"/>
+        </ValueBinding>
+      </Label>
+
+      <Label image="module://themeActive/image/x32/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+        <PopupBinding ord="station:|$(slotPathOrd)|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
+        <ValueBinding ord="station:|$(slotPathOrd)/master"/>
+      </Label>
+
+      <SourceBinding ord="station:|$(slotPathOrd)"/>
+
+      <IdBinding id="FCU"/>
+
+    </GridPane>
+
+    <Label layout="560.0,290.0,80.0,60.0" image="file:^images/icons/roomControllerSlave.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+      <IdBinding id="Light Controller"/>
+      <SourceBinding ord="station:|$(slotPathOrd)"/>
+    </Label>
+
+    <Label layout="660.0,290.0,80.0,60.0" image="module://themeActive/image/x32/metiers/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+      <IdBinding id="Lamp"/>
+      <SourceBinding ord="station:|$(slotPathOrd)"/>
+    </Label>
+
+  </CanvasPane>
+
+</ScrollPane>
+</content>
+</px>

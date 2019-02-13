@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<properties>
+
+  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/N1pjgJtbfwIu">
+  </property>
+
+  <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
+  </property>
+
+  <property name="vueCentraleBackgroundBlanc" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleurClaire" type="gx:Brush" value="#546e7a">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleur" type="gx:Brush" value="#455a64">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleurSombre" type="gx:Brush" value="#37474f">
+  </property>
+
+  <property name="vueCentraleElementForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleurClaire" type="gx:Brush" value="#1e88e5">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleur" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleurSombre" type="gx:Brush" value="#1565c0">
+  </property>
+
+  <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  </property>
+
+  <property name="headerBackgroundColor" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="headerBackgroundColorShade" type="gx:Brush" value="#02669c">
+  </property>
+
+  <property name="headerBackgroundColorTint" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="headerForegroundColor" type="gx:Brush" value="white">
+  </property>
+
+  <property name="leftForegroundColor" type="gx:Brush" value="white">
+  </property>
+
+  <property name="leftBackgroundColor" type="gx:Brush" value="#19212b">
+  </property>
+
+  <property name="leftBackgroundColorShade" type="gx:Brush" value="#0d1116">
+  </property>
+
+  <property name="leftBackgroundColorTint" type="gx:Brush" value="#3c5069">
+  </property>
+
+  <property name="siteName" type="baja:String" value="Le Rabelais">
+  </property>
+
+</properties>
+<content>
+<ScrollPane>
+
+  <CanvasPane name="content" viewSize="1140.0,800.0" valign="top">
+
+    <Label layout="10.0,490.0,550.0,30.0" background="white"/>
+
+    <Label layout="10.0,670.0,550.0,50.0" background="#7fb9fb"/>
+
+    <BoundLabel layout="15.0,670.0,135.0,50.0" font="bold 14.0pt Tahoma" wordWrapEnabled="true">
+      <BoundLabelBinding ord="slot:rerBStatus/points/traffic/state" statusEffect="none">
+        <ObjectToString name="text" format="%out.value% :"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="170.0,670.0,390.0,50.0" font="bold 12.0pt Tahoma" halign="left" wordWrapEnabled="true">
+      <BoundLabelBinding ord="slot:rerBStatus/points/traffic/message" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="10.0,520.0,550.0,30.0" background="#a0cbf5"/>
+
+    <Label layout="10.0,550.0,550.0,30.0" background="white"/>
+
+    <Label layout="10.0,580.0,550.0,30.0" background="#a0cbf5"/>
+
+    <Label layout="10.0,610.0,550.0,30.0" background="white"/>
+
+    <Label layout="165.0,440.0,230.0,45.0" text="Mitry-Claye&#xa;A&#xe9;roport Ch. de Gaulle" font="bold 16.0pt Tahoma" foreground="#1e239e"/>
+
+    <PxInclude layout="15.0,495.0,540.0,20.0" ord="file:^px/fonctions/kiosque/stationMassyInclude.px" variables="train=s:slot$3arerMassy$2fpoints$2fdirParis$2ftrainN"/>
+
+    <Label layout="10.0,640.0,550.0,30.0" background="#a0cbf5"/>
+
+    <BoundLabel layout="425.0,450.0,110.0,20.0" font="bold 14.0pt Tahoma">
+      <BoundLabelBinding ord="station:|slot:/Drivers/RestNetwork/CurrentTime/out" statusEffect="none">
+        <ObjectToString name="text" format="%time%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="120.0,10.0,900.0,380.0" image="file:^images/backgrounds/massyRailwayStation.jpg"/>
+
+    <PxInclude layout="15.0,525.0,540.0,20.0" ord="file:^px/fonctions/kiosque/stationMassyInclude.px" variables="train=s:slot$3arerMassy$2fpoints$2fdirParis$2ftrainN$242b1"/>
+
+    <PxInclude layout="15.0,555.0,540.0,20.0" ord="file:^px/fonctions/kiosque/stationMassyInclude.px" variables="train=s:slot$3arerMassy$2fpoints$2fdirParis$2ftrainN$242b2"/>
+
+    <PxInclude layout="15.0,585.0,540.0,20.0" ord="file:^px/fonctions/kiosque/stationMassyInclude.px" variables="train=s:slot$3arerMassy$2fpoints$2fdirParis$2ftrainN$242b3"/>
+
+    <PxInclude layout="15.0,615.0,540.0,20.0" ord="file:^px/fonctions/kiosque/stationMassyInclude.px" variables="train=s:slot$3arerMassy$2fpoints$2fdirParis$2ftrainN$242b4"/>
+
+    <PxInclude layout="15.0,645.0,540.0,20.0" ord="file:^px/fonctions/kiosque/stationMassyInclude.px" variables="train=s:slot$3arerMassy$2fpoints$2fdirParis$2ftrainN$242b5"/>
+
+    <Label layout="580.0,490.0,550.0,30.0" background="white"/>
+
+    <Label layout="580.0,670.0,550.0,50.0" background="#7fb9fb"/>
+
+    <Label layout="580.0,440.0,45.0,46.0" image="file:^images/images/railwayLineLogo.png"/>
+
+    <BoundLabel layout="585.0,670.0,135.0,50.0" font="bold 14.0pt Tahoma" wordWrapEnabled="true">
+      <BoundLabelBinding ord="slot:rerBStatus/points/traffic/state" statusEffect="none">
+        <ObjectToString name="text" format="%out.value% :"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="760.0,670.0,370.0,50.0" font="bold 12.0pt Tahoma" halign="left" wordWrapEnabled="true">
+      <BoundLabelBinding ord="slot:rerBStatus/points/traffic/message" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="580.0,520.0,550.0,30.0" background="#a0cbf5"/>
+
+    <Label layout="580.0,550.0,550.0,30.0" background="white"/>
+
+    <Label layout="580.0,580.0,550.0,30.0" background="#a0cbf5"/>
+
+    <Label layout="580.0,610.0,550.0,30.0" background="white"/>
+
+    <Label layout="735.0,440.0,230.0,45.0" text="Saint-R&#xe9;my-les-Chevreuses" font="bold 16.0pt Tahoma" foreground="#1e239e"/>
+
+    <PxInclude layout="585.0,495.0,540.0,20.0" ord="file:^px/fonctions/kiosque/stationMassyInclude.px" variables="train=s:slot$3arerMassy$2fpoints$2fdirStRemy$2ftrainN"/>
+
+    <Label layout="580.0,640.0,550.0,30.0" background="#a0cbf5"/>
+
+    <BoundLabel layout="995.0,450.0,110.0,20.0" font="bold 14.0pt Tahoma">
+      <BoundLabelBinding ord="station:|slot:/Drivers/RestNetwork/CurrentTime/out" statusEffect="none">
+        <ObjectToString name="text" format="%time%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <PxInclude layout="585.0,525.0,540.0,20.0" ord="file:^px/fonctions/kiosque/stationMassyInclude.px" variables="train=s:slot$3arerMassy$2fpoints$2fdirStRemy$2ftrainN$242b1"/>
+
+    <PxInclude layout="585.0,555.0,540.0,20.0" ord="file:^px/fonctions/kiosque/stationMassyInclude.px" variables="train=s:slot$3arerMassy$2fpoints$2fdirStRemy$2ftrainN$242b2"/>
+
+    <PxInclude layout="585.0,585.0,540.0,20.0" ord="file:^px/fonctions/kiosque/stationMassyInclude.px" variables="train=s:slot$3arerMassy$2fpoints$2fdirStRemy$2ftrainN$242b3"/>
+
+    <PxInclude layout="585.0,615.0,540.0,20.0" ord="file:^px/fonctions/kiosque/stationMassyInclude.px" variables="train=s:slot$3arerMassy$2fpoints$2fdirStRemy$2ftrainN$242b4"/>
+
+    <PxInclude layout="585.0,645.0,540.0,20.0" ord="file:^px/fonctions/kiosque/stationMassyInclude.px" variables="train=s:slot$3arerMassy$2fpoints$2fdirStRemy$2ftrainN$242b5"/>
+
+    <Label layout="390.0,395.0,360.0,40.0" text="Massy-Palaiseau" font="bold 20.0pt Tahoma" foreground="white" background="#3251e6"/>
+
+    <Line stroke="#51b9f6" pen="3.0" geom="560.0,490.0 10.0,490.0"/>
+
+    <Line stroke="#51b9f6" pen="3.0" geom="580.0,490.0 1130.0,490.0"/>
+
+    <Label layout="10.0,440.0,45.0,46.0" image="file:^images/images/railwayLineLogo.png"/>
+
+  </CanvasPane>
+
+</ScrollPane>
+</content>
+</px>

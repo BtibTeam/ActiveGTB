@@ -4,10 +4,9 @@
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
-  <module name="converters"/>
+  <module name="btibCore"/>
+  <module name="btibVision"/>
   <module name="gx"/>
-  <module name="kitPx"/>
-  <module name="workbench"/>
 </import>
 <properties>
 
@@ -82,51 +81,45 @@
 
   <PxInclude name="left" ord="file:^px/menu/left.px"/>
 
-  <BorderPane name="center">
+  <EdgePane name="center">
 
-    <GridPane name="content" columnCount="1" valign="top" halign="fill" rowAlign="fill" columnAlign="fill" stretchRow="2" stretchColumn="0">
+    <CanvasPane name="top" viewSize="1000.0,40.0" halign="left" background="#f2f2f2">
 
-      <EdgePane>
+      <GridPane layout="10.0,0.0,640.0,40.0" columnCount="10" halign="left">
 
-        <Label name="left" text="Overridden Point List" font="18.0pt Calibri" foreground="#424242" halign="left">
-          <ValueBinding ord="slot:"/>
+        <Label text="$(buildingDisplayName) /" font="18.0pt SansSerif" foreground="#3c3c3c">
+          <ValueBinding hyperlink="$(buildingOrd)"/>
         </Label>
 
-        <GridPane name="right" columnGap="8.0">
+        <Label text="$(floorDisplayName) /" font="18.0pt SansSerif" foreground="#3c3c3c">
+          <ValueBinding hyperlink="$(floorOrd)"/>
+        </Label>
 
-          <Label font="24.0pt Calibri" foreground="#5e5e5e" halign="left">
-            <ValueBinding ord="slot:overridenPointsCount">
-              <ObjectToString name="text" format="%size% points"/>
-            </ValueBinding>
-          </Label>
+      </GridPane>
 
-          <ImageButton styleClasses="hyperlink" image="module://icons/x16/sync.png" buttonStyle="hyperlink">
-            <ActionBinding ord="slot:overridenPointsCount/execute" widgetEvent="actionPerformed"/>
-          </ImageButton>
+    </CanvasPane>
 
-        </GridPane>
+    <CanvasPane name="center" viewSize="1200.0,800.0" halign="left" valign="top" background="white">
 
-      </EdgePane>
+      <Line stroke="#acacac" geom="10.0,60.0 1150.0,60.0"/>
 
-      <Line stroke="darkGrey" pen="0.5" geom="0.0,0.0 1800.0,0.0"/>
+      <CanvasPane layout="50.0,80.0,1100.0,670.0" viewSize="1100.0,670.0" halign="left" valign="top">
 
-      <WebWidget js="view:btibVision:EnhancedBoundTable">
-        <WbViewBinding ord="slot:"/>
-        <Ord name="query" f="3" value="station:|slot:/|bql: select displayName as &#x27;Nom affich&#xe9;&#x27;, vykonPro:Lib.tagValue(&#x27;b:building&#x27;) as &#x27;B&#xe2;timent&#x27;, vykonPro:Lib.tagValue(&#x27;b:floor&#x27;) as &#x27;Etage&#x27;, out as &#x27;Sortie&#x27; from control:ControlPoint where out.status.isOverridden and !(displayName like &#x27;%ocale%&#x27;)"/>
-        <Ord name="hyperlink" f="3" value="slot:"/>
-        <Double name="rowCount" f="3" value="10.0"/>
-        <Boolean name="showRowCountSelector" f="3" value="true"/>
-        <Boolean name="showSearching" f="3" value="true"/>
-        <Boolean name="showColumnSelector" f="3" value="true"/>
-        <Boolean name="showInfo" f="3" value="true"/>
-        <Boolean name="showExporting" f="3" value="true"/>
-      </WebWidget>
+        <IdBinding id="canvasForNodeDrawer"/>
 
-    </GridPane>
+      </CanvasPane>
 
-  </BorderPane>
+      <OverBorderPane layout="10.0,10.0,160.0,40.0" fill="#4db6ac" overFill="#009688">
 
-  <PxTemplateInfo name="templateInfo" templateName="BilanPointsDeroges" vendor="BTIB" version="1.0"/>
+        <Label name="content" text="Spacing Tool" font="16.0pt SansSerif" foreground="white"/>
+
+        <ValueBinding hyperlink="slot:Spacing$20Tool"/>
+
+      </OverBorderPane>
+
+    </CanvasPane>
+
+  </EdgePane>
 
 </EdgePane>
 </content>

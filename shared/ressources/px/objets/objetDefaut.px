@@ -4,10 +4,7 @@
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
-  <module name="converters"/>
   <module name="gx"/>
-  <module name="kitPx"/>
-  <module name="workbench"/>
 </import>
 <properties>
 
@@ -76,58 +73,12 @@
 
 </properties>
 <content>
-<EdgePane>
+<CanvasPane>
 
-  <PxInclude name="top" ord="file:^px/menu/top.px"/>
+  <Label layout="30.0,40.0,70.0,60.0" text="?" font="bold 22.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+    <ValueBinding ord="station:|$(slotPathOrd)" hyperlink="station:|$(slotPathOrd)"/>
+  </Label>
 
-  <PxInclude name="left" ord="file:^px/menu/left.px"/>
-
-  <BorderPane name="center">
-
-    <GridPane name="content" columnCount="1" valign="top" halign="fill" rowAlign="fill" columnAlign="fill" stretchRow="2" stretchColumn="0">
-
-      <EdgePane>
-
-        <Label name="left" text="Overridden Point List" font="18.0pt Calibri" foreground="#424242" halign="left">
-          <ValueBinding ord="slot:"/>
-        </Label>
-
-        <GridPane name="right" columnGap="8.0">
-
-          <Label font="24.0pt Calibri" foreground="#5e5e5e" halign="left">
-            <ValueBinding ord="slot:overridenPointsCount">
-              <ObjectToString name="text" format="%size% points"/>
-            </ValueBinding>
-          </Label>
-
-          <ImageButton styleClasses="hyperlink" image="module://icons/x16/sync.png" buttonStyle="hyperlink">
-            <ActionBinding ord="slot:overridenPointsCount/execute" widgetEvent="actionPerformed"/>
-          </ImageButton>
-
-        </GridPane>
-
-      </EdgePane>
-
-      <Line stroke="darkGrey" pen="0.5" geom="0.0,0.0 1800.0,0.0"/>
-
-      <WebWidget js="view:btibVision:EnhancedBoundTable">
-        <WbViewBinding ord="slot:"/>
-        <Ord name="query" f="3" value="station:|slot:/|bql: select displayName as &#x27;Nom affich&#xe9;&#x27;, vykonPro:Lib.tagValue(&#x27;b:building&#x27;) as &#x27;B&#xe2;timent&#x27;, vykonPro:Lib.tagValue(&#x27;b:floor&#x27;) as &#x27;Etage&#x27;, out as &#x27;Sortie&#x27; from control:ControlPoint where out.status.isOverridden and !(displayName like &#x27;%ocale%&#x27;)"/>
-        <Ord name="hyperlink" f="3" value="slot:"/>
-        <Double name="rowCount" f="3" value="10.0"/>
-        <Boolean name="showRowCountSelector" f="3" value="true"/>
-        <Boolean name="showSearching" f="3" value="true"/>
-        <Boolean name="showColumnSelector" f="3" value="true"/>
-        <Boolean name="showInfo" f="3" value="true"/>
-        <Boolean name="showExporting" f="3" value="true"/>
-      </WebWidget>
-
-    </GridPane>
-
-  </BorderPane>
-
-  <PxTemplateInfo name="templateInfo" templateName="BilanPointsDeroges" vendor="BTIB" version="1.0"/>
-
-</EdgePane>
+</CanvasPane>
 </content>
 </px>
