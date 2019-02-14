@@ -33,7 +33,7 @@
   </property>
 
   <property name="vueCentraleBackgroundCouleur" type="gx:Brush" value="#455a64">
-    <target ord="slot:content/center/background"/>
+    <target ord="slot:content/center/fill"/>
   </property>
 
   <property name="vueCentraleBackgroundCouleurSombre" type="gx:Brush" value="#37474f">
@@ -64,13 +64,13 @@
 
     <PxInclude name="left" ord="file:^px/menus/gauche.px"/>
 
-    <CanvasPane name="center" viewSize="1300.0,800.0" minScaleFactor="0.5" maxScaleFactor="1.0" valign="top" background="#455a64">
+    <BorderPane name="center" padding="30.0" fill="#455a64">
 
-      <BqlToWidgetsView name="BqlToWidgetsView" layout="10.0,10.0,1280.0,780.0">
+      <BqlToWidgetsView name="content">
         <WbViewBinding name="WbViewBinding" ord="station:|slot:/Accueil/Param$e8tres$20stations/Liste$20des$20param$e8tres"/>
       </BqlToWidgetsView>
 
-    </CanvasPane>
+    </BorderPane>
 
     <PxInclude name="right" ord="file:^px/menus/droite.px"/>
 

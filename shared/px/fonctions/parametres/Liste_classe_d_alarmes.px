@@ -23,7 +23,7 @@
     <CanvasPane viewSize="720.0,40.0" background="#546e7a">
 
       <GenericFieldEditor layout="220.0,10.0,500.0,20.0" foreground="white">
-        <WbFieldEditorBinding ord="station:|slot:/Services/AlarmService/Electricite_Niveau1/priority"/>
+        <WbFieldEditorBinding ord="slot:/Services/AlarmService/defaultAlarmClass/priority"/>
       </GenericFieldEditor>
 
       <Picture layout="0.0,5.0,32.0,30.0" image="module://themeActive/image/x32/status/alarm_w.png" scale="fitRatio"/>
@@ -43,7 +43,7 @@
     <CanvasPane viewSize="720.0,40.0" background="#546e7a">
 
       <GenericFieldEditor layout="220.0,10.0,500.0,20.0" foreground="white">
-        <WbFieldEditorBinding ord="station:|slot:/Services/AlarmService/Electricite_Niveau1/priority"/>
+        <WbFieldEditorBinding ord="slot:/Services/AlarmService/Electricite_Niveau1/priority"/>
       </GenericFieldEditor>
 
       <Picture layout="0.0,5.0,32.0,30.0" image="module://themeActive/image/x32/status/alarm_w.png" scale="fitRatio"/>
@@ -63,7 +63,7 @@
     <CanvasPane viewSize="720.0,40.0" background="#546e7a">
 
       <GenericFieldEditor layout="220.0,10.0,500.0,20.0" foreground="white">
-        <WbFieldEditorBinding ord="station:|slot:/Services/AlarmService/Electricite_Niveau1/priority"/>
+        <WbFieldEditorBinding ord="slot:/Services/AlarmService/Electricite_Niveau2/priority"/>
       </GenericFieldEditor>
 
       <Picture layout="0.0,5.0,32.0,30.0" image="module://themeActive/image/x32/status/alarm_w.png" scale="fitRatio"/>
@@ -83,7 +83,7 @@
     <CanvasPane viewSize="720.0,40.0" background="#546e7a">
 
       <GenericFieldEditor layout="220.0,10.0,500.0,20.0" foreground="white">
-        <WbFieldEditorBinding ord="station:|slot:/Services/AlarmService/Electricite_Niveau1/priority"/>
+        <WbFieldEditorBinding ord="slot:/Services/AlarmService/Plomberie_Niveau1/priority"/>
       </GenericFieldEditor>
 
       <Picture layout="0.0,5.0,32.0,30.0" image="module://themeActive/image/x32/status/alarm_w.png" scale="fitRatio"/>
@@ -103,13 +103,73 @@
     <CanvasPane viewSize="720.0,40.0" background="#546e7a">
 
       <GenericFieldEditor layout="220.0,10.0,500.0,20.0" foreground="white">
-        <WbFieldEditorBinding ord="station:|slot:/Services/AlarmService/Electricite_Niveau1/priority"/>
+        <WbFieldEditorBinding ord="slot:/Services/AlarmService/Plomberie_Niveau2/priority"/>
       </GenericFieldEditor>
 
       <Picture layout="0.0,5.0,32.0,30.0" image="module://themeActive/image/x32/status/alarm_w.png" scale="fitRatio"/>
 
       <Label layout="35.0,5.0,175.0,30.0" image="" font="14.0pt Calibri" foreground="white" background="#546e7a">
         <ValueBinding ord="slot:/Services/AlarmService/Plomberie_Niveau2">
+          <ObjectToString name="text" format="%displayName%"/>
+        </ValueBinding>
+      </Label>
+
+      <SaveButton layout="670.0,10.0,40.0,20.0" image="module://icons/x16/save.png" font="16.0pt Calibri" halign="left" textIconGap="0.0" textOverride=" ">
+        <WsAnnotation name="wsAnnotation" value="14,14,8"/>
+      </SaveButton>
+
+    </CanvasPane>
+
+    <CanvasPane viewSize="720.0,40.0" background="#546e7a">
+
+      <GenericFieldEditor layout="220.0,10.0,500.0,20.0" foreground="white">
+        <WbFieldEditorBinding ord="slot:/Services/AlarmService/CVC_Niveau1/priority"/>
+      </GenericFieldEditor>
+
+      <Picture layout="0.0,5.0,32.0,30.0" image="module://themeActive/image/x32/status/alarm_w.png" scale="fitRatio"/>
+
+      <Label layout="35.0,5.0,175.0,30.0" image="" font="14.0pt Calibri" foreground="white" background="#546e7a">
+        <ValueBinding ord="slot:/Services/AlarmService/CVC_Niveau1">
+          <ObjectToString name="text" format="%displayName%"/>
+        </ValueBinding>
+      </Label>
+
+      <SaveButton layout="670.0,10.0,40.0,20.0" image="module://icons/x16/save.png" font="16.0pt Calibri" halign="left" textIconGap="0.0" textOverride=" ">
+        <WsAnnotation name="wsAnnotation" value="14,14,8"/>
+      </SaveButton>
+
+    </CanvasPane>
+
+    <CanvasPane viewSize="720.0,40.0" background="#546e7a">
+
+      <GenericFieldEditor layout="220.0,10.0,500.0,20.0" foreground="white">
+        <WbFieldEditorBinding ord="slot:/Services/AlarmService/CVC_Niveau2/priority"/>
+      </GenericFieldEditor>
+
+      <Picture layout="0.0,5.0,32.0,30.0" image="module://themeActive/image/x32/status/alarm_w.png" scale="fitRatio"/>
+
+      <Label layout="35.0,5.0,175.0,30.0" image="" font="14.0pt Calibri" foreground="white" background="#546e7a">
+        <ValueBinding ord="slot:/Services/AlarmService/CVC_Niveau2">
+          <ObjectToString name="text" format="%displayName%"/>
+        </ValueBinding>
+      </Label>
+
+      <SaveButton layout="670.0,10.0,40.0,20.0" image="module://icons/x16/save.png" font="16.0pt Calibri" halign="left" textIconGap="0.0" textOverride=" ">
+        <WsAnnotation name="wsAnnotation" value="14,14,8"/>
+      </SaveButton>
+
+    </CanvasPane>
+
+    <CanvasPane viewSize="720.0,40.0" background="#546e7a">
+
+      <GenericFieldEditor layout="220.0,10.0,500.0,20.0" foreground="white">
+        <WbFieldEditorBinding ord="slot:/Services/AlarmService/CVC_Niveau3/priority"/>
+      </GenericFieldEditor>
+
+      <Picture layout="0.0,5.0,32.0,30.0" image="module://themeActive/image/x32/status/alarm_w.png" scale="fitRatio"/>
+
+      <Label layout="35.0,5.0,175.0,30.0" image="" font="14.0pt Calibri" foreground="white" background="#546e7a">
+        <ValueBinding ord="slot:/Services/AlarmService/CVC_Niveau3">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>
       </Label>

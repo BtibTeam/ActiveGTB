@@ -118,7 +118,7 @@
       </Label>
 
       <Label name="Label2" image="module://themeActive/image/x16/alarm_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
-        <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil/Alarmes" hyperlink="station:|slot:/Accueil/Alarmes">
+        <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil/Alarmes" hyperlink="station:|slot:/Services/AlarmService/Console_Generale|view:vue">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>
       </Label>
