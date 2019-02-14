@@ -4,45 +4,45 @@
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibVision"/>
   <module name="converters"/>
   <module name="gx"/>
   <module name="kitPx"/>
   <module name="vykonPro"/>
+  <module name="workbench"/>
 </import>
 <properties>
 
-  <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
   </property>
 
-  <property name="headerBackgroundColor" type="gx:Brush" value="#0288d1">
+  <property name="vueCentraleBackgroundBlanc" type="gx:Brush" value="white">
+    <target ord="slot:center/background"/>
   </property>
 
-  <property name="headerBackgroundColorShade" type="gx:Brush" value="#02669c">
+  <property name="vueCentraleForegroundCouleur" type="gx:Brush" value="white">
   </property>
 
-  <property name="headerBackgroundColorTint" type="gx:Brush" value="#039be5">
-    <target ord="slot:center/CanvasPane/background"/>
+  <property name="vueCentraleBackgroundCouleurClaire" type="gx:Brush" value="#546e7a">
   </property>
 
-  <property name="headerForegroundColor" type="gx:Brush" value="white">
+  <property name="vueCentraleBackgroundCouleur" type="gx:Brush" value="#455a64">
   </property>
 
-  <property name="leftForegroundColor" type="gx:Brush" value="white">
+  <property name="vueCentraleBackgroundCouleurSombre" type="gx:Brush" value="#37474f">
   </property>
 
-  <property name="leftBackgroundColor" type="gx:Brush" value="#19212b">
+  <property name="vueCentraleElementForegroundCouleur" type="gx:Brush" value="white">
   </property>
 
-  <property name="leftBackgroundColorShade" type="gx:Brush" value="#0d1116">
+  <property name="vueCentraleElementBackgroundCouleurClaire" type="gx:Brush" value="#1e88e5">
   </property>
 
-  <property name="leftBackgroundColorTint" type="gx:Brush" value="#3c5069">
+  <property name="vueCentraleElementBackgroundCouleur" type="gx:Brush" value="#1976d2">
   </property>
 
-  <property name="siteName" type="baja:String" value="Building">
-  </property>
-
-  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/gD14vW">
+  <property name="vueCentraleElementBackgroundCouleurSombre" type="gx:Brush" value="#1565c0">
   </property>
 
 </properties>
@@ -53,9 +53,9 @@
 
   <PxInclude name="left" ord="file:^px/menus/gauche.px"/>
 
-  <CanvasPane name="center" viewSize="1600.0,800.0" halign="left" valign="top" background="#eceff1">
+  <CanvasPane name="center" viewSize="1400.0,800.0" halign="left" valign="top" background="white">
 
-    <CanvasPane name="CanvasPane" layout="0.0,0.0,100.0%,420.0" viewSize="1600.0,420.0" halign="fill" background="#039be5">
+    <CanvasPane name="CanvasPane" layout="0.0,0.0,1400.0,420.0" viewSize="1400.0,420.0" halign="fill" background="#455a64">
 
       <Label name="Label" layout="120.0,80.0,460.0,50.0" text="Bienvenue dans Active Framework &#x2665;" font="22.0pt Calibri" foreground="white" halign="left"/>
 
@@ -90,6 +90,8 @@
     </CanvasPane>
 
   </CanvasPane>
+
+  <PxInclude name="right" ord="file:^px/menus/droite.px"/>
 
 </EdgePane>
 </content>

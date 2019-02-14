@@ -10,11 +10,11 @@
 <content>
 <EdgePane>
 
-  <PxInclude name="top" ord="file:^px/menu/top.px"/>
+  <PxInclude name="top" ord="file:^px/menus/haut.px"/>
 
-  <PxInclude name="left" ord="file:^px/menu/left.px"/>
+  <PxInclude name="left" ord="file:^px/menus/gauche.px"/>
 
-  <WebWidget name="center" js="view:alarm:AlarmUxConsole">
+  <WebWidget name="center" js="view:btibVision:FlexPane">
     <WbViewBinding ord="slot:"/>
   </WebWidget>
 

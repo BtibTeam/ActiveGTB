@@ -1,17 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0" media="workbench:WbPxMedia">
+<px version="1.0">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
-  <module name="converters"/>
   <module name="gx"/>
-  <module name="jxBrowser"/>
-  <module name="kitPx"/>
-  <module name="vykonPro"/>
   <module name="workbench"/>
 </import>
 <properties>
+
+  <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
+  </property>
+
+  <property name="vueCentraleBackgroundBlanc" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleurClaire" type="gx:Brush" value="#546e7a">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleur" type="gx:Brush" value="#455a64">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleurSombre" type="gx:Brush" value="#37474f">
+  </property>
+
+  <property name="vueCentraleElementForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleurClaire" type="gx:Brush" value="#1e88e5">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleur" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleurSombre" type="gx:Brush" value="#1565c0">
+  </property>
 
   <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
   </property>
@@ -40,7 +66,7 @@
   <property name="leftBackgroundColorTint" type="gx:Brush" value="#3c5069">
   </property>
 
-  <property name="siteName" type="baja:String" value="Building">
+  <property name="siteName" type="baja:String" value="Le Rabelais">
   </property>
 
   <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/gD14vW">
@@ -55,7 +81,7 @@
   <PxInclude name="left" ord="file:^px/menus/gauche.px"/>
 
   <WebWidget name="center" js="view:btibVision:MapLocationView">
-    <WbViewBinding name="WbViewBinding" ord="station:|slot:/Accueil/Cartes/Localisation$20carte"/>
+    <WbViewBinding ord="station:|slot:/Accueil/Cartes/Localisation$20carte"/>
   </WebWidget>
 
 </EdgePane>

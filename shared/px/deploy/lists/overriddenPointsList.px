@@ -1,16 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0" media="workbench:WbPxMedia">
+<px version="1.0">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
   <module name="converters"/>
   <module name="gx"/>
-  <module name="jxBrowser"/>
   <module name="kitPx"/>
   <module name="workbench"/>
 </import>
 <properties>
+
+  <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
+  </property>
+
+  <property name="vueCentraleBackgroundBlanc" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleurClaire" type="gx:Brush" value="#546e7a">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleur" type="gx:Brush" value="#455a64">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleurSombre" type="gx:Brush" value="#37474f">
+  </property>
+
+  <property name="vueCentraleElementForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleurClaire" type="gx:Brush" value="#1e88e5">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleur" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleurSombre" type="gx:Brush" value="#1565c0">
+  </property>
 
   <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
   </property>
@@ -39,7 +68,7 @@
   <property name="leftBackgroundColorTint" type="gx:Brush" value="#3c5069">
   </property>
 
-  <property name="siteName" type="baja:String" value="Building">
+  <property name="siteName" type="baja:String" value="Le Rabelais">
   </property>
 
   <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/gD14vW">
@@ -57,32 +86,32 @@
 
     <GridPane name="content" columnCount="1" valign="top" halign="fill" rowAlign="fill" columnAlign="fill" stretchRow="2" stretchColumn="0">
 
-      <EdgePane name="EdgePane">
+      <EdgePane>
 
         <Label name="left" text="Overridden Point List" font="18.0pt Calibri" foreground="#424242" halign="left">
-          <ValueBinding name="ValueBinding" ord="slot:"/>
+          <ValueBinding ord="slot:"/>
         </Label>
 
         <GridPane name="right" columnGap="8.0">
 
-          <Label name="Label" font="24.0pt Calibri" foreground="#5e5e5e" halign="left">
-            <ValueBinding name="ValueBinding" ord="slot:overridenPointsCount">
+          <Label font="24.0pt Calibri" foreground="#5e5e5e" halign="left">
+            <ValueBinding ord="slot:overridenPointsCount">
               <ObjectToString name="text" format="%size% points"/>
             </ValueBinding>
           </Label>
 
-          <ImageButton name="ImageButton" styleClasses="hyperlink" image="module://icons/x16/sync.png" buttonStyle="hyperlink">
-            <ActionBinding name="ActionBinding" ord="slot:overridenPointsCount/execute" widgetEvent="actionPerformed"/>
+          <ImageButton styleClasses="hyperlink" image="module://icons/x16/sync.png" buttonStyle="hyperlink">
+            <ActionBinding ord="slot:overridenPointsCount/execute" widgetEvent="actionPerformed"/>
           </ImageButton>
 
         </GridPane>
 
       </EdgePane>
 
-      <Line name="Line" stroke="darkGrey" pen="0.5" geom="0.0,0.0 1800.0,0.0"/>
+      <Line stroke="darkGrey" pen="0.5" geom="0.0,0.0 1800.0,0.0"/>
 
-      <WebWidget name="WebWidget" js="view:btibVision:EnhancedBoundTable">
-        <WbViewBinding name="WbViewBinding" ord="slot:"/>
+      <WebWidget js="view:btibVision:EnhancedBoundTable">
+        <WbViewBinding ord="slot:"/>
         <Ord name="query" f="3" value="station:|slot:/|bql: select displayName as &#x27;Nom affich&#xe9;&#x27;, vykonPro:Lib.tagValue(&#x27;b:building&#x27;) as &#x27;B&#xe2;timent&#x27;, vykonPro:Lib.tagValue(&#x27;b:floor&#x27;) as &#x27;Etage&#x27;, out as &#x27;Sortie&#x27; from control:ControlPoint where out.status.isOverridden and !(displayName like &#x27;%ocale%&#x27;)"/>
         <Ord name="hyperlink" f="3" value="slot:"/>
         <Double name="rowCount" f="3" value="10.0"/>

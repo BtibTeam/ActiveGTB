@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibVision"/>
+  <module name="gx"/>
+</import>
+<properties>
+
+  <property name="bqlToWidgetsHandle" type="baja:String" value="fb3b">
+  </property>
+
+</properties>
+<content>
+<ScrollPane viewportBackground="#455a64" borderPolicy="never">
+
+  <GridPane name="content" columnCount="5" valign="top" rowAlign="top" columnGap="30.0">
+
+    <OverCanvasPane viewSize="250.0,200.0" background="#1976d2" overBackground="#1565c0">
+
+      <Label layout="0.0,30.0,250.0,40.0" text="Param&#xe8;tres utilisateurs" image="" font="20.0pt Calibri" foreground="white" wordWrapEnabled="true">
+        <ValueBinding ord="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20utilisateurs" hyperlink="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20utilisateurs"/>
+      </Label>
+
+      <Picture layout="100.0,90.0,50.0,50.0" image="module://themeActive/image/svg/system_w.svg" scale="fitRatio">
+        <ValueBinding ord="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20utilisateurs" hyperlink="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20utilisateurs"/>
+      </Picture>
+
+      <ValueBinding ord="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20utilisateurs" hyperlink="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20utilisateurs"/>
+
+    </OverCanvasPane>
+
+    <OverCanvasPane viewSize="250.0,200.0" background="#1976d2" overBackground="#1565c0">
+
+      <Label layout="0.0,30.0,250.0,40.0" text="Param&#xe8;tres classe d&#x27;alarmes" image="" font="20.0pt Calibri" foreground="white" wordWrapEnabled="true">
+        <ValueBinding ord="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20classe$20d$27alarmes" hyperlink="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20classe$20d$27alarmes"/>
+      </Label>
+
+      <Picture layout="100.0,90.0,50.0,50.0" image="module://themeActive/image/svg/system_w.svg" scale="fitRatio">
+        <ValueBinding ord="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20classe$20d$27alarmes" hyperlink="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20classe$20d$27alarmes"/>
+      </Picture>
+
+      <ValueBinding ord="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20classe$20d$27alarmes" hyperlink="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20classe$20d$27alarmes"/>
+
+    </OverCanvasPane>
+
+  </GridPane>
+
+</ScrollPane>
+</content>
+</px>

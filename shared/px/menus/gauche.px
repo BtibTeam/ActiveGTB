@@ -10,43 +10,78 @@
 </import>
 <properties>
 
-  <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
   </property>
 
-  <property name="headerBackgroundColor" type="gx:Brush" value="#0288d1">
+  <property name="vueCentraleBackgroundBlanc" type="gx:Brush" value="white">
   </property>
 
-  <property name="headerBackgroundColorShade" type="gx:Brush" value="#02669c">
+  <property name="vueCentraleForegroundCouleur" type="gx:Brush" value="white">
   </property>
 
-  <property name="headerBackgroundColorTint" type="gx:Brush" value="#039be5">
+  <property name="vueCentraleBackgroundCouleurClaire" type="gx:Brush" value="#546e7a">
   </property>
 
-  <property name="headerForegroundColor" type="gx:Brush" value="white">
+  <property name="vueCentraleBackgroundCouleur" type="gx:Brush" value="#455a64">
   </property>
 
-  <property name="leftForegroundColor" type="gx:Brush" value="white">
-    <target ord="slot:BorderPane/content/Label/foreground"/>
-    <target ord="slot:BorderPane1/content/Label2/foreground"/>
+  <property name="vueCentraleBackgroundCouleurSombre" type="gx:Brush" value="#37474f">
+  </property>
+
+  <property name="vueCentraleElementForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleurClaire" type="gx:Brush" value="#1e88e5">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleur" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleurSombre" type="gx:Brush" value="#1565c0">
+  </property>
+
+  <property name="siteName" type="baja:String" value="Le Rabelais">
+    <target ord="slot:BorderPane/content/Label/text"/>
+  </property>
+
+  <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
     <target ord="slot:BorderPane1/content/Label/foreground"/>
-    <target ord="slot:BorderPane2/content/Label/foreground"/>
     <target ord="slot:BorderPane1/content/Label1/foreground"/>
+    <target ord="slot:BorderPane1/content/Label2/foreground"/>
+    <target ord="slot:BorderPane1/content/Label3/foreground"/>
+    <target ord="slot:BorderPane1/content/Label4/foreground"/>
+    <target ord="slot:BorderPane2/content/Label/foreground"/>
+    <target ord="slot:BorderPane2/content/Label1/foreground"/>
+    <target ord="slot:BorderPane2/content/Label2/foreground"/>
+    <target ord="slot:BorderPane2/content/Label3/foreground"/>
   </property>
 
-  <property name="leftBackgroundColor" type="gx:Brush" value="#19212b">
+  <property name="gaucheBackgroundCouleurClaire" type="gx:Brush" value="#616161">
+    <target ord="slot:BorderPane/content/background"/>
+  </property>
+
+  <property name="gaucheBackgroundCouleur" type="gx:Brush" value="#424242">
+  </property>
+
+  <property name="gaucheBackgroundCouleurSombre" type="gx:Brush" value="#212121">
     <target ord="slot:BorderPane1/fill"/>
     <target ord="slot:BorderPane2/fill"/>
     <target ord="slot:BorderPane3/fill"/>
   </property>
 
-  <property name="leftBackgroundColorShade" type="gx:Brush" value="#0d1116">
+  <property name="enTeteForegroundCouleur" type="gx:Brush" value="white">
   </property>
 
-  <property name="leftBackgroundColorTint" type="gx:Brush" value="#3c5069">
-    <target ord="slot:BorderPane/fill"/>
+  <property name="enTeteBackgroundCouleurClaire" type="gx:Brush" value="#039be5">
   </property>
 
-  <property name="siteName" type="baja:String" value="Building">
+  <property name="enTeteBackgroundCouleur" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="enTeteBackgroundCouleurSombre" type="gx:Brush" value="#0277bd">
+  </property>
+
+  <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
   </property>
 
   <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/gD14vW">
@@ -56,23 +91,21 @@
 <content>
 <GridPane columnCount="1" valign="fill" rowAlign="fill" columnAlign="fill" rowGap="0.0" stretchRow="3">
 
-  <BorderPane name="BorderPane" padding="0.0" border="top(1.0 solid #5d5d5d) bottom(1.0 solid #5d5d5d)" fill="#3c5069">
+  <BorderPane name="BorderPane" padding="0.0" border="top(1.0 solid #5d5d5d) bottom(1.0 solid #5d5d5d)">
 
-    <CanvasPane name="content" viewSize="250.0,80.0" background="#262f3d">
+    <CanvasPane name="content" viewSize="250.0,80.0" background="#616161">
 
       <Picture name="Picture" layout="10.0,20.0,40.0,40.0" image="module://themeActive/image/x24/building_w.png"/>
 
-      <Label name="Label" layout="70.0,0.0,180.0,80.0" font="18.0pt Calibri" foreground="white" halign="left">
-        <ValueBinding name="ValueBinding" ord="station:|slot:/Services/BtibService/pxProperties/siteName">
-          <ObjectToString name="text" format="%propertyValue%"/>
-        </ValueBinding>
+      <Label name="Label" layout="70.0,0.0,180.0,80.0" text="Le Rabelais" font="18.0pt Calibri" foreground="white" halign="left">
+        <ValueBinding name="ValueBinding" ord="station:|slot:/Services/BtibService/pxProperties/siteName"/>
       </Label>
 
     </CanvasPane>
 
   </BorderPane>
 
-  <BorderPane name="BorderPane1" padding="16.0 0.0 24.0 16.0" border="bottom(1.0 solid #5d5d5d)" fill="#19212b">
+  <BorderPane name="BorderPane1" padding="16.0 0.0 24.0 16.0" border="bottom(1.0 solid #5d5d5d)" fill="#212121">
 
     <GridPane name="content" columnCount="1" valign="top" halign="left" rowGap="24.0">
 
@@ -85,7 +118,7 @@
       </Label>
 
       <Label name="Label2" image="module://themeActive/image/x16/alarm_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
-        <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil/Alarmes" hyperlink="station:|slot:/Accueil/Alarmes/Consoles$20par$20m$e9tier">
+        <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil/Alarmes" hyperlink="station:|slot:/Services/AlarmService/Console_Generale|view:vue">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>
       </Label>
@@ -107,7 +140,7 @@
 
   </BorderPane>
 
-  <BorderPane name="BorderPane2" padding="16.0 0.0 24.0 16.0" border="bottom(1.0 solid #5d5d5d)" fill="#19212b">
+  <BorderPane name="BorderPane2" padding="16.0 0.0 24.0 16.0" border="bottom(1.0 solid #5d5d5d)" fill="#212121">
 
     <GridPane name="content" columnCount="1" valign="top" halign="fill" columnAlign="fill" rowGap="24.0" stretchColumn="0">
 
@@ -135,7 +168,7 @@
 
   </BorderPane>
 
-  <BorderPane name="BorderPane3" padding="16.0 0.0 24.0 16.0" border="bottom(1.0 solid #5d5d5d)" fill="#19212b"/>
+  <BorderPane name="BorderPane3" padding="16.0 0.0 24.0 16.0" border="bottom(1.0 solid #5d5d5d)" fill="#212121"/>
 
 </GridPane>
 </content>
