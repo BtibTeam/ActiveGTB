@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+  <module name="workbench"/>
+</import>
+<properties>
+
+  <property name="siteName" type="baja:String" value="Le Rabelais">
+  </property>
+
+  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/N1pjgJtbfwIu">
+  </property>
+
+  <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  </property>
+
+  <property name="bqlToWidgetsHandle" type="baja:String" value="4811">
+  </property>
+
+  <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
+  </property>
+
+  <property name="vueCentraleBackgroundBlanc" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleurClaire" type="gx:Brush" value="#546e7a">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleur" type="gx:Brush" value="#455a64">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleurSombre" type="gx:Brush" value="#37474f">
+  </property>
+
+  <property name="vueCentraleElementForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleurClaire" type="gx:Brush" value="#1e88e5">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleur" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleurSombre" type="gx:Brush" value="#1565c0">
+  </property>
+
+  <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="gaucheBackgroundCouleurClaire" type="gx:Brush" value="#616161">
+  </property>
+
+  <property name="gaucheBackgroundCouleur" type="gx:Brush" value="#424242">
+  </property>
+
+  <property name="gaucheBackgroundCouleurSombre" type="gx:Brush" value="#212121">
+  </property>
+
+  <property name="enTeteForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="enTeteBackgroundCouleurClaire" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="enTeteBackgroundCouleur" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="enTeteBackgroundCouleurSombre" type="gx:Brush" value="#0277bd">
+  </property>
+
+</properties>
+<content>
+<CanvasPane viewSize="500.0,400.0" minScaleFactor="0.5" maxScaleFactor="1.0" background="#455a64">
+
+  <Label layout="10.0,10.0,130.0,20.0" text="Status" font="14.0pt Calibri" foreground="white"/>
+
+  <Label layout="140.0,10.0,350.0,20.0" font="14.0pt Calibri" foreground="white">
+    <ValueBinding ord="slot:Historique">
+      <ObjectToString name="text" format="%status%"/>
+    </ValueBinding>
+  </Label>
+
+  <Label layout="10.0,40.0,130.0,20.0" text="Cause de l&#x27;erreur" font="14.0pt Calibri" foreground="white"/>
+
+  <Label layout="140.0,40.0,350.0,20.0" font="14.0pt Calibri" foreground="white">
+    <ValueBinding ord="slot:Historique">
+      <ObjectToString name="text" format="%faultCause%"/>
+    </ValueBinding>
+  </Label>
+
+  <GenericFieldEditor layout="160.0,70.0,100.0,23.0">
+    <WbFieldEditorBinding ord="slot:Historique/enabled"/>
+  </GenericFieldEditor>
+
+  <Label layout="10.0,70.0,130.0,20.0" text="Activation" font="14.0pt Calibri" foreground="white"/>
+
+  <SaveButton layout="10.0,360.0,480.0,30.0" image="module://icons/x16/save.png">
+    <WsAnnotation name="wsAnnotation" value="14,14,8"/>
+  </SaveButton>
+
+  <Label layout="10.0,100.0,130.0,20.0" text="Actif" font="14.0pt Calibri" foreground="white"/>
+
+  <Label layout="140.0,100.0,350.0,20.0" font="14.0pt Calibri" foreground="white">
+    <ValueBinding ord="slot:Historique">
+      <ObjectToString name="text" format="%active%"/>
+    </ValueBinding>
+  </Label>
+
+  <Label layout="10.0,130.0,130.0,20.0" text="Nom de l&#x27;historique" font="14.0pt Calibri" foreground="white"/>
+
+  <GenericFieldEditor layout="140.0,130.0,350.0,30.0">
+    <WbFieldEditorBinding ord="slot:Historique/historyName"/>
+  </GenericFieldEditor>
+
+  <GenericFieldEditor layout="140.0,170.0,350.0,30.0">
+    <WbFieldEditorBinding ord="slot:Historique/historyConfig/capacity"/>
+  </GenericFieldEditor>
+
+  <Label layout="10.0,170.0,130.0,20.0" text="Capacit&#xe9;" font="14.0pt Calibri" foreground="white"/>
+
+  <Label layout="10.0,210.0,130.0,20.0" text="Intervalle" font="14.0pt Calibri" foreground="white"/>
+
+  <GenericFieldEditor layout="140.0,210.0,350.0,20.0">
+    <WbFieldEditorBinding ord="slot:Historique/interval"/>
+  </GenericFieldEditor>
+
+</CanvasPane>
+</content>
+</px>

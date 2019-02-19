@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0" media="workbench:WbPxMedia">
+<px version="1.0">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
@@ -9,6 +9,33 @@
   <module name="gx"/>
 </import>
 <properties>
+
+  <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="gaucheBackgroundCouleurClaire" type="gx:Brush" value="#616161">
+  </property>
+
+  <property name="gaucheBackgroundCouleur" type="gx:Brush" value="#424242">
+  </property>
+
+  <property name="gaucheBackgroundCouleurSombre" type="gx:Brush" value="#212121">
+  </property>
+
+  <property name="enTeteForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="enTeteBackgroundCouleurClaire" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="enTeteBackgroundCouleur" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="enTeteBackgroundCouleurSombre" type="gx:Brush" value="#0277bd">
+  </property>
+
+  <property name="bqlToWidgetsHandle" type="baja:String" value="4811">
+  </property>
 
   <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
   </property>
@@ -46,22 +73,22 @@
   <property name="siteName" type="baja:String" value="Le Rabelais">
   </property>
 
-  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/gD14vW">
+  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/N1pjgJtbfwIu">
   </property>
 
 </properties>
 <content>
 <OverCanvasPane viewSize="250.0,200.0" background="#1976d2" overBackground="#1565c0">
 
-  <Label name="Label" layout="0.0,30.0,250.0,40.0" text="$(escapedDisplayName)" font="20.0pt Calibri" foreground="white" wordWrapEnabled="true">
-    <ValueBinding name="ValueBinding" ord="$(lien)" hyperlink="$(lien)"/>
+  <Label layout="0.0,30.0,250.0,40.0" text="$(escapedDisplayName)" font="20.0pt Calibri" foreground="white" wordWrapEnabled="true">
+    <ValueBinding ord="$(lien)" hyperlink="$(lien)"/>
   </Label>
 
-  <Picture name="Picture" layout="100.0,90.0,50.0,50.0" image="module://themeActive/image/svg/system_w.svg" scale="fitRatio">
-    <ValueBinding name="ValueBinding" ord="$(lien)" hyperlink="$(lien)"/>
+  <Picture layout="100.0,90.0,50.0,50.0" image="module://themeActive/image/svg/system_w.svg" scale="fitRatio">
+    <ValueBinding ord="$(lien)" hyperlink="$(lien)"/>
   </Picture>
 
-  <ValueBinding name="ValueBinding" ord="$(lien)" hyperlink="$(lien)"/>
+  <ValueBinding ord="$(lien)" hyperlink="$(lien)"/>
 
 </OverCanvasPane>
 </content>

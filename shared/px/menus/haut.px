@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0" media="workbench:WbPxMedia">
+<px version="1.0">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
@@ -9,6 +9,39 @@
   <module name="kitPx"/>
 </import>
 <properties>
+
+  <property name="bqlToWidgetsHandle" type="baja:String" value="4811">
+  </property>
+
+  <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
+  </property>
+
+  <property name="vueCentraleBackgroundBlanc" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleurClaire" type="gx:Brush" value="#546e7a">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleur" type="gx:Brush" value="#455a64">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleurSombre" type="gx:Brush" value="#37474f">
+  </property>
+
+  <property name="vueCentraleElementForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleurClaire" type="gx:Brush" value="#1e88e5">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleur" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleurSombre" type="gx:Brush" value="#1565c0">
+  </property>
 
   <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
   </property>
@@ -46,7 +79,7 @@
   <property name="siteName" type="baja:String" value="Le Rabelais">
   </property>
 
-  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/gD14vW">
+  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/N1pjgJtbfwIu">
   </property>
 
 </properties>
@@ -57,8 +90,8 @@
 
     <CanvasPane name="content" viewSize="250.0,50.0">
 
-      <Picture name="Picture" layout="0.0,-20.0,250.0,90.0" image="file:^images/logos/logo_w.svg" scale="fitRatio" halign="left">
-        <ValueBinding name="ValueBinding" ord="station:|slot:/" hyperlink="station:|slot:/Accueil"/>
+      <Picture layout="0.0,-20.0,250.0,90.0" image="file:^images/logos/logo_w.svg" scale="fitRatio" halign="left">
+        <ValueBinding ord="station:|slot:/" hyperlink="station:|slot:/Accueil"/>
       </Picture>
 
     </CanvasPane>
@@ -74,7 +107,7 @@
       </BackButton>
 
       <Label name="center" font="22.0pt Calibri" foreground="white" halign="left" textIconGap="4.5">
-        <ValueBinding name="ValueBinding" ord="slot:">
+        <ValueBinding ord="slot:">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>
       </Label>
@@ -89,8 +122,8 @@
 
       <GridPane name="content" halign="right" rowGap="0.0" columnGap="20.0">
 
-        <Label name="Label" image="module://themeActive/image/x24/worker_w.png" font="16.0pt Trebuchet MS" foreground="white" halign="right" textToIconAlign="left" textIconGap="12.0">
-          <ValueBinding name="ValueBinding" ord="station:|slot:/" popupEnabled="false">
+        <Label image="module://themeActive/image/x24/worker_w.png" font="16.0pt Trebuchet MS" foreground="white" halign="right" textToIconAlign="left" textIconGap="12.0">
+          <ValueBinding ord="station:|slot:/" popupEnabled="false">
             <ObjectToString name="text" format="%user()%"/>
           </ValueBinding>
         </Label>
@@ -103,11 +136,11 @@
 
       <GridPane name="content" halign="right" rowGap="0.0" columnGap="20.0">
 
-        <Label name="Label" image="module://themeActive/image/x24/system_w.png">
-          <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil/Param$e8tres$20stations" hyperlink="station:|slot:/Accueil/Param$e8tres$20stations"/>
+        <Label image="module://themeActive/image/x24/system_w.png">
+          <ValueBinding ord="station:|slot:/Accueil/Param$e8tres$20stations" hyperlink="station:|slot:/Accueil/Param$e8tres$20stations"/>
         </Label>
 
-        <LogoffButton name="LogoffButton" image="file:^px/themeActive/image/x24/logout_w.png" textIconGap="0.0" buttonStyle="hyperlink" textOverride=" ">
+        <LogoffButton image="file:^px/themeActive/image/x24/logout_w.png" textIconGap="0.0" buttonStyle="hyperlink" textOverride=" ">
           <WsAnnotation name="wsAnnotation" value="34,34,8"/>
         </LogoffButton>
 

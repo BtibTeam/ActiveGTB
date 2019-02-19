@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+  <module name="workbench"/>
+</import>
+<properties>
+
+  <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
+  </property>
+
+  <property name="vueCentraleBackgroundBlanc" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleurClaire" type="gx:Brush" value="#546e7a">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleur" type="gx:Brush" value="#455a64">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleurSombre" type="gx:Brush" value="#37474f">
+  </property>
+
+  <property name="vueCentraleElementForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleurClaire" type="gx:Brush" value="#1e88e5">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleur" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleurSombre" type="gx:Brush" value="#1565c0">
+  </property>
+
+  <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="gaucheBackgroundCouleurClaire" type="gx:Brush" value="#616161">
+  </property>
+
+  <property name="gaucheBackgroundCouleur" type="gx:Brush" value="#424242">
+  </property>
+
+  <property name="gaucheBackgroundCouleurSombre" type="gx:Brush" value="#212121">
+  </property>
+
+  <property name="enTeteForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="enTeteBackgroundCouleurClaire" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="enTeteBackgroundCouleur" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="enTeteBackgroundCouleurSombre" type="gx:Brush" value="#0277bd">
+  </property>
+
+  <property name="siteName" type="baja:String" value="Le Rabelais">
+  </property>
+
+  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/N1pjgJtbfwIu">
+  </property>
+
+  <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  </property>
+
+  <property name="bqlToWidgetsHandle" type="baja:String" value="4811">
+  </property>
+
+  <property name="leftBackgroundColor" type="gx:Brush" value="#19212b">
+  </property>
+
+  <property name="leftBackgroundColorShade" type="gx:Brush" value="#0d1116">
+  </property>
+
+  <property name="leftBackgroundColorTint" type="gx:Brush" value="#3c5069">
+  </property>
+
+  <property name="leftForegroundColor" type="gx:Brush" value="white">
+  </property>
+
+  <property name="headerBackgroundColor" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="headerBackgroundColorShade" type="gx:Brush" value="#02669c">
+  </property>
+
+  <property name="headerBackgroundColorTint" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="headerForegroundColor" type="gx:Brush" value="white">
+  </property>
+
+  <property name="rightBackgroundColor" type="gx:Brush" value="#02669c">
+  </property>
+
+  <property name="rightBackgroundColorShade" type="gx:Brush" value="#02669c">
+  </property>
+
+  <property name="rightBackgroundColorTint" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="centerBackgroundColor" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="centerBackgroundColorShade" type="gx:Brush" value="#02669c">
+  </property>
+
+  <property name="centerBackgroundColorTint" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="centerForegroundColor" type="gx:Brush" value="white">
+  </property>
+
+</properties>
+<content>
+<CanvasPane viewSize="500.0,400.0" background="#455a64">
+
+  <GenericFieldEditor layout="300.0,42.0,179.0,16.0">
+    <WbFieldEditorBinding ord="slot:Alarme/timeDelay"/>
+  </GenericFieldEditor>
+
+  <GenericFieldEditor layout="300.0,63.0,pref,pref">
+    <WbFieldEditorBinding ord="slot:Alarme/timeDelayToNormal"/>
+  </GenericFieldEditor>
+
+  <GenericFieldEditor layout="300.0,120.0,pref,pref">
+    <WbFieldEditorBinding ord="slot:Alarme/alarmClass"/>
+  </GenericFieldEditor>
+
+  <Label layout="10.0,40.0,264.0,20.0" text="D&#xe9;lais avant alarme :" font="bold 12.0pt Trebuchet MS" foreground="white" halign="right"/>
+
+  <Label layout="10.0,60.0,264.0,20.0" text="D&#xe9;lais avant retour &#xe0; la normale :" font="bold 12.0pt Trebuchet MS" foreground="white" halign="right"/>
+
+  <CheckBox layout="300.0,90.0,150.0,20.0" font="bold 12.0pt SansSerif" foreground="white">
+    <SetPointBinding ord="slot:Alarme/alarmInhibit" widgetEvent="actionPerformed" widgetProperty="selected">
+      <IStatusToBrush name="background"/>
+      <IBooleanToSimple name="text">
+        <String name="trueValue" value="Alarme inhib&#xe9;e"/>
+        <String name="falseValue" value="Alarme activ&#xe9;e"/>
+      </IBooleanToSimple>
+    </SetPointBinding>
+    <WsAnnotation name="wsAnnotation" value="62,62,8"/>
+  </CheckBox>
+
+  <Label layout="10.0,90.0,264.0,20.0" text="Inhibition alarme :" font="bold 12.0pt Trebuchet MS" foreground="white" halign="right"/>
+
+  <Label layout="10.0,120.0,264.0,20.0" text="Groupe d&#x27;alarme :" font="bold 12.0pt Trebuchet MS" foreground="white" halign="right"/>
+
+  <BoundLabel layout="300.0,220.0,160.0,20.0" font="bold 12.0pt SansSerif" foreground="white" halign="left">
+    <BoundLabelBinding ord="slot:Alarme/toOffnormalTimes/alarmTime" statusEffect="none">
+      <ObjectToString name="text"/>
+    </BoundLabelBinding>
+  </BoundLabel>
+
+  <BoundLabel layout="300.0,240.0,160.0,20.0" font="bold 12.0pt SansSerif" foreground="white" halign="left">
+    <BoundLabelBinding ord="slot:Alarme/toOffnormalTimes/ackTime" statusEffect="none">
+      <ObjectToString name="text"/>
+    </BoundLabelBinding>
+  </BoundLabel>
+
+  <BoundLabel layout="300.0,260.0,160.0,20.0" font="bold 12.0pt SansSerif" foreground="white" halign="left">
+    <BoundLabelBinding ord="slot:Alarme/toOffnormalTimes/normalTime" statusEffect="none">
+      <ObjectToString name="text"/>
+    </BoundLabelBinding>
+  </BoundLabel>
+
+  <BoundLabel layout="300.0,280.0,160.0,20.0" font="bold 12.0pt SansSerif" foreground="white" halign="left">
+    <BoundLabelBinding ord="slot:Alarme/toOffnormalTimes/count" statusEffect="none">
+      <ObjectToString name="text"/>
+    </BoundLabelBinding>
+  </BoundLabel>
+
+  <BoundLabel layout="300.0,300.0,160.0,20.0" font="bold 12.0pt SansSerif" foreground="white" halign="left">
+    <BoundLabelBinding ord="slot:Alarme/timeInCurrentState" statusEffect="none">
+      <ObjectToString name="text"/>
+    </BoundLabelBinding>
+  </BoundLabel>
+
+  <Label layout="10.0,220.0,264.0,20.0" text="Date et heure de l&#x27;alarme :" font="bold 12.0pt Trebuchet MS" foreground="white" halign="right"/>
+
+  <Label layout="10.0,240.0,264.0,20.0" text="Date et heure acquittement de l&#x27;alarme :" font="bold 12.0pt Trebuchet MS" foreground="white" halign="right"/>
+
+  <Label layout="10.0,260.0,264.0,20.0" text="Date et heure fin de l&#x27;alarme :" font="bold 12.0pt Trebuchet MS" foreground="white" halign="right"/>
+
+  <Label layout="10.0,280.0,264.0,20.0" text="Nombre total d&#x27;alarmes :" font="bold 12.0pt Trebuchet MS" foreground="white" halign="right"/>
+
+  <Label layout="10.0,300.0,264.0,20.0" text="Temps &#xe9;tat actuel :" font="bold 12.0pt Trebuchet MS" foreground="white" halign="right"/>
+
+  <GenericFieldEditor visible="false" layout="300.0,150.0,pref,pref">
+    <WbFieldEditorBinding ord="slot:Alarme/offnormalAlgorithm/highLimit" degradeBehavior="hide"/>
+  </GenericFieldEditor>
+
+  <GenericFieldEditor visible="false" layout="300.0,172.0,pref,pref">
+    <WbFieldEditorBinding ord="slot:Alarme/offnormalAlgorithm/lowLimit" degradeBehavior="hide"/>
+  </GenericFieldEditor>
+
+  <Label visible="false" layout="10.0,150.0,264.0,20.0" text="Seuil haut :" font="bold 12.0pt SansSerif" foreground="white" halign="right">
+    <ValueBinding ord="slot:Alarme/offnormalAlgorithm/highLimit" degradeBehavior="hide"/>
+  </Label>
+
+  <Label visible="false" layout="10.0,172.0,264.0,20.0" text="Seuil bas :" font="bold 12.0pt SansSerif" foreground="white" halign="right">
+    <ValueBinding ord="slot:Alarme/offnormalAlgorithm/lowLimit" degradeBehavior="hide"/>
+  </Label>
+
+  <CheckBox visible="false" layout="410.0,170.0,20.0,20.0">
+    <SetPointBinding ord="slot:Alarme/offnormalAlgorithm/limitEnable/lowLimitEnable" degradeBehavior="hide" widgetEvent="actionPerformed" widgetProperty="selected">
+      <IStatusToBrush name="foreground" mode="foreground"/>
+      <IStatusToBrush name="background"/>
+    </SetPointBinding>
+    <WsAnnotation name="wsAnnotation" value="62,62,8"/>
+  </CheckBox>
+
+  <CheckBox visible="false" layout="410.0,150.0,20.0,20.0">
+    <SetPointBinding ord="slot:Alarme/offnormalAlgorithm/limitEnable/highLimitEnable" degradeBehavior="hide" widgetEvent="actionPerformed" widgetProperty="selected">
+      <IStatusToBrush name="foreground" mode="foreground"/>
+      <IStatusToBrush name="background"/>
+    </SetPointBinding>
+    <WsAnnotation name="wsAnnotation" value="62,62,8"/>
+  </CheckBox>
+
+  <SaveButton layout="10.0,360.0,480.0,30.0" image="module://icons/x16/save.png">
+    <WsAnnotation name="wsAnnotation" value="14,14,8"/>
+  </SaveButton>
+
+</CanvasPane>
+</content>
+</px>

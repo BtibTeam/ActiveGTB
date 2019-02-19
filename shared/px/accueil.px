@@ -1,18 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0" media="workbench:WbPxMedia">
+<px version="1.0">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
-  <module name="btibCore"/>
-  <module name="btibVision"/>
-  <module name="converters"/>
   <module name="gx"/>
   <module name="kitPx"/>
-  <module name="vykonPro"/>
-  <module name="workbench"/>
 </import>
 <properties>
+
+  <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="gaucheBackgroundCouleurClaire" type="gx:Brush" value="#616161">
+  </property>
+
+  <property name="gaucheBackgroundCouleur" type="gx:Brush" value="#424242">
+  </property>
+
+  <property name="gaucheBackgroundCouleurSombre" type="gx:Brush" value="#212121">
+  </property>
+
+  <property name="enTeteForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="enTeteBackgroundCouleurClaire" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="enTeteBackgroundCouleur" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="enTeteBackgroundCouleurSombre" type="gx:Brush" value="#0277bd">
+  </property>
+
+  <property name="siteName" type="baja:String" value="Le Rabelais">
+  </property>
+
+  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/N1pjgJtbfwIu">
+  </property>
+
+  <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  </property>
+
+  <property name="bqlToWidgetsHandle" type="baja:String" value="4811">
+  </property>
 
   <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
   </property>
@@ -55,37 +86,37 @@
 
   <CanvasPane name="center" viewSize="1400.0,800.0" halign="left" valign="top" background="white">
 
-    <CanvasPane name="CanvasPane" layout="0.0,0.0,1400.0,420.0" viewSize="1400.0,420.0" halign="fill" background="#455a64">
+    <CanvasPane layout="0.0,0.0,1400.0,420.0" viewSize="1400.0,420.0" halign="fill" background="#455a64">
 
-      <Label name="Label" layout="120.0,80.0,460.0,50.0" text="Bienvenue dans Active Framework &#x2665;" font="22.0pt Calibri" foreground="white" halign="left"/>
+      <Label layout="120.0,80.0,460.0,50.0" text="Bienvenue dans Active Framework &#x2665;" font="22.0pt Calibri" foreground="white" halign="left"/>
 
-      <Label name="Label1" layout="120.0,120.0,460.0,50.0" text="D&#xe9;marrons!" font="bold 48.0pt Calibri" foreground="white" halign="left"/>
+      <Label layout="120.0,120.0,460.0,50.0" text="D&#xe9;marrons!" font="bold 48.0pt Calibri" foreground="white" halign="left"/>
 
-      <Ellipse name="Ellipse" stroke="white" pen="3.0" geom="125.0,215.0,100.0,100.0"/>
+      <Ellipse stroke="white" pen="3.0" geom="125.0,215.0,100.0,100.0"/>
 
-      <Label name="Label2" layout="120.0,320.0,110.0,50.0" text="Cr&#xe9;&#xe9; votre mod&#xe8;le" font="16.0pt Trebuchet MS" foreground="white" wordWrapEnabled="true">
-        <PopupBinding name="PopupBinding" ord="slot:schedules/ProgrammeHoraireBool$e9en" title="Schedule" size="1200.0,800.0"/>
+      <Label layout="120.0,320.0,110.0,50.0" text="Cr&#xe9;ez votre mod&#xe8;le" font="16.0pt Trebuchet MS" foreground="white" wordWrapEnabled="true">
+        <PopupBinding ord="slot:schedules/ProgrammeHoraireBool$e9en" title="Schedule" size="1200.0,800.0"/>
       </Label>
 
-      <Ellipse name="Ellipse1" stroke="white" pen="3.0" geom="460.0,215.0,100.0,100.0"/>
+      <Ellipse stroke="white" pen="3.0" geom="460.0,215.0,100.0,100.0"/>
 
-      <Ellipse name="Ellipse2" stroke="white" pen="3.0" geom="295.0,215.0,100.0,100.0"/>
+      <Ellipse stroke="white" pen="3.0" geom="295.0,215.0,100.0,100.0"/>
 
-      <Picture name="Picture" layout="150.0,245.0,50.0,40.0" image="file:^images/icones/hierarchie.svg" scale="fitRatio">
-        <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Services/BtibService/aspectContainer"/>
+      <Picture layout="150.0,245.0,50.0,40.0" image="file:^images/icones/hierarchie.svg" scale="fitRatio">
+        <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer"/>
       </Picture>
 
-      <Label name="Label3" layout="290.0,320.0,110.0,50.0" text="Affecter vos &#xe9;quipements" font="16.0pt Trebuchet MS" foreground="white" wordWrapEnabled="true">
-        <PopupBinding name="PopupBinding" ord="slot:schedules/ProgrammeHoraireBool$e9en" title="Schedule" size="1200.0,800.0"/>
+      <Label layout="290.0,320.0,110.0,50.0" text="Affectez vos &#xe9;quipements" font="16.0pt Trebuchet MS" foreground="white" wordWrapEnabled="true">
+        <PopupBinding ord="slot:schedules/ProgrammeHoraireBool$e9en" title="Schedule" size="1200.0,800.0"/>
       </Label>
 
-      <Picture name="Picture1" layout="320.0,245.0,50.0,40.0" image="file:^images/icones/equipement.svg" scale="fitRatio"/>
+      <Picture layout="320.0,245.0,50.0,40.0" image="file:^images/icones/equipement.svg" scale="fitRatio"/>
 
-      <Label name="Label4" layout="460.0,320.0,110.0,60.0" text="D&#xe9;ployez vos fonctions avanc&#xe9;es" font="16.0pt Trebuchet MS" foreground="white" wordWrapEnabled="true">
-        <PopupBinding name="PopupBinding" ord="slot:schedules/ProgrammeHoraireBool$e9en" title="Schedule" size="1200.0,800.0"/>
+      <Label layout="460.0,320.0,110.0,60.0" text="D&#xe9;ployez vos fonctions avanc&#xe9;es" font="16.0pt Trebuchet MS" foreground="white" wordWrapEnabled="true">
+        <PopupBinding ord="slot:schedules/ProgrammeHoraireBool$e9en" title="Schedule" size="1200.0,800.0"/>
       </Label>
 
-      <Picture name="Picture2" layout="485.0,245.0,50.0,40.0" image="file:^images/icones/moteur.svg" scale="fitRatio"/>
+      <Picture layout="485.0,245.0,50.0,40.0" image="file:^images/icones/moteur.svg" scale="fitRatio"/>
 
     </CanvasPane>
 

@@ -76,6 +76,12 @@
    "P0RHlAI5Agi4xZcsZ7fz2_comp:h:101a9": ["comp:h:101b6"],
    "P0RHlAI5Agi4xZcsZ7fz2_comp:h:101bf": ["comp:h:101cc"],
    "P0RHlAI5Agi4xZcsZ7fz2_comp:h:103b5": ["comp:h:103c3"],
+   "P0RHlAI5Agi4xZcsZ7fz2_comp:h:10860": ["comp:h:101b6"],
+   "P0RHlAI5Agi4xZcsZ7fz2_comp:h:10862": ["comp:h:101cc"],
+   "P0RHlAI5Agi4xZcsZ7fz2_comp:h:10864": ["comp:h:103c3"],
+   "P0RHlAI5Agi4xZcsZ7fz2_comp:h:1097d": ["comp:h:101b6"],
+   "P0RHlAI5Agi4xZcsZ7fz2_comp:h:1097f": ["comp:h:101cc"],
+   "P0RHlAI5Agi4xZcsZ7fz2_comp:h:10981": ["comp:h:103c3"],
    "R0RHJBzyitMBpxarDcY1L_comp:h:1048d": ["category:h:1048d|4"],
    "R0RHJBzyitMBpxarDcY1L_comp:h:ffb6": ["category:h:ffb6|4"],
    "a0RG75MP0ZutqCdE938u5_comp:h:103a9": ["comp:h:103b4"],
@@ -194,9 +200,43 @@
       "ord:file:^px/fonctions/alarmes/consoleAlarmes/Console_CVC.px",
       "slot:h:103b4|vue|removeSlot|"
    ],
+   "o0RG75MOzL3DwLDcpbCs5_comp:h:1085e": [
+      "ord:file:^px/fonctions/alarmes/consoleAlarmes/Console_Generale.px",
+      "slot:h:f7c6|vue|removeSlot|"
+   ],
+   "o0RG75MOzL3DwLDcpbCs5_comp:h:10860": [
+      "ord:file:^px/fonctions/alarmes/consoleAlarmes/Console_Electricite.px",
+      "slot:h:101a8|vue|removeSlot|"
+   ],
+   "o0RG75MOzL3DwLDcpbCs5_comp:h:10862": [
+      "slot:h:101be|vue|removeSlot|",
+      "ord:file:^px/fonctions/alarmes/consoleAlarmes/Console_Plomberie.px"
+   ],
+   "o0RG75MOzL3DwLDcpbCs5_comp:h:10864": [
+      "ord:file:^px/fonctions/alarmes/consoleAlarmes/Console_CVC.px",
+      "slot:h:103b4|vue|removeSlot|"
+   ],
+   "o0RG75MOzL3DwLDcpbCs5_comp:h:1097b": [
+      "ord:file:^px/fonctions/alarmes/consoleAlarmes/Console_Generale.px",
+      "slot:h:f7c6|vue|removeSlot|"
+   ],
+   "o0RG75MOzL3DwLDcpbCs5_comp:h:1097d": [
+      "ord:file:^px/fonctions/alarmes/consoleAlarmes/Console_Electricite.px",
+      "slot:h:101a8|vue|removeSlot|"
+   ],
+   "o0RG75MOzL3DwLDcpbCs5_comp:h:1097f": [
+      "slot:h:101be|vue|removeSlot|",
+      "ord:file:^px/fonctions/alarmes/consoleAlarmes/Console_Plomberie.px"
+   ],
+   "o0RG75MOzL3DwLDcpbCs5_comp:h:10981": [
+      "ord:file:^px/fonctions/alarmes/consoleAlarmes/Console_CVC.px",
+      "slot:h:103b4|vue|removeSlot|"
+   ],
    "q0RHJUiffPn3CYRnWHqsg_comp:h:103a9": ["comp:h:103b7"],
    "q0RHJUiffPn3CYRnWHqsg_comp:h:df72": ["comp:h:101ab"],
    "q0RHJUiffPn3CYRnWHqsg_comp:h:ff7e": ["comp:h:101c1"],
+   "u0RHl9qSO0OHUKDOxvatc_comp:h:1085e": ["comp:h:f7c7"],
+   "u0RHl9qSO0OHUKDOxvatc_comp:h:1097b": ["comp:h:f7c7"],
    "w0RHJBzyitMBpxarDcY1K_comp:h:1048d": ["category:h:fcf3|12"],
    "w0RHJBzyitMBpxarDcY1K_comp:h:ffb6": ["category:h:fc64|12"]
 }
