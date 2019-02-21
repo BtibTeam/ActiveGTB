@@ -2,6 +2,12 @@
    "A0RG75MP0ZutqCdE938u1_comp:h:103a9": ["comp:h:101a0"],
    "A0RG75MP0ZutqCdE938u1_comp:h:df72": ["comp:h:101a0"],
    "A0RG75MP0ZutqCdE938u1_comp:h:ff7e": ["comp:h:101a0"],
+   "A0RIhgThyhgcnWM5dU1gi_comp:h:105f8": ["comp:h:10da8"],
+   "A0RIhgThyhgcnWM5dU1gi_comp:h:105fe": ["comp:h:10da9"],
+   "A0RIhgThyhgcnWM5dU1gi_comp:h:10c2c": ["comp:h:10da6"],
+   "A0RIhgThyhgcnWM5dU1gi_comp:h:10c2e": ["comp:h:10da7"],
+   "A0RIhgThyhgcnWM5dU1gi_comp:h:10c30": ["comp:h:10da5"],
+   "A0RIhgThyhgcnWM5dU1gi_comp:h:ffb6": ["comp:h:10daa"],
    "C0RG75MP0ZutqCdE938u7_comp:h:103a9": [
       "link:h:f7c6|routeAlarm|h:103b1|alarm",
       "link:h:f7c6|routeAlarm|h:103b2|alarm",
@@ -122,6 +128,30 @@
       "link:h:101c3|totalAlarmCount|h:101bd|totalAlarmCount",
       "link:h:101c3|totalAlarmCount|h:101bc|totalAlarmCount",
       "link:h:101c2|totalAlarmCount|h:101bc|totalAlarmCount"
+   ],
+   "d0RIhiN6V5bfA15wtyqWl_comp:h:105f8": [
+      "ord:file:^px/sources/generique/point/infoSourcePointParametrageCommandes.px",
+      "slot:h:4546|commandes|removeSlot|"
+   ],
+   "d0RIhiN6V5bfA15wtyqWl_comp:h:105fe": [
+      "ord:file:^px/sources/generique/point/infoSourcePointParametrageCommandes.px",
+      "slot:h:49ea|commandes|removeSlot|"
+   ],
+   "d0RIhiN6V5bfA15wtyqWl_comp:h:10c2c": [
+      "ord:file:^px/sources/generique/point/infoSourcePointParametrageCommandes.px",
+      "slot:h:10c26|commandes|removeSlot|"
+   ],
+   "d0RIhiN6V5bfA15wtyqWl_comp:h:10c2e": [
+      "ord:file:^px/sources/generique/point/infoSourcePointParametrageCommandes.px",
+      "slot:h:10c28|commandes|removeSlot|"
+   ],
+   "d0RIhiN6V5bfA15wtyqWl_comp:h:10c30": [
+      "ord:file:^px/sources/generique/point/infoSourcePointParametrageCommandes.px",
+      "slot:h:10c2a|commandes|removeSlot|"
+   ],
+   "d0RIhiN6V5bfA15wtyqWl_comp:h:ffb6": [
+      "ord:file:^px/sources/generique/point/infoSourcePointParametrageCommandes.px",
+      "slot:h:fc64|commandes|removeSlot|"
    ],
    "e0RG75MP0ZutqCdE938u8_comp:h:103a9": [
       "link:h:101a0|receive|h:103b3|alarm",
