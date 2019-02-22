@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0" media="workbench:WbPxMedia">
+<px version="1.0">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
@@ -9,6 +9,33 @@
   <module name="workbench"/>
 </import>
 <properties>
+
+  <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="gaucheBackgroundCouleurClaire" type="gx:Brush" value="#616161">
+  </property>
+
+  <property name="gaucheBackgroundCouleur" type="gx:Brush" value="#424242">
+  </property>
+
+  <property name="gaucheBackgroundCouleurSombre" type="gx:Brush" value="#212121">
+  </property>
+
+  <property name="enTeteForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="enTeteBackgroundCouleurClaire" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="enTeteBackgroundCouleur" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="enTeteBackgroundCouleurSombre" type="gx:Brush" value="#0277bd">
+  </property>
+
+  <property name="bqlToWidgetsHandle" type="baja:String" value="4811">
+  </property>
 
   <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
   </property>
@@ -70,61 +97,61 @@
   <property name="siteName" type="baja:String" value="Le Rabelais">
   </property>
 
-  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/gD14vW">
+  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/N1pjgJtbfwIu">
   </property>
 
 </properties>
 <content>
 <CanvasPane viewSize="1280.0,50.0" background="#546e7a">
 
-  <Picture name="Picture" layout="0.0,10.0,32.0,30.0" image="module://themeActive/image/x32/status/worker_w.png" scale="fitRatio">
-    <PopupBinding name="PopupBinding" ord="$(lien)" title="Configuration avanc&#xe9;e" position="10.0,10.0"/>
+  <Picture layout="0.0,10.0,32.0,30.0" image="module://themeActive/image/x32/status/worker_w.png" scale="fitRatio">
+    <PopupBinding ord="$(lien)" title="Configuration avanc&#xe9;e" position="10.0,10.0"/>
   </Picture>
 
-  <Label name="Label" layout="35.0,10.0,105.0,30.0" text="$(username)" font="14.0pt Calibri" foreground="white"/>
+  <Label layout="35.0,10.0,105.0,30.0" text="$(username)" font="14.0pt Calibri" foreground="white"/>
 
-  <GenericFieldEditor name="GenericFieldEditor" layout="145.0,15.0,110.0,20.0" foreground="black">
-    <WbFieldEditorBinding name="WbFieldEditorBinding" ord="$(lien)/fullName"/>
+  <GenericFieldEditor layout="145.0,15.0,110.0,20.0" foreground="black">
+    <WbFieldEditorBinding ord="$(lien)/fullName"/>
   </GenericFieldEditor>
 
-  <GenericFieldEditor name="GenericFieldEditor1" layout="400.0,15.0,120.0,20.0" foreground="black">
-    <WbFieldEditorBinding name="WbFieldEditorBinding" ord="$(lien)/email"/>
+  <GenericFieldEditor layout="400.0,15.0,120.0,20.0" foreground="black">
+    <WbFieldEditorBinding ord="$(lien)/email"/>
   </GenericFieldEditor>
 
-  <GenericFieldEditor name="GenericFieldEditor2" layout="560.0,0.0,165.0,50.0" foreground="black">
-    <WbFieldEditorBinding name="WbFieldEditorBinding" ord="$(lien)/authenticator/password"/>
+  <GenericFieldEditor layout="560.0,0.0,165.0,50.0" foreground="black">
+    <WbFieldEditorBinding ord="$(lien)/authenticator/password"/>
   </GenericFieldEditor>
 
-  <Label name="Label1" layout="525.0,1.0,85.0,20.0" text="Mot de passe :" font="14.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
+  <Label layout="525.0,1.0,85.0,20.0" text="Mot de passe :" font="14.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
 
-  <Label name="Label2" layout="525.0,23.0,85.0,20.0" text="Confirmation :" font="14.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
+  <Label layout="525.0,23.0,85.0,20.0" text="Confirmation :" font="14.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
 
-  <GenericFieldEditor name="GenericFieldEditor3" layout="730.0,15.0,120.0,20.0" foreground="black">
-    <WbFieldEditorBinding name="WbFieldEditorBinding" ord="$(lien)/prototypeName"/>
+  <GenericFieldEditor layout="730.0,15.0,120.0,20.0" foreground="black">
+    <WbFieldEditorBinding ord="$(lien)/prototypeName"/>
   </GenericFieldEditor>
 
-  <GenericFieldEditor name="GenericFieldEditor4" layout="855.0,15.0,80.0,20.0" foreground="black">
-    <WbFieldEditorBinding name="WbFieldEditorBinding" ord="$(lien)/networkUser"/>
+  <GenericFieldEditor layout="855.0,15.0,80.0,20.0" foreground="black">
+    <WbFieldEditorBinding ord="$(lien)/networkUser"/>
   </GenericFieldEditor>
 
-  <GenericFieldEditor name="GenericFieldEditor5" layout="940.0,15.0,120.0,20.0" foreground="black">
-    <WbFieldEditorBinding name="WbFieldEditorBinding" ord="$(lien)/cellPhoneNumber"/>
+  <GenericFieldEditor layout="940.0,15.0,120.0,20.0" foreground="black">
+    <WbFieldEditorBinding ord="$(lien)/cellPhoneNumber"/>
   </GenericFieldEditor>
 
-  <GenericFieldEditor name="GenericFieldEditor6" layout="1065.0,15.0,130.0,20.0" foreground="black">
-    <WbFieldEditorBinding name="WbFieldEditorBinding" ord="$(lien)/authenticationSchemeName"/>
+  <GenericFieldEditor layout="1065.0,15.0,130.0,20.0" foreground="black">
+    <WbFieldEditorBinding ord="$(lien)/authenticationSchemeName"/>
   </GenericFieldEditor>
 
-  <GenericFieldEditor name="GenericFieldEditor7" layout="1200.0,15.0,80.0,20.0" foreground="black">
-    <WbFieldEditorBinding name="WbFieldEditorBinding" ord="$(lien)/autoLogoffSettings/autoLogoffEnabled"/>
+  <GenericFieldEditor layout="1200.0,15.0,80.0,20.0" foreground="black">
+    <WbFieldEditorBinding ord="$(lien)/autoLogoffSettings/autoLogoffEnabled"/>
   </GenericFieldEditor>
 
-  <GenericFieldEditor name="GenericFieldEditor8" layout="345.0,15.0,50.0,20.0" styleClasses="readonly" foreground="black">
-    <WbFieldEditorBinding name="WbFieldEditorBinding" ord="$(lien)/language"/>
+  <GenericFieldEditor layout="345.0,15.0,50.0,20.0" styleClasses="readonly" foreground="black">
+    <WbFieldEditorBinding ord="$(lien)/language"/>
   </GenericFieldEditor>
 
-  <GenericFieldEditor name="GenericFieldEditor9" layout="260.0,15.0,80.0,20.0" foreground="black">
-    <WbFieldEditorBinding name="WbFieldEditorBinding" ord="$(lien)/enabled"/>
+  <GenericFieldEditor layout="260.0,15.0,80.0,20.0" foreground="black">
+    <WbFieldEditorBinding ord="$(lien)/enabled"/>
   </GenericFieldEditor>
 
 </CanvasPane>

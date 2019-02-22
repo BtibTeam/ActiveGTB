@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0" media="workbench:WbPxMedia">
+<px version="1.0">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
@@ -10,6 +10,42 @@
   <module name="workbench"/>
 </import>
 <properties>
+
+  <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="gaucheBackgroundCouleurClaire" type="gx:Brush" value="#616161">
+  </property>
+
+  <property name="gaucheBackgroundCouleur" type="gx:Brush" value="#424242">
+  </property>
+
+  <property name="gaucheBackgroundCouleurSombre" type="gx:Brush" value="#212121">
+  </property>
+
+  <property name="enTeteForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="enTeteBackgroundCouleurClaire" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="enTeteBackgroundCouleur" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="enTeteBackgroundCouleurSombre" type="gx:Brush" value="#0277bd">
+  </property>
+
+  <property name="siteName" type="baja:String" value="Le Rabelais">
+  </property>
+
+  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/N1pjgJtbfwIu">
+  </property>
+
+  <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  </property>
+
+  <property name="bqlToWidgetsHandle" type="baja:String" value="4811">
+  </property>
 
   <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
   </property>
@@ -46,19 +82,19 @@
 <content>
 <CanvasPane viewSize="720.0,40.0" background="#546e7a">
 
-  <GenericFieldEditor name="GenericFieldEditor" layout="220.0,10.0,500.0,20.0" foreground="white">
-    <WbFieldEditorBinding name="WbFieldEditorBinding" ord="$(lien)/priority"/>
+  <GenericFieldEditor layout="220.0,10.0,500.0,20.0" foreground="white">
+    <WbFieldEditorBinding ord="$(lien)/priority"/>
   </GenericFieldEditor>
 
-  <Picture name="Picture" layout="0.0,5.0,32.0,30.0" image="module://themeActive/image/x32/status/alarm_w.png" scale="fitRatio"/>
+  <Picture layout="0.0,5.0,32.0,30.0" image="module://themeActive/image/x32/status/alarm_w.png" scale="fitRatio"/>
 
-  <Label name="Label" layout="35.0,5.0,175.0,30.0" font="14.0pt Calibri" foreground="white" background="#546e7a">
-    <ValueBinding name="ValueBinding" ord="$(lien)">
+  <Label layout="35.0,5.0,175.0,30.0" font="14.0pt Calibri" foreground="white" background="#546e7a">
+    <ValueBinding ord="$(lien)">
       <ObjectToString name="text" format="%displayName%"/>
     </ValueBinding>
   </Label>
 
-  <SaveButton name="SaveButton" layout="670.0,10.0,40.0,20.0" image="module://icons/x16/save.png" font="16.0pt Calibri" halign="left" textIconGap="0.0" textOverride=" ">
+  <SaveButton layout="670.0,10.0,40.0,20.0" image="module://icons/x16/save.png" font="16.0pt Calibri" halign="left" textIconGap="0.0" textOverride=" ">
     <WsAnnotation name="wsAnnotation" value="14,14,8"/>
   </SaveButton>
 

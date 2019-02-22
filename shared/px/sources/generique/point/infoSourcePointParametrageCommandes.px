@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+  <module name="vykonPro"/>
+</import>
+<content>
+<CanvasPane viewSize="400.0,250.0">
+
+  <ImageButton layout="0.0,45.0,190.0,20.0" text="Urgence for&#xe7;age marche" image="" font="bold 12.0pt Trebuchet MS" disabled="">
+    <ActionBinding ord="slot:emergencyActive" degradeBehavior="hide" widgetEvent="actionPerformed"/>
+  </ImageButton>
+
+  <ImageButton layout="0.0,65.0,190.0,20.0" text="Urgence for&#xe7;age arr&#xea;t" image="" font="bold 12.0pt Trebuchet MS" disabled="">
+    <ActionBinding ord="slot:emergencyInactive" degradeBehavior="hide" widgetEvent="actionPerformed"/>
+  </ImageButton>
+
+  <ImageButton layout="0.0,85.0,190.0,20.0" text="Annulation urgence for&#xe7;age" image="" font="bold 12.0pt Trebuchet MS" disabled="">
+    <ActionBinding ord="slot:emergencyAuto" degradeBehavior="hide" widgetEvent="actionPerformed"/>
+  </ImageButton>
+
+  <ImageButton layout="210.0,45.0,190.0,20.0" text="For&#xe7;age marche" image="" font="bold 12.0pt Trebuchet MS" disabled="">
+    <ActionBinding ord="slot:active" degradeBehavior="hide" widgetEvent="actionPerformed"/>
+  </ImageButton>
+
+  <ImageButton layout="210.0,65.0,190.0,20.0" text="For&#xe7;age arr&#xea;t" image="" font="bold 12.0pt Trebuchet MS" disabled="">
+    <ActionBinding ord="slot:inactive" degradeBehavior="hide" widgetEvent="actionPerformed"/>
+  </ImageButton>
+
+  <ImageButton layout="210.0,85.0,190.0,20.0" text="Annulation for&#xe7;age" image="" font="bold 12.0pt Trebuchet MS" disabled="">
+    <ActionBinding ord="slot:auto" degradeBehavior="hide" widgetEvent="actionPerformed"/>
+  </ImageButton>
+
+  <ImageButton layout="150.0,115.0,110.0,20.0" text="R&#xe9;glage" image="" font="bold 12.0pt Trebuchet MS" disabled="">
+    <ActionBinding ord="slot:set" degradeBehavior="hide" widgetEvent="actionPerformed"/>
+  </ImageButton>
+
+  <Label layout="0.0,0.0,190.0,40.0" text="Commandes administrateur" image="" font="14.0pt Calibri" foreground="black" wordWrapEnabled="true">
+    <ValueBinding ord="slot:" degradeBehavior="hide">
+      <IPriorityToSimple name="image">
+        <Image name="none" value="null"/>
+        <Image name="level_1" value="module://themeActive/image/x24/status/overridden.png"/>
+        <Image name="level_2" value="null"/>
+        <Image name="level_3" value="null"/>
+        <Image name="level_4" value="null"/>
+        <Image name="level_5" value="null"/>
+        <Image name="level_6" value="null"/>
+        <Image name="level_7" value="null"/>
+        <Image name="level_8" value="null"/>
+        <Image name="level_9" value="null"/>
+        <Image name="level_10" value="null"/>
+        <Image name="level_11" value="null"/>
+        <Image name="level_12" value="null"/>
+        <Image name="level_13" value="null"/>
+        <Image name="level_14" value="null"/>
+        <Image name="level_15" value="null"/>
+        <Image name="level_16" value="null"/>
+        <Image name="def" value="null"/>
+      </IPriorityToSimple>
+    </ValueBinding>
+  </Label>
+
+  <BoundLabel layout="280.0,145.0,120.0,20.0" image="" font="14.0pt Calibri" foreground="black" wordWrapEnabled="true">
+    <BoundLabelBinding ord="slot:" statusEffect="none">
+      <ObjectToString name="text" format="%out.status.activeLevel%"/>
+    </BoundLabelBinding>
+  </BoundLabel>
+
+  <Label layout="210.0,0.0,190.0,40.0" text="Commandes utilisateur" image="" font="14.0pt Calibri" foreground="black" wordWrapEnabled="true">
+    <ValueBinding ord="slot:">
+      <IPriorityToSimple name="image">
+        <Image name="none" value="null"/>
+        <Image name="level_1" value="null"/>
+        <Image name="level_2" value="null"/>
+        <Image name="level_3" value="null"/>
+        <Image name="level_4" value="null"/>
+        <Image name="level_5" value="null"/>
+        <Image name="level_6" value="null"/>
+        <Image name="level_7" value="null"/>
+        <Image name="level_8" value="module://themeActive/image/x24/status/overridden.png"/>
+        <Image name="level_9" value="null"/>
+        <Image name="level_10" value="null"/>
+        <Image name="level_11" value="null"/>
+        <Image name="level_12" value="null"/>
+        <Image name="level_13" value="null"/>
+        <Image name="level_14" value="null"/>
+        <Image name="level_15" value="null"/>
+        <Image name="level_16" value="null"/>
+        <Image name="def" value="null"/>
+      </IPriorityToSimple>
+    </ValueBinding>
+  </Label>
+
+  <BoundLabel layout="260.0,115.0,140.0,20.0" image="" font="14.0pt Calibri" foreground="black">
+    <BoundLabelBinding ord="slot:" degradeBehavior="hide" statusEffect="none">
+      <ObjectToString name="text" format="%out.value%"/>
+    </BoundLabelBinding>
+  </BoundLabel>
+
+  <BoundLabel layout="80.0,145.0,200.0,20.0" text="Priorit&#xe9; en cours :" image="" font="14.0pt Calibri" foreground="black" wordWrapEnabled="true"/>
+
+  <BoundLabel layout="80.0,170.0,200.0,20.0" text="Expiration du for&#xe7;age :" image="" font="14.0pt Calibri" foreground="black" wordWrapEnabled="true"/>
+
+  <BoundLabel layout="280.0,170.0,120.0,20.0" image="" font="14.0pt Calibri" foreground="black" wordWrapEnabled="true">
+    <BoundLabelBinding ord="slot:overrideExpiration" statusEffect="none">
+      <ObjectToString name="text"/>
+    </BoundLabelBinding>
+  </BoundLabel>
+
+  <BoundLabel layout="80.0,195.0,200.0,20.0" text="Temps mini fonctionnement :" image="" font="14.0pt Calibri" foreground="black" wordWrapEnabled="true">
+    <ValueBinding ord="slot:minActiveTime" degradeBehavior="hide"/>
+  </BoundLabel>
+
+  <BoundLabel layout="280.0,195.0,120.0,20.0" image="" font="14.0pt Calibri" foreground="black" wordWrapEnabled="true">
+    <BoundLabelBinding ord="slot:minActiveTime" degradeBehavior="hide" statusEffect="none">
+      <ObjectToString name="text"/>
+    </BoundLabelBinding>
+  </BoundLabel>
+
+  <BoundLabel layout="80.0,220.0,200.0,20.0" text="Temps maxi fonctionnement :" image="" font="14.0pt Calibri" foreground="black" wordWrapEnabled="true">
+    <ValueBinding ord="slot:minInactiveTime" degradeBehavior="hide"/>
+  </BoundLabel>
+
+  <BoundLabel layout="280.0,220.0,120.0,20.0" image="" font="14.0pt Calibri" foreground="black" wordWrapEnabled="true">
+    <BoundLabelBinding ord="slot:minInactiveTime" degradeBehavior="hide" statusEffect="none">
+      <ObjectToString name="text"/>
+    </BoundLabelBinding>
+  </BoundLabel>
+
+  <ImageButton visible="false" layout="0.0,55.0,190.0,20.0" text="For&#xe7;age d&#x27;urgence" image="" font="bold 12.0pt Trebuchet MS" disabled="">
+    <ActionBinding ord="slot:emergencyOverride" degradeBehavior="hide" widgetEvent="actionPerformed"/>
+  </ImageButton>
+
+  <ImageButton visible="false" layout="210.0,55.0,190.0,20.0" text="For&#xe7;age" image="" font="bold 12.0pt Trebuchet MS" disabled="">
+    <ActionBinding ord="slot:override" degradeBehavior="hide" widgetEvent="actionPerformed"/>
+  </ImageButton>
+
+  <ImageButton visible="false" layout="10.0,115.0,130.0,20.0" text="R&#xe9;glage compteur" image="" disabled="">
+    <ActionBinding ord="slot:MeterExt/setMeter" degradeBehavior="hide" widgetEvent="actionPerformed"/>
+  </ImageButton>
+
+</CanvasPane>
+</content>
+</px>

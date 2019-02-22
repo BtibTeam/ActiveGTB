@@ -4,11 +4,21 @@
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
-  <module name="btibVision"/>
+  <module name="converters"/>
   <module name="gx"/>
+  <module name="kitPx"/>
   <module name="workbench"/>
 </import>
 <properties>
+
+  <property name="siteName" type="baja:String" value="Le Rabelais">
+  </property>
+
+  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/N1pjgJtbfwIu">
+  </property>
+
+  <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  </property>
 
   <property name="bqlToWidgetsHandle" type="baja:String" value="4811">
   </property>
@@ -20,12 +30,18 @@
   </property>
 
   <property name="vueCentraleForegroundCouleur" type="gx:Brush" value="white">
+    <target ord="slot:content/Label/foreground"/>
+    <target ord="slot:content/Label1/foreground"/>
+    <target ord="slot:content/Label2/foreground"/>
+    <target ord="slot:content/Label3/foreground"/>
+    <target ord="slot:content/Label4/foreground"/>
   </property>
 
   <property name="vueCentraleBackgroundCouleurClaire" type="gx:Brush" value="#546e7a">
   </property>
 
   <property name="vueCentraleBackgroundCouleur" type="gx:Brush" value="#455a64">
+    <target ord="slot:content/background"/>
   </property>
 
   <property name="vueCentraleBackgroundCouleurSombre" type="gx:Brush" value="#37474f">
@@ -41,9 +57,6 @@
   </property>
 
   <property name="vueCentraleElementBackgroundCouleurSombre" type="gx:Brush" value="#1565c0">
-  </property>
-
-  <property name="siteName" type="baja:String" value="Le Rabelais">
   </property>
 
   <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
@@ -70,34 +83,40 @@
   <property name="enTeteBackgroundCouleurSombre" type="gx:Brush" value="#0277bd">
   </property>
 
-  <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
-  </property>
-
-  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/N1pjgJtbfwIu">
-  </property>
-
 </properties>
 <content>
-<BorderPane fill="#0277bd">
+<ScrollPane>
 
-  <GridPane name="content" columnCount="1" valign="fill" rowAlign="top" stretchRow="0">
+  <CanvasPane name="content" viewSize="700.0,500.0" minScaleFactor="0.5" maxScaleFactor="1.0" background="#455a64">
 
-    <BqlToWidgetsView>
-      <WbViewBinding ord="station:|slot:/Accueil/Alarmes/Bandeau$20droit/Synth$e8se$20alarmes"/>
-    </BqlToWidgetsView>
+    <Label layout="10.0,10.0,130.0,20.0" text="Status" font="14.0pt Calibri" foreground="white"/>
 
-    <GridPane columnCount="1" halign="fill" columnAlign="fill" stretchColumn="0">
+    <Label layout="140.0,10.0,550.0,20.0" font="14.0pt Calibri" foreground="white">
+      <ValueBinding ord="slot:alarmes">
+        <ObjectToString name="text" format="%status%"/>
+      </ValueBinding>
+    </Label>
 
-      <Label text="Liste des derni&#xe8;res alarmes" font="16.0pt Calibri" foreground="white"/>
+    <Label layout="10.0,35.0,130.0,20.0" text="Cause de l&#x27;erreur" font="14.0pt Calibri" foreground="white"/>
 
-      <BqlToWidgetsView>
-        <WbViewBinding ord="station:|slot:/Accueil/Alarmes/Bandeau$20droit/Derni$e8res$20alarmes"/>
-      </BqlToWidgetsView>
+    <Label layout="140.0,35.0,550.0,20.0" font="14.0pt Calibri" foreground="white">
+      <ValueBinding ord="slot:historique">
+        <ObjectToString name="text" format="%faultCause%"/>
+      </ValueBinding>
+    </Label>
 
-    </GridPane>
+    <GenericFieldEditor layout="160.0,60.0,100.0,23.0">
+      <WbFieldEditorBinding ord="slot:historique/enabled"/>
+    </GenericFieldEditor>
 
-  </GridPane>
+    <Label layout="10.0,60.0,130.0,20.0" text="Activation" font="14.0pt Calibri" foreground="white"/>
 
-</BorderPane>
+    <SaveButton layout="10.0,460.0,680.0,30.0" image="module://icons/x16/save.png">
+      <WsAnnotation name="wsAnnotation" value="14,14,8"/>
+    </SaveButton>
+
+  </CanvasPane>
+
+</ScrollPane>
 </content>
 </px>
