@@ -7,6 +7,7 @@
    "A0RIhgThyhgcnWM5dU1gi_comp:h:10c2c": ["comp:h:10da6"],
    "A0RIhgThyhgcnWM5dU1gi_comp:h:10c2e": ["comp:h:10da7"],
    "A0RIhgThyhgcnWM5dU1gi_comp:h:10c30": ["comp:h:10da5"],
+   "A0RIhgThyhgcnWM5dU1gi_comp:h:10eca": ["comp:h:10ecc"],
    "A0RIhgThyhgcnWM5dU1gi_comp:h:ffb6": ["comp:h:10daa"],
    "C0RG75MP0ZutqCdE938u7_comp:h:103a9": [
       "link:h:f7c6|routeAlarm|h:103b1|alarm",
@@ -148,6 +149,10 @@
    "d0RIhiN6V5bfA15wtyqWl_comp:h:10c30": [
       "ord:file:^px/sources/generique/point/infoSourcePointParametrageCommandes.px",
       "slot:h:10c2a|commandes|removeSlot|"
+   ],
+   "d0RIhiN6V5bfA15wtyqWl_comp:h:10eca": [
+      "ord:file:^px/sources/generique/point/infoSourcePointParametrageCommandes.px",
+      "slot:h:10ec8|commandes|removeSlot|"
    ],
    "d0RIhiN6V5bfA15wtyqWl_comp:h:ffb6": [
       "ord:file:^px/sources/generique/point/infoSourcePointParametrageCommandes.px",
