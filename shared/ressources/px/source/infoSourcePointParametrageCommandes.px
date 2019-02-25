@@ -113,7 +113,7 @@
     <ValueBinding ord="slot:" degradeBehavior="hide">
       <IPriorityToSimple name="image">
         <Image name="none" value="null"/>
-        <Image name="level_1" value="module://themeActive/image/x24/status/overridden.png"/>
+        <Image name="level_1" value="module://themeBtib/image/x20/status/overridden.png"/>
         <Image name="level_2" value="null"/>
         <Image name="level_3" value="null"/>
         <Image name="level_4" value="null"/>
@@ -151,7 +151,7 @@
         <Image name="level_5" value="null"/>
         <Image name="level_6" value="null"/>
         <Image name="level_7" value="null"/>
-        <Image name="level_8" value="module://themeActive/image/x24/status/overridden.png"/>
+        <Image name="level_8" value="module://themeBtib/image/x20/status/overridden.png"/>
         <Image name="level_9" value="null"/>
         <Image name="level_10" value="null"/>
         <Image name="level_11" value="null"/>

@@ -92,7 +92,7 @@
       <IdBinding name="IdBinding" id="etageDansBatiment"/>
     </Polygon>
 
-    <Label name="Label" layout="200.0,310.0,80.0,60.0" image="file:^px/themeActive/image/x32/devices/electricity/powerMeasurementDevice_ok.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+    <Label name="Label" layout="200.0,310.0,80.0,60.0" image="module://themeBtib/image/x30/devices/electricity/powerMeasurementDevice_ok.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
       <IdBinding name="IdBinding" id="Compteur"/>
       <SourceBinding name="SourceBinding" ord="station:|$(slotPathOrd)"/>
       <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)">
@@ -100,7 +100,7 @@
       </ValueBinding>
     </Label>
 
-    <Label name="Label1" layout="300.0,310.0,80.0,60.0" image="file:^px/themeActive/image/x32/devices/hvac/ahu_ok.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+    <Label name="Label1" layout="300.0,310.0,80.0,60.0" image="module://themeBtib/image/x30/devices/hvac/ahu_ok.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
       <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)" hyperlink="station:|$(slotPathOrd)">
         <ObjectToString name="text" format="%displayName%"/>
       </ValueBinding>
@@ -120,7 +120,7 @@
         </ValueBinding>
       </Label>
 
-      <Label name="Label1" image="module://themeActive/image/x32/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+      <Label name="Label1" image="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
         <PopupBinding name="PopupBinding" ord="station:|$(slotPathOrd)|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
         <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/master"/>
       </Label>
@@ -136,7 +136,7 @@
       <SourceBinding name="SourceBinding" ord="station:|$(slotPathOrd)"/>
     </Label>
 
-    <Label name="Label4" layout="600.0,310.0,80.0,60.0" image="module://themeActive/image/x32/metiers/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+    <Label name="Label4" layout="600.0,310.0,80.0,60.0" image="module://themeBtib/image/x30/metiers/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
       <IdBinding name="IdBinding" id="Lampe"/>
       <SourceBinding name="SourceBinding" ord="station:|$(slotPathOrd)"/>
     </Label>

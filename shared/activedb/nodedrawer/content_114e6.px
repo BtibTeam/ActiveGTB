@@ -5,63 +5,12 @@
   <module name="baja"/>
   <module name="bajaui"/>
   <module name="btibCore"/>
-  <module name="btibStructure"/>
-  <module name="converters"/>
   <module name="gx"/>
-  <module name="kitPx"/>
 </import>
-<properties>
-
-  <property name="ordSite" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/T1AMurNQyDMt">
-  </property>
-
-</properties>
 <content>
 <CanvasPane layout="50.0,80.0,1100.0,670.0" viewSize="1100.0,670.0" halign="left" valign="top">
 
   <IdBinding id="canvasPourNodeDrawer"/>
-
-  <GridPane layout="100.0,200.0,80.0,60.0" columnCount="1" columnAlign="center" rowGap="4.0">
-
-    <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
-      <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_01/points/Space$20Temp">
-        <ObjectToString name="text" format="%out.value%"/>
-      </ValueBinding>
-    </Label>
-
-    <Label image="module://themeActive/image/x32/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
-      <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_01|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
-      <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_01/master"/>
-    </Label>
-
-    <SourceBinding ord="station:|slot:/Drivers/LonNetwork/FCU_01"/>
-
-    <IdBinding id="VC"/>
-
-    <String name="id" value="widget_8c8f_6a76_0"/>
-
-  </GridPane>
-
-  <GridPane layout="270.0,150.0,80.0,60.0" columnCount="1" columnAlign="center" rowGap="4.0">
-
-    <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
-      <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_02/points/Space$20Temp">
-        <ObjectToString name="text" format="%out.value%"/>
-      </ValueBinding>
-    </Label>
-
-    <Label image="module://themeActive/image/x32/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
-      <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_02|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
-      <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_02/master"/>
-    </Label>
-
-    <SourceBinding ord="station:|slot:/Drivers/LonNetwork/FCU_02"/>
-
-    <IdBinding id="VC"/>
-
-    <String name="id" value="widget_d4ca_6a76_0"/>
-
-  </GridPane>
 
 </CanvasPane>
 </content>

@@ -97,10 +97,12 @@
 
     <CanvasPane name="content" viewSize="250.0,80.0" background="#616161">
 
-      <Picture name="Picture" layout="10.0,20.0,40.0,40.0" image="module://themeActive/image/x24/building_w.png"/>
+      <Picture name="Picture" layout="10.0,20.0,40.0,40.0" image="module://themeBtib/image/x20/building_w.png"/>
 
       <Label name="Label" layout="70.0,0.0,180.0,80.0" font="18.0pt Calibri" foreground="white" halign="left">
-        <ValueBinding name="ValueBinding" ord="station:|slot:/Services/BtibService/pxProperties/siteName"/>
+        <ValueBinding name="ValueBinding" ord="station:|slot:/Services/BtibService/pxProperties/nomSite">
+          <ObjectToString name="text" format="%propertyValue%"/>
+        </ValueBinding>
       </Label>
 
     </CanvasPane>
@@ -113,13 +115,13 @@
 
       <Label name="Label" text="General" font="bold 19.0pt Calibri" foreground="white" halign="left"/>
 
-      <Label name="Label1" image="module://themeActive/image/x16/buildings_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+      <Label name="Label1" image="module://themeBtib/image/x16/buildings_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
         <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil" hyperlink="station:|slot:/Accueil">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>
       </Label>
 
-      <Label name="Label2" image="module://themeActive/image/x16/alarm_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+      <Label name="Label2" image="module://themeBtib/image/x16/alarm_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
         <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil/Alarmes" hyperlink="station:|slot:/Services/AlarmService/Console_Generale|view:vue">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>
@@ -131,7 +133,7 @@
         </ValueBinding>
       </Label>
 
-      <Label name="Label4" image="module://themeActive/image/x16/geoNav_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+      <Label name="Label4" image="module://themeBtib/image/x16/geoNav_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
         <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil/Navigation$20G$e9ographique" hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/T1AMurNQyDMt">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>
@@ -147,19 +149,19 @@
 
       <Label name="Label" text="Data" font="bold 19.0pt Calibri" foreground="white" halign="left"/>
 
-      <Label name="Label1" image="module://themeActive/image/x16/alarm_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+      <Label name="Label1" image="module://themeBtib/image/x16/alarm_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
         <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil/Donn$e9es/Tableau$20de$20bord" hyperlink="station:|slot:/Accueil/Donn$e9es/Tableau$20de$20bord">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>
       </Label>
 
-      <Label name="Label2" image="module://themeActive/image/x16/status/overridden_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+      <Label name="Label2" image="module://themeBtib/image/x16/status/overridden_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
         <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil/Donn$e9es/Synth$e8se$20des$20points" hyperlink="station:|slot:/Accueil/Donn$e9es/Synth$e8se$20des$20points">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>
       </Label>
 
-      <Label name="Label3" image="module://themeActive/image/x16/pie-chart_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+      <Label name="Label3" image="module://themeBtib/image/x16/pie-chart_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
         <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil/Donn$e9es/Tableau$20de$20bord">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>

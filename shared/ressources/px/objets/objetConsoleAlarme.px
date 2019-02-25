@@ -84,7 +84,7 @@
 
   <ValueBinding ord="station:|slot:/" hyperlink="station:|slot:/Services/AlarmService/$(escapedDisplayName)"/>
 
-  <Picture layout="100.0,90.0,50.0,50.0" image="module://themeActive/image/svg/alarm_w.svg" scale="fitRatio"/>
+  <Picture layout="100.0,90.0,50.0,50.0" image="module://themeBtib/image/svg/alarm_w.svg" scale="fitRatio"/>
 
   <Label layout="80.0,75.0,90.0,80.0"/>
 

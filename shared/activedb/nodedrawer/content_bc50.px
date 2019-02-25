@@ -92,7 +92,7 @@
       </ValueBinding>
     </Label>
 
-    <Label image="module://themeActive/image/x32/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+    <Label image="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
       <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_01|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
       <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_01/master"/>
     </Label>
@@ -113,7 +113,7 @@
       </ValueBinding>
     </Label>
 
-    <Label image="module://themeActive/image/x32/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+    <Label image="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
       <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_02|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
       <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_02/master"/>
     </Label>
@@ -134,7 +134,7 @@
       </ValueBinding>
     </Label>
 
-    <Label image="module://themeActive/image/x32/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+    <Label image="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
       <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_03|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
       <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_03/master"/>
     </Label>
@@ -155,7 +155,7 @@
       </ValueBinding>
     </Label>
 
-    <Label image="module://themeActive/image/x32/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+    <Label image="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
       <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_04|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
       <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_04/master"/>
     </Label>

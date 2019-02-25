@@ -12,9 +12,6 @@
 </import>
 <properties>
 
-  <property name="ordSite" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/T1AMurNQyDMt">
-  </property>
-
   <property name="bqlToWidgetsHandle" type="baja:String" value="fca9">
   </property>
 

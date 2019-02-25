@@ -97,7 +97,7 @@
 
           <Ellipse stroke="white" pen="3.0" geom="45.0,5.0,60.0,60.0"/>
 
-          <Picture layout="60.0,20.0,30.0,30.0" image="module://themeActive/image/svg/timePlanning_w.svg" scale="fitRatio">
+          <Picture layout="60.0,20.0,30.0,30.0" image="module://themeBtib/image/svg/timePlanning_w.svg" scale="fitRatio">
             <PopupBinding ord="slot:schedules/ProgrammeHoraireBool$e9en" title="Schedule" size="1200.0,800.0"/>
           </Picture>
 
@@ -113,7 +113,7 @@
 
           <Ellipse stroke="white" pen="3.0" geom="45.0,5.0,60.0,60.0"/>
 
-          <Picture layout="60.0,20.0,30.0,30.0" image="module://themeActive/image/svg/settings_w.svg" scale="fitRatio"/>
+          <Picture layout="60.0,20.0,30.0,30.0" image="module://themeBtib/image/svg/settings_w.svg" scale="fitRatio"/>
 
           <Label layout="0.0,80.0,150.0,20.0" text="Parameters" font="16.0pt Trebuchet MS" foreground="white" wordWrapEnabled="true"/>
 
@@ -123,7 +123,7 @@
 
           <Ellipse stroke="white" pen="3.0" geom="45.0,5.0,60.0,60.0"/>
 
-          <Picture layout="60.0,20.0,30.0,30.0" image="module://themeActive/image/svg/day_w.svg" scale="fitRatio">
+          <Picture layout="60.0,20.0,30.0,30.0" image="module://themeBtib/image/svg/day_w.svg" scale="fitRatio">
             <PopupBinding ord="slot:points/Setpoint/TemperatureReset" title="Temperature Reset" size="1200.0,800.0"/>
           </Picture>
 

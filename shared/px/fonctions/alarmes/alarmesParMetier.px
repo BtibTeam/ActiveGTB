@@ -95,7 +95,7 @@
 
           <OverBorderPane border="bottom(4.0 solid white)" overFill="#039be5" shadow="0.0px 0.0px 0.0px 1.0px rgba(255,255,255,0.09803921568627451)">
 
-            <Label name="content" text="Console par m&#xe9;tier" image="module://themeActive/image/x24/alarm_w.png" font="18.0pt Calibri" foreground="white"/>
+            <Label name="content" text="Console par m&#xe9;tier" image="module://themeBtib/image/x20/alarm_w.png" font="18.0pt Calibri" foreground="white"/>
 
             <ValueBinding ord="station:|slot:/Accueil" hyperlink="station:|slot:/Accueil/Alarmes/Consoles$20par$20m$e9tier"/>
 
@@ -103,7 +103,7 @@
 
           <OverBorderPane overFill="#02669c" shadow="0.0px 0.0px 0.0px 1.0px rgba(255,255,255,0.09803921568627451)">
 
-            <Label name="content" text="Console g&#xe9;n&#xe9;rale" image="module://themeActive/image/x24/alarm1_w.png" font="18.0pt Calibri" foreground="white"/>
+            <Label name="content" text="Console g&#xe9;n&#xe9;rale" image="module://themeBtib/image/x20/alarm_w.png" font="18.0pt Calibri" foreground="white"/>
 
             <ValueBinding ord="station:|slot:/Accueil" hyperlink="station:|slot:/Accueil/Alarmes"/>
 

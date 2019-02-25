@@ -86,7 +86,7 @@
     <WbFieldEditorBinding ord="$(lien)/priority"/>
   </GenericFieldEditor>
 
-  <Picture layout="0.0,5.0,32.0,30.0" image="module://themeActive/image/x32/status/alarm_w.png" scale="fitRatio"/>
+  <Picture layout="0.0,5.0,32.0,30.0" image="module://themeBtib/image/x30/status/alarm_w.png" scale="fitRatio"/>
 
   <Label layout="35.0,5.0,175.0,30.0" font="14.0pt Calibri" foreground="white" background="#546e7a">
     <ValueBinding ord="$(lien)">

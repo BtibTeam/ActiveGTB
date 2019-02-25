@@ -84,7 +84,7 @@
     <ValueBinding ord="$(lien)" hyperlink="$(lien)"/>
   </Label>
 
-  <Picture layout="100.0,90.0,50.0,50.0" image="module://themeActive/image/svg/system_w.svg" scale="fitRatio">
+  <Picture layout="100.0,90.0,50.0,50.0" image="module://themeBtib/image/svg/system_w.svg" scale="fitRatio">
     <ValueBinding ord="$(lien)" hyperlink="$(lien)"/>
   </Picture>
 
