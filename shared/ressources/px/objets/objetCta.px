@@ -11,6 +11,12 @@
 </import>
 <properties>
 
+  <property name="nomSite" type="baja:String" value="Le Rabelais">
+  </property>
+
+  <property name="ordSite" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/T1AMurNQyDMt">
+  </property>
+
   <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
   </property>
 
@@ -36,9 +42,6 @@
   </property>
 
   <property name="bqlToWidgetsHandle" type="baja:String" value="4811">
-  </property>
-
-  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/N1pjgJtbfwIu">
   </property>
 
   <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
@@ -71,34 +74,7 @@
   <property name="vueCentraleElementBackgroundCouleurSombre" type="gx:Brush" value="#1565c0">
   </property>
 
-  <property name="siteName" type="baja:String" value="Le Rabelais">
-  </property>
-
   <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
-  </property>
-
-  <property name="headerBackgroundColor" type="gx:Brush" value="#0288d1">
-  </property>
-
-  <property name="headerBackgroundColorShade" type="gx:Brush" value="#02669c">
-  </property>
-
-  <property name="headerBackgroundColorTint" type="gx:Brush" value="#039be5">
-  </property>
-
-  <property name="headerForegroundColor" type="gx:Brush" value="white">
-  </property>
-
-  <property name="leftForegroundColor" type="gx:Brush" value="white">
-  </property>
-
-  <property name="leftBackgroundColor" type="gx:Brush" value="#19212b">
-  </property>
-
-  <property name="leftBackgroundColorShade" type="gx:Brush" value="#0d1116">
-  </property>
-
-  <property name="leftBackgroundColorTint" type="gx:Brush" value="#3c5069">
   </property>
 
 </properties>

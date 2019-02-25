@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="gx"/>
+</import>
+<properties>
+
+  <property name="ordSite" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/T1AMurNQyDMt">
+  </property>
+
+</properties>
+<content>
+<CanvasPane layout="50.0,80.0,1100.0,670.0" viewSize="1100.0,670.0" halign="left" valign="top">
+
+  <IdBinding id="canvasPourNodeDrawer"/>
+
+</CanvasPane>
+</content>
+</px>

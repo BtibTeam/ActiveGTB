@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0">
+<px version="1.0" media="workbench:WbPxMedia">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
   <module name="btibCore"/>
   <module name="btibStructure"/>
+  <module name="btibVision"/>
   <module name="converters"/>
   <module name="gx"/>
   <module name="kitPx"/>
 </import>
 <properties>
+
+  <property name="nomSite" type="baja:String" value="Le Rabelais">
+  </property>
+
+  <property name="ordSite" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/T1AMurNQyDMt">
+  </property>
 
   <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
   </property>
@@ -28,18 +35,13 @@
   </property>
 
   <property name="enTeteBackgroundCouleurClaire" type="gx:Brush" value="#039be5">
+    <target ord="slot:content/OverBorderPane/content/CanvasPane/background"/>
   </property>
 
   <property name="enTeteBackgroundCouleur" type="gx:Brush" value="#0288d1">
   </property>
 
   <property name="enTeteBackgroundCouleurSombre" type="gx:Brush" value="#0277bd">
-  </property>
-
-  <property name="siteName" type="baja:String" value="Le Rabelais">
-  </property>
-
-  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/N1pjgJtbfwIu">
   </property>
 
   <property name="bqlToWidgetsHandle" type="baja:String" value="4811">
@@ -78,90 +80,114 @@
   <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
   </property>
 
-  <property name="headerBackgroundColor" type="gx:Brush" value="#02d10e">
-  </property>
-
-  <property name="headerBackgroundColorShade" type="gx:Brush" value="#119c02">
-  </property>
-
-  <property name="headerBackgroundColorTint" type="gx:Brush" value="#03e519">
-  </property>
-
-  <property name="headerForegroundColor" type="gx:Brush" value="white">
-  </property>
-
-  <property name="leftForegroundColor" type="gx:Brush" value="white">
-  </property>
-
-  <property name="leftBackgroundColor" type="gx:Brush" value="#19212b">
-  </property>
-
-  <property name="leftBackgroundColorShade" type="gx:Brush" value="#0d1116">
-  </property>
-
-  <property name="leftBackgroundColorTint" type="gx:Brush" value="#3c5069">
-  </property>
-
 </properties>
 <content>
 <ScrollPane>
 
   <CanvasPane name="content" viewSize="1000.0,800.0" scale="fitRatio" minScaleFactor="0.5" maxScaleFactor="1.0">
 
-    <Polygon fill="#b32326b8" stroke="white" pen="0.0" geom="50.0,140.0 50.0,210.0 470.0,150.0 770.0,180.0 770.0,110.0 471.0,30.0 ">
-      <ValueBinding hyperlink="$(floorOrd)"/>
+    <Polygon name="Polygon" fill="#b32326b8" stroke="white" pen="0.0" geom="410.0,170.0 390.0,240.0 600.0,230.0 790.0,230.0 800.0,160.0 590.0,130.0 ">
+      <ValueBinding name="ValueBinding" hyperlink="$(ordEtage)"/>
       <String name="id" value="widget83a7"/>
-      <IdBinding id="floorInBuildingItem"/>
+      <IdBinding name="IdBinding" id="etageDansBatiment"/>
     </Polygon>
 
-    <Label layout="260.0,290.0,80.0,60.0" image="file:^px/themeActive/image/x32/devices/electricity/powerMeasurementDevice_ok.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
-      <IdBinding id="Meter"/>
-      <SourceBinding ord="station:|$(slotPathOrd)"/>
-      <ValueBinding ord="station:|$(slotPathOrd)">
+    <Label name="Label" layout="200.0,310.0,80.0,60.0" image="module://themeBtib/image/x30/devices/electricity/powerMeasurementDevice_ok.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+      <IdBinding name="IdBinding" id="Compteur"/>
+      <SourceBinding name="SourceBinding" ord="station:|$(slotPathOrd)"/>
+      <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)">
         <ObjectToString name="text" format="%displayName%"/>
       </ValueBinding>
     </Label>
 
-    <Label layout="360.0,290.0,80.0,60.0" image="file:^px/themeActive/image/x32/devices/hvac/ahu_ok.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
-      <ValueBinding ord="station:|$(slotPathOrd)" hyperlink="station:|$(slotPathOrd)">
+    <Label name="Label1" layout="300.0,310.0,80.0,60.0" image="module://themeBtib/image/x30/devices/hvac/ahu_ok.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+      <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)" hyperlink="station:|$(slotPathOrd)">
         <ObjectToString name="text" format="%displayName%"/>
       </ValueBinding>
-      <IdBinding id="AHU"/>
+      <IdBinding name="IdBinding" id="CTA"/>
     </Label>
 
-    <Label layout="460.0,290.0,80.0,60.0" image="file:^images/icons/lightSensorOcc.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
-      <IdBinding id="Occupancy Sensor"/>
-      <SourceBinding ord="station:|$(slotPathOrd)"/>
+    <Label name="Label2" layout="400.0,310.0,80.0,60.0" image="file:^images/icones/capteurLumiereOcc.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+      <IdBinding name="IdBinding" id="Multicapteur"/>
+      <SourceBinding name="SourceBinding" ord="station:|$(slotPathOrd)"/>
     </Label>
 
-    <GridPane layout="160.0,290.0,80.0,60.0" columnCount="1" columnAlign="center" rowGap="4.0">
+    <GridPane name="GridPane" layout="100.0,310.0,80.0,60.0" columnCount="1" columnAlign="center" rowGap="4.0">
 
-      <Label font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
-        <ValueBinding ord="station:|$(slotPathOrd)/points/Space$20Temp">
+      <Label name="Label" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+        <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/points/Space$20Temp">
           <ObjectToString name="text" format="%out.value%"/>
         </ValueBinding>
       </Label>
 
-      <Label image="module://themeActive/image/x32/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
-        <PopupBinding ord="station:|$(slotPathOrd)|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
-        <ValueBinding ord="station:|$(slotPathOrd)/master"/>
+      <Label name="Label1" image="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+        <PopupBinding name="PopupBinding" ord="station:|$(slotPathOrd)|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
+        <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/master"/>
       </Label>
 
-      <SourceBinding ord="station:|$(slotPathOrd)"/>
+      <SourceBinding name="SourceBinding" ord="station:|$(slotPathOrd)"/>
 
-      <IdBinding id="FCU"/>
+      <IdBinding name="IdBinding" id="VC"/>
 
     </GridPane>
 
-    <Label layout="560.0,290.0,80.0,60.0" image="file:^images/icons/roomControllerSlave.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
-      <IdBinding id="Light Controller"/>
-      <SourceBinding ord="station:|$(slotPathOrd)"/>
+    <Label name="Label3" layout="500.0,310.0,80.0,60.0" image="file:^images/icones/controleurMaitre.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+      <IdBinding name="IdBinding" id="Contr&#xf4;leur d&#x27;&#xe9;clairage"/>
+      <SourceBinding name="SourceBinding" ord="station:|$(slotPathOrd)"/>
     </Label>
 
-    <Label layout="660.0,290.0,80.0,60.0" image="module://themeActive/image/x32/metiers/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
-      <IdBinding id="Lamp"/>
-      <SourceBinding ord="station:|$(slotPathOrd)"/>
+    <Label name="Label4" layout="600.0,310.0,80.0,60.0" image="module://themeBtib/image/x30/metiers/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+      <IdBinding name="IdBinding" id="Lampe"/>
+      <SourceBinding name="SourceBinding" ord="station:|$(slotPathOrd)"/>
     </Label>
+
+    <OverBorderPane name="OverBorderPane" layout="100.0,40.0,220.0,210.0" padding="0.0" fill="white" radius="10.0px 10.0px 10.0px 10.0px">
+
+      <GridPane name="content" columnCount="1" halign="fill" rowAlign="fill" columnAlign="fill" rowGap="0.0" columnGap="0.0" stretchRow="1" stretchColumn="0" bandBrush="white">
+
+        <CanvasPane name="CanvasPane" viewSize="220.0,100.0" background="#039be5">
+
+          <Label name="Label" layout="10.0,10.0,200.0,50.0" text="$(nomBatiment)" font="20.0pt Calibri" foreground="white" halign="left" wordWrapEnabled="true">
+            <ValueBinding name="ValueBinding" hyperlink="$(ordBatiment)"/>
+          </Label>
+
+          <Label name="Label1" layout="10.0,60.0,200.0,35.0" text="$(descriptionBatiment)" font="14.0pt Calibri" foreground="white" halign="left" valign="top" wordWrapEnabled="true">
+            <ValueBinding name="ValueBinding" hyperlink="$(ordBatiment)"/>
+          </Label>
+
+        </CanvasPane>
+
+        <CanvasPane name="CanvasPane1" viewSize="220.0,110.0" background="white">
+
+          <GridPane name="GridPane" layout="10.0,0.0,200.0,100.0" columnCount="1" halign="left" columnAlign="fill" rowGap="10.0" stretchColumn="0">
+
+            <Label name="Label" image="file:^px/themeBtib/image/x16/status/alarm.png" font="14.0pt Calibri Light" foreground="#454545" halign="left" wordWrapEnabled="true">
+              <ValueBinding name="ValueBinding" ord="$(synthesePointsAlarmesOrd)/value">
+                <ObjectToString name="text" format="%.% points en alarme"/>
+              </ValueBinding>
+            </Label>
+
+            <Label name="Label1" image="file:^px/themeBtib/image/x16/status/overridden.png" font="14.0pt Calibri Light" foreground="#454545" halign="left" wordWrapEnabled="true">
+              <ValueBinding name="ValueBinding" ord="$(synthesePointsDerogesOrd)/value">
+                <ObjectToString name="text" format="%.% points d&#xe9;rog&#xe9;s"/>
+              </ValueBinding>
+            </Label>
+
+            <Label name="Label2" image="module://themeBtib/image/x16/status/fault.png" font="14.0pt Calibri Light" foreground="#454545" halign="left" wordWrapEnabled="true">
+              <ValueBinding name="ValueBinding" ord="$(synthesePointsEnDefautOrd)/value">
+                <ObjectToString name="text" format="%.% points en d&#xe9;faut"/>
+              </ValueBinding>
+            </Label>
+
+          </GridPane>
+
+        </CanvasPane>
+
+      </GridPane>
+
+      <IdBinding name="IdBinding" id="batimentDansSite"/>
+
+    </OverBorderPane>
 
   </CanvasPane>
 

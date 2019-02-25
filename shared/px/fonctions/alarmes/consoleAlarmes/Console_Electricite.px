@@ -7,6 +7,15 @@
   <module name="gx"/>
   <module name="workbench"/>
 </import>
+<properties>
+
+  <property name="nomSite" type="baja:String" value="Le Rabelais">
+  </property>
+
+  <property name="ordSite" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/T1AMurNQyDMt">
+  </property>
+
+</properties>
 <content>
 <EdgePane>
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0">
+<px version="1.0" media="workbench:WbPxMedia">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
@@ -9,6 +9,12 @@
   <module name="workbench"/>
 </import>
 <properties>
+
+  <property name="nomSite" type="baja:String" value="Le Rabelais">
+  </property>
+
+  <property name="ordSite" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/T1AMurNQyDMt">
+  </property>
 
   <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
   </property>
@@ -32,12 +38,6 @@
   </property>
 
   <property name="enTeteBackgroundCouleurSombre" type="gx:Brush" value="#0277bd">
-  </property>
-
-  <property name="siteName" type="baja:String" value="Le Rabelais">
-  </property>
-
-  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/N1pjgJtbfwIu">
   </property>
 
   <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
@@ -82,272 +82,272 @@
 
   <GridPane name="content" columnCount="1" valign="top" rowAlign="top">
 
-    <CanvasPane viewSize="1280.0,50.0" background="#546e7a">
+    <CanvasPane name="CanvasPane" viewSize="1280.0,50.0" background="#546e7a">
 
-      <Picture layout="0.0,10.0,32.0,30.0" image="module://themeActive/image/x32/status/worker_w.png" scale="fitRatio">
-        <PopupBinding ord="slot:/Services/UserService/guest" title="Configuration avanc&#xe9;e" position="10.0,10.0"/>
+      <Picture name="Picture" layout="0.0,10.0,32.0,30.0" image="module://themeBtib/image/x30/worker_w.png" scale="fitRatio">
+        <PopupBinding name="PopupBinding" ord="slot:/Services/UserService/guest" title="Configuration avanc&#xe9;e" position="10.0,10.0"/>
       </Picture>
 
-      <Label layout="35.0,10.0,105.0,30.0" text="guest" image="" font="14.0pt Calibri" foreground="white"/>
+      <Label name="Label" layout="35.0,10.0,105.0,30.0" text="guest" image="" font="14.0pt Calibri" foreground="white"/>
 
-      <GenericFieldEditor layout="145.0,15.0,110.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/guest/fullName"/>
+      <GenericFieldEditor name="GenericFieldEditor" layout="145.0,15.0,110.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/guest/fullName"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="400.0,15.0,120.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/guest/email"/>
+      <GenericFieldEditor name="GenericFieldEditor1" layout="400.0,15.0,120.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/guest/email"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="560.0,0.0,165.0,50.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/guest/authenticator/password"/>
+      <GenericFieldEditor name="GenericFieldEditor2" layout="560.0,0.0,165.0,50.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/guest/authenticator/password"/>
       </GenericFieldEditor>
 
-      <Label layout="525.0,1.0,85.0,20.0" text="Mot de passe :" image="" font="14.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
+      <Label name="Label1" layout="525.0,1.0,85.0,20.0" text="Mot de passe :" image="" font="14.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
 
-      <Label layout="525.0,23.0,85.0,20.0" text="Confirmation :" image="" font="14.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
+      <Label name="Label2" layout="525.0,23.0,85.0,20.0" text="Confirmation :" image="" font="14.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
 
-      <GenericFieldEditor layout="730.0,15.0,120.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/guest/prototypeName"/>
+      <GenericFieldEditor name="GenericFieldEditor3" layout="730.0,15.0,120.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/guest/prototypeName"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="855.0,15.0,80.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/guest/networkUser"/>
+      <GenericFieldEditor name="GenericFieldEditor4" layout="855.0,15.0,80.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/guest/networkUser"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="940.0,15.0,120.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/guest/cellPhoneNumber"/>
+      <GenericFieldEditor name="GenericFieldEditor5" layout="940.0,15.0,120.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/guest/cellPhoneNumber"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="1065.0,15.0,130.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/guest/authenticationSchemeName"/>
+      <GenericFieldEditor name="GenericFieldEditor6" layout="1065.0,15.0,130.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/guest/authenticationSchemeName"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="1200.0,15.0,80.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/guest/autoLogoffSettings/autoLogoffEnabled"/>
+      <GenericFieldEditor name="GenericFieldEditor7" layout="1200.0,15.0,80.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/guest/autoLogoffSettings/autoLogoffEnabled"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="345.0,15.0,50.0,20.0" styleClasses="readonly" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/guest/language"/>
+      <GenericFieldEditor name="GenericFieldEditor8" layout="345.0,15.0,50.0,20.0" styleClasses="readonly" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/guest/language"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="260.0,15.0,80.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/guest/enabled"/>
+      <GenericFieldEditor name="GenericFieldEditor9" layout="260.0,15.0,80.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/guest/enabled"/>
       </GenericFieldEditor>
 
     </CanvasPane>
 
-    <CanvasPane viewSize="1280.0,50.0" background="#546e7a">
+    <CanvasPane name="CanvasPane1" viewSize="1280.0,50.0" background="#546e7a">
 
-      <Picture layout="0.0,10.0,32.0,30.0" image="module://themeActive/image/x32/status/worker_w.png" scale="fitRatio">
-        <PopupBinding ord="slot:/Services/UserService/admin" title="Configuration avanc&#xe9;e" position="10.0,10.0"/>
+      <Picture name="Picture" layout="0.0,10.0,32.0,30.0" image="module://themeBtib/image/x30/worker_w.png" scale="fitRatio">
+        <PopupBinding name="PopupBinding" ord="slot:/Services/UserService/admin" title="Configuration avanc&#xe9;e" position="10.0,10.0"/>
       </Picture>
 
-      <Label layout="35.0,10.0,105.0,30.0" text="admin" image="" font="14.0pt Calibri" foreground="white"/>
+      <Label name="Label" layout="35.0,10.0,105.0,30.0" text="admin" image="" font="14.0pt Calibri" foreground="white"/>
 
-      <GenericFieldEditor layout="145.0,15.0,110.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/admin/fullName"/>
+      <GenericFieldEditor name="GenericFieldEditor" layout="145.0,15.0,110.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/admin/fullName"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="400.0,15.0,120.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/admin/email"/>
+      <GenericFieldEditor name="GenericFieldEditor1" layout="400.0,15.0,120.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/admin/email"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="560.0,0.0,165.0,50.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/admin/authenticator/password"/>
+      <GenericFieldEditor name="GenericFieldEditor2" layout="560.0,0.0,165.0,50.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/admin/authenticator/password"/>
       </GenericFieldEditor>
 
-      <Label layout="525.0,1.0,85.0,20.0" text="Mot de passe :" image="" font="14.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
+      <Label name="Label1" layout="525.0,1.0,85.0,20.0" text="Mot de passe :" image="" font="14.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
 
-      <Label layout="525.0,23.0,85.0,20.0" text="Confirmation :" image="" font="14.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
+      <Label name="Label2" layout="525.0,23.0,85.0,20.0" text="Confirmation :" image="" font="14.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
 
-      <GenericFieldEditor layout="730.0,15.0,120.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/admin/prototypeName"/>
+      <GenericFieldEditor name="GenericFieldEditor3" layout="730.0,15.0,120.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/admin/prototypeName"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="855.0,15.0,80.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/admin/networkUser"/>
+      <GenericFieldEditor name="GenericFieldEditor4" layout="855.0,15.0,80.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/admin/networkUser"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="940.0,15.0,120.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/admin/cellPhoneNumber"/>
+      <GenericFieldEditor name="GenericFieldEditor5" layout="940.0,15.0,120.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/admin/cellPhoneNumber"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="1065.0,15.0,130.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/admin/authenticationSchemeName"/>
+      <GenericFieldEditor name="GenericFieldEditor6" layout="1065.0,15.0,130.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/admin/authenticationSchemeName"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="1200.0,15.0,80.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/admin/autoLogoffSettings/autoLogoffEnabled"/>
+      <GenericFieldEditor name="GenericFieldEditor7" layout="1200.0,15.0,80.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/admin/autoLogoffSettings/autoLogoffEnabled"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="345.0,15.0,50.0,20.0" styleClasses="readonly" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/admin/language"/>
+      <GenericFieldEditor name="GenericFieldEditor8" layout="345.0,15.0,50.0,20.0" styleClasses="readonly" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/admin/language"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="260.0,15.0,80.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/admin/enabled"/>
+      <GenericFieldEditor name="GenericFieldEditor9" layout="260.0,15.0,80.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/admin/enabled"/>
       </GenericFieldEditor>
 
     </CanvasPane>
 
-    <CanvasPane viewSize="1280.0,50.0" background="#546e7a">
+    <CanvasPane name="CanvasPane2" viewSize="1280.0,50.0" background="#546e7a">
 
-      <Picture layout="0.0,10.0,32.0,30.0" image="module://themeActive/image/x32/status/worker_w.png" scale="fitRatio">
-        <PopupBinding ord="slot:/Services/UserService/BACnet" title="Configuration avanc&#xe9;e" position="10.0,10.0"/>
+      <Picture name="Picture" layout="0.0,10.0,32.0,30.0" image="module://themeBtib/image/x30/worker_w.png" scale="fitRatio">
+        <PopupBinding name="PopupBinding" ord="slot:/Services/UserService/BACnet" title="Configuration avanc&#xe9;e" position="10.0,10.0"/>
       </Picture>
 
-      <Label layout="35.0,10.0,105.0,30.0" text="BACnet" image="" font="14.0pt Calibri" foreground="white"/>
+      <Label name="Label" layout="35.0,10.0,105.0,30.0" text="BACnet" image="" font="14.0pt Calibri" foreground="white"/>
 
-      <GenericFieldEditor layout="145.0,15.0,110.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/BACnet/fullName"/>
+      <GenericFieldEditor name="GenericFieldEditor" layout="145.0,15.0,110.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/BACnet/fullName"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="400.0,15.0,120.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/BACnet/email"/>
+      <GenericFieldEditor name="GenericFieldEditor1" layout="400.0,15.0,120.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/BACnet/email"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="560.0,0.0,165.0,50.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/BACnet/authenticator/password"/>
+      <GenericFieldEditor name="GenericFieldEditor2" layout="560.0,0.0,165.0,50.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/BACnet/authenticator/password"/>
       </GenericFieldEditor>
 
-      <Label layout="525.0,1.0,85.0,20.0" text="Mot de passe :" image="" font="14.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
+      <Label name="Label1" layout="525.0,1.0,85.0,20.0" text="Mot de passe :" image="" font="14.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
 
-      <Label layout="525.0,23.0,85.0,20.0" text="Confirmation :" image="" font="14.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
+      <Label name="Label2" layout="525.0,23.0,85.0,20.0" text="Confirmation :" image="" font="14.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
 
-      <GenericFieldEditor layout="730.0,15.0,120.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/BACnet/prototypeName"/>
+      <GenericFieldEditor name="GenericFieldEditor3" layout="730.0,15.0,120.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/BACnet/prototypeName"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="855.0,15.0,80.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/BACnet/networkUser"/>
+      <GenericFieldEditor name="GenericFieldEditor4" layout="855.0,15.0,80.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/BACnet/networkUser"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="940.0,15.0,120.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/BACnet/cellPhoneNumber"/>
+      <GenericFieldEditor name="GenericFieldEditor5" layout="940.0,15.0,120.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/BACnet/cellPhoneNumber"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="1065.0,15.0,130.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/BACnet/authenticationSchemeName"/>
+      <GenericFieldEditor name="GenericFieldEditor6" layout="1065.0,15.0,130.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/BACnet/authenticationSchemeName"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="1200.0,15.0,80.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/BACnet/autoLogoffSettings/autoLogoffEnabled"/>
+      <GenericFieldEditor name="GenericFieldEditor7" layout="1200.0,15.0,80.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/BACnet/autoLogoffSettings/autoLogoffEnabled"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="345.0,15.0,50.0,20.0" styleClasses="readonly" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/BACnet/language"/>
+      <GenericFieldEditor name="GenericFieldEditor8" layout="345.0,15.0,50.0,20.0" styleClasses="readonly" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/BACnet/language"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="260.0,15.0,80.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/BACnet/enabled"/>
+      <GenericFieldEditor name="GenericFieldEditor9" layout="260.0,15.0,80.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/BACnet/enabled"/>
       </GenericFieldEditor>
 
     </CanvasPane>
 
-    <CanvasPane viewSize="1280.0,50.0" background="#546e7a">
+    <CanvasPane name="CanvasPane3" viewSize="1280.0,50.0" background="#546e7a">
 
-      <Picture layout="0.0,10.0,32.0,30.0" image="module://themeActive/image/x32/status/worker_w.png" scale="fitRatio">
-        <PopupBinding ord="slot:/Services/UserService/basic" title="Configuration avanc&#xe9;e" position="10.0,10.0"/>
+      <Picture name="Picture" layout="0.0,10.0,32.0,30.0" image="module://themeBtib/image/x30/worker_w.png" scale="fitRatio">
+        <PopupBinding name="PopupBinding" ord="slot:/Services/UserService/basic" title="Configuration avanc&#xe9;e" position="10.0,10.0"/>
       </Picture>
 
-      <Label layout="35.0,10.0,105.0,30.0" text="basic" image="" font="14.0pt Calibri" foreground="white"/>
+      <Label name="Label" layout="35.0,10.0,105.0,30.0" text="basic" image="" font="14.0pt Calibri" foreground="white"/>
 
-      <GenericFieldEditor layout="145.0,15.0,110.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/basic/fullName"/>
+      <GenericFieldEditor name="GenericFieldEditor" layout="145.0,15.0,110.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/basic/fullName"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="400.0,15.0,120.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/basic/email"/>
+      <GenericFieldEditor name="GenericFieldEditor1" layout="400.0,15.0,120.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/basic/email"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="560.0,0.0,165.0,50.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/basic/authenticator/password"/>
+      <GenericFieldEditor name="GenericFieldEditor2" layout="560.0,0.0,165.0,50.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/basic/authenticator/password"/>
       </GenericFieldEditor>
 
-      <Label layout="525.0,1.0,85.0,20.0" text="Mot de passe :" image="" font="14.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
+      <Label name="Label1" layout="525.0,1.0,85.0,20.0" text="Mot de passe :" image="" font="14.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
 
-      <Label layout="525.0,23.0,85.0,20.0" text="Confirmation :" image="" font="14.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
+      <Label name="Label2" layout="525.0,23.0,85.0,20.0" text="Confirmation :" image="" font="14.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
 
-      <GenericFieldEditor layout="730.0,15.0,120.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/basic/prototypeName"/>
+      <GenericFieldEditor name="GenericFieldEditor3" layout="730.0,15.0,120.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/basic/prototypeName"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="855.0,15.0,80.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/basic/networkUser"/>
+      <GenericFieldEditor name="GenericFieldEditor4" layout="855.0,15.0,80.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/basic/networkUser"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="940.0,15.0,120.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/basic/cellPhoneNumber"/>
+      <GenericFieldEditor name="GenericFieldEditor5" layout="940.0,15.0,120.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/basic/cellPhoneNumber"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="1065.0,15.0,130.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/basic/authenticationSchemeName"/>
+      <GenericFieldEditor name="GenericFieldEditor6" layout="1065.0,15.0,130.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/basic/authenticationSchemeName"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="1200.0,15.0,80.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/basic/autoLogoffSettings/autoLogoffEnabled"/>
+      <GenericFieldEditor name="GenericFieldEditor7" layout="1200.0,15.0,80.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/basic/autoLogoffSettings/autoLogoffEnabled"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="345.0,15.0,50.0,20.0" styleClasses="readonly" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/basic/language"/>
+      <GenericFieldEditor name="GenericFieldEditor8" layout="345.0,15.0,50.0,20.0" styleClasses="readonly" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/basic/language"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="260.0,15.0,80.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/basic/enabled"/>
+      <GenericFieldEditor name="GenericFieldEditor9" layout="260.0,15.0,80.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/basic/enabled"/>
       </GenericFieldEditor>
 
     </CanvasPane>
 
-    <CanvasPane viewSize="1280.0,50.0" background="#546e7a">
+    <CanvasPane name="CanvasPane4" viewSize="1280.0,50.0" background="#546e7a">
 
-      <Picture layout="0.0,10.0,32.0,30.0" image="module://themeActive/image/x32/status/worker_w.png" scale="fitRatio">
-        <PopupBinding ord="slot:/Services/UserService/utilisateur" title="Configuration avanc&#xe9;e" position="10.0,10.0"/>
+      <Picture name="Picture" layout="0.0,10.0,32.0,30.0" image="module://themeBtib/image/x30/worker_w.png" scale="fitRatio">
+        <PopupBinding name="PopupBinding" ord="slot:/Services/UserService/utilisateur" title="Configuration avanc&#xe9;e" position="10.0,10.0"/>
       </Picture>
 
-      <Label layout="35.0,10.0,105.0,30.0" text="utilisateur" image="" font="14.0pt Calibri" foreground="white"/>
+      <Label name="Label" layout="35.0,10.0,105.0,30.0" text="utilisateur" image="" font="14.0pt Calibri" foreground="white"/>
 
-      <GenericFieldEditor layout="145.0,15.0,110.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/utilisateur/fullName"/>
+      <GenericFieldEditor name="GenericFieldEditor" layout="145.0,15.0,110.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/utilisateur/fullName"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="400.0,15.0,120.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/utilisateur/email"/>
+      <GenericFieldEditor name="GenericFieldEditor1" layout="400.0,15.0,120.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/utilisateur/email"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="560.0,0.0,165.0,50.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/utilisateur/authenticator/password"/>
+      <GenericFieldEditor name="GenericFieldEditor2" layout="560.0,0.0,165.0,50.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/utilisateur/authenticator/password"/>
       </GenericFieldEditor>
 
-      <Label layout="525.0,1.0,85.0,20.0" text="Mot de passe :" image="" font="14.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
+      <Label name="Label1" layout="525.0,1.0,85.0,20.0" text="Mot de passe :" image="" font="14.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
 
-      <Label layout="525.0,23.0,85.0,20.0" text="Confirmation :" image="" font="14.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
+      <Label name="Label2" layout="525.0,23.0,85.0,20.0" text="Confirmation :" image="" font="14.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
 
-      <GenericFieldEditor layout="730.0,15.0,120.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/utilisateur/prototypeName"/>
+      <GenericFieldEditor name="GenericFieldEditor3" layout="730.0,15.0,120.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/utilisateur/prototypeName"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="855.0,15.0,80.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/utilisateur/networkUser"/>
+      <GenericFieldEditor name="GenericFieldEditor4" layout="855.0,15.0,80.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/utilisateur/networkUser"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="940.0,15.0,120.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/utilisateur/cellPhoneNumber"/>
+      <GenericFieldEditor name="GenericFieldEditor5" layout="940.0,15.0,120.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/utilisateur/cellPhoneNumber"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="1065.0,15.0,130.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/utilisateur/authenticationSchemeName"/>
+      <GenericFieldEditor name="GenericFieldEditor6" layout="1065.0,15.0,130.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/utilisateur/authenticationSchemeName"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="1200.0,15.0,80.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/utilisateur/autoLogoffSettings/autoLogoffEnabled"/>
+      <GenericFieldEditor name="GenericFieldEditor7" layout="1200.0,15.0,80.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/utilisateur/autoLogoffSettings/autoLogoffEnabled"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="345.0,15.0,50.0,20.0" styleClasses="readonly" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/utilisateur/language"/>
+      <GenericFieldEditor name="GenericFieldEditor8" layout="345.0,15.0,50.0,20.0" styleClasses="readonly" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/utilisateur/language"/>
       </GenericFieldEditor>
 
-      <GenericFieldEditor layout="260.0,15.0,80.0,20.0" foreground="black">
-        <WbFieldEditorBinding ord="slot:/Services/UserService/utilisateur/enabled"/>
+      <GenericFieldEditor name="GenericFieldEditor9" layout="260.0,15.0,80.0,20.0" foreground="black">
+        <WbFieldEditorBinding name="WbFieldEditorBinding" ord="slot:/Services/UserService/utilisateur/enabled"/>
       </GenericFieldEditor>
 
     </CanvasPane>

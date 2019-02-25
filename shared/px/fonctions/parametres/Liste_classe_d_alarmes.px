@@ -11,6 +11,12 @@
 </import>
 <properties>
 
+  <property name="nomSite" type="baja:String" value="Le Rabelais">
+  </property>
+
+  <property name="ordSite" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/T1AMurNQyDMt">
+  </property>
+
   <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
   </property>
 
@@ -33,12 +39,6 @@
   </property>
 
   <property name="enTeteBackgroundCouleurSombre" type="gx:Brush" value="#0277bd">
-  </property>
-
-  <property name="siteName" type="baja:String" value="Le Rabelais">
-  </property>
-
-  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/N1pjgJtbfwIu">
   </property>
 
   <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
@@ -89,7 +89,7 @@
         <WbFieldEditorBinding ord="slot:/Services/AlarmService/defaultAlarmClass/priority"/>
       </GenericFieldEditor>
 
-      <Picture layout="0.0,5.0,32.0,30.0" image="module://themeActive/image/x32/status/alarm_w.png" scale="fitRatio"/>
+      <Picture layout="0.0,5.0,32.0,30.0" image="module://themeBtib/image/x30/status/alarm_w.png" scale="fitRatio"/>
 
       <Label layout="35.0,5.0,175.0,30.0" image="" font="14.0pt Calibri" foreground="white" background="#546e7a">
         <ValueBinding ord="slot:/Services/AlarmService/defaultAlarmClass">
@@ -109,7 +109,7 @@
         <WbFieldEditorBinding ord="slot:/Services/AlarmService/Electricite_Niveau1/priority"/>
       </GenericFieldEditor>
 
-      <Picture layout="0.0,5.0,32.0,30.0" image="module://themeActive/image/x32/status/alarm_w.png" scale="fitRatio"/>
+      <Picture layout="0.0,5.0,32.0,30.0" image="module://themeBtib/image/x30/status/alarm_w.png" scale="fitRatio"/>
 
       <Label layout="35.0,5.0,175.0,30.0" image="" font="14.0pt Calibri" foreground="white" background="#546e7a">
         <ValueBinding ord="slot:/Services/AlarmService/Electricite_Niveau1">
@@ -129,7 +129,7 @@
         <WbFieldEditorBinding ord="slot:/Services/AlarmService/Electricite_Niveau2/priority"/>
       </GenericFieldEditor>
 
-      <Picture layout="0.0,5.0,32.0,30.0" image="module://themeActive/image/x32/status/alarm_w.png" scale="fitRatio"/>
+      <Picture layout="0.0,5.0,32.0,30.0" image="module://themeBtib/image/x30/status/alarm_w.png" scale="fitRatio"/>
 
       <Label layout="35.0,5.0,175.0,30.0" image="" font="14.0pt Calibri" foreground="white" background="#546e7a">
         <ValueBinding ord="slot:/Services/AlarmService/Electricite_Niveau2">
@@ -149,7 +149,7 @@
         <WbFieldEditorBinding ord="slot:/Services/AlarmService/Plomberie_Niveau1/priority"/>
       </GenericFieldEditor>
 
-      <Picture layout="0.0,5.0,32.0,30.0" image="module://themeActive/image/x32/status/alarm_w.png" scale="fitRatio"/>
+      <Picture layout="0.0,5.0,32.0,30.0" image="module://themeBtib/image/x30/status/alarm_w.png" scale="fitRatio"/>
 
       <Label layout="35.0,5.0,175.0,30.0" image="" font="14.0pt Calibri" foreground="white" background="#546e7a">
         <ValueBinding ord="slot:/Services/AlarmService/Plomberie_Niveau1">
@@ -169,7 +169,7 @@
         <WbFieldEditorBinding ord="slot:/Services/AlarmService/Plomberie_Niveau2/priority"/>
       </GenericFieldEditor>
 
-      <Picture layout="0.0,5.0,32.0,30.0" image="module://themeActive/image/x32/status/alarm_w.png" scale="fitRatio"/>
+      <Picture layout="0.0,5.0,32.0,30.0" image="module://themeBtib/image/x30/status/alarm_w.png" scale="fitRatio"/>
 
       <Label layout="35.0,5.0,175.0,30.0" image="" font="14.0pt Calibri" foreground="white" background="#546e7a">
         <ValueBinding ord="slot:/Services/AlarmService/Plomberie_Niveau2">
@@ -189,7 +189,7 @@
         <WbFieldEditorBinding ord="slot:/Services/AlarmService/CVC_Niveau1/priority"/>
       </GenericFieldEditor>
 
-      <Picture layout="0.0,5.0,32.0,30.0" image="module://themeActive/image/x32/status/alarm_w.png" scale="fitRatio"/>
+      <Picture layout="0.0,5.0,32.0,30.0" image="module://themeBtib/image/x30/status/alarm_w.png" scale="fitRatio"/>
 
       <Label layout="35.0,5.0,175.0,30.0" image="" font="14.0pt Calibri" foreground="white" background="#546e7a">
         <ValueBinding ord="slot:/Services/AlarmService/CVC_Niveau1">
@@ -209,7 +209,7 @@
         <WbFieldEditorBinding ord="slot:/Services/AlarmService/CVC_Niveau2/priority"/>
       </GenericFieldEditor>
 
-      <Picture layout="0.0,5.0,32.0,30.0" image="module://themeActive/image/x32/status/alarm_w.png" scale="fitRatio"/>
+      <Picture layout="0.0,5.0,32.0,30.0" image="module://themeBtib/image/x30/status/alarm_w.png" scale="fitRatio"/>
 
       <Label layout="35.0,5.0,175.0,30.0" image="" font="14.0pt Calibri" foreground="white" background="#546e7a">
         <ValueBinding ord="slot:/Services/AlarmService/CVC_Niveau2">
@@ -229,7 +229,7 @@
         <WbFieldEditorBinding ord="slot:/Services/AlarmService/CVC_Niveau3/priority"/>
       </GenericFieldEditor>
 
-      <Picture layout="0.0,5.0,32.0,30.0" image="module://themeActive/image/x32/status/alarm_w.png" scale="fitRatio"/>
+      <Picture layout="0.0,5.0,32.0,30.0" image="module://themeBtib/image/x30/status/alarm_w.png" scale="fitRatio"/>
 
       <Label layout="35.0,5.0,175.0,30.0" image="" font="14.0pt Calibri" foreground="white" background="#546e7a">
         <ValueBinding ord="slot:/Services/AlarmService/CVC_Niveau3">

@@ -9,6 +9,15 @@
   <module name="kitPx"/>
   <module name="vykonPro"/>
 </import>
+<properties>
+
+  <property name="nomSite" type="baja:String" value="Le Rabelais">
+  </property>
+
+  <property name="ordSite" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/T1AMurNQyDMt">
+  </property>
+
+</properties>
 <content>
 <CanvasPane viewSize="400.0,250.0">
 
@@ -44,7 +53,7 @@
     <ValueBinding ord="slot:" degradeBehavior="hide">
       <IPriorityToSimple name="image">
         <Image name="none" value="null"/>
-        <Image name="level_1" value="module://themeActive/image/x24/status/overridden.png"/>
+        <Image name="level_1" value="module://themeBtib/image/x20/status/overridden.png"/>
         <Image name="level_2" value="null"/>
         <Image name="level_3" value="null"/>
         <Image name="level_4" value="null"/>
@@ -82,7 +91,7 @@
         <Image name="level_5" value="null"/>
         <Image name="level_6" value="null"/>
         <Image name="level_7" value="null"/>
-        <Image name="level_8" value="module://themeActive/image/x24/status/overridden.png"/>
+        <Image name="level_8" value="module://themeBtib/image/x20/status/overridden.png"/>
         <Image name="level_9" value="null"/>
         <Image name="level_10" value="null"/>
         <Image name="level_11" value="null"/>

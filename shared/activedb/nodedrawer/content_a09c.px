@@ -12,6 +12,12 @@
 </import>
 <properties>
 
+  <property name="nomSite" type="baja:String" value="Le Rabelais">
+  </property>
+
+  <property name="ordSite" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/T1AMurNQyDMt">
+  </property>
+
   <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
   </property>
 
@@ -37,9 +43,6 @@
   </property>
 
   <property name="bqlToWidgetsHandle" type="baja:String" value="4811">
-  </property>
-
-  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/N1pjgJtbfwIu">
   </property>
 
   <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
@@ -75,9 +78,6 @@
   <property name="vueCentraleElementBackgroundCouleurSombre" type="gx:Brush" value="#1565c0">
   </property>
 
-  <property name="siteName" type="baja:String" value="Le Rabelais">
-  </property>
-
 </properties>
 <content>
 <CanvasPane layout="50.0,80.0,1100.0,670.0" viewSize="1100.0,670.0" halign="left" valign="top" background="image( source(file:^images/plans/btibOffice.PNG) halign(left) valign(top) )">
@@ -92,7 +92,7 @@
       </ValueBinding>
     </Label>
 
-    <Label image="module://themeActive/image/x32/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+    <Label image="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
       <PopupBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_01/sccFanCoil|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
       <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_01/sccFanCoil/master"/>
     </Label>
@@ -105,13 +105,13 @@
 
   </GridPane>
 
-  <Label layout="160.0,370.0,80.0,60.0" image="module://themeActive/image/x32/metiers/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+  <Label layout="160.0,370.0,80.0,60.0" image="module://themeBtib/image/x30/subsystem/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
     <IdBinding id="Lamp"/>
     <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_01/Lamp1"/>
     <String name="id" value="widget8f2a"/>
   </Label>
 
-  <Label layout="170.0,430.0,80.0,60.0" image="module://themeActive/image/x32/metiers/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+  <Label layout="170.0,430.0,80.0,60.0" image="module://themeBtib/image/x30/subsystem/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
     <IdBinding id="Lamp"/>
     <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_01/Lamp2"/>
     <String name="id" value="widget8f33"/>
@@ -123,7 +123,7 @@
     <String name="id" value="widget8f3b"/>
   </Label>
 
-  <Label layout="330.0,340.0,70.0,60.0" image="module://themeActive/image/x32/metiers/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+  <Label layout="330.0,340.0,70.0,60.0" image="module://themeBtib/image/x30/subsystem/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
     <IdBinding id="Lamp"/>
     <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_01/Lamp8"/>
     <String name="id" value="widget8f35"/>
@@ -137,7 +137,7 @@
       </ValueBinding>
     </Label>
 
-    <Label image="module://themeActive/image/x32/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+    <Label image="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
       <PopupBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_02/sccFanCoil|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
       <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_02/sccFanCoil/master"/>
     </Label>
@@ -168,25 +168,25 @@
     <String name="id" value="widgeta931"/>
   </Label>
 
-  <Label layout="350.0,390.0,65.0,60.0" image="module://themeActive/image/x32/metiers/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+  <Label layout="350.0,390.0,65.0,60.0" image="module://themeBtib/image/x30/subsystem/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
     <IdBinding id="Lamp"/>
     <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_02/Lamp1"/>
     <String name="id" value="widgeta940"/>
   </Label>
 
-  <Label layout="650.0,310.0,80.0,60.0" image="module://themeActive/image/x32/metiers/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+  <Label layout="650.0,310.0,80.0,60.0" image="module://themeBtib/image/x30/subsystem/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
     <IdBinding id="Lamp"/>
     <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_02/Lamp2"/>
     <String name="id" value="widgeta94f"/>
   </Label>
 
-  <Label layout="840.0,250.0,80.0,60.0" image="module://themeActive/image/x32/metiers/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+  <Label layout="840.0,250.0,80.0,60.0" image="module://themeBtib/image/x30/subsystem/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
     <IdBinding id="Lamp"/>
     <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_02/Lamp8"/>
     <String name="id" value="widgeta95e"/>
   </Label>
 
-  <Label layout="680.0,60.0,80.0,60.0" image="file:^px/themeActive/image/x32/devices/electricity/powerMeasurementDevice_ok.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+  <Label layout="680.0,60.0,80.0,60.0" image="module://themeBtib/image/x30/devices/electricity/powerMeasurementDevice_ok.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
     <IdBinding id="Meter"/>
     <SourceBinding ord="station:|slot:/Drivers/ModbusTcpNetwork/Submeters/SubMeter$201"/>
     <ValueBinding ord="station:|slot:/Drivers/ModbusTcpNetwork/Submeters/SubMeter$201">
@@ -195,7 +195,7 @@
     <String name="id" value="widget9c1d"/>
   </Label>
 
-  <Label layout="580.0,90.0,80.0,60.0" image="file:^px/themeActive/image/x32/devices/electricity/powerMeasurementDevice_ok.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+  <Label layout="580.0,90.0,80.0,60.0" image="module://themeBtib/image/x30/devices/electricity/powerMeasurementDevice_ok.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
     <IdBinding id="Meter"/>
     <SourceBinding ord="station:|slot:/Drivers/ModbusTcpNetwork/Submeters/SubMeter$202"/>
     <ValueBinding ord="station:|slot:/Drivers/ModbusTcpNetwork/Submeters/SubMeter$202">
@@ -204,7 +204,7 @@
     <String name="id" value="widget9d0e"/>
   </Label>
 
-  <Label layout="380.0,230.0,80.0,60.0" image="file:^px/themeActive/image/x32/devices/electricity/powerMeasurementDevice_ok.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+  <Label layout="380.0,230.0,80.0,60.0" image="module://themeBtib/image/x30/devices/electricity/powerMeasurementDevice_ok.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
     <IdBinding id="Meter"/>
     <SourceBinding ord="station:|slot:/Drivers/ModbusTcpNetwork/Submeters/SubMeter$204"/>
     <ValueBinding ord="station:|slot:/Drivers/ModbusTcpNetwork/Submeters/SubMeter$204">
@@ -213,7 +213,7 @@
     <String name="id" value="widget9d20"/>
   </Label>
 
-  <Label layout="245.0,130.0,80.0,60.0" image="file:^px/themeActive/image/x32/devices/electricity/powerMeasurementDevice_ok.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+  <Label layout="245.0,130.0,80.0,60.0" image="module://themeBtib/image/x30/devices/electricity/powerMeasurementDevice_ok.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
     <IdBinding id="Meter"/>
     <SourceBinding ord="station:|slot:/Drivers/ModbusTcpNetwork/Submeters/SubMeter$205"/>
     <ValueBinding ord="station:|slot:/Drivers/ModbusTcpNetwork/Submeters/SubMeter$205">
@@ -230,7 +230,7 @@
       </ValueBinding>
     </Label>
 
-    <Label image="module://themeActive/image/x32/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+    <Label image="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
       <PopupBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_03/sccFanCoil|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
       <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_03/sccFanCoil/master"/>
     </Label>
@@ -243,13 +243,13 @@
 
   </GridPane>
 
-  <Label layout="625.0,265.0,80.0,60.0" image="module://themeActive/image/x32/metiers/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+  <Label layout="625.0,265.0,80.0,60.0" image="module://themeBtib/image/x30/subsystem/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
     <IdBinding id="Lamp"/>
     <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_03/Lamp1"/>
     <String name="id" value="widgetabd9"/>
   </Label>
 
-  <Label layout="475.0,300.0,80.0,60.0" image="module://themeActive/image/x32/metiers/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+  <Label layout="475.0,300.0,80.0,60.0" image="module://themeBtib/image/x30/subsystem/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
     <IdBinding id="Lamp"/>
     <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_03/Lamp2"/>
     <String name="id" value="widgetabe8"/>
@@ -267,7 +267,7 @@
     <String name="id" value="widgeta925"/>
   </Label>
 
-  <Label layout="495.0,350.0,80.0,60.0" image="module://themeActive/image/x32/metiers/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+  <Label layout="495.0,350.0,80.0,60.0" image="module://themeBtib/image/x30/subsystem/lighting_down.png" font="14.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
     <IdBinding id="Lamp"/>
     <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Room_Controller_03/Lamp8"/>
     <String name="id" value="widgetabf7"/>

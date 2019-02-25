@@ -12,70 +12,7 @@
 </import>
 <properties>
 
-  <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
-  </property>
-
-  <property name="gaucheBackgroundCouleurClaire" type="gx:Brush" value="#616161">
-  </property>
-
-  <property name="gaucheBackgroundCouleur" type="gx:Brush" value="#424242">
-  </property>
-
-  <property name="gaucheBackgroundCouleurSombre" type="gx:Brush" value="#212121">
-  </property>
-
-  <property name="enTeteForegroundCouleur" type="gx:Brush" value="white">
-  </property>
-
-  <property name="enTeteBackgroundCouleurClaire" type="gx:Brush" value="#039be5">
-  </property>
-
-  <property name="enTeteBackgroundCouleur" type="gx:Brush" value="#0288d1">
-  </property>
-
-  <property name="enTeteBackgroundCouleurSombre" type="gx:Brush" value="#0277bd">
-  </property>
-
-  <property name="siteName" type="baja:String" value="Le Rabelais">
-  </property>
-
-  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/N1pjgJtbfwIu">
-  </property>
-
-  <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
-  </property>
-
-  <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
-  </property>
-
-  <property name="vueCentraleBackgroundBlanc" type="gx:Brush" value="white">
-  </property>
-
-  <property name="vueCentraleForegroundCouleur" type="gx:Brush" value="white">
-  </property>
-
-  <property name="vueCentraleBackgroundCouleurClaire" type="gx:Brush" value="#546e7a">
-  </property>
-
-  <property name="vueCentraleBackgroundCouleur" type="gx:Brush" value="#455a64">
-  </property>
-
-  <property name="vueCentraleBackgroundCouleurSombre" type="gx:Brush" value="#37474f">
-  </property>
-
-  <property name="vueCentraleElementForegroundCouleur" type="gx:Brush" value="white">
-  </property>
-
-  <property name="vueCentraleElementBackgroundCouleurClaire" type="gx:Brush" value="#1e88e5">
-  </property>
-
-  <property name="vueCentraleElementBackgroundCouleur" type="gx:Brush" value="#1976d2">
-  </property>
-
-  <property name="vueCentraleElementBackgroundCouleurSombre" type="gx:Brush" value="#1565c0">
-  </property>
-
-  <property name="bqlToWidgetsHandle" type="baja:String" value="4811">
+  <property name="bqlToWidgetsHandle" type="baja:String" value="fcb4">
   </property>
 
 </properties>
@@ -84,205 +21,225 @@
 
   <GridPane name="content" columnCount="1" valign="top" columnAlign="center" rowGap="5.0">
 
-    <OverCanvasPane viewSize="230.0,60.0" background="#0288d1" overBackground="#0277bd">
+    <BorderPane padding="0.0" border="1.0 solid null">
 
-      <BoundLabel layout="20.0,0.0,160.0,20.0" image="" font="12.0pt Trebuchet MS" foreground="white" halign="left">
-        <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem1" statusEffect="none">
-          <ObjectToString name="text" format="%time%"/>
-        </BoundLabelBinding>
-      </BoundLabel>
+      <OverCanvasPane name="content" viewSize="230.0,60.0" background="#039be5" overBackground="#0288d1">
 
-      <Picture layout="2.0,2.0,16.0,16.0" image="" scale="fitRatio">
-        <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem1/metier">
-          <OrdToImage name="image"/>
-        </ValueBinding>
-      </Picture>
+        <BoundLabel layout="30.0,0.0,140.0,20.0" image="" font="12.0pt Trebuchet MS" foreground="white" halign="left">
+          <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem1" statusEffect="none">
+            <ObjectToString name="text" format="%time%"/>
+          </BoundLabelBinding>
+        </BoundLabel>
 
-      <ImageButton layout="180.0,0.0,50.0,20.0" text="Acq." image="file:^images/x16/status/unackedAlarm_w.png" valign="fill" disabled="">
-        <ActionBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem1/ack" widgetEvent="actionPerformed"/>
-      </ImageButton>
+        <Picture layout="10.0,2.0,16.0,16.0" image="" scale="fitRatio">
+          <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem1/metier">
+            <OrdToImage name="image"/>
+          </ValueBinding>
+        </Picture>
 
-      <BoundLabel layout="0.0,20.0,230.0,20.0" image="" foreground="white" halign="left">
-        <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem1" statusEffect="none">
-          <ObjectToString name="text" format="%source%"/>
-        </BoundLabelBinding>
-      </BoundLabel>
+        <ImageButton layout="170.0,0.0,50.0,20.0" text="Acq." image="" background="white" valign="fill" disabled="">
+          <ActionBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem1/ack" widgetEvent="actionPerformed"/>
+        </ImageButton>
 
-      <BoundLabel layout="0.0,40.0,140.0,20.0" image="" foreground="white" halign="left">
-        <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem1" statusEffect="none">
-          <ObjectToString name="text" format="%message%"/>
-        </BoundLabelBinding>
-      </BoundLabel>
+        <BoundLabel layout="10.0,20.0,210.0,20.0" image="" foreground="white" halign="left">
+          <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem1" statusEffect="none">
+            <ObjectToString name="text" format="%source%"/>
+          </BoundLabelBinding>
+        </BoundLabel>
 
-      <BoundLabel layout="140.0,40.0,90.0,20.0" image="" foreground="white" halign="left">
-        <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem1" statusEffect="none">
-          <ObjectToString name="text" format="%ackState%"/>
-        </BoundLabelBinding>
-      </BoundLabel>
+        <BoundLabel layout="80.0,40.0,140.0,20.0" image="" foreground="white" halign="left">
+          <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem1" statusEffect="none">
+            <ObjectToString name="text" format="%message%"/>
+          </BoundLabelBinding>
+        </BoundLabel>
 
-      <PxTemplateInfo name="templateInfo" templateName="BandeauAlarmesVert" vendor="B.tib" version="1.0"/>
+        <BoundLabel layout="10.0,40.0,70.0,20.0" image="" foreground="white" halign="left">
+          <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem1" statusEffect="none">
+            <ObjectToString name="text" format="%ackState%"/>
+          </BoundLabelBinding>
+        </BoundLabel>
 
-    </OverCanvasPane>
+        <PxTemplateInfo name="templateInfo" templateName="BandeauAlarmesVert" vendor="B.tib" version="1.0"/>
 
-    <OverCanvasPane viewSize="230.0,60.0" background="#0288d1" overBackground="#0277bd">
+      </OverCanvasPane>
 
-      <BoundLabel layout="20.0,0.0,160.0,20.0" image="" font="12.0pt Trebuchet MS" foreground="white" halign="left">
-        <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem2" statusEffect="none">
-          <ObjectToString name="text" format="%time%"/>
-        </BoundLabelBinding>
-      </BoundLabel>
+    </BorderPane>
 
-      <Picture layout="2.0,2.0,16.0,16.0" image="" scale="fitRatio">
-        <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem2/metier">
-          <OrdToImage name="image"/>
-        </ValueBinding>
-      </Picture>
+    <BorderPane padding="0.0" border="1.0 solid null">
 
-      <ImageButton layout="180.0,0.0,50.0,20.0" text="Acq." image="file:^images/x16/status/unackedAlarm_w.png" valign="fill" disabled="">
-        <ActionBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem2/ack" widgetEvent="actionPerformed"/>
-      </ImageButton>
+      <OverCanvasPane name="content" viewSize="230.0,60.0" background="#039be5" overBackground="#0288d1">
 
-      <BoundLabel layout="0.0,20.0,230.0,20.0" image="" foreground="white" halign="left">
-        <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem2" statusEffect="none">
-          <ObjectToString name="text" format="%source%"/>
-        </BoundLabelBinding>
-      </BoundLabel>
+        <BoundLabel layout="30.0,0.0,140.0,20.0" image="" font="12.0pt Trebuchet MS" foreground="white" halign="left">
+          <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem2" statusEffect="none">
+            <ObjectToString name="text" format="%time%"/>
+          </BoundLabelBinding>
+        </BoundLabel>
 
-      <BoundLabel layout="0.0,40.0,140.0,20.0" image="" foreground="white" halign="left">
-        <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem2" statusEffect="none">
-          <ObjectToString name="text" format="%message%"/>
-        </BoundLabelBinding>
-      </BoundLabel>
+        <Picture layout="10.0,2.0,16.0,16.0" image="" scale="fitRatio">
+          <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem2/metier">
+            <OrdToImage name="image"/>
+          </ValueBinding>
+        </Picture>
 
-      <BoundLabel layout="140.0,40.0,90.0,20.0" image="" foreground="white" halign="left">
-        <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem2" statusEffect="none">
-          <ObjectToString name="text" format="%ackState%"/>
-        </BoundLabelBinding>
-      </BoundLabel>
+        <ImageButton layout="170.0,0.0,50.0,20.0" text="Acq." image="" background="white" valign="fill" disabled="">
+          <ActionBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem2/ack" widgetEvent="actionPerformed"/>
+        </ImageButton>
 
-      <PxTemplateInfo name="templateInfo" templateName="BandeauAlarmesVert" vendor="B.tib" version="1.0"/>
+        <BoundLabel layout="10.0,20.0,210.0,20.0" image="" foreground="white" halign="left">
+          <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem2" statusEffect="none">
+            <ObjectToString name="text" format="%source%"/>
+          </BoundLabelBinding>
+        </BoundLabel>
 
-    </OverCanvasPane>
+        <BoundLabel layout="80.0,40.0,140.0,20.0" image="" foreground="white" halign="left">
+          <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem2" statusEffect="none">
+            <ObjectToString name="text" format="%message%"/>
+          </BoundLabelBinding>
+        </BoundLabel>
 
-    <OverCanvasPane viewSize="230.0,60.0" background="#0288d1" overBackground="#0277bd">
+        <BoundLabel layout="10.0,40.0,70.0,20.0" image="" foreground="white" halign="left">
+          <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem2" statusEffect="none">
+            <ObjectToString name="text" format="%ackState%"/>
+          </BoundLabelBinding>
+        </BoundLabel>
 
-      <BoundLabel layout="20.0,0.0,160.0,20.0" image="" font="12.0pt Trebuchet MS" foreground="white" halign="left">
-        <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem3" statusEffect="none">
-          <ObjectToString name="text" format="%time%"/>
-        </BoundLabelBinding>
-      </BoundLabel>
+        <PxTemplateInfo name="templateInfo" templateName="BandeauAlarmesVert" vendor="B.tib" version="1.0"/>
 
-      <Picture layout="2.0,2.0,16.0,16.0" image="" scale="fitRatio">
-        <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem3/metier">
-          <OrdToImage name="image"/>
-        </ValueBinding>
-      </Picture>
+      </OverCanvasPane>
 
-      <ImageButton layout="180.0,0.0,50.0,20.0" text="Acq." image="file:^images/x16/status/unackedAlarm_w.png" valign="fill" disabled="">
-        <ActionBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem3/ack" widgetEvent="actionPerformed"/>
-      </ImageButton>
+    </BorderPane>
 
-      <BoundLabel layout="0.0,20.0,230.0,20.0" image="" foreground="white" halign="left">
-        <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem3" statusEffect="none">
-          <ObjectToString name="text" format="%source%"/>
-        </BoundLabelBinding>
-      </BoundLabel>
+    <BorderPane padding="0.0" border="1.0 solid null">
 
-      <BoundLabel layout="0.0,40.0,140.0,20.0" image="" foreground="white" halign="left">
-        <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem3" statusEffect="none">
-          <ObjectToString name="text" format="%message%"/>
-        </BoundLabelBinding>
-      </BoundLabel>
+      <OverCanvasPane name="content" viewSize="230.0,60.0" background="#039be5" overBackground="#0288d1">
 
-      <BoundLabel layout="140.0,40.0,90.0,20.0" image="" foreground="white" halign="left">
-        <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem3" statusEffect="none">
-          <ObjectToString name="text" format="%ackState%"/>
-        </BoundLabelBinding>
-      </BoundLabel>
+        <BoundLabel layout="30.0,0.0,140.0,20.0" image="" font="12.0pt Trebuchet MS" foreground="white" halign="left">
+          <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem3" statusEffect="none">
+            <ObjectToString name="text" format="%time%"/>
+          </BoundLabelBinding>
+        </BoundLabel>
 
-      <PxTemplateInfo name="templateInfo" templateName="BandeauAlarmesVert" vendor="B.tib" version="1.0"/>
+        <Picture layout="10.0,2.0,16.0,16.0" image="" scale="fitRatio">
+          <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem3/metier">
+            <OrdToImage name="image"/>
+          </ValueBinding>
+        </Picture>
 
-    </OverCanvasPane>
+        <ImageButton layout="170.0,0.0,50.0,20.0" text="Acq." image="" background="white" valign="fill" disabled="">
+          <ActionBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem3/ack" widgetEvent="actionPerformed"/>
+        </ImageButton>
 
-    <OverCanvasPane viewSize="230.0,60.0" background="#0288d1" overBackground="#0277bd">
+        <BoundLabel layout="10.0,20.0,210.0,20.0" image="" foreground="white" halign="left">
+          <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem3" statusEffect="none">
+            <ObjectToString name="text" format="%source%"/>
+          </BoundLabelBinding>
+        </BoundLabel>
 
-      <BoundLabel layout="20.0,0.0,160.0,20.0" image="" font="12.0pt Trebuchet MS" foreground="white" halign="left">
-        <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem4" statusEffect="none">
-          <ObjectToString name="text" format="%time%"/>
-        </BoundLabelBinding>
-      </BoundLabel>
+        <BoundLabel layout="80.0,40.0,140.0,20.0" image="" foreground="white" halign="left">
+          <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem3" statusEffect="none">
+            <ObjectToString name="text" format="%message%"/>
+          </BoundLabelBinding>
+        </BoundLabel>
 
-      <Picture layout="2.0,2.0,16.0,16.0" image="" scale="fitRatio">
-        <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem4/metier">
-          <OrdToImage name="image"/>
-        </ValueBinding>
-      </Picture>
+        <BoundLabel layout="10.0,40.0,70.0,20.0" image="" foreground="white" halign="left">
+          <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem3" statusEffect="none">
+            <ObjectToString name="text" format="%ackState%"/>
+          </BoundLabelBinding>
+        </BoundLabel>
 
-      <ImageButton layout="180.0,0.0,50.0,20.0" text="Acq." image="file:^images/x16/status/unackedAlarm_w.png" valign="fill" disabled="">
-        <ActionBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem4/ack" widgetEvent="actionPerformed"/>
-      </ImageButton>
+        <PxTemplateInfo name="templateInfo" templateName="BandeauAlarmesVert" vendor="B.tib" version="1.0"/>
 
-      <BoundLabel layout="0.0,20.0,230.0,20.0" image="" foreground="white" halign="left">
-        <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem4" statusEffect="none">
-          <ObjectToString name="text" format="%source%"/>
-        </BoundLabelBinding>
-      </BoundLabel>
+      </OverCanvasPane>
 
-      <BoundLabel layout="0.0,40.0,140.0,20.0" image="" foreground="white" halign="left">
-        <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem4" statusEffect="none">
-          <ObjectToString name="text" format="%message%"/>
-        </BoundLabelBinding>
-      </BoundLabel>
+    </BorderPane>
 
-      <BoundLabel layout="140.0,40.0,90.0,20.0" image="" foreground="white" halign="left">
-        <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem4" statusEffect="none">
-          <ObjectToString name="text" format="%ackState%"/>
-        </BoundLabelBinding>
-      </BoundLabel>
+    <BorderPane padding="0.0" border="1.0 solid null">
 
-      <PxTemplateInfo name="templateInfo" templateName="BandeauAlarmesVert" vendor="B.tib" version="1.0"/>
+      <OverCanvasPane name="content" viewSize="230.0,60.0" background="#039be5" overBackground="#0288d1">
 
-    </OverCanvasPane>
+        <BoundLabel layout="30.0,0.0,140.0,20.0" image="" font="12.0pt Trebuchet MS" foreground="white" halign="left">
+          <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem4" statusEffect="none">
+            <ObjectToString name="text" format="%time%"/>
+          </BoundLabelBinding>
+        </BoundLabel>
 
-    <OverCanvasPane viewSize="230.0,60.0" background="#0288d1" overBackground="#0277bd">
+        <Picture layout="10.0,2.0,16.0,16.0" image="" scale="fitRatio">
+          <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem4/metier">
+            <OrdToImage name="image"/>
+          </ValueBinding>
+        </Picture>
 
-      <BoundLabel layout="20.0,0.0,160.0,20.0" image="" font="12.0pt Trebuchet MS" foreground="white" halign="left">
-        <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem5" statusEffect="none">
-          <ObjectToString name="text" format="%time%"/>
-        </BoundLabelBinding>
-      </BoundLabel>
+        <ImageButton layout="170.0,0.0,50.0,20.0" text="Acq." image="" background="white" valign="fill" disabled="">
+          <ActionBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem4/ack" widgetEvent="actionPerformed"/>
+        </ImageButton>
 
-      <Picture layout="2.0,2.0,16.0,16.0" image="" scale="fitRatio">
-        <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem5/metier">
-          <OrdToImage name="image"/>
-        </ValueBinding>
-      </Picture>
+        <BoundLabel layout="10.0,20.0,210.0,20.0" image="" foreground="white" halign="left">
+          <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem4" statusEffect="none">
+            <ObjectToString name="text" format="%source%"/>
+          </BoundLabelBinding>
+        </BoundLabel>
 
-      <ImageButton layout="180.0,0.0,50.0,20.0" text="Acq." image="file:^images/x16/status/unackedAlarm_w.png" valign="fill" disabled="">
-        <ActionBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem5/ack" widgetEvent="actionPerformed"/>
-      </ImageButton>
+        <BoundLabel layout="80.0,40.0,140.0,20.0" image="" foreground="white" halign="left">
+          <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem4" statusEffect="none">
+            <ObjectToString name="text" format="%message%"/>
+          </BoundLabelBinding>
+        </BoundLabel>
 
-      <BoundLabel layout="0.0,20.0,230.0,20.0" image="" foreground="white" halign="left">
-        <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem5" statusEffect="none">
-          <ObjectToString name="text" format="%source%"/>
-        </BoundLabelBinding>
-      </BoundLabel>
+        <BoundLabel layout="10.0,40.0,70.0,20.0" image="" foreground="white" halign="left">
+          <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem4" statusEffect="none">
+            <ObjectToString name="text" format="%ackState%"/>
+          </BoundLabelBinding>
+        </BoundLabel>
 
-      <BoundLabel layout="0.0,40.0,140.0,20.0" image="" foreground="white" halign="left">
-        <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem5" statusEffect="none">
-          <ObjectToString name="text" format="%message%"/>
-        </BoundLabelBinding>
-      </BoundLabel>
+        <PxTemplateInfo name="templateInfo" templateName="BandeauAlarmesVert" vendor="B.tib" version="1.0"/>
 
-      <BoundLabel layout="140.0,40.0,90.0,20.0" image="" foreground="white" halign="left">
-        <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem5" statusEffect="none">
-          <ObjectToString name="text" format="%ackState%"/>
-        </BoundLabelBinding>
-      </BoundLabel>
+      </OverCanvasPane>
 
-      <PxTemplateInfo name="templateInfo" templateName="BandeauAlarmesVert" vendor="B.tib" version="1.0"/>
+    </BorderPane>
 
-    </OverCanvasPane>
+    <BorderPane padding="0.0" border="1.0 solid null">
+
+      <OverCanvasPane name="content" viewSize="230.0,60.0" background="#039be5" overBackground="#0288d1">
+
+        <BoundLabel layout="30.0,0.0,140.0,20.0" image="" font="12.0pt Trebuchet MS" foreground="white" halign="left">
+          <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem5" statusEffect="none">
+            <ObjectToString name="text" format="%time%"/>
+          </BoundLabelBinding>
+        </BoundLabel>
+
+        <Picture layout="10.0,2.0,16.0,16.0" image="" scale="fitRatio">
+          <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem5/metier">
+            <OrdToImage name="image"/>
+          </ValueBinding>
+        </Picture>
+
+        <ImageButton layout="170.0,0.0,50.0,20.0" text="Acq." image="" background="white" valign="fill" disabled="">
+          <ActionBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem5/ack" widgetEvent="actionPerformed"/>
+        </ImageButton>
+
+        <BoundLabel layout="10.0,20.0,210.0,20.0" image="" foreground="white" halign="left">
+          <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem5" statusEffect="none">
+            <ObjectToString name="text" format="%source%"/>
+          </BoundLabelBinding>
+        </BoundLabel>
+
+        <BoundLabel layout="80.0,40.0,140.0,20.0" image="" foreground="white" halign="left">
+          <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem5" statusEffect="none">
+            <ObjectToString name="text" format="%message%"/>
+          </BoundLabelBinding>
+        </BoundLabel>
+
+        <BoundLabel layout="10.0,40.0,70.0,20.0" image="" foreground="white" halign="left">
+          <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem5" statusEffect="none">
+            <ObjectToString name="text" format="%ackState%"/>
+          </BoundLabelBinding>
+        </BoundLabel>
+
+        <PxTemplateInfo name="templateInfo" templateName="BandeauAlarmesVert" vendor="B.tib" version="1.0"/>
+
+      </OverCanvasPane>
+
+    </BorderPane>
 
   </GridPane>
 

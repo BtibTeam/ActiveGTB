@@ -10,6 +10,12 @@
 </import>
 <properties>
 
+  <property name="nomSite" type="baja:String" value="Le Rabelais">
+  </property>
+
+  <property name="ordSite" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/T1AMurNQyDMt">
+  </property>
+
   <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
   </property>
 
@@ -35,9 +41,6 @@
   </property>
 
   <property name="bqlToWidgetsHandle" type="baja:String" value="4811">
-  </property>
-
-  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/N1pjgJtbfwIu">
   </property>
 
   <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
@@ -73,33 +76,6 @@
   <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
   </property>
 
-  <property name="headerBackgroundColor" type="gx:Brush" value="#0288d1">
-  </property>
-
-  <property name="headerBackgroundColorShade" type="gx:Brush" value="#02669c">
-  </property>
-
-  <property name="headerBackgroundColorTint" type="gx:Brush" value="#039be5">
-  </property>
-
-  <property name="headerForegroundColor" type="gx:Brush" value="white">
-  </property>
-
-  <property name="leftForegroundColor" type="gx:Brush" value="white">
-  </property>
-
-  <property name="leftBackgroundColor" type="gx:Brush" value="#19212b">
-  </property>
-
-  <property name="leftBackgroundColorShade" type="gx:Brush" value="#0d1116">
-  </property>
-
-  <property name="leftBackgroundColorTint" type="gx:Brush" value="#3c5069">
-  </property>
-
-  <property name="siteName" type="baja:String" value="Le Rabelais">
-  </property>
-
 </properties>
 <content>
 <BorderPane padding="0.0 16.0">
@@ -108,7 +84,7 @@
 
     <CanvasPane name="left" viewSize="150.0,80.0">
 
-      <Picture layout="0.0,0.0,150.0,80.0" image="module://themeActive/image/svg/logo/logo_w.svg" scale="fit"/>
+      <Picture layout="0.0,0.0,150.0,80.0" image="module://themeBtib/image/svg/logo/logo_w.svg" scale="fit"/>
 
     </CanvasPane>
 
@@ -155,15 +131,15 @@
       <Picture layout="100.0,50.0,50.0,24.0" scale="fitRatio">
         <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_01">
           <IStatusToSimple name="image">
-            <Image name="disabled" value="module://themeActive/image/x24/status/disabled_w.png"/>
-            <Image name="fault" value="module://themeActive/image/x24/status/fault.png"/>
-            <Image name="down" value="module://themeActive/image/x24/status/down_w.png"/>
-            <Image name="alarm" value="module://themeActive/image/x24/status/alarm_w.png"/>
-            <Image name="stale" value="module://themeActive/image/x24/status/stale_w.png"/>
-            <Image name="overridden" value="module://themeActive/image/x24/status/overridden_w.png"/>
+            <Image name="disabled" value="module://themeBtib/image/x20/status/disabled_w.png"/>
+            <Image name="fault" value="module://themeBtib/image/x20/status/fault.png"/>
+            <Image name="down" value="module://themeBtib/image/x20/status/down_w.png"/>
+            <Image name="alarm" value="module://themeBtib/image/x20/status/alarm_w.png"/>
+            <Image name="stale" value="module://themeBtib/image/x20/status/stale_w.png"/>
+            <Image name="overridden" value="module://themeBtib/image/x20/status/overridden_w.png"/>
             <Image name="nullStatus" value="null"/>
-            <Image name="unackedAlarm" value="module://themeActive/image/x24/status/unackedAlarm_w.png"/>
-            <Image name="ok" value="module://themeActive/image/x24/status/ok_w.png"/>
+            <Image name="unackedAlarm" value="module://themeBtib/image/x20/status/unackedAlarm_w.png"/>
+            <Image name="ok" value="module://themeBtib/image/x20/status/ok_w.png"/>
           </IStatusToSimple>
         </ValueBinding>
       </Picture>

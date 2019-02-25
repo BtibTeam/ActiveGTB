@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0">
+<px version="1.0" media="workbench:WbPxMedia">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
+  <module name="btibCore"/>
   <module name="btibVision"/>
+  <module name="converters"/>
   <module name="gx"/>
   <module name="kitPx"/>
+  <module name="wbutil"/>
   <module name="workbench"/>
 </import>
 <properties>
+
+  <property name="nomSite" type="baja:String" value="Le Rabelais">
+  </property>
+
+  <property name="ordSite" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/T1AMurNQyDMt">
+  </property>
 
   <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
   </property>
@@ -36,9 +45,6 @@
   </property>
 
   <property name="bqlToWidgetsHandle" type="baja:String" value="4811">
-  </property>
-
-  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/N1pjgJtbfwIu">
   </property>
 
   <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
@@ -75,9 +81,6 @@
   <property name="vueCentraleElementBackgroundCouleurSombre" type="gx:Brush" value="#1565c0">
   </property>
 
-  <property name="siteName" type="baja:String" value="Le Rabelais">
-  </property>
-
 </properties>
 <content>
 <ScrollPane>
@@ -90,35 +93,35 @@
 
     <CanvasPane name="center" viewSize="1300.0,800.0" minScaleFactor="0.5" maxScaleFactor="1.0" valign="top" background="#455a64">
 
-      <Label layout="10.0,10.0,1300.0,60.0" font="bold 16.0pt Calibri" background="#546e7a"/>
+      <Label name="Label" layout="10.0,10.0,1280.0,60.0" font="bold 16.0pt Calibri" background="#546e7a"/>
 
-      <BqlToWidgetsView layout="10.0,100.0,1280.0,790.0">
-        <WbViewBinding ord="station:|slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20utilisateurs/Listes$20des$20utilisateurs|view:directView"/>
+      <BqlToWidgetsView name="BqlToWidgetsView" layout="10.0,100.0,1280.0,790.0">
+        <WbViewBinding name="WbViewBinding" ord="station:|slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20utilisateurs/Listes$20des$20utilisateurs|view:directView"/>
       </BqlToWidgetsView>
 
-      <Label layout="10.0,10.0,140.0,60.0" text="Nom utilisateur" font="bold 16.0pt Calibri" foreground="white" background="#546e7a"/>
+      <Label name="Label1" layout="10.0,10.0,140.0,60.0" text="Nom utilisateur" font="bold 16.0pt Calibri" foreground="white" background="#546e7a"/>
 
-      <Label layout="150.0,10.0,120.0,60.0" text="Nom entier" font="bold 16.0pt Calibri" foreground="white" background="#546e7a"/>
+      <Label name="Label2" layout="150.0,10.0,120.0,60.0" text="Nom entier" font="bold 16.0pt Calibri" foreground="white" background="#546e7a"/>
 
-      <Label layout="270.0,10.0,80.0,60.0" text="Activation" font="bold 16.0pt Calibri" foreground="white" background="#546e7a"/>
+      <Label name="Label3" layout="270.0,10.0,80.0,60.0" text="Activation" font="bold 16.0pt Calibri" foreground="white" background="#546e7a"/>
 
-      <Label layout="350.0,10.0,55.0,60.0" text="Langue" font="bold 16.0pt Calibri" foreground="white" background="#546e7a"/>
+      <Label name="Label4" layout="350.0,10.0,55.0,60.0" text="Langue" font="bold 16.0pt Calibri" foreground="white" background="#546e7a"/>
 
-      <Label layout="410.0,10.0,120.0,60.0" text="E-mail" font="bold 16.0pt Calibri" foreground="white" background="#546e7a"/>
+      <Label name="Label5" layout="410.0,10.0,120.0,60.0" text="E-mail" font="bold 16.0pt Calibri" foreground="white" background="#546e7a"/>
 
-      <Label layout="530.0,10.0,210.0,60.0" text="Mot de passe" font="bold 16.0pt Calibri" foreground="white" background="#546e7a"/>
+      <Label name="Label6" layout="530.0,10.0,210.0,60.0" text="Mot de passe" font="bold 16.0pt Calibri" foreground="white" background="#546e7a"/>
 
-      <Label layout="740.0,10.0,120.0,60.0" text="Prototype" font="bold 16.0pt Calibri" foreground="white" background="#546e7a"/>
+      <Label name="Label7" layout="740.0,10.0,120.0,60.0" text="Prototype" font="bold 16.0pt Calibri" foreground="white" background="#546e7a"/>
 
-      <Label layout="860.0,10.0,90.0,60.0" text="Utilisateur r&#xe9;seau" font="bold 16.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
+      <Label name="Label8" layout="860.0,10.0,90.0,60.0" text="Utilisateur r&#xe9;seau" font="bold 16.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
 
-      <Label layout="950.0,10.0,120.0,60.0" text="Num&#xe9;ro de t&#xe9;l&#xe9;phone" font="bold 16.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
+      <Label name="Label9" layout="950.0,10.0,120.0,60.0" text="Num&#xe9;ro de t&#xe9;l&#xe9;phone" font="bold 16.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
 
-      <Label layout="1075.0,10.0,130.0,60.0" text="Sch&#xe9;ma d&#x27;authentification" font="bold 16.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
+      <Label name="Label10" layout="1075.0,10.0,130.0,60.0" text="Sch&#xe9;ma d&#x27;authentification" font="bold 16.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
 
-      <Label layout="1210.0,10.0,85.0,60.0" text="Autorisation sessions simultan&#xe9;es" font="bold 16.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
+      <Label name="Label11" layout="1205.0,10.0,85.0,60.0" text="Autorisation sessions simultan&#xe9;es" font="bold 16.0pt Calibri" foreground="white" background="#546e7a" wordWrapEnabled="true"/>
 
-      <SaveButton layout="10.0,70.0,1280.0,30.0" image="module://icons/x16/save.png" font="16.0pt Calibri" textOverride="Sauvegarder">
+      <SaveButton name="SaveButton" layout="10.0,70.0,1280.0,30.0" image="module://icons/x16/save.png" font="16.0pt Calibri" textOverride="Sauvegarder">
         <WsAnnotation name="wsAnnotation" value="14,14,8"/>
       </SaveButton>
 

@@ -10,6 +10,12 @@
 </import>
 <properties>
 
+  <property name="nomSite" type="baja:String" value="Le Rabelais">
+  </property>
+
+  <property name="ordSite" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/T1AMurNQyDMt">
+  </property>
+
   <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
   </property>
 
@@ -32,12 +38,6 @@
   </property>
 
   <property name="enTeteBackgroundCouleurSombre" type="gx:Brush" value="#0277bd">
-  </property>
-
-  <property name="siteName" type="baja:String" value="Le Rabelais">
-  </property>
-
-  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/N1pjgJtbfwIu">
   </property>
 
   <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
@@ -88,7 +88,7 @@
 
       <ValueBinding ord="station:|slot:/" hyperlink="station:|slot:/Services/AlarmService/Console_Electricite"/>
 
-      <Picture layout="100.0,90.0,50.0,50.0" image="module://themeActive/image/svg/alarm_w.svg" scale="fitRatio"/>
+      <Picture layout="100.0,90.0,50.0,50.0" image="module://themeBtib/image/svg/alarm_w.svg" scale="fitRatio"/>
 
       <Label layout="80.0,75.0,90.0,80.0" image=""/>
 
@@ -100,7 +100,7 @@
 
       <ValueBinding ord="station:|slot:/" hyperlink="station:|slot:/Services/AlarmService/Console_Plomberie"/>
 
-      <Picture layout="100.0,90.0,50.0,50.0" image="module://themeActive/image/svg/alarm_w.svg" scale="fitRatio"/>
+      <Picture layout="100.0,90.0,50.0,50.0" image="module://themeBtib/image/svg/alarm_w.svg" scale="fitRatio"/>
 
       <Label layout="80.0,75.0,90.0,80.0" image=""/>
 
@@ -112,7 +112,7 @@
 
       <ValueBinding ord="station:|slot:/" hyperlink="station:|slot:/Services/AlarmService/Console_CVC"/>
 
-      <Picture layout="100.0,90.0,50.0,50.0" image="module://themeActive/image/svg/alarm_w.svg" scale="fitRatio"/>
+      <Picture layout="100.0,90.0,50.0,50.0" image="module://themeBtib/image/svg/alarm_w.svg" scale="fitRatio"/>
 
       <Label layout="80.0,75.0,90.0,80.0" image=""/>
 

@@ -10,6 +10,12 @@
 </import>
 <properties>
 
+  <property name="nomSite" type="baja:String" value="Le Rabelais">
+  </property>
+
+  <property name="ordSite" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/T1AMurNQyDMt">
+  </property>
+
   <property name="bqlToWidgetsHandle" type="baja:String" value="4811">
   </property>
 
@@ -76,12 +82,6 @@
   <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
   </property>
 
-  <property name="siteName" type="baja:String" value="Le Rabelais">
-  </property>
-
-  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/N1pjgJtbfwIu">
-  </property>
-
 </properties>
 <content>
 <EdgePane>
@@ -102,7 +102,7 @@
 
     <EdgePane name="content">
 
-      <BackButton name="left" image="module://themeActive/image/x24/previous_w.png" foreground="white" background="transparent" buttonStyle="hyperlink" textOverride=" ">
+      <BackButton name="left" image="module://themeBtib/image/x20/previous_w.png" foreground="white" background="transparent" buttonStyle="hyperlink" textOverride=" ">
         <WsAnnotation name="wsAnnotation" value="26,26,8"/>
       </BackButton>
 
@@ -122,7 +122,7 @@
 
       <GridPane name="content" halign="right" rowGap="0.0" columnGap="20.0">
 
-        <Label image="module://themeActive/image/x24/worker_w.png" font="16.0pt Trebuchet MS" foreground="white" halign="right" textToIconAlign="left" textIconGap="12.0">
+        <Label image="module://themeBtib/image/x20/worker_w.png" font="16.0pt Trebuchet MS" foreground="white" halign="right" textToIconAlign="left" textIconGap="12.0">
           <ValueBinding ord="station:|slot:/" popupEnabled="false">
             <ObjectToString name="text" format="%user()%"/>
           </ValueBinding>
@@ -136,11 +136,11 @@
 
       <GridPane name="content" halign="right" rowGap="0.0" columnGap="20.0">
 
-        <Label image="module://themeActive/image/x24/system_w.png">
+        <Label image="module://themeBtib/image/x20/system_w.png">
           <ValueBinding ord="station:|slot:/Accueil/Param$e8tres$20stations" hyperlink="station:|slot:/Accueil/Param$e8tres$20stations"/>
         </Label>
 
-        <LogoffButton image="file:^px/themeActive/image/x24/logout_w.png" textIconGap="0.0" buttonStyle="hyperlink" textOverride=" ">
+        <LogoffButton image="module://themeBtib/image/x20/logout_w.png" textIconGap="0.0" buttonStyle="hyperlink" textOverride=" ">
           <WsAnnotation name="wsAnnotation" value="34,34,8"/>
         </LogoffButton>
 

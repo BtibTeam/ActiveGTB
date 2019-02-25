@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0">
+<px version="1.0" media="workbench:WbPxMedia">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
   <module name="converters"/>
   <module name="gx"/>
-  <module name="vykonPro"/>
 </import>
 <properties>
+
+  <property name="ordSite" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/T1AMurNQyDMt">
+    <target ord="slot:BorderPane1/content/Label4/ValueBinding/hyperlink"/>
+  </property>
+
+  <property name="nomSite" type="baja:String" value="Le Rabelais">
+  </property>
 
   <property name="bqlToWidgetsHandle" type="baja:String" value="4811">
   </property>
@@ -41,10 +47,6 @@
   </property>
 
   <property name="vueCentraleElementBackgroundCouleurSombre" type="gx:Brush" value="#1565c0">
-  </property>
-
-  <property name="siteName" type="baja:String" value="Le Rabelais">
-    <target ord="slot:BorderPane/content/Label/text"/>
   </property>
 
   <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
@@ -87,82 +89,80 @@
   <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
   </property>
 
-  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/N1pjgJtbfwIu">
-  </property>
-
 </properties>
 <content>
 <GridPane columnCount="1" valign="fill" rowAlign="fill" columnAlign="fill" rowGap="0.0" stretchRow="3">
 
-  <BorderPane padding="0.0" border="top(1.0 solid #5d5d5d) bottom(1.0 solid #5d5d5d)">
+  <BorderPane name="BorderPane" padding="0.0" border="top(1.0 solid #5d5d5d) bottom(1.0 solid #5d5d5d)">
 
     <CanvasPane name="content" viewSize="250.0,80.0" background="#616161">
 
-      <Picture layout="10.0,20.0,40.0,40.0" image="module://themeActive/image/x24/building_w.png"/>
+      <Picture name="Picture" layout="10.0,20.0,40.0,40.0" image="module://themeBtib/image/x20/building_w.png"/>
 
-      <Label layout="70.0,0.0,180.0,80.0" text="Le Rabelais" font="18.0pt Calibri" foreground="white" halign="left">
-        <ValueBinding ord="station:|slot:/Services/BtibService/pxProperties/siteName"/>
+      <Label name="Label" layout="70.0,0.0,180.0,80.0" font="18.0pt Calibri" foreground="white" halign="left">
+        <ValueBinding name="ValueBinding" ord="station:|slot:/Services/BtibService/pxProperties/nomSite">
+          <ObjectToString name="text" format="%propertyValue%"/>
+        </ValueBinding>
       </Label>
 
     </CanvasPane>
 
   </BorderPane>
 
-  <BorderPane padding="16.0 0.0 24.0 16.0" border="bottom(1.0 solid #5d5d5d)" fill="#212121">
+  <BorderPane name="BorderPane1" padding="16.0 0.0 24.0 16.0" border="bottom(1.0 solid #5d5d5d)" fill="#212121">
 
     <GridPane name="content" columnCount="1" valign="top" halign="left" rowGap="24.0">
 
-      <Label text="General" font="bold 19.0pt Calibri" foreground="white" halign="left"/>
+      <Label name="Label" text="General" font="bold 19.0pt Calibri" foreground="white" halign="left"/>
 
-      <Label image="module://themeActive/image/x16/buildings_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
-        <ValueBinding ord="station:|slot:/Accueil" hyperlink="station:|slot:/Accueil">
+      <Label name="Label1" image="module://themeBtib/image/x16/buildings_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+        <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil" hyperlink="station:|slot:/Accueil">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>
       </Label>
 
-      <Label image="module://themeActive/image/x16/alarm_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
-        <ValueBinding ord="station:|slot:/Accueil/Alarmes" hyperlink="station:|slot:/Services/AlarmService/Console_Generale|view:vue">
+      <Label name="Label2" image="module://themeBtib/image/x16/alarm_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+        <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil/Alarmes" hyperlink="station:|slot:/Services/AlarmService/Console_Generale|view:vue">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>
       </Label>
 
-      <Label image="file:^images/icones/carte_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
-        <ValueBinding ord="station:|slot:/Accueil/Cartes" hyperlink="station:|slot:/Accueil/Cartes">
+      <Label name="Label3" image="file:^images/icones/carte_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+        <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil/Cartes" hyperlink="station:|slot:/Accueil/Cartes">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>
       </Label>
 
-      <Label image="module://themeActive/image/x16/geoNav_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
-        <ValueBinding ord="station:|slot:/Accueil/Navigation$20G$e9ographique">
+      <Label name="Label4" image="module://themeBtib/image/x16/geoNav_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+        <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil/Navigation$20G$e9ographique" hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/T1AMurNQyDMt">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>
-        <EnhancedHyperlinkBinding ord="station:|slot:/Services/BtibService/pxProperties/siteOrd" hyperlinkFormat="%propertyValue%"/>
       </Label>
 
     </GridPane>
 
   </BorderPane>
 
-  <BorderPane padding="16.0 0.0 24.0 16.0" border="bottom(1.0 solid #5d5d5d)" fill="#212121">
+  <BorderPane name="BorderPane2" padding="16.0 0.0 24.0 16.0" border="bottom(1.0 solid #5d5d5d)" fill="#212121">
 
     <GridPane name="content" columnCount="1" valign="top" halign="fill" columnAlign="fill" rowGap="24.0" stretchColumn="0">
 
-      <Label text="Data" font="bold 19.0pt Calibri" foreground="white" halign="left"/>
+      <Label name="Label" text="Data" font="bold 19.0pt Calibri" foreground="white" halign="left"/>
 
-      <Label image="module://themeActive/image/x16/alarm_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
-        <ValueBinding ord="station:|slot:/Accueil/Donn$e9es/Tableau$20de$20bord" hyperlink="station:|slot:/Accueil/Donn$e9es/Tableau$20de$20bord">
+      <Label name="Label1" image="module://themeBtib/image/x16/alarm_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+        <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil/Donn$e9es/Tableau$20de$20bord" hyperlink="station:|slot:/Accueil/Donn$e9es/Tableau$20de$20bord">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>
       </Label>
 
-      <Label image="module://themeActive/image/x16/status/overridden_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
-        <ValueBinding ord="station:|slot:/Accueil/Donn$e9es/Synth$e8se$20des$20points" hyperlink="station:|slot:/Accueil/Donn$e9es/Synth$e8se$20des$20points">
+      <Label name="Label2" image="module://themeBtib/image/x16/status/overridden_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+        <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil/Donn$e9es/Synth$e8se$20des$20points" hyperlink="station:|slot:/Accueil/Donn$e9es/Synth$e8se$20des$20points">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>
       </Label>
 
-      <Label image="module://themeActive/image/x16/pie-chart_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
-        <ValueBinding ord="station:|slot:/Accueil/Donn$e9es/Tableau$20de$20bord">
+      <Label name="Label3" image="module://themeBtib/image/x16/pie-chart_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+        <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil/Donn$e9es/Tableau$20de$20bord">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>
       </Label>
@@ -171,7 +171,7 @@
 
   </BorderPane>
 
-  <BorderPane padding="16.0 0.0 24.0 16.0" border="bottom(1.0 solid #5d5d5d)" fill="#212121"/>
+  <BorderPane name="BorderPane3" padding="16.0 0.0 24.0 16.0" border="bottom(1.0 solid #5d5d5d)" fill="#212121"/>
 
 </GridPane>
 </content>

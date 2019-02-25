@@ -12,6 +12,12 @@
 </import>
 <properties>
 
+  <property name="nomSite" type="baja:String" value="Le Rabelais">
+  </property>
+
+  <property name="ordSite" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/T1AMurNQyDMt">
+  </property>
+
   <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
   </property>
 
@@ -37,9 +43,6 @@
   </property>
 
   <property name="bqlToWidgetsHandle" type="baja:String" value="4811">
-  </property>
-
-  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/N1pjgJtbfwIu">
   </property>
 
   <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
@@ -75,9 +78,6 @@
   <property name="vueCentraleElementBackgroundCouleurSombre" type="gx:Brush" value="#1565c0">
   </property>
 
-  <property name="siteName" type="baja:String" value="Le Rabelais">
-  </property>
-
 </properties>
 <content>
 <CanvasPane layout="50.0,80.0,1100.0,670.0" viewSize="1100.0,670.0" halign="left" valign="top" background="image( source(file:^images/plans/btibOffice.PNG) halign(left) valign(top) )">
@@ -92,7 +92,7 @@
       </ValueBinding>
     </Label>
 
-    <Label image="module://themeActive/image/x32/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+    <Label image="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
       <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_01|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
       <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_01/master"/>
     </Label>
@@ -113,7 +113,7 @@
       </ValueBinding>
     </Label>
 
-    <Label image="module://themeActive/image/x32/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+    <Label image="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
       <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_02|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
       <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_02/master"/>
     </Label>
@@ -134,7 +134,7 @@
       </ValueBinding>
     </Label>
 
-    <Label image="module://themeActive/image/x32/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+    <Label image="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
       <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_03|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
       <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_03/master"/>
     </Label>
@@ -155,7 +155,7 @@
       </ValueBinding>
     </Label>
 
-    <Label image="module://themeActive/image/x32/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+    <Label image="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
       <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_04|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
       <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_04/master"/>
     </Label>
