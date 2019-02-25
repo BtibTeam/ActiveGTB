@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibVision"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+  <module name="workbench"/>
+</import>
+<properties>
+
+  <property name="nomSite" type="baja:String" value="Le Rabelais">
+  </property>
+
+  <property name="ordSite" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/T1AMurNQyDMt">
+  </property>
+
+  <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="gaucheBackgroundCouleurClaire" type="gx:Brush" value="#616161">
+  </property>
+
+  <property name="gaucheBackgroundCouleur" type="gx:Brush" value="#424242">
+  </property>
+
+  <property name="gaucheBackgroundCouleurSombre" type="gx:Brush" value="#212121">
+  </property>
+
+  <property name="enTeteForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="enTeteBackgroundCouleurClaire" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="enTeteBackgroundCouleur" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="enTeteBackgroundCouleurSombre" type="gx:Brush" value="#0277bd">
+  </property>
+
+  <property name="bqlToWidgetsHandle" type="baja:String" value="4811">
+  </property>
+
+  <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  </property>
+
+  <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
+  </property>
+
+  <property name="vueCentraleBackgroundBlanc" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleurClaire" type="gx:Brush" value="#546e7a">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleur" type="gx:Brush" value="#455a64">
+    <target ord="slot:content/center/background"/>
+  </property>
+
+  <property name="vueCentraleBackgroundCouleurSombre" type="gx:Brush" value="#37474f">
+  </property>
+
+  <property name="vueCentraleElementForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleurClaire" type="gx:Brush" value="#1e88e5">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleur" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleurSombre" type="gx:Brush" value="#1565c0">
+  </property>
+
+</properties>
+<content>
+<ScrollPane>
+
+  <EdgePane name="content">
+
+    <PxInclude name="top" ord="file:^px/menus/haut.px"/>
+
+    <PxInclude name="left" ord="file:^px/menus/gauche.px"/>
+
+    <CanvasPane name="center" viewSize="1300.0,800.0" minScaleFactor="0.5" maxScaleFactor="1.0" valign="top" background="#455a64">
+
+      <Label name="Label" layout="30.0,70.0,330.0,20.0" text="Remplissez ici les param&#xe8;tres g&#xe9;n&#xe9;raux de la station" font="bold 12.0pt SansSerif" foreground="white" halign="left"/>
+
+      <GridPane name="GridPane" layout="30.0,110.0,pref,pref" columnAlign="fill" rowGap="10.0" columnGap="10.0">
+
+        <Label name="Label" text="Mode de navigation G&#xe9;ographique" font="14.0pt SansSerif" foreground="white" halign="left"/>
+
+        <GenericFieldEditor name="GenericFieldEditor">
+          <WbFieldEditorBinding name="WbFieldEditorBinding" ord="station:|slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20g$e9n$e9raux/modeNavigationGeographique"/>
+        </GenericFieldEditor>
+
+        <Separator name="Separator"/>
+
+        <Separator name="Separator1"/>
+
+        <Label name="Label1" text="Nom du Site (si plusieurs b&#xe2;timents)" font="14.0pt SansSerif" foreground="white" halign="left"/>
+
+        <GenericFieldEditor name="GenericFieldEditor1">
+          <WbFieldEditorBinding name="WbFieldEditorBinding" ord="station:|slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20g$e9n$e9raux/nomSite"/>
+        </GenericFieldEditor>
+
+      </GridPane>
+
+      <SaveButton name="SaveButton" layout="440.0,60.0,100.0,30.0" image="module://icons/x16/save.png" foreground="#484848" background="white">
+        <WsAnnotation name="wsAnnotation" value="14,14,8"/>
+      </SaveButton>
+
+    </CanvasPane>
+
+    <PxInclude name="right" ord="file:^px/menus/droite.px"/>
+
+  </EdgePane>
+
+</ScrollPane>
+</content>
+</px>

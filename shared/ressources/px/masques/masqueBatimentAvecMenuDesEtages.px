@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0">
+<px version="1.0" media="workbench:WbPxMedia">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
   <module name="btibCore"/>
+  <module name="btibVision"/>
+  <module name="converters"/>
   <module name="gx"/>
+  <module name="kitPx"/>
+  <module name="workbench"/>
 </import>
 <properties>
+
+  <property name="nomSite" type="baja:String" value="Le Rabelais">
+  </property>
+
+  <property name="ordSite" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/T1AMurNQyDMt">
+  </property>
 
   <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
   </property>
@@ -69,69 +79,37 @@
   <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
   </property>
 
-  <property name="headerBackgroundColor" type="gx:Brush" value="#0288d1">
-  </property>
-
-  <property name="headerBackgroundColorShade" type="gx:Brush" value="#02669c">
-  </property>
-
-  <property name="headerBackgroundColorTint" type="gx:Brush" value="#039be5">
-  </property>
-
-  <property name="headerForegroundColor" type="gx:Brush" value="white">
-  </property>
-
-  <property name="leftForegroundColor" type="gx:Brush" value="white">
-  </property>
-
-  <property name="leftBackgroundColor" type="gx:Brush" value="#19212b">
-  </property>
-
-  <property name="leftBackgroundColorShade" type="gx:Brush" value="#0d1116">
-  </property>
-
-  <property name="leftBackgroundColorTint" type="gx:Brush" value="#3c5069">
-  </property>
-
-  <property name="siteName" type="baja:String" value="Le Rabelais">
-  </property>
-
-  <property name="siteOrd" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/geography/building/N1pjgJtbfwIu">
-  </property>
-
 </properties>
 <content>
 <EdgePane>
 
-  <PxInclude name="top" ord="file:^px/menu/top.px"/>
+  <PxInclude name="top" ord="file:^px/menus/haut.px"/>
 
-  <PxInclude name="left" ord="file:^px/menu/left.px"/>
+  <PxInclude name="left" ord="file:^px/menus/gauche.px"/>
 
   <BorderPane name="center" padding="0.0">
 
-    <EdgePane name="content">
+    <CanvasPane name="content" viewSize="1600.0,800.0" halign="left" valign="top" background="image( source(file:^images/arriere_plans/batiment.jpg) halign(left) valign(top) )">
 
-      <CanvasPane name="top" viewSize="1000.0,40.0" halign="left" background="#f2f2f2">
+      <IdBinding name="IdBinding" id="canvasBatiment"/>
 
-        <GridPane layout="10.0,0.0,640.0,40.0" columnCount="10" halign="left" stretchColumn="0">
+      <CanvasPane name="CanvasPane" layout="0.0,0.0,100.0%,40.0" viewSize="1600.0,40.0" halign="left" background="#99ffffff">
 
-          <Label text="$(buildingDisplayName) /" font="18.0pt SansSerif" foreground="#3c3c3c">
-            <ValueBinding hyperlink="$(buildingOrd)"/>
+        <GridPane name="GridPane" layout="10.0,0.0,640.0,40.0" columnCount="10" halign="left" stretchColumn="0">
+
+          <Label name="Label" text="$(nomBatiment) /" font="18.0pt SansSerif" foreground="#3c3c3c">
+            <ValueBinding name="ValueBinding" hyperlink="$(ordBatiment)"/>
           </Label>
 
         </GridPane>
 
       </CanvasPane>
 
-      <CanvasPane name="center" viewSize="1000.0,800.0" halign="left" valign="top" background="image( source(file:^images/backgrounds/building.jpg) halign(left) valign(top) )">
-
-        <IdBinding id="building"/>
-
-      </CanvasPane>
-
-    </EdgePane>
+    </CanvasPane>
 
   </BorderPane>
+
+  <PxInclude name="right" ord="file:^px/menus/droite.px"/>
 
 </EdgePane>
 </content>
