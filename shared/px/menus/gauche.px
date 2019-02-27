@@ -9,7 +9,7 @@
 </import>
 <properties>
 
-  <property name="ordSite" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/T1AMurNQyDMt">
+  <property name="ordSite" type="baja:Ord" value="station:|slot:/Accueil/Navigation$20G$e9ographique">
     <target ord="slot:BorderPane1/content/Label4/ValueBinding/hyperlink"/>
   </property>
 
@@ -59,6 +59,7 @@
     <target ord="slot:BorderPane2/content/Label1/foreground"/>
     <target ord="slot:BorderPane2/content/Label2/foreground"/>
     <target ord="slot:BorderPane2/content/Label3/foreground"/>
+    <target ord="slot:BorderPane2/content/Label4/foreground"/>
   </property>
 
   <property name="gaucheBackgroundCouleurClaire" type="gx:Brush" value="#616161">
@@ -134,7 +135,7 @@
       </Label>
 
       <Label name="Label4" image="module://themeBtib/image/x16/geoNav_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
-        <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil/Navigation$20G$e9ographique" hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/T1AMurNQyDMt">
+        <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil/Navigation$20G$e9ographique" hyperlink="station:|slot:/Accueil/Navigation$20G$e9ographique">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>
       </Label>
@@ -148,6 +149,12 @@
     <GridPane name="content" columnCount="1" valign="top" halign="fill" columnAlign="fill" rowGap="24.0" stretchColumn="0">
 
       <Label name="Label" text="Data" font="bold 19.0pt Calibri" foreground="white" halign="left"/>
+
+      <Label name="Label4" image="module://icons/x16/braces.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+        <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil/Bilans$20d$27exploitation" hyperlink="station:|slot:/Accueil/Bilans$20d$27exploitation">
+          <ObjectToString name="text" format="%displayName%"/>
+        </ValueBinding>
+      </Label>
 
       <Label name="Label1" image="module://themeBtib/image/x16/alarm_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
         <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil/Donn$e9es/Tableau$20de$20bord" hyperlink="station:|slot:/Accueil/Donn$e9es/Tableau$20de$20bord">

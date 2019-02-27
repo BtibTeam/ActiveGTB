@@ -41,6 +41,11 @@
 
         <IdBinding id="canvasPourNodeDrawer"/>
 
+        <Label layout="30.0,40.0,70.0,60.0" text="?" image="" font="bold 22.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+          <ValueBinding ord="station:|slot:/Drivers/BacnetNetwork/Chiller$20plant$201" hyperlink="station:|slot:/Drivers/BacnetNetwork/Chiller$20plant$201"/>
+          <String name="id" value="widget_5e2d_6a76_0"/>
+        </Label>
+
       </CanvasPane>
 
       <OverBorderPane layout="10.0,10.0,160.0,40.0" fill="#4db6ac" overFill="#009688">
