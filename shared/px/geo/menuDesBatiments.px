@@ -44,7 +44,13 @@
 
         <Polygon fill="#b32326b8" stroke="white" pen="0.0" geom="410.0,170.0 390.0,240.0 600.0,230.0 790.0,230.0 800.0,160.0 590.0,130.0 ">
           <ValueBinding hyperlink="$(ordEtage)"/>
-          <String name="id" value="widget_12692_11672_0"/>
+          <String name="id" value="widget83a7"/>
+          <IdBinding id="etageDansBatiment"/>
+        </Polygon>
+
+        <Polygon fill="#b32326b8" stroke="white" pen="0.0" geom="410.0,170.0 390.0,240.0 600.0,230.0 790.0,230.0 800.0,160.0 590.0,130.0 ">
+          <ValueBinding hyperlink="$(ordEtage)"/>
+          <String name="id" value="widget_128b4_11672_0"/>
           <IdBinding id="etageDansBatiment"/>
         </Polygon>
 

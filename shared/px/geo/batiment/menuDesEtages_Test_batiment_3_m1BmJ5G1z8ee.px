@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibVision"/>
+  <module name="converters"/>
+  <module name="gx"/>
+</import>
+<properties>
+
+  <property name="bqlToWidgetsHandle" type="baja:String" value="128f1">
+  </property>
+
+</properties>
+<content>
+<ScrollPane viewportBackground="transparent" borderPolicy="never">
+
+  <GridPane name="content" columnCount="1" valign="top" rowGap="20.0">
+
+    <OverCanvasPane viewSize="400.0,80.0" background="#e6fafafa" overBackground="#e6ebebeb" radius="20.0px 20.0px 20.0px 20.0px">
+
+      <Label layout="15.0,10.0,230.0,40.0" text="Toiture" image="" font="bold 20.0pt Calibri Light" foreground="#595959" halign="left">
+        <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/r1BmJ5G1bjTI"/>
+      </Label>
+
+      <Label layout="245.0,10.0,50.0,60.0" image="module://themeBtib/image/x20/status/alarm.png" font="14.0pt Calibri Light" foreground="#454545" textToIconAlign="bottom" wordWrapEnabled="true">
+        <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/r1BmJ5G1bjTI/Synthese/alarmCount/value">
+          <ObjectToString name="text"/>
+        </ValueBinding>
+      </Label>
+
+      <Label layout="295.0,10.0,50.0,60.0" image="module://themeBtib/image/x20/status/overridden.png" font="14.0pt Calibri Light" foreground="#454545" textToIconAlign="bottom" wordWrapEnabled="true">
+        <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/r1BmJ5G1bjTI/Synthese/overriddenCount/value">
+          <ObjectToString name="text"/>
+        </ValueBinding>
+      </Label>
+
+      <Label layout="345.0,10.0,50.0,60.0" image="module://themeBtib/image/x16/status/fault.png" font="14.0pt Calibri Light" foreground="#454545" textToIconAlign="bottom" wordWrapEnabled="true">
+        <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/r1BmJ5G1bjTI/Synthese/faultCount/value">
+          <ObjectToString name="text"/>
+        </ValueBinding>
+      </Label>
+
+      <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/r1BmJ5G1bjTI"/>
+
+      <Label layout="15.0,40.0,210.0,30.0" image="" font="12.0pt Calibri Light" foreground="#7c7c7c" halign="left">
+        <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/r1BmJ5G1bjTI/Synthese/totalPointCount/value">
+          <ObjectToString name="text" format="%.% points"/>
+        </ValueBinding>
+      </Label>
+
+    </OverCanvasPane>
+
+    <OverCanvasPane viewSize="400.0,80.0" background="#e6fafafa" overBackground="#e6ebebeb" radius="20.0px 20.0px 20.0px 20.0px">
+
+      <Label layout="15.0,10.0,230.0,40.0" text="Sous-toiture" image="" font="bold 20.0pt Calibri Light" foreground="#595959" halign="left">
+        <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/d1BmJ5G2O7oa"/>
+      </Label>
+
+      <Label layout="245.0,10.0,50.0,60.0" image="module://themeBtib/image/x20/status/alarm.png" font="14.0pt Calibri Light" foreground="#454545" textToIconAlign="bottom" wordWrapEnabled="true">
+        <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/d1BmJ5G2O7oa/Synthese/alarmCount/value">
+          <ObjectToString name="text"/>
+        </ValueBinding>
+      </Label>
+
+      <Label layout="295.0,10.0,50.0,60.0" image="module://themeBtib/image/x20/status/overridden.png" font="14.0pt Calibri Light" foreground="#454545" textToIconAlign="bottom" wordWrapEnabled="true">
+        <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/d1BmJ5G2O7oa/Synthese/overriddenCount/value">
+          <ObjectToString name="text"/>
+        </ValueBinding>
+      </Label>
+
+      <Label layout="345.0,10.0,50.0,60.0" image="module://themeBtib/image/x16/status/fault.png" font="14.0pt Calibri Light" foreground="#454545" textToIconAlign="bottom" wordWrapEnabled="true">
+        <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/d1BmJ5G2O7oa/Synthese/faultCount/value">
+          <ObjectToString name="text"/>
+        </ValueBinding>
+      </Label>
+
+      <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/d1BmJ5G2O7oa"/>
+
+      <Label layout="15.0,40.0,210.0,30.0" image="" font="12.0pt Calibri Light" foreground="#7c7c7c" halign="left">
+        <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/d1BmJ5G2O7oa/Synthese/totalPointCount/value">
+          <ObjectToString name="text" format="%.% points"/>
+        </ValueBinding>
+      </Label>
+
+    </OverCanvasPane>
+
+    <OverCanvasPane viewSize="400.0,80.0" background="#e6fafafa" overBackground="#e6ebebeb" radius="20.0px 20.0px 20.0px 20.0px">
+
+      <Label layout="15.0,10.0,230.0,40.0" text="Etage 5" image="" font="bold 20.0pt Calibri Light" foreground="#595959" halign="left">
+        <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/S1BmJ5G16A7E"/>
+      </Label>
+
+      <Label layout="245.0,10.0,50.0,60.0" image="module://themeBtib/image/x20/status/alarm.png" font="14.0pt Calibri Light" foreground="#454545" textToIconAlign="bottom" wordWrapEnabled="true">
+        <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/S1BmJ5G16A7E/Synthese/alarmCount/value">
+          <ObjectToString name="text"/>
+        </ValueBinding>
+      </Label>
+
+      <Label layout="295.0,10.0,50.0,60.0" image="module://themeBtib/image/x20/status/overridden.png" font="14.0pt Calibri Light" foreground="#454545" textToIconAlign="bottom" wordWrapEnabled="true">
+        <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/S1BmJ5G16A7E/Synthese/overriddenCount/value">
+          <ObjectToString name="text"/>
+        </ValueBinding>
+      </Label>
+
+      <Label layout="345.0,10.0,50.0,60.0" image="module://themeBtib/image/x16/status/fault.png" font="14.0pt Calibri Light" foreground="#454545" textToIconAlign="bottom" wordWrapEnabled="true">
+        <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/S1BmJ5G16A7E/Synthese/faultCount/value">
+          <ObjectToString name="text"/>
+        </ValueBinding>
+      </Label>
+
+      <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/S1BmJ5G16A7E"/>
+
+      <Label layout="15.0,40.0,210.0,30.0" image="" font="12.0pt Calibri Light" foreground="#7c7c7c" halign="left">
+        <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/S1BmJ5G16A7E/Synthese/totalPointCount/value">
+          <ObjectToString name="text" format="%.% points"/>
+        </ValueBinding>
+      </Label>
+
+    </OverCanvasPane>
+
+    <OverCanvasPane viewSize="400.0,80.0" background="#e6fafafa" overBackground="#e6ebebeb" radius="20.0px 20.0px 20.0px 20.0px">
+
+      <Label layout="15.0,10.0,230.0,40.0" text="Etage 4" image="" font="bold 20.0pt Calibri Light" foreground="#595959" halign="left">
+        <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/N1BmJ5G1TtmY"/>
+      </Label>
+
+      <Label layout="245.0,10.0,50.0,60.0" image="module://themeBtib/image/x20/status/alarm.png" font="14.0pt Calibri Light" foreground="#454545" textToIconAlign="bottom" wordWrapEnabled="true">
+        <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/N1BmJ5G1TtmY/Synthese/alarmCount/value">
+          <ObjectToString name="text"/>
+        </ValueBinding>
+      </Label>
+
+      <Label layout="295.0,10.0,50.0,60.0" image="module://themeBtib/image/x20/status/overridden.png" font="14.0pt Calibri Light" foreground="#454545" textToIconAlign="bottom" wordWrapEnabled="true">
+        <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/N1BmJ5G1TtmY/Synthese/overriddenCount/value">
+          <ObjectToString name="text"/>
+        </ValueBinding>
+      </Label>
+
+      <Label layout="345.0,10.0,50.0,60.0" image="module://themeBtib/image/x16/status/fault.png" font="14.0pt Calibri Light" foreground="#454545" textToIconAlign="bottom" wordWrapEnabled="true">
+        <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/N1BmJ5G1TtmY/Synthese/faultCount/value">
+          <ObjectToString name="text"/>
+        </ValueBinding>
+      </Label>
+
+      <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/N1BmJ5G1TtmY"/>
+
+      <Label layout="15.0,40.0,210.0,30.0" image="" font="12.0pt Calibri Light" foreground="#7c7c7c" halign="left">
+        <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/N1BmJ5G1TtmY/Synthese/totalPointCount/value">
+          <ObjectToString name="text" format="%.% points"/>
+        </ValueBinding>
+      </Label>
+
+    </OverCanvasPane>
+
+    <OverCanvasPane viewSize="400.0,80.0" background="#e6fafafa" overBackground="#e6ebebeb" radius="20.0px 20.0px 20.0px 20.0px">
+
+      <Label layout="15.0,10.0,230.0,40.0" text="Etage 3" image="" font="bold 20.0pt Calibri Light" foreground="#595959" halign="left">
+        <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/b1BmJ5G2AaXH"/>
+      </Label>
+
+      <Label layout="245.0,10.0,50.0,60.0" image="module://themeBtib/image/x20/status/alarm.png" font="14.0pt Calibri Light" foreground="#454545" textToIconAlign="bottom" wordWrapEnabled="true">
+        <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/b1BmJ5G2AaXH/Synthese/alarmCount/value">
+          <ObjectToString name="text"/>
+        </ValueBinding>
+      </Label>
+
+      <Label layout="295.0,10.0,50.0,60.0" image="module://themeBtib/image/x20/status/overridden.png" font="14.0pt Calibri Light" foreground="#454545" textToIconAlign="bottom" wordWrapEnabled="true">
+        <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/b1BmJ5G2AaXH/Synthese/overriddenCount/value">
+          <ObjectToString name="text"/>
+        </ValueBinding>
+      </Label>
+
+      <Label layout="345.0,10.0,50.0,60.0" image="module://themeBtib/image/x16/status/fault.png" font="14.0pt Calibri Light" foreground="#454545" textToIconAlign="bottom" wordWrapEnabled="true">
+        <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/b1BmJ5G2AaXH/Synthese/faultCount/value">
+          <ObjectToString name="text"/>
+        </ValueBinding>
+      </Label>
+
+      <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/b1BmJ5G2AaXH"/>
+
+      <Label layout="15.0,40.0,210.0,30.0" image="" font="12.0pt Calibri Light" foreground="#7c7c7c" halign="left">
+        <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/b1BmJ5G2AaXH/Synthese/totalPointCount/value">
+          <ObjectToString name="text" format="%.% points"/>
+        </ValueBinding>
+      </Label>
+
+    </OverCanvasPane>
+
+  </GridPane>
+
+</ScrollPane>
+</content>
+</px>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<content>
+<CanvasPane viewSize="200.0,300.0" scale="fitRatio" minScaleFactor="0.5" maxScaleFactor="1.0">
+
+  <BoundLabel layout="10.0,10.0,90.0,80.0" font="72.0pt Calibri Light" foreground="#535353">
+    <BoundLabelBinding ord="station:|slot:/Accueil/Alarmes/Statistiques/Nombre$20total$20d$27alarmes/size" statusEffect="none">
+      <ObjectToString name="text"/>
+    </BoundLabelBinding>
+  </BoundLabel>
+
+  <BoundLabel layout="10.0,110.0,90.0,80.0" font="72.0pt Calibri Light" foreground="#535353">
+    <BoundLabelBinding ord="station:|slot:/Accueil/Alarmes/Statistiques/Nombre$20d$27alarmes$20non$20acquitt$e9es/size" statusEffect="none">
+      <ObjectToString name="text"/>
+    </BoundLabelBinding>
+  </BoundLabel>
+
+  <BoundLabel layout="10.0,210.0,90.0,80.0" font="72.0pt Calibri Light" foreground="#535353">
+    <BoundLabelBinding ord="station:|slot:/Accueil/Alarmes/Statistiques/Nombre$20d$27alarmes$20aujourd$27hui/size" statusEffect="none">
+      <ObjectToString name="text"/>
+    </BoundLabelBinding>
+  </BoundLabel>
+
+  <Label layout="100.0,40.0,90.0,50.0" text="Nombre total d&#x27;alarmes" font="16.0pt Calibri Light" foreground="#535353" halign="left" wordWrapEnabled="true"/>
+
+  <Label layout="100.0,140.0,90.0,50.0" text="Alarmes non acquitt&#xe9;es" font="16.0pt Calibri Light" foreground="#535353" halign="left" wordWrapEnabled="true"/>
+
+  <Label layout="100.0,240.0,90.0,50.0" text="Alarmes aujourd&#x27;hui" font="16.0pt Calibri Light" foreground="#535353" halign="left" wordWrapEnabled="true"/>
+
+</CanvasPane>
+</content>
+</px>
