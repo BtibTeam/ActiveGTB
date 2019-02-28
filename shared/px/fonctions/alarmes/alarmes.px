@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0" media="workbench:WbPxMedia">
+<px version="1.0">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
   <module name="btibCore"/>
   <module name="btibVision"/>
   <module name="gx"/>
-  <module name="jxBrowser"/>
   <module name="workbench"/>
 </import>
 <properties>
 
-  <property name="nomSite" type="baja:String" value="Le Rabelais">
+  <property name="nomSite" type="baja:String" value="station:|slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20g$e9n$e9raux/nomSite">
   </property>
 
-  <property name="ordSite" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/T1AMurNQyDMt">
+  <property name="ordSite" type="baja:Ord" value="station:|slot:/Accueil/Navigation$20G$e9ographique">
   </property>
 
   <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
@@ -92,23 +91,23 @@
 
     <GridPane name="content" columnCount="1" halign="fill" rowAlign="fill" columnAlign="fill" rowGap="0.0" stretchRow="1" stretchColumn="0">
 
-      <BorderPane name="BorderPane" padding="0.0" fill="#02669c">
+      <BorderPane padding="0.0" fill="#02669c">
 
         <GridPane name="content" columnCount="4" halign="left" columnGap="0.0">
 
-          <OverBorderPane name="OverBorderPane" overFill="#02669c" shadow="0.0px 0.0px 0.0px 1.0px rgba(255,255,255,0.09803921568627451)">
+          <OverBorderPane overFill="#02669c" shadow="0.0px 0.0px 0.0px 1.0px rgba(255,255,255,0.09803921568627451)">
 
             <Label name="content" text="Console par m&#xe9;tier" image="module://themeBtib/image/x20/alarm_w.png" font="18.0pt Calibri" foreground="white"/>
 
-            <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil" hyperlink="station:|slot:/Accueil/Alarmes/Consoles$20par$20m$e9tier"/>
+            <ValueBinding ord="station:|slot:/Accueil" hyperlink="station:|slot:/Accueil/Alarmes/Consoles$20par$20m$e9tier"/>
 
           </OverBorderPane>
 
-          <OverBorderPane name="OverBorderPane1" border="bottom(4.0 solid white)" overFill="#02669c" shadow="0.0px 0.0px 0.0px 1.0px rgba(255,255,255,0.09803921568627451)">
+          <OverBorderPane border="bottom(4.0 solid white)" overFill="#02669c" shadow="0.0px 0.0px 0.0px 1.0px rgba(255,255,255,0.09803921568627451)">
 
             <Label name="content" text="Console g&#xe9;n&#xe9;rale" image="module://themeBtib/image/x20/alarm_w.png" font="18.0pt Calibri" foreground="white"/>
 
-            <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil" hyperlink="station:|slot:/Services/AlarmService/General$20Console"/>
+            <ValueBinding ord="station:|slot:/Accueil" hyperlink="station:|slot:/Services/AlarmService/General$20Console"/>
 
           </OverBorderPane>
 
@@ -116,10 +115,10 @@
 
       </BorderPane>
 
-      <OverBorderPane name="OverBorderPane" padding="24.0" fill="white" overFill="white">
+      <OverBorderPane padding="24.0" fill="white" overFill="white">
 
         <WebWidget name="content" js="view:alarm:AlarmUxConsole">
-          <WbViewBinding name="WbViewBinding" ord="station:|slot:/Services/AlarmService/ConsoleRecipient"/>
+          <WbViewBinding ord="station:|slot:/Services/AlarmService/ConsoleRecipient"/>
         </WebWidget>
 
       </OverBorderPane>

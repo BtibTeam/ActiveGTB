@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0" media="workbench:WbPxMedia">
+<px version="1.0">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
-  <module name="btibCore"/>
   <module name="btibVision"/>
-  <module name="converters"/>
   <module name="gx"/>
-  <module name="kitPx"/>
   <module name="workbench"/>
 </import>
 <properties>
 
-  <property name="nomSite" type="baja:String" value="Le Rabelais">
+  <property name="nomSite" type="baja:String" value="station:|slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20g$e9n$e9raux/nomSite">
   </property>
 
-  <property name="ordSite" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/T1AMurNQyDMt">
+  <property name="ordSite" type="baja:Ord" value="station:|slot:/Accueil/Navigation$20G$e9ographique">
   </property>
 
   <property name="bqlToWidgetsHandle" type="baja:String" value="4811">
@@ -85,20 +82,20 @@
 
   <GridPane name="content" columnCount="1" valign="fill" rowAlign="top" stretchRow="0">
 
-    <BqlToWidgetsView name="BqlToWidgetsView">
-      <WbViewBinding name="WbViewBinding" ord="station:|slot:/Accueil/Alarmes/Bandeau$20droit/Synth$e8se$20alarmes"/>
+    <BqlToWidgetsView>
+      <WbViewBinding ord="station:|slot:/Accueil/Alarmes/Bandeau$20droit/Synth$e8se$20alarmes"/>
     </BqlToWidgetsView>
 
-    <GridPane name="GridPane" columnCount="1" halign="fill" columnAlign="fill" stretchColumn="0">
+    <GridPane columnCount="1" halign="fill" columnAlign="fill" stretchColumn="0">
 
-      <BorderPane name="BorderPane" border="1.0 solid null">
+      <BorderPane border="1.0 solid null">
 
         <Label name="content" text="Liste des derni&#xe8;res alarmes" font="16.0pt Calibri" foreground="white" halign="left"/>
 
       </BorderPane>
 
-      <BqlToWidgetsView name="BqlToWidgetsView">
-        <WbViewBinding name="WbViewBinding" ord="station:|slot:/Accueil/Alarmes/Bandeau$20droit/Derni$e8res$20alarmes"/>
+      <BqlToWidgetsView>
+        <WbViewBinding ord="station:|slot:/Accueil/Alarmes/Bandeau$20droit/Derni$e8res$20alarmes"/>
       </BqlToWidgetsView>
 
     </GridPane>

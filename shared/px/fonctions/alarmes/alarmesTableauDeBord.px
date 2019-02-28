@@ -13,10 +13,10 @@
 </import>
 <properties>
 
-  <property name="nomSite" type="baja:String" value="Le Rabelais">
+  <property name="nomSite" type="baja:String" value="station:|slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20g$e9n$e9raux/nomSite">
   </property>
 
-  <property name="ordSite" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/T1AMurNQyDMt">
+  <property name="ordSite" type="baja:Ord" value="station:|slot:/Accueil/Navigation$20G$e9ographique">
   </property>
 
   <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">

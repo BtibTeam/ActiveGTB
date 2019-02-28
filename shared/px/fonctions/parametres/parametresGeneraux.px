@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0" media="workbench:WbPxMedia">
+<px version="1.0">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
-  <module name="btibCore"/>
-  <module name="btibVision"/>
-  <module name="converters"/>
   <module name="gx"/>
   <module name="kitPx"/>
   <module name="workbench"/>
 </import>
 <properties>
 
-  <property name="nomSite" type="baja:String" value="Le Rabelais">
+  <property name="nomSite" type="baja:String" value="station:|slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20g$e9n$e9raux/nomSite">
   </property>
 
-  <property name="ordSite" type="baja:Ord" value="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/T1AMurNQyDMt">
+  <property name="ordSite" type="baja:Ord" value="station:|slot:/Accueil/Navigation$20G$e9ographique">
   </property>
 
   <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
@@ -92,29 +89,29 @@
 
     <CanvasPane name="center" viewSize="1300.0,800.0" minScaleFactor="0.5" maxScaleFactor="1.0" valign="top" background="#455a64">
 
-      <Label name="Label" layout="30.0,70.0,330.0,20.0" text="Remplissez ici les param&#xe8;tres g&#xe9;n&#xe9;raux de la station" font="bold 12.0pt SansSerif" foreground="white" halign="left"/>
+      <Label layout="30.0,70.0,330.0,20.0" text="Remplissez ici les param&#xe8;tres g&#xe9;n&#xe9;raux de la station" font="bold 12.0pt SansSerif" foreground="white" halign="left"/>
 
-      <GridPane name="GridPane" layout="30.0,110.0,pref,pref" columnAlign="fill" rowGap="10.0" columnGap="10.0">
+      <GridPane layout="30.0,110.0,pref,pref" columnAlign="fill" rowGap="10.0" columnGap="10.0">
 
-        <Label name="Label" text="Mode de navigation G&#xe9;ographique" font="14.0pt SansSerif" foreground="white" halign="left"/>
+        <Label text="Mode de navigation G&#xe9;ographique" font="14.0pt SansSerif" foreground="white" halign="left"/>
 
-        <GenericFieldEditor name="GenericFieldEditor">
-          <WbFieldEditorBinding name="WbFieldEditorBinding" ord="station:|slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20g$e9n$e9raux/modeNavigationGeographique"/>
+        <GenericFieldEditor>
+          <WbFieldEditorBinding ord="station:|slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20g$e9n$e9raux/modeNavigationGeographique"/>
         </GenericFieldEditor>
 
-        <Separator name="Separator"/>
+        <Separator/>
 
-        <Separator name="Separator1"/>
+        <Separator/>
 
-        <Label name="Label1" text="Nom du Site (si plusieurs b&#xe2;timents)" font="14.0pt SansSerif" foreground="white" halign="left"/>
+        <Label text="Nom du Site (si plusieurs b&#xe2;timents)" font="14.0pt SansSerif" foreground="white" halign="left"/>
 
-        <GenericFieldEditor name="GenericFieldEditor1">
-          <WbFieldEditorBinding name="WbFieldEditorBinding" ord="station:|slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20g$e9n$e9raux/nomSite"/>
+        <GenericFieldEditor>
+          <WbFieldEditorBinding ord="station:|slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20g$e9n$e9raux/nomSite"/>
         </GenericFieldEditor>
 
       </GridPane>
 
-      <SaveButton name="SaveButton" layout="440.0,60.0,100.0,30.0" image="module://icons/x16/save.png" foreground="#484848" background="white">
+      <SaveButton layout="440.0,60.0,100.0,30.0" image="module://icons/x16/save.png" foreground="#484848" background="white">
         <WsAnnotation name="wsAnnotation" value="14,14,8"/>
       </SaveButton>
 
