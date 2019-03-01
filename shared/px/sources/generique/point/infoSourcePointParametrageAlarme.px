@@ -74,30 +74,6 @@
   <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
   </property>
 
-  <property name="bqlToWidgetsHandle" type="baja:String" value="4811">
-  </property>
-
-  <property name="rightBackgroundColor" type="gx:Brush" value="#02669c">
-  </property>
-
-  <property name="rightBackgroundColorShade" type="gx:Brush" value="#02669c">
-  </property>
-
-  <property name="rightBackgroundColorTint" type="gx:Brush" value="#039be5">
-  </property>
-
-  <property name="centerBackgroundColor" type="gx:Brush" value="#0288d1">
-  </property>
-
-  <property name="centerBackgroundColorShade" type="gx:Brush" value="#02669c">
-  </property>
-
-  <property name="centerBackgroundColorTint" type="gx:Brush" value="#039be5">
-  </property>
-
-  <property name="centerForegroundColor" type="gx:Brush" value="white">
-  </property>
-
 </properties>
 <content>
 <CanvasPane viewSize="500.0,400.0" background="#455a64">

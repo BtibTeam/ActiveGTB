@@ -20,9 +20,6 @@
   <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
   </property>
 
-  <property name="bqlToWidgetsHandle" type="baja:String" value="4811">
-  </property>
-
   <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
   </property>
 
@@ -82,7 +79,7 @@
 <OverCanvasPane viewSize="400.0,80.0" background="#e6fafafa" overBackground="#e6ebebeb" radius="20.0px 20.0px 20.0px 20.0px">
 
   <Label name="Label" layout="15.0,10.0,230.0,40.0" text="$(displayName)" font="bold 20.0pt Calibri Light" foreground="#595959" halign="left">
-    <ValueBinding name="ValueBinding" hyperlink="station:|$(slotPathOrd)"/>
+    <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)" hyperlink="station:|$(slotPathOrd)"/>
   </Label>
 
   <Label name="Label1" layout="245.0,10.0,50.0,60.0" image="module://themeBtib/image/x20/status/alarm.png" font="14.0pt Calibri Light" foreground="#454545" textToIconAlign="bottom" wordWrapEnabled="true">
@@ -103,10 +100,10 @@
     </ValueBinding>
   </Label>
 
-  <ValueBinding name="ValueBinding" hyperlink="station:|$(slotPathOrd)"/>
+  <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)" hyperlink="station:|$(slotPathOrd)"/>
 
   <Label name="Label4" layout="15.0,40.0,210.0,30.0" font="12.0pt Calibri Light" foreground="#7c7c7c" halign="left">
-    <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/Synthese/totalPointCount/value">
+    <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/Synthese/totalPointCount/value" hyperlink="station:|$(slotPathOrd)">
       <ObjectToString name="text" format="%.% points"/>
     </ValueBinding>
   </Label>

@@ -21,12 +21,12 @@
 
       <GridPane layout="10.0,0.0,640.0,40.0" columnCount="10" halign="left">
 
-        <Label text="Test batiment 2 /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
-          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/e1Bm7YDtw06U"/>
+        <Label text="Le rabelais /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
+          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/Le$20rabelais"/>
         </Label>
 
-        <Label text="Toiture /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
-          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/r1Bm80Nhz0Pl"/>
+        <Label text="Sous-sol /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
+          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/k1BroBDzZJJQ"/>
         </Label>
 
       </GridPane>

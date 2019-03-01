@@ -40,9 +40,6 @@
   <property name="enTeteBackgroundCouleurSombre" type="gx:Brush" value="#0277bd">
   </property>
 
-  <property name="bqlToWidgetsHandle" type="baja:String" value="4811">
-  </property>
-
   <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
   </property>
 

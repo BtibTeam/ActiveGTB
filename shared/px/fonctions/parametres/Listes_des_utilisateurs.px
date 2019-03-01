@@ -73,9 +73,6 @@
   <property name="vueCentraleElementBackgroundCouleurSombre" type="gx:Brush" value="#1565c0">
   </property>
 
-  <property name="bqlToWidgetsHandle" type="baja:String" value="4811">
-  </property>
-
 </properties>
 <content>
 <ScrollPane viewportBackground="#455a64" borderPolicy="never">

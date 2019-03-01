@@ -16,9 +16,6 @@
   <property name="ordSite" type="baja:Ord" value="station:|slot:/Accueil/Navigation$20G$e9ographique">
   </property>
 
-  <property name="bqlToWidgetsHandle" type="baja:String" value="4811">
-  </property>
-
   <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
   </property>
 

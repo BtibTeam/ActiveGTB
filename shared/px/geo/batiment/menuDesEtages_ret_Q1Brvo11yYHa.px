@@ -8,7 +8,7 @@
 </import>
 <properties>
 
-  <property name="bqlToWidgetsHandle" type="baja:String" value="126bc">
+  <property name="bqlToWidgetsHandle" type="baja:String" value="12a43">
   </property>
 
 </properties>
