@@ -7,6 +7,12 @@
   <module name="btibCore"/>
   <module name="gx"/>
 </import>
+<properties>
+
+  <property name="nomSite" type="baja:String" value="Le rabelais">
+  </property>
+
+</properties>
 <content>
 <CanvasPane layout="50.0,80.0,1100.0,670.0" viewSize="1100.0,670.0" halign="left" valign="top">
 

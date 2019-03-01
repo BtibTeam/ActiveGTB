@@ -6,6 +6,12 @@
   <module name="bajaui"/>
   <module name="gx"/>
 </import>
+<properties>
+
+  <property name="nomSite" type="baja:String" value="Le rabelais">
+  </property>
+
+</properties>
 <content>
 <ScrollPane viewportBackground="transparent" borderPolicy="never">
 

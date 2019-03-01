@@ -11,7 +11,7 @@
 </import>
 <properties>
 
-  <property name="nomSite" type="baja:String" value="Le rabelais">
+  <property name="bqlToWidgetsHandle" type="baja:String" value="12961">
   </property>
 
 </properties>
