@@ -6,12 +6,6 @@
   <module name="bajaui"/>
   <module name="gx"/>
 </import>
-<properties>
-
-  <property name="bqlToWidgetsHandle" type="baja:String" value="12a43">
-  </property>
-
-</properties>
 <content>
 <ScrollPane viewportBackground="transparent" borderPolicy="never">
 
