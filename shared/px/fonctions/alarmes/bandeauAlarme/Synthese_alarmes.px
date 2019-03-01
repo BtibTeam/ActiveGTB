@@ -10,75 +10,6 @@
   <module name="gx"/>
   <module name="kitPx"/>
 </import>
-<properties>
-
-  <property name="nomSite" type="baja:String" value="station:|slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20g$e9n$e9raux/nomSite">
-  </property>
-
-  <property name="ordSite" type="baja:Ord" value="station:|slot:/Accueil/Navigation$20G$e9ographique">
-  </property>
-
-  <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
-  </property>
-
-  <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
-  </property>
-
-  <property name="vueCentraleBackgroundBlanc" type="gx:Brush" value="white">
-  </property>
-
-  <property name="vueCentraleForegroundCouleur" type="gx:Brush" value="white">
-  </property>
-
-  <property name="vueCentraleBackgroundCouleurClaire" type="gx:Brush" value="#546e7a">
-  </property>
-
-  <property name="vueCentraleBackgroundCouleur" type="gx:Brush" value="#455a64">
-  </property>
-
-  <property name="vueCentraleBackgroundCouleurSombre" type="gx:Brush" value="#37474f">
-  </property>
-
-  <property name="vueCentraleElementForegroundCouleur" type="gx:Brush" value="white">
-  </property>
-
-  <property name="vueCentraleElementBackgroundCouleurClaire" type="gx:Brush" value="#1e88e5">
-  </property>
-
-  <property name="vueCentraleElementBackgroundCouleur" type="gx:Brush" value="#1976d2">
-  </property>
-
-  <property name="vueCentraleElementBackgroundCouleurSombre" type="gx:Brush" value="#1565c0">
-  </property>
-
-  <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
-  </property>
-
-  <property name="gaucheBackgroundCouleurClaire" type="gx:Brush" value="#616161">
-  </property>
-
-  <property name="gaucheBackgroundCouleur" type="gx:Brush" value="#424242">
-  </property>
-
-  <property name="gaucheBackgroundCouleurSombre" type="gx:Brush" value="#212121">
-  </property>
-
-  <property name="enTeteForegroundCouleur" type="gx:Brush" value="white">
-  </property>
-
-  <property name="enTeteBackgroundCouleurClaire" type="gx:Brush" value="#039be5">
-  </property>
-
-  <property name="enTeteBackgroundCouleur" type="gx:Brush" value="#0288d1">
-  </property>
-
-  <property name="enTeteBackgroundCouleurSombre" type="gx:Brush" value="#0277bd">
-  </property>
-
-  <property name="bqlToWidgetsHandle" type="baja:String" value="4811">
-  </property>
-
-</properties>
 <content>
 <ScrollPane viewportBackground="#0277bd" borderPolicy="never">
 
@@ -247,6 +178,118 @@
         </BoundLabel>
 
         <ValueBinding ord="slot:/Services/AlarmService/Console_CVC" hyperlink="slot:/Services/AlarmService/Console_CVC|view:vue"/>
+
+      </OverCanvasPane>
+
+    </BorderPane>
+
+    <BorderPane padding="0.0" border="1.0 solid null">
+
+      <OverCanvasPane name="content" viewSize="230.0,60.0" background="#039be5" overBackground="#0288d1">
+
+        <Picture layout="15.0,20.0,32.0,32.0" image="" scale="fitRatio">
+          <ValueBinding ord="Cuisine">
+            <OrdToImage name="image"/>
+          </ValueBinding>
+        </Picture>
+
+        <PxTemplateInfo name="templateInfo" templateName="BandeauAlarmesVert" vendor="B.tib" version="1.0"/>
+
+        <BoundLabel layout="60.0,36.0,170.0,15.0" image="" font="12.0pt Calibri" foreground="white" halign="left">
+          <BoundLabelBinding ord="station:|slot:/Services/AlarmService/Cuisine_synthese/unackedAlarmCountSynthesis" statusEffect="none">
+            <ObjectToString name="text" format="%.% alarme non acquit&#xe9;e"/>
+            <INumericToSimple name="visible" map="baja:Boolean 0.0:1.0=true;default=false;"/>
+          </BoundLabelBinding>
+        </BoundLabel>
+
+        <BoundLabel layout="60.0,36.0,170.0,15.0" image="" font="12.0pt Calibri" foreground="white" halign="left">
+          <BoundLabelBinding ord="station:|slot:/Services/AlarmService/Cuisine_synthese/unackedAlarmCountSynthesis" statusEffect="none">
+            <ObjectToString name="text" format="%.% alarmes non acquit&#xe9;es"/>
+            <INumericToSimple name="visible" map="baja:Boolean 1.0:+inf=true;default=false;"/>
+          </BoundLabelBinding>
+        </BoundLabel>
+
+        <BoundLabel layout="60.0,21.0,170.0,15.0" image="" font="12.0pt Calibri" foreground="white" halign="left">
+          <BoundLabelBinding ord="station:|slot:/Services/AlarmService/Cuisine_synthese/inAlarmCountSynthesis" statusEffect="none">
+            <ObjectToString name="text" format="%.% alarme en cours"/>
+            <INumericToSimple name="visible" map="baja:Boolean 0.0:1.0=true;default=false;"/>
+          </BoundLabelBinding>
+        </BoundLabel>
+
+        <BoundLabel layout="60.0,21.0,170.0,15.0" image="" font="12.0pt Calibri" foreground="white" halign="left">
+          <BoundLabelBinding ord="station:|slot:/Services/AlarmService/Cuisine_synthese/inAlarmCountSynthesis" statusEffect="none">
+            <ObjectToString name="text" format="%.% alarmes en cours"/>
+            <INumericToSimple name="visible" map="baja:Boolean 1.0:+inf=true;default=false;"/>
+          </BoundLabelBinding>
+        </BoundLabel>
+
+        <BoundLabel layout="0.0,0.0,240.0,20.0" image="" font="16.0pt Calibri" foreground="white">
+          <BoundLabelBinding ord="slot:/Services/AlarmService/Console_Cuisine/metier" statusEffect="none">
+            <ObjectToString name="text" format="Console %.%"/>
+          </BoundLabelBinding>
+        </BoundLabel>
+
+        <BoundLabel layout="0.0,0.0,140.0,60.0" image="" font="16.0pt Calibri" foreground="white" halign="left">
+          <BoundLabelBinding ord="slot:/Services/AlarmService/Console_Cuisine" hyperlink="slot:/Services/AlarmService/Console_Cuisine|view:vue" statusEffect="none"/>
+        </BoundLabel>
+
+        <ValueBinding ord="slot:/Services/AlarmService/Console_Cuisine" hyperlink="slot:/Services/AlarmService/Console_Cuisine|view:vue"/>
+
+      </OverCanvasPane>
+
+    </BorderPane>
+
+    <BorderPane padding="0.0" border="1.0 solid null">
+
+      <OverCanvasPane name="content" viewSize="230.0,60.0" background="#039be5" overBackground="#0288d1">
+
+        <Picture layout="15.0,20.0,32.0,32.0" image="" scale="fitRatio">
+          <ValueBinding ord="Medical">
+            <OrdToImage name="image"/>
+          </ValueBinding>
+        </Picture>
+
+        <PxTemplateInfo name="templateInfo" templateName="BandeauAlarmesVert" vendor="B.tib" version="1.0"/>
+
+        <BoundLabel layout="60.0,36.0,170.0,15.0" image="" font="12.0pt Calibri" foreground="white" halign="left">
+          <BoundLabelBinding ord="station:|slot:/Services/AlarmService/Medical_synthese/unackedAlarmCountSynthesis" statusEffect="none">
+            <ObjectToString name="text" format="%.% alarme non acquit&#xe9;e"/>
+            <INumericToSimple name="visible" map="baja:Boolean 0.0:1.0=true;default=false;"/>
+          </BoundLabelBinding>
+        </BoundLabel>
+
+        <BoundLabel layout="60.0,36.0,170.0,15.0" image="" font="12.0pt Calibri" foreground="white" halign="left">
+          <BoundLabelBinding ord="station:|slot:/Services/AlarmService/Medical_synthese/unackedAlarmCountSynthesis" statusEffect="none">
+            <ObjectToString name="text" format="%.% alarmes non acquit&#xe9;es"/>
+            <INumericToSimple name="visible" map="baja:Boolean 1.0:+inf=true;default=false;"/>
+          </BoundLabelBinding>
+        </BoundLabel>
+
+        <BoundLabel layout="60.0,21.0,170.0,15.0" image="" font="12.0pt Calibri" foreground="white" halign="left">
+          <BoundLabelBinding ord="station:|slot:/Services/AlarmService/Medical_synthese/inAlarmCountSynthesis" statusEffect="none">
+            <ObjectToString name="text" format="%.% alarme en cours"/>
+            <INumericToSimple name="visible" map="baja:Boolean 0.0:1.0=true;default=false;"/>
+          </BoundLabelBinding>
+        </BoundLabel>
+
+        <BoundLabel layout="60.0,21.0,170.0,15.0" image="" font="12.0pt Calibri" foreground="white" halign="left">
+          <BoundLabelBinding ord="station:|slot:/Services/AlarmService/Medical_synthese/inAlarmCountSynthesis" statusEffect="none">
+            <ObjectToString name="text" format="%.% alarmes en cours"/>
+            <INumericToSimple name="visible" map="baja:Boolean 1.0:+inf=true;default=false;"/>
+          </BoundLabelBinding>
+        </BoundLabel>
+
+        <BoundLabel layout="0.0,0.0,240.0,20.0" image="" font="16.0pt Calibri" foreground="white">
+          <BoundLabelBinding ord="slot:/Services/AlarmService/Console_Medical/metier" statusEffect="none">
+            <ObjectToString name="text" format="Console %.%"/>
+          </BoundLabelBinding>
+        </BoundLabel>
+
+        <BoundLabel layout="0.0,0.0,140.0,60.0" image="" font="16.0pt Calibri" foreground="white" halign="left">
+          <BoundLabelBinding ord="slot:/Services/AlarmService/Console_Medical" hyperlink="slot:/Services/AlarmService/Console_Medical|view:vue" statusEffect="none"/>
+        </BoundLabel>
+
+        <ValueBinding ord="slot:/Services/AlarmService/Console_Medical" hyperlink="slot:/Services/AlarmService/Console_Medical|view:vue"/>
 
       </OverCanvasPane>
 

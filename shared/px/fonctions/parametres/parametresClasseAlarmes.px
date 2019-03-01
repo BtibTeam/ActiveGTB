@@ -38,9 +38,6 @@
   <property name="enTeteBackgroundCouleurSombre" type="gx:Brush" value="#0277bd">
   </property>
 
-  <property name="bqlToWidgetsHandle" type="baja:String" value="4811">
-  </property>
-
   <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
   </property>
 

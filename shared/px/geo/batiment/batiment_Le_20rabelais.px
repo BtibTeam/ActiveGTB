@@ -5,7 +5,9 @@
   <module name="baja"/>
   <module name="bajaui"/>
   <module name="btibCore"/>
+  <module name="btibVision"/>
   <module name="gx"/>
+  <module name="workbench"/>
 </import>
 <content>
 <EdgePane>
@@ -24,13 +26,17 @@
 
         <GridPane layout="10.0,0.0,640.0,40.0" columnCount="10" halign="left" stretchColumn="0">
 
-          <Label text="B&#xe2;timent A /" image="" font="18.0pt SansSerif" foreground="#3c3c3c">
-            <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/T1AMurNQyDMt"/>
+          <Label text="Le rabelais /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
+            <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/Le$20rabelais"/>
           </Label>
 
         </GridPane>
 
       </CanvasPane>
+
+      <BqlToWidgetsView layout="220.0,60.0,560.0,740.0">
+        <WbViewBinding ord="slot:Menu$20des$20$e9tages"/>
+      </BqlToWidgetsView>
 
     </CanvasPane>
 

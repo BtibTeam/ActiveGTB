@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibVision"/>
+  <module name="gx"/>
+</import>
+<content>
+<EdgePane>
+
+  <PxInclude name="top" ord="file:^px/menus/haut.px"/>
+
+  <PxInclude name="left" ord="file:^px/menus/gauche.px"/>
+
+  <EdgePane name="center">
+
+    <CanvasPane name="top" viewSize="1000.0,40.0" halign="left" background="#f2f2f2">
+
+      <GridPane layout="10.0,0.0,640.0,40.0" columnCount="10" halign="left">
+
+        <Label text="Le rabelais /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
+          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/Le$20rabelais"/>
+        </Label>
+
+        <Label text="Etage 2 /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
+          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/p1Browwgm3dP"/>
+        </Label>
+
+      </GridPane>
+
+    </CanvasPane>
+
+    <CanvasPane name="center" viewSize="1200.0,800.0" halign="left" valign="top" background="white">
+
+      <Line stroke="#acacac" geom="10.0,60.0 1150.0,60.0"/>
+
+      <CanvasPane layout="50.0,80.0,1100.0,670.0" viewSize="1100.0,670.0" halign="left" valign="top">
+
+        <IdBinding id="canvasPourNodeDrawer"/>
+
+      </CanvasPane>
+
+      <OverBorderPane layout="10.0,10.0,160.0,40.0" fill="#4db6ac" overFill="#009688">
+
+        <Label name="content" text="Recloisonnement" image="" font="16.0pt Calibri Light" foreground="white"/>
+
+        <ValueBinding hyperlink="slot:Recloisonnement"/>
+
+      </OverBorderPane>
+
+    </CanvasPane>
+
+  </EdgePane>
+
+</EdgePane>
+</content>
+</px>

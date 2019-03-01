@@ -8,6 +8,12 @@
   <module name="btibVision"/>
   <module name="gx"/>
 </import>
+<properties>
+
+  <property name="bqlToWidgetsHandle" type="baja:String" value="fb3b">
+  </property>
+
+</properties>
 <content>
 <ScrollPane viewportBackground="#455a64" borderPolicy="never">
 
