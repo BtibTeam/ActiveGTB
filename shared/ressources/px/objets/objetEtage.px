@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0" media="workbench:WbPxMedia">
+<px version="1.0">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
@@ -78,32 +78,32 @@
 <content>
 <OverCanvasPane viewSize="400.0,80.0" background="#e6fafafa" overBackground="#e6ebebeb" radius="20.0px 20.0px 20.0px 20.0px">
 
-  <Label name="Label" layout="15.0,10.0,230.0,40.0" text="$(displayName)" font="bold 20.0pt Calibri Light" foreground="#595959" halign="left">
-    <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)" hyperlink="station:|$(slotPathOrd)"/>
+  <Label layout="15.0,10.0,230.0,40.0" text="$(displayName)" font="bold 20.0pt Calibri Light" foreground="#595959" halign="left">
+    <ValueBinding ord="station:|$(slotPathOrd)" hyperlink="station:|$(slotPathOrd)"/>
   </Label>
 
-  <Label name="Label1" layout="245.0,10.0,50.0,60.0" image="module://themeBtib/image/x20/status/alarm.png" font="14.0pt Calibri Light" foreground="#454545" textToIconAlign="bottom" wordWrapEnabled="true">
-    <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/Synthese/alarmCount/value">
+  <Label layout="245.0,10.0,50.0,60.0" image="module://themeBtib/image/x20/status/alarm.png" font="14.0pt Calibri Light" foreground="#454545" textToIconAlign="bottom" wordWrapEnabled="true">
+    <ValueBinding ord="station:|$(slotPathOrd)/Synthese/alarmCount/value">
       <ObjectToString name="text"/>
     </ValueBinding>
   </Label>
 
-  <Label name="Label2" layout="295.0,10.0,50.0,60.0" image="module://themeBtib/image/x20/status/overridden.png" font="14.0pt Calibri Light" foreground="#454545" textToIconAlign="bottom" wordWrapEnabled="true">
-    <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/Synthese/overriddenCount/value">
+  <Label layout="295.0,10.0,50.0,60.0" image="module://themeBtib/image/x20/status/overridden.png" font="14.0pt Calibri Light" foreground="#454545" textToIconAlign="bottom" wordWrapEnabled="true">
+    <ValueBinding ord="station:|$(slotPathOrd)/Synthese/overriddenCount/value">
       <ObjectToString name="text"/>
     </ValueBinding>
   </Label>
 
-  <Label name="Label3" layout="345.0,10.0,50.0,60.0" image="module://themeBtib/image/x16/status/fault.png" font="14.0pt Calibri Light" foreground="#454545" textToIconAlign="bottom" wordWrapEnabled="true">
-    <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/Synthese/faultCount/value">
+  <Label layout="345.0,10.0,50.0,60.0" image="module://themeBtib/image/x16/status/fault.png" font="14.0pt Calibri Light" foreground="#454545" textToIconAlign="bottom" wordWrapEnabled="true">
+    <ValueBinding ord="station:|$(slotPathOrd)/Synthese/faultCount/value">
       <ObjectToString name="text"/>
     </ValueBinding>
   </Label>
 
-  <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)" hyperlink="station:|$(slotPathOrd)"/>
+  <ValueBinding ord="station:|$(slotPathOrd)" hyperlink="station:|$(slotPathOrd)"/>
 
-  <Label name="Label4" layout="15.0,40.0,210.0,30.0" font="12.0pt Calibri Light" foreground="#7c7c7c" halign="left">
-    <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/Synthese/totalPointCount/value" hyperlink="station:|$(slotPathOrd)">
+  <Label layout="15.0,40.0,210.0,30.0" font="12.0pt Calibri Light" foreground="#7c7c7c" halign="left">
+    <ValueBinding ord="station:|$(slotPathOrd)/Synthese/totalPointCount/value" hyperlink="station:|$(slotPathOrd)">
       <ObjectToString name="text" format="%.% points"/>
     </ValueBinding>
   </Label>

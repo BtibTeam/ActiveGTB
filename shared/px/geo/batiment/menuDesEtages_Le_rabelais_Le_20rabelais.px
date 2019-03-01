@@ -9,12 +9,6 @@
   <module name="converters"/>
   <module name="gx"/>
 </import>
-<properties>
-
-  <property name="bqlToWidgetsHandle" type="baja:String" value="12961">
-  </property>
-
-</properties>
 <content>
 <ScrollPane viewportBackground="transparent" borderPolicy="never">
 
