@@ -22,30 +22,14 @@
 
     <OverCanvasPane viewSize="250.0,200.0" background="#039be5" overBackground="#02669c">
 
-      <Label layout="0.0,30.0,250.0,40.0" text="Console_Cuisine" image="" font="20.0pt Calibri" foreground="#f2f2f2">
-        <ValueBinding ord="slot:" hyperlink="station:|slot:/Services/AlarmService/Console_Cuisine"/>
+      <Label layout="0.0,30.0,250.0,40.0" text="Console_Electricite" image="" font="20.0pt Calibri" foreground="#f2f2f2">
+        <ValueBinding ord="slot:" hyperlink="station:|slot:/Services/AlarmService/Console_Electricite"/>
       </Label>
 
-      <ValueBinding ord="station:|slot:/" hyperlink="station:|slot:/Services/AlarmService/Console_Cuisine"/>
+      <ValueBinding ord="station:|slot:/" hyperlink="station:|slot:/Services/AlarmService/Console_Electricite"/>
 
       <Picture layout="75.0,85.0,100.0,100.0" image="" scale="fitRatio">
-        <ValueBinding ord="module://themeBtib/image/svg/subsystem/kitchen_w.svg" hyperlink="station:|slot:/Services/AlarmService/Console_Cuisine">
-          <OrdToImage name="image"/>
-        </ValueBinding>
-      </Picture>
-
-    </OverCanvasPane>
-
-    <OverCanvasPane viewSize="250.0,200.0" background="#039be5" overBackground="#02669c">
-
-      <Label layout="0.0,30.0,250.0,40.0" text="Console_Medical" image="" font="20.0pt Calibri" foreground="#f2f2f2">
-        <ValueBinding ord="slot:" hyperlink="station:|slot:/Services/AlarmService/Console_Medical"/>
-      </Label>
-
-      <ValueBinding ord="station:|slot:/" hyperlink="station:|slot:/Services/AlarmService/Console_Medical"/>
-
-      <Picture layout="75.0,85.0,100.0,100.0" image="" scale="fitRatio">
-        <ValueBinding ord="module://themeBtib/image/svg/subsystem/medical_w.svg" hyperlink="station:|slot:/Services/AlarmService/Console_Medical">
+        <ValueBinding ord="module://themeBtib/image/svg/subsystem/undefined_w.svg" hyperlink="station:|slot:/Services/AlarmService/Console_Electricite">
           <OrdToImage name="image"/>
         </ValueBinding>
       </Picture>
@@ -70,22 +54,6 @@
 
     <OverCanvasPane viewSize="250.0,200.0" background="#039be5" overBackground="#02669c">
 
-      <Label layout="0.0,30.0,250.0,40.0" text="Console_Electricite" image="" font="20.0pt Calibri" foreground="#f2f2f2">
-        <ValueBinding ord="slot:" hyperlink="station:|slot:/Services/AlarmService/Console_Electricite"/>
-      </Label>
-
-      <ValueBinding ord="station:|slot:/" hyperlink="station:|slot:/Services/AlarmService/Console_Electricite"/>
-
-      <Picture layout="75.0,85.0,100.0,100.0" image="" scale="fitRatio">
-        <ValueBinding ord="module://themeBtib/image/svg/subsystem/undefined_w.svg" hyperlink="station:|slot:/Services/AlarmService/Console_Electricite">
-          <OrdToImage name="image"/>
-        </ValueBinding>
-      </Picture>
-
-    </OverCanvasPane>
-
-    <OverCanvasPane viewSize="250.0,200.0" background="#039be5" overBackground="#02669c">
-
       <Label layout="0.0,30.0,250.0,40.0" text="Console_CVC" image="" font="20.0pt Calibri" foreground="#f2f2f2">
         <ValueBinding ord="slot:" hyperlink="station:|slot:/Services/AlarmService/Console_CVC"/>
       </Label>
@@ -94,6 +62,38 @@
 
       <Picture layout="75.0,85.0,100.0,100.0" image="" scale="fitRatio">
         <ValueBinding ord="module://themeBtib/image/svg/subsystem/undefined_w.svg" hyperlink="station:|slot:/Services/AlarmService/Console_CVC">
+          <OrdToImage name="image"/>
+        </ValueBinding>
+      </Picture>
+
+    </OverCanvasPane>
+
+    <OverCanvasPane viewSize="250.0,200.0" background="#039be5" overBackground="#02669c">
+
+      <Label layout="0.0,30.0,250.0,40.0" text="Console_Medical" image="" font="20.0pt Calibri" foreground="#f2f2f2">
+        <ValueBinding ord="slot:" hyperlink="station:|slot:/Services/AlarmService/Console_Medical"/>
+      </Label>
+
+      <ValueBinding ord="station:|slot:/" hyperlink="station:|slot:/Services/AlarmService/Console_Medical"/>
+
+      <Picture layout="75.0,85.0,100.0,100.0" image="" scale="fitRatio">
+        <ValueBinding ord="module://themeBtib/image/svg/subsystem/medical_w.svg" hyperlink="station:|slot:/Services/AlarmService/Console_Medical">
+          <OrdToImage name="image"/>
+        </ValueBinding>
+      </Picture>
+
+    </OverCanvasPane>
+
+    <OverCanvasPane viewSize="250.0,200.0" background="#039be5" overBackground="#02669c">
+
+      <Label layout="0.0,30.0,250.0,40.0" text="Console_Cuisine" image="" font="20.0pt Calibri" foreground="#f2f2f2">
+        <ValueBinding ord="slot:" hyperlink="station:|slot:/Services/AlarmService/Console_Cuisine"/>
+      </Label>
+
+      <ValueBinding ord="station:|slot:/" hyperlink="station:|slot:/Services/AlarmService/Console_Cuisine"/>
+
+      <Picture layout="75.0,85.0,100.0,100.0" image="" scale="fitRatio">
+        <ValueBinding ord="module://themeBtib/image/svg/subsystem/undefined_w.svg" hyperlink="station:|slot:/Services/AlarmService/Console_Cuisine">
           <OrdToImage name="image"/>
         </ValueBinding>
       </Picture>
