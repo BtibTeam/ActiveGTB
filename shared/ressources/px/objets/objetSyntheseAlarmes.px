@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0">
+<px version="1.0" media="workbench:WbPxMedia">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
@@ -83,53 +83,53 @@
 
   <OverCanvasPane name="content" viewSize="230.0,60.0" background="#039be5" overBackground="#0288d1">
 
-    <Picture layout="15.0,20.0,32.0,32.0" scale="fitRatio">
-      <ValueBinding ord="$(metier)">
+    <Picture name="Picture" layout="10.0,15.0,30.0,30.0" scale="fitRatio">
+      <ValueBinding name="ValueBinding" ord="$(iconMetier)">
         <OrdToImage name="image"/>
       </ValueBinding>
     </Picture>
 
     <PxTemplateInfo name="templateInfo" templateName="BandeauAlarmesVert" vendor="B.tib" version="1.0"/>
 
-    <BoundLabel layout="60.0,36.0,170.0,15.0" font="12.0pt Calibri" foreground="white" halign="left">
-      <BoundLabelBinding ord="station:|slot:/Services/AlarmService/$(metier)_synthese/unackedAlarmCountSynthesis" statusEffect="none">
+    <BoundLabel name="BoundLabel" layout="60.0,36.0,170.0,15.0" font="12.0pt Calibri" foreground="white" halign="left">
+      <BoundLabelBinding name="BoundLabelBinding" ord="station:|slot:/Services/AlarmService/$(metier)_synthese/unackedAlarmCountSynthesis" statusEffect="none">
         <ObjectToString name="text" format="%.% alarme non acquit&#xe9;e"/>
         <INumericToSimple name="visible" map="baja:Boolean 0.0:1.0=true;default=false;"/>
       </BoundLabelBinding>
     </BoundLabel>
 
-    <BoundLabel layout="60.0,36.0,170.0,15.0" font="12.0pt Calibri" foreground="white" halign="left">
-      <BoundLabelBinding ord="station:|slot:/Services/AlarmService/$(metier)_synthese/unackedAlarmCountSynthesis" statusEffect="none">
+    <BoundLabel name="BoundLabel1" layout="60.0,36.0,170.0,15.0" font="12.0pt Calibri" foreground="white" halign="left">
+      <BoundLabelBinding name="BoundLabelBinding" ord="station:|slot:/Services/AlarmService/$(metier)_synthese/unackedAlarmCountSynthesis" statusEffect="none">
         <ObjectToString name="text" format="%.% alarmes non acquit&#xe9;es"/>
         <INumericToSimple name="visible" map="baja:Boolean 1.0:+inf=true;default=false;"/>
       </BoundLabelBinding>
     </BoundLabel>
 
-    <BoundLabel layout="60.0,21.0,170.0,15.0" font="12.0pt Calibri" foreground="white" halign="left">
-      <BoundLabelBinding ord="station:|slot:/Services/AlarmService/$(metier)_synthese/inAlarmCountSynthesis" statusEffect="none">
+    <BoundLabel name="BoundLabel2" layout="60.0,21.0,170.0,15.0" font="12.0pt Calibri" foreground="white" halign="left">
+      <BoundLabelBinding name="BoundLabelBinding" ord="station:|slot:/Services/AlarmService/$(metier)_synthese/inAlarmCountSynthesis" statusEffect="none">
         <ObjectToString name="text" format="%.% alarme en cours"/>
         <INumericToSimple name="visible" map="baja:Boolean 0.0:1.0=true;default=false;"/>
       </BoundLabelBinding>
     </BoundLabel>
 
-    <BoundLabel layout="60.0,21.0,170.0,15.0" font="12.0pt Calibri" foreground="white" halign="left">
-      <BoundLabelBinding ord="station:|slot:/Services/AlarmService/$(metier)_synthese/inAlarmCountSynthesis" statusEffect="none">
+    <BoundLabel name="BoundLabel3" layout="60.0,21.0,170.0,15.0" font="12.0pt Calibri" foreground="white" halign="left">
+      <BoundLabelBinding name="BoundLabelBinding" ord="station:|slot:/Services/AlarmService/$(metier)_synthese/inAlarmCountSynthesis" statusEffect="none">
         <ObjectToString name="text" format="%.% alarmes en cours"/>
         <INumericToSimple name="visible" map="baja:Boolean 1.0:+inf=true;default=false;"/>
       </BoundLabelBinding>
     </BoundLabel>
 
-    <BoundLabel layout="0.0,0.0,240.0,20.0" font="16.0pt Calibri" foreground="white">
-      <BoundLabelBinding ord="$(lien)/metier" statusEffect="none">
+    <BoundLabel name="BoundLabel4" layout="0.0,0.0,230.0,20.0" font="16.0pt Calibri" foreground="white">
+      <BoundLabelBinding name="BoundLabelBinding" ord="$(lien)/metier" statusEffect="none">
         <ObjectToString name="text" format="Console %.%"/>
       </BoundLabelBinding>
     </BoundLabel>
 
-    <BoundLabel layout="0.0,0.0,140.0,60.0" font="16.0pt Calibri" foreground="white" halign="left">
-      <BoundLabelBinding ord="$(lien)" hyperlink="$(lien)|view:vue" statusEffect="none"/>
+    <BoundLabel name="BoundLabel5" layout="0.0,0.0,230.0,60.0" font="16.0pt Calibri" foreground="white" halign="left">
+      <BoundLabelBinding name="BoundLabelBinding" ord="$(lien)" hyperlink="$(lien)|view:vue" statusEffect="none"/>
     </BoundLabel>
 
-    <ValueBinding ord="$(lien)" hyperlink="$(lien)|view:vue"/>
+    <ValueBinding name="ValueBinding" ord="$(lien)" hyperlink="$(lien)|view:vue"/>
 
   </OverCanvasPane>
 

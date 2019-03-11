@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0">
+<px version="1.0" media="workbench:WbPxMedia">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
@@ -81,36 +81,36 @@
 
   <OverCanvasPane name="content" viewSize="230.0,60.0" background="#039be5" overBackground="#0288d1">
 
-    <BoundLabel layout="30.0,0.0,140.0,20.0" font="12.0pt Trebuchet MS" foreground="white" halign="left">
-      <BoundLabelBinding ord="$(lien)" statusEffect="none">
+    <BoundLabel name="BoundLabel" layout="30.0,0.0,140.0,20.0" font="12.0pt Trebuchet MS" foreground="white" halign="left">
+      <BoundLabelBinding name="BoundLabelBinding" ord="$(lien)" statusEffect="none">
         <ObjectToString name="text" format="%time%"/>
       </BoundLabelBinding>
     </BoundLabel>
 
-    <Picture layout="10.0,2.0,16.0,16.0" scale="fitRatio">
-      <ValueBinding ord="$(lien)/metier">
+    <Picture name="Picture" layout="10.0,2.0,16.0,16.0" scale="fitRatio">
+      <ValueBinding name="ValueBinding" ord="$(lien)/icon">
         <OrdToImage name="image"/>
       </ValueBinding>
     </Picture>
 
-    <ImageButton layout="170.0,0.0,50.0,20.0" text="Acq." background="white" valign="fill">
-      <ActionBinding ord="$(lien)/ack" widgetEvent="actionPerformed"/>
+    <ImageButton name="ImageButton" layout="170.0,0.0,50.0,20.0" text="Acq." background="white" valign="fill">
+      <ActionBinding name="ActionBinding" ord="$(lien)/ack" widgetEvent="actionPerformed"/>
     </ImageButton>
 
-    <BoundLabel layout="10.0,20.0,210.0,20.0" foreground="white" halign="left">
-      <BoundLabelBinding ord="$(lien)" statusEffect="none">
+    <BoundLabel name="BoundLabel1" layout="10.0,20.0,210.0,20.0" foreground="white" halign="left">
+      <BoundLabelBinding name="BoundLabelBinding" ord="$(lien)" statusEffect="none">
         <ObjectToString name="text" format="%source%"/>
       </BoundLabelBinding>
     </BoundLabel>
 
-    <BoundLabel layout="80.0,40.0,140.0,20.0" foreground="white" halign="left">
-      <BoundLabelBinding ord="$(lien)" statusEffect="none">
+    <BoundLabel name="BoundLabel2" layout="80.0,40.0,140.0,20.0" foreground="white" halign="left">
+      <BoundLabelBinding name="BoundLabelBinding" ord="$(lien)" statusEffect="none">
         <ObjectToString name="text" format="%message%"/>
       </BoundLabelBinding>
     </BoundLabel>
 
-    <BoundLabel layout="10.0,40.0,70.0,20.0" foreground="white" halign="left">
-      <BoundLabelBinding ord="$(lien)" statusEffect="none">
+    <BoundLabel name="BoundLabel3" layout="10.0,40.0,70.0,20.0" foreground="white" halign="left">
+      <BoundLabelBinding name="BoundLabelBinding" ord="$(lien)" statusEffect="none">
         <ObjectToString name="text" format="%ackState%"/>
       </BoundLabelBinding>
     </BoundLabel>
