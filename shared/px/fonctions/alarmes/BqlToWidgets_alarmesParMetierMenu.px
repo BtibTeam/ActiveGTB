@@ -29,23 +29,7 @@
       <ValueBinding ord="station:|slot:/" hyperlink="station:|slot:/Services/AlarmService/Console_Electricite"/>
 
       <Picture layout="75.0,85.0,100.0,100.0" image="" scale="fitRatio">
-        <ValueBinding ord="module://themeBtib/image/svg/subsystem/undefined_w.svg" hyperlink="station:|slot:/Services/AlarmService/Console_Electricite">
-          <OrdToImage name="image"/>
-        </ValueBinding>
-      </Picture>
-
-    </OverCanvasPane>
-
-    <OverCanvasPane viewSize="250.0,200.0" background="#039be5" overBackground="#02669c">
-
-      <Label layout="0.0,30.0,250.0,40.0" text="Console_Plomberie" image="" font="20.0pt Calibri" foreground="#f2f2f2">
-        <ValueBinding ord="slot:" hyperlink="station:|slot:/Services/AlarmService/Console_Plomberie"/>
-      </Label>
-
-      <ValueBinding ord="station:|slot:/" hyperlink="station:|slot:/Services/AlarmService/Console_Plomberie"/>
-
-      <Picture layout="75.0,85.0,100.0,100.0" image="" scale="fitRatio">
-        <ValueBinding ord="module://themeBtib/image/svg/subsystem/undefined_w.svg" hyperlink="station:|slot:/Services/AlarmService/Console_Plomberie">
+        <ValueBinding ord="module://themeBtib/image/svg/subsystem/electricity_w.svg" hyperlink="station:|slot:/Services/AlarmService/Console_Electricite">
           <OrdToImage name="image"/>
         </ValueBinding>
       </Picture>
@@ -61,7 +45,7 @@
       <ValueBinding ord="station:|slot:/" hyperlink="station:|slot:/Services/AlarmService/Console_CVC"/>
 
       <Picture layout="75.0,85.0,100.0,100.0" image="" scale="fitRatio">
-        <ValueBinding ord="module://themeBtib/image/svg/subsystem/undefined_w.svg" hyperlink="station:|slot:/Services/AlarmService/Console_CVC">
+        <ValueBinding ord="module://themeBtib/image/svg/subsystem/hvac_w.svg" hyperlink="station:|slot:/Services/AlarmService/Console_CVC">
           <OrdToImage name="image"/>
         </ValueBinding>
       </Picture>
@@ -93,7 +77,23 @@
       <ValueBinding ord="station:|slot:/" hyperlink="station:|slot:/Services/AlarmService/Console_Cuisine"/>
 
       <Picture layout="75.0,85.0,100.0,100.0" image="" scale="fitRatio">
-        <ValueBinding ord="module://themeBtib/image/svg/subsystem/undefined_w.svg" hyperlink="station:|slot:/Services/AlarmService/Console_Cuisine">
+        <ValueBinding ord="module://themeBtib/image/svg/subsystem/kitchen_w.svg" hyperlink="station:|slot:/Services/AlarmService/Console_Cuisine">
+          <OrdToImage name="image"/>
+        </ValueBinding>
+      </Picture>
+
+    </OverCanvasPane>
+
+    <OverCanvasPane viewSize="250.0,200.0" background="#039be5" overBackground="#02669c">
+
+      <Label layout="0.0,30.0,250.0,40.0" text="Console_Plomberie" image="" font="20.0pt Calibri" foreground="#f2f2f2">
+        <ValueBinding ord="slot:" hyperlink="station:|slot:/Services/AlarmService/Console_Plomberie"/>
+      </Label>
+
+      <ValueBinding ord="station:|slot:/" hyperlink="station:|slot:/Services/AlarmService/Console_Plomberie"/>
+
+      <Picture layout="75.0,85.0,100.0,100.0" image="" scale="fitRatio">
+        <ValueBinding ord="module://themeBtib/image/svg/subsystem/undefined_w.svg" hyperlink="station:|slot:/Services/AlarmService/Console_Plomberie">
           <OrdToImage name="image"/>
         </ValueBinding>
       </Picture>
