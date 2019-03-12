@@ -8,6 +8,12 @@
   <module name="btibVision"/>
   <module name="gx"/>
 </import>
+<properties>
+
+  <property name="nomSite" type="baja:String" value="Le rabelais">
+  </property>
+
+</properties>
 <content>
 <ScrollPane viewportBackground="#455a64" borderPolicy="never">
 

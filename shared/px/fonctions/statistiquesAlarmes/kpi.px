@@ -8,6 +8,12 @@
   <module name="gx"/>
   <module name="kitPx"/>
 </import>
+<properties>
+
+  <property name="nomSite" type="baja:String" value="Le rabelais">
+  </property>
+
+</properties>
 <content>
 <CanvasPane viewSize="200.0,300.0" scale="fitRatio" minScaleFactor="0.5" maxScaleFactor="1.0">
 

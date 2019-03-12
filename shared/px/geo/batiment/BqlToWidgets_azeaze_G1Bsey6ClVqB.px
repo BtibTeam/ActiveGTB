@@ -4,20 +4,19 @@
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
-  <module name="btibCore"/>
   <module name="gx"/>
 </import>
 <properties>
 
-  <property name="nomSite" type="baja:String" value="Le rabelais">
+  <property name="bqlToWidgetsHandle" type="baja:String" value="12c5f">
   </property>
 
 </properties>
 <content>
-<CanvasPane layout="50.0,80.0,1100.0,670.0" viewSize="1100.0,670.0" halign="left" valign="top">
+<ScrollPane viewportBackground="transparent" borderPolicy="never">
 
-  <IdBinding id="canvasPourNodeDrawer"/>
+  <GridPane name="content" columnCount="1" valign="top" rowGap="20.0"/>
 
-</CanvasPane>
+</ScrollPane>
 </content>
 </px>

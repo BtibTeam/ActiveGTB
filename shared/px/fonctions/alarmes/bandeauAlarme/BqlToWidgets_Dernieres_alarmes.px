@@ -12,7 +12,7 @@
 </import>
 <properties>
 
-  <property name="nomSite" type="baja:String" value="Le rabelais">
+  <property name="bqlToWidgetsHandle" type="baja:String" value="fcb4">
   </property>
 
 </properties>
@@ -32,7 +32,7 @@
         </BoundLabel>
 
         <Picture layout="10.0,2.0,16.0,16.0" image="" scale="fitRatio">
-          <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem1/metier">
+          <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem1/icon">
             <OrdToImage name="image"/>
           </ValueBinding>
         </Picture>
@@ -76,7 +76,7 @@
         </BoundLabel>
 
         <Picture layout="10.0,2.0,16.0,16.0" image="" scale="fitRatio">
-          <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem2/metier">
+          <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem2/icon">
             <OrdToImage name="image"/>
           </ValueBinding>
         </Picture>
@@ -120,7 +120,7 @@
         </BoundLabel>
 
         <Picture layout="10.0,2.0,16.0,16.0" image="" scale="fitRatio">
-          <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem3/metier">
+          <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem3/icon">
             <OrdToImage name="image"/>
           </ValueBinding>
         </Picture>
@@ -164,7 +164,7 @@
         </BoundLabel>
 
         <Picture layout="10.0,2.0,16.0,16.0" image="" scale="fitRatio">
-          <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem4/metier">
+          <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem4/icon">
             <OrdToImage name="image"/>
           </ValueBinding>
         </Picture>
@@ -208,7 +208,7 @@
         </BoundLabel>
 
         <Picture layout="10.0,2.0,16.0,16.0" image="" scale="fitRatio">
-          <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem5/metier">
+          <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem5/icon">
             <OrdToImage name="image"/>
           </ValueBinding>
         </Picture>

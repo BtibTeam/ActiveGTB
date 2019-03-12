@@ -7,6 +7,12 @@
   <module name="gx"/>
   <module name="workbench"/>
 </import>
+<properties>
+
+  <property name="nomSite" type="baja:String" value="Le rabelais">
+  </property>
+
+</properties>
 <content>
 <EdgePane>
 
