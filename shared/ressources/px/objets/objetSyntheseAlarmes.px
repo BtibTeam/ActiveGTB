@@ -93,14 +93,14 @@
 
     <BoundLabel name="BoundLabel" layout="60.0,36.0,170.0,15.0" font="12.0pt Calibri" foreground="white" halign="left">
       <BoundLabelBinding name="BoundLabelBinding" ord="station:|slot:/Services/AlarmService/$(metier)_synthese/unackedAlarmCountSynthesis" statusEffect="none">
-        <ObjectToString name="text" format="%.% alarme non acquit&#xe9;e"/>
+        <ObjectToString name="text" format="%.% alarme non acquitt&#xe9;e"/>
         <INumericToSimple name="visible" map="baja:Boolean 0.0:1.0=true;default=false;"/>
       </BoundLabelBinding>
     </BoundLabel>
 
     <BoundLabel name="BoundLabel1" layout="60.0,36.0,170.0,15.0" font="12.0pt Calibri" foreground="white" halign="left">
       <BoundLabelBinding name="BoundLabelBinding" ord="station:|slot:/Services/AlarmService/$(metier)_synthese/unackedAlarmCountSynthesis" statusEffect="none">
-        <ObjectToString name="text" format="%.% alarmes non acquit&#xe9;es"/>
+        <ObjectToString name="text" format="%.% alarmes non acquitt&#xe9;es"/>
         <INumericToSimple name="visible" map="baja:Boolean 1.0:+inf=true;default=false;"/>
       </BoundLabelBinding>
     </BoundLabel>
