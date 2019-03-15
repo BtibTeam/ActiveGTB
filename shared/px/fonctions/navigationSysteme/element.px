@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<content>
+<CanvasPane viewSize="120.0,30.0" minScaleFactor="0.5" maxScaleFactor="1.0">
+
+  <Label layout="0.0,0.0,50.0,30.0" font="bold 18.0pt Calibri" halign="right">
+    <ValueBinding ord="$(Lien)/BqlSizeHorsCom/size">
+      <ObjectToString name="text" format="%.% "/>
+      <INumericToSimple name="foreground" map="gx:Brush 0.0:0.5=black;0.5:+inf=red;default=null;"/>
+      <INumericToSimple name="blink" map="baja:Boolean 0.0:0.5=false;0.5:+inf=true;default=false;"/>
+    </ValueBinding>
+  </Label>
+
+  <Label layout="50.0,0.0,70.0,30.0" font="bold 18.0pt Calibri" foreground="black" halign="left">
+    <ValueBinding ord="$(Lien)/BqlSize/size">
+      <ObjectToString name="text" format="/ %.%"/>
+    </ValueBinding>
+  </Label>
+
+  <Label layout="0.0,0.0,120.0,30.0">
+    <PopupBinding ord="$(Lien)" title="Informations" position="10.0,10.0" size="900.0,700.0"/>
+  </Label>
+
+</CanvasPane>
+</content>
+</px>
