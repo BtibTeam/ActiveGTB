@@ -5,8 +5,6 @@
   <module name="baja"/>
   <module name="bajaui"/>
   <module name="btibCore"/>
-  <module name="btibVision"/>
-  <module name="converters"/>
   <module name="gx"/>
 </import>
 <content>
@@ -31,106 +29,6 @@
       <FlowPane name="content" align="fill" hgap="30" vgap="30">
 
         <IdBinding id="flowPanePourObjetBatiment"/>
-
-        <OverBorderPane padding="0.0" fill="white" radius="10.0px 10.0px 10.0px 10.0px">
-
-          <GridPane name="content" columnCount="1" halign="fill" rowAlign="fill" columnAlign="fill" rowGap="0.0" columnGap="0.0" stretchRow="1" stretchColumn="0" bandBrush="white">
-
-            <CanvasPane viewSize="220.0,100.0" background="#039be5">
-
-              <Label layout="10.0,10.0,200.0,50.0" text="Le rabelais" image="" font="20.0pt Calibri" foreground="white" halign="left" wordWrapEnabled="true">
-                <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/Le$20rabelais"/>
-              </Label>
-
-              <Label layout="10.0,60.0,200.0,35.0" image="" font="14.0pt Calibri" foreground="white" halign="left" valign="top" wordWrapEnabled="true">
-                <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/Le$20rabelais"/>
-              </Label>
-
-            </CanvasPane>
-
-            <CanvasPane viewSize="220.0,110.0" background="white">
-
-              <GridPane layout="10.0,0.0,200.0,100.0" columnCount="1" halign="left" columnAlign="fill" rowGap="10.0" stretchColumn="0">
-
-                <Label image="module://themeBtib/image/x16/status/alarm.png" font="14.0pt Calibri Light" foreground="#454545" halign="left" wordWrapEnabled="true">
-                  <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/Le$20rabelais/Synthese/alarmCount/value">
-                    <ObjectToString name="text" format="%.% points en alarme"/>
-                  </ValueBinding>
-                </Label>
-
-                <Label image="module://themeBtib/image/x16/status/overridden.png" font="14.0pt Calibri Light" foreground="#454545" halign="left" wordWrapEnabled="true">
-                  <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/Le$20rabelais/Synthese/overriddenCount/value">
-                    <ObjectToString name="text" format="%.% points d&#xe9;rog&#xe9;s"/>
-                  </ValueBinding>
-                </Label>
-
-                <Label image="module://themeBtib/image/x16/status/fault.png" font="14.0pt Calibri Light" foreground="#454545" halign="left" wordWrapEnabled="true">
-                  <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/Le$20rabelais/Synthese/faultCount/value">
-                    <ObjectToString name="text" format="%.% points en d&#xe9;faut"/>
-                  </ValueBinding>
-                </Label>
-
-              </GridPane>
-
-            </CanvasPane>
-
-          </GridPane>
-
-          <IdBinding id="batimentDansSite"/>
-
-          <String name="id" value="widget_12953_11672_0"/>
-
-        </OverBorderPane>
-
-        <OverBorderPane layout="100.0,40.0,220.0,210.0" padding="0.0" fill="white" radius="10.0px 10.0px 10.0px 10.0px">
-
-          <GridPane name="content" columnCount="1" halign="fill" rowAlign="fill" columnAlign="fill" rowGap="0.0" columnGap="0.0" stretchRow="1" stretchColumn="0" bandBrush="white">
-
-            <CanvasPane viewSize="220.0,100.0" background="#039be5">
-
-              <Label layout="10.0,10.0,200.0,50.0" text="azeaze" image="" font="20.0pt Calibri" foreground="white" halign="left" wordWrapEnabled="true">
-                <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/G1Bsey6ClVqB"/>
-              </Label>
-
-              <Label layout="10.0,60.0,200.0,35.0" image="" font="14.0pt Calibri" foreground="white" halign="left" valign="top" wordWrapEnabled="true">
-                <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/G1Bsey6ClVqB"/>
-              </Label>
-
-            </CanvasPane>
-
-            <CanvasPane viewSize="220.0,110.0" background="white">
-
-              <GridPane layout="10.0,0.0,200.0,100.0" columnCount="1" halign="left" columnAlign="fill" rowGap="10.0" stretchColumn="0">
-
-                <Label image="module://themeBtib/image/x16/status/alarm.png" font="14.0pt Calibri Light" foreground="#454545" halign="left" wordWrapEnabled="true">
-                  <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/G1Bsey6ClVqB/Synthese/alarmCount/value">
-                    <ObjectToString name="text" format="%.% points en alarme"/>
-                  </ValueBinding>
-                </Label>
-
-                <Label image="module://themeBtib/image/x16/status/overridden.png" font="14.0pt Calibri Light" foreground="#454545" halign="left" wordWrapEnabled="true">
-                  <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/G1Bsey6ClVqB/Synthese/overriddenCount/value">
-                    <ObjectToString name="text" format="%.% points d&#xe9;rog&#xe9;s"/>
-                  </ValueBinding>
-                </Label>
-
-                <Label image="module://themeBtib/image/x16/status/fault.png" font="14.0pt Calibri Light" foreground="#454545" halign="left" wordWrapEnabled="true">
-                  <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/G1Bsey6ClVqB/Synthese/faultCount/value">
-                    <ObjectToString name="text" format="%.% points en d&#xe9;faut"/>
-                  </ValueBinding>
-                </Label>
-
-              </GridPane>
-
-            </CanvasPane>
-
-          </GridPane>
-
-          <IdBinding id="batimentDansSite"/>
-
-          <String name="id" value="widget_12c51_11672_0"/>
-
-        </OverBorderPane>
 
       </FlowPane>
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="bajaui"/>
+  <module name="gx"/>
+</import>
+<content>
+<CanvasPane viewSize="120.0,30.0" minScaleFactor="0.5" maxScaleFactor="1.0">
+
+  <Label layout="0.0,0.0,120.0,30.0" text="$(Etage)" font="bold 16.0pt Calibri"/>
+
+</CanvasPane>
+</content>
+</px>

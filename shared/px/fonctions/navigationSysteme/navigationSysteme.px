@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibVision"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+  <module name="vykonPro"/>
+  <module name="workbench"/>
+</import>
+<content>
+<ScrollPane>
+
+  <EdgePane name="content">
+
+    <PxInclude name="top" ord="file:^px/menus/haut.px"/>
+
+    <PxInclude name="left" ord="file:^px/menus/gauche.px"/>
+
+    <CanvasPane name="center" viewSize="1300.0,800.0" minScaleFactor="0.5" maxScaleFactor="1.0" valign="top">
+
+      <BqlToWidgetsView layout="0.0,0.0,1300.0,800.0">
+        <WbViewBinding ord="slot:Navigation$20syst$e8me"/>
+      </BqlToWidgetsView>
+
+    </CanvasPane>
+
+    <PxInclude name="right" ord="file:^px/menus/droite.px"/>
+
+  </EdgePane>
+
+</ScrollPane>
+</content>
+</px>
