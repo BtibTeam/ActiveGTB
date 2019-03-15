@@ -10,27 +10,19 @@
   <module name="workbench"/>
 </import>
 <content>
-<ScrollPane>
-
-  <CanvasPane name="content" viewSize="800.0,600.0" minScaleFactor="0.5" maxScaleFactor="1.0">
-
-    <WebWidget layout="0.0,0.0,800.0,600.0" js="view:btibVision:EnhancedBoundTable">
-      <WbViewBinding ord="slot:BqlSize"/>
-      <Ord name="query" f="3" value="station:|slot:/Drivers|neql:n:device and n:child-&gt;b:equSourceOf-&gt;b:node|bql:select displayName as &#x27;Nom&#x27;, network.displayName as &#x27;R&#xe9;seau&#x27;, vykonPro:Lib.tagValue(&#x27;b:etage&#x27;) as &#x27;Etage&#x27;, vykonPro:Lib.tagValue(&#x27;b:equipement&#x27;) as &#x27;Equipement&#x27; where vykonPro:Lib.tagValue(&#x27;b:etage&#x27;) like &#x27;Etage 1&#x27; and vykonPro:Lib.tagValue(&#x27;b:reference&#x27;) like &#x27;ISMA-4I4O-H-IP&#x27;"/>
-      <Ord name="hyperlink" f="3" value="slot:InfoSource"/>
-      <Double name="rowCount" f="3" value="500.0"/>
-      <Boolean name="showRowCountSelector" f="3" value="true"/>
-      <Boolean name="showSearching" f="3" value="true"/>
-      <Boolean name="showColumnSelector" f="3" value="true"/>
-      <Boolean name="showInfo" f="3" value="true"/>
-      <Boolean name="showExporting" f="3" value="true"/>
-      <ValueBinding ord="slot:BqlSize/executeQuery">
-        <PassThrough name="query"/>
-      </ValueBinding>
-    </WebWidget>
-
-  </CanvasPane>
-
-</ScrollPane>
+<WebWidget js="view:btibVision:EnhancedBoundTable">
+  <WbViewBinding ord="slot:BqlSize"/>
+  <Ord name="query" f="3" value="station:|slot:/Drivers|neql:n:device and n:child-&gt;b:equSourceOf-&gt;b:node|bql:select displayName as &#x27;Nom&#x27;, network.displayName as &#x27;R&#xe9;seau&#x27;, vykonPro:Lib.tagValue(&#x27;b:batiment&#x27;) as &#x27;B&#xe2;timent&#x27;, vykonPro:Lib.tagValue(&#x27;b:etage&#x27;) as &#x27;Etage&#x27;, vykonPro:Lib.tagValue(&#x27;b:reference&#x27;) as &#x27;Equipement&#x27; where vykonPro:Lib.tagValue(&#x27;b:etage&#x27;) like &#x27;Etage 1&#x27; and vykonPro:Lib.tagValue(&#x27;b:reference&#x27;) like &#x27;Xl10&#x27;"/>
+  <Ord name="hyperlink" f="3" value="slot:"/>
+  <Double name="rowCount" f="3" value="500.0"/>
+  <Boolean name="showRowCountSelector" f="3" value="true"/>
+  <Boolean name="showSearching" f="3" value="true"/>
+  <Boolean name="showColumnSelector" f="3" value="true"/>
+  <Boolean name="showInfo" f="3" value="true"/>
+  <Boolean name="showExporting" f="3" value="true"/>
+  <ValueBinding ord="slot:BqlSize/executeQuery">
+    <PassThrough name="query"/>
+  </ValueBinding>
+</WebWidget>
 </content>
 </px>
