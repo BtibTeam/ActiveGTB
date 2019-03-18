@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0">
+<px version="1.0" media="workbench:WbPxMedia">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
   <module name="btibCore"/>
   <module name="btibVision"/>
+  <module name="converters"/>
   <module name="gx"/>
+  <module name="kitPx"/>
+  <module name="vykonPro"/>
   <module name="workbench"/>
 </import>
 <content>
@@ -18,24 +21,26 @@
 
   <BorderPane name="center" padding="0.0">
 
-    <CanvasPane name="content" viewSize="1600.0,800.0" halign="left" valign="top" background="image( source(file:^images/arriere_plans/batiment.jpg) halign(left) valign(top) )">
+    <CanvasPane name="content" viewSize="1300.0,800.0" valign="top" background="image( source(file:^images/arriere_plans/batiment.jpg) halign(left) valign(top) )">
 
       <IdBinding id="canvasBatiment"/>
 
-      <CanvasPane layout="0.0,0.0,100.0%,40.0" viewSize="1600.0,40.0" halign="left" background="#99ffffff">
+      <CanvasPane layout="0.0,0.0,100.0%,40.0" viewSize="1300.0,40.0" halign="left" background="#99ffffff">
 
         <GridPane layout="10.0,0.0,640.0,40.0" columnCount="10" halign="left" stretchColumn="0">
 
-          <Label text="azeaze /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
-            <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/G1Bsey6ClVqB"/>
+          <Label text="Le Rabelais /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
+            <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/e1D4ysl1xUGc"/>
           </Label>
 
         </GridPane>
 
       </CanvasPane>
 
-      <BqlToWidgetsView layout="220.0,60.0,560.0,740.0">
+      <BqlToWidgetsView layout="0.0,60.0,100.0%,100.0%">
         <WbViewBinding ord="slot:Menu$20des$20$e9tages"/>
+        <IdBinding id="menuEtage"/>
+        <String name="id" value="widget_13f89_13b41_0"/>
       </BqlToWidgetsView>
 
     </CanvasPane>
