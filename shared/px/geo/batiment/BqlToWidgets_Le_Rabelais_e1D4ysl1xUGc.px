@@ -122,6 +122,40 @@
 
     </OverCanvasPane>
 
+    <OverCanvasPane viewSize="400.0,80.0" background="#e6fafafa" overBackground="#e6ebebeb" radius="20.0px 20.0px 20.0px 20.0px">
+
+      <Label layout="15.0,10.0,230.0,40.0" text="Etage 4" image="" font="bold 20.0pt Calibri Light" foreground="#595959" halign="left">
+        <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/j1D4J4fw7whR" hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/j1D4J4fw7whR"/>
+      </Label>
+
+      <Label layout="245.0,10.0,50.0,60.0" image="module://themeBtib/image/x20/status/alarm.png" font="14.0pt Calibri Light" foreground="#454545" textToIconAlign="bottom" wordWrapEnabled="true">
+        <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/j1D4J4fw7whR/Synthese/alarmCount/value">
+          <ObjectToString name="text"/>
+        </ValueBinding>
+      </Label>
+
+      <Label layout="295.0,10.0,50.0,60.0" image="module://themeBtib/image/x20/status/overridden.png" font="14.0pt Calibri Light" foreground="#454545" textToIconAlign="bottom" wordWrapEnabled="true">
+        <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/j1D4J4fw7whR/Synthese/overriddenCount/value">
+          <ObjectToString name="text"/>
+        </ValueBinding>
+      </Label>
+
+      <Label layout="345.0,10.0,50.0,60.0" image="module://themeBtib/image/x16/status/fault.png" font="14.0pt Calibri Light" foreground="#454545" textToIconAlign="bottom" wordWrapEnabled="true">
+        <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/j1D4J4fw7whR/Synthese/faultCount/value">
+          <ObjectToString name="text"/>
+        </ValueBinding>
+      </Label>
+
+      <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/j1D4J4fw7whR" hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/j1D4J4fw7whR"/>
+
+      <Label layout="15.0,40.0,210.0,30.0" image="" font="12.0pt Calibri Light" foreground="#7c7c7c" halign="left">
+        <ValueBinding ord="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/j1D4J4fw7whR/Synthese/totalPointCount/value" hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/j1D4J4fw7whR">
+          <ObjectToString name="text" format="%.% points"/>
+        </ValueBinding>
+      </Label>
+
+    </OverCanvasPane>
+
   </GridPane>
 
 </ScrollPane>

@@ -93,7 +93,7 @@
       <ValueBinding ord="station:|slot:/" hyperlink="station:|slot:/Services/AlarmService/Console_Plomberie"/>
 
       <Picture layout="75.0,85.0,100.0,100.0" image="" scale="fitRatio">
-        <ValueBinding ord="module://themeBtib/image/svg/subsystem/plumbering_w.svg" hyperlink="station:|slot:/Services/AlarmService/Console_Plomberie">
+        <ValueBinding ord="module://themeBtib/image/svg/subsystem/plumbing_w.svg" hyperlink="station:|slot:/Services/AlarmService/Console_Plomberie">
           <OrdToImage name="image"/>
         </ValueBinding>
       </Picture>
