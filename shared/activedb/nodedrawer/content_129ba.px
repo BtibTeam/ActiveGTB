@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibStructure"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<content>
+<CanvasPane layout="50.0,80.0,1100.0,670.0" viewSize="1100.0,670.0" halign="left" valign="top" background="image( source(file:^images/plans/bureauBtib.PNG) halign(left) valign(top) )">
+
+  <IdBinding id="canvasEtage"/>
+
+  <GridPane layout="200.0,390.0,80.0,60.0" columnCount="1" columnAlign="center" rowGap="4.0">
+
+    <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+      <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_01/points/Space$20Temp">
+        <ObjectToString name="text" format="%out.value%"/>
+      </ValueBinding>
+    </Label>
+
+    <Label image="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+      <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_01|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
+      <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_01/master"/>
+    </Label>
+
+    <SourceBinding ord="station:|slot:/Drivers/LonNetwork/FCU_01"/>
+
+    <IdBinding id="VC"/>
+
+    <String name="id" value="widget_8c8f_6a76_0"/>
+
+  </GridPane>
+
+  <Label layout="870.0,640.0,150.0,20.0" text="Made by Charles Bourgain" foreground="white"/>
+
+  <Polygon fill="#8023b82c" stroke="white" pen="0.0" geom="133.0,353.0 284.0,328.0 316.0,422.0 321.0,488.0 230.0,486.0 154.0,485.0 128.0,396.0 ">
+    <ValueBinding hyperlink="$(ordEtage)"/>
+    <String name="id" value="widget_13f0c_13d27_0"/>
+    <IdBinding id="zoneDansEtage"/>
+    <Color name="color" value="#00aabb"/>
+  </Polygon>
+
+</CanvasPane>
+</content>
+</px>

@@ -26,16 +26,18 @@
 
         <GridPane layout="10.0,0.0,640.0,40.0" columnCount="10" halign="left" stretchColumn="0">
 
-          <Label text="azeaze /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
-            <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/G1Bsey6ClVqB"/>
+          <Label text="Le Rabelais /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
+            <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/e1D4ysl1xUGc"/>
           </Label>
 
         </GridPane>
 
       </CanvasPane>
 
-      <BqlToWidgetsView layout="220.0,60.0,560.0,740.0">
+      <BqlToWidgetsView layout="0.0,60.0,100.0%,100.0%">
         <WbViewBinding ord="slot:Menu$20des$20$e9tages"/>
+        <IdBinding id="menuEtage"/>
+        <String name="id" value="widget_13f89_13b41_0"/>
       </BqlToWidgetsView>
 
     </CanvasPane>

@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0">
+<px version="1.0" media="workbench:WbPxMedia">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
   <module name="btibCore"/>
   <module name="btibVision"/>
+  <module name="converters"/>
   <module name="gx"/>
+  <module name="kitPx"/>
+  <module name="vykonPro"/>
 </import>
 <properties>
 
@@ -85,14 +88,14 @@
 
     <CanvasPane name="top" viewSize="1000.0,40.0" halign="left" background="#f2f2f2">
 
-      <GridPane layout="10.0,0.0,640.0,40.0" columnCount="10" halign="left">
+      <GridPane name="GridPane" layout="10.0,0.0,640.0,40.0" columnCount="10" halign="left">
 
-        <Label text="$(nomBatiment) /" font="18.0pt Calibri Light" foreground="#3c3c3c">
-          <ValueBinding hyperlink="$(ordBatiment)"/>
+        <Label name="Label" text="$(nomBatiment) /" font="18.0pt Calibri Light" foreground="#3c3c3c">
+          <ValueBinding name="ValueBinding" hyperlink="$(ordBatiment)"/>
         </Label>
 
-        <Label text="$(nomEtage) /" font="18.0pt Calibri Light" foreground="#3c3c3c">
-          <ValueBinding hyperlink="$(ordEtage)"/>
+        <Label name="Label1" text="$(nomEtage) /" font="18.0pt Calibri Light" foreground="#3c3c3c">
+          <ValueBinding name="ValueBinding" hyperlink="$(ordEtage)"/>
         </Label>
 
       </GridPane>
@@ -101,19 +104,19 @@
 
     <CanvasPane name="center" viewSize="1200.0,800.0" halign="left" valign="top" background="white">
 
-      <Line stroke="#acacac" geom="10.0,60.0 1150.0,60.0"/>
+      <Line name="Line" stroke="#acacac" geom="10.0,60.0 1150.0,60.0"/>
 
-      <CanvasPane layout="50.0,80.0,1100.0,670.0" viewSize="1100.0,670.0" halign="left" valign="top">
+      <CanvasPane name="CanvasPane" layout="50.0,80.0,1100.0,670.0" viewSize="1100.0,670.0" halign="left" valign="top">
 
-        <IdBinding id="canvasPourNodeDrawer"/>
+        <IdBinding name="IdBinding" id="canvasEtage"/>
 
       </CanvasPane>
 
-      <OverBorderPane layout="10.0,10.0,160.0,40.0" fill="#4db6ac" overFill="#009688">
+      <OverBorderPane name="OverBorderPane" layout="10.0,10.0,160.0,40.0" fill="#4db6ac" overFill="#009688">
 
         <Label name="content" text="Recloisonnement" font="16.0pt Calibri Light" foreground="white"/>
 
-        <ValueBinding hyperlink="slot:Recloisonnement"/>
+        <ValueBinding name="ValueBinding" hyperlink="slot:Recloisonnement"/>
 
       </OverBorderPane>
 

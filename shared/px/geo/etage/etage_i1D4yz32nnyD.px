@@ -21,12 +21,12 @@
 
       <GridPane layout="10.0,0.0,640.0,40.0" columnCount="10" halign="left">
 
-        <Label text="Le rabelais /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
-          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/Le$20rabelais"/>
+        <Label text="Le Rabelais /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
+          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/e1D4ysl1xUGc"/>
         </Label>
 
-        <Label text="Etage 4 /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
-          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/K1BroxA6HIvu"/>
+        <Label text="Etage 3 /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
+          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/i1D4yz32nnyD"/>
         </Label>
 
       </GridPane>
@@ -39,7 +39,7 @@
 
       <CanvasPane layout="50.0,80.0,1100.0,670.0" viewSize="1100.0,670.0" halign="left" valign="top">
 
-        <IdBinding id="canvasPourNodeDrawer"/>
+        <IdBinding id="canvasEtage"/>
 
       </CanvasPane>
 

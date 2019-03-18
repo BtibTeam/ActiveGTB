@@ -115,7 +115,31 @@
 
     </GridPane>
 
-    <NullWidget/>
+    <GridPane columnCount="1">
+
+      <CanvasPane viewSize="120.0,30.0" minScaleFactor="0.5" maxScaleFactor="1.0">
+
+        <Label layout="0.0,0.0,50.0,30.0" image="" font="bold 18.0pt Calibri" halign="right">
+          <ValueBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$205/Xl10/BqlSizeHorsCom/size">
+            <ObjectToString name="text" format="%.% "/>
+            <INumericToSimple name="foreground" map="gx:Brush 0.0:0.5=black;0.5:+inf=red;default=null;"/>
+            <INumericToSimple name="blink" map="baja:Boolean 0.0:0.5=false;0.5:+inf=true;default=false;"/>
+          </ValueBinding>
+        </Label>
+
+        <Label layout="50.0,0.0,70.0,30.0" image="" font="bold 18.0pt Calibri" foreground="black" halign="left">
+          <ValueBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$205/Xl10/BqlSize/size">
+            <ObjectToString name="text" format="/ %.%"/>
+          </ValueBinding>
+        </Label>
+
+        <Label layout="0.0,0.0,120.0,30.0" image="">
+          <PopupBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$205/Xl10" title="Informations" position="10.0,10.0" size="900.0,700.0"/>
+        </Label>
+
+      </CanvasPane>
+
+    </GridPane>
 
   </GridPane>
 
