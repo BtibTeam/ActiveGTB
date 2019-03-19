@@ -102,25 +102,29 @@
 
     </CanvasPane>
 
-    <CanvasPane name="center" viewSize="1200.0,800.0" halign="left" valign="top" background="white">
+    <ScrollPane name="center">
 
-      <Line name="Line" stroke="#acacac" geom="10.0,60.0 1150.0,60.0"/>
+      <CanvasPane name="content" viewSize="1200.0,1400.0" halign="left" valign="top" background="white">
 
-      <CanvasPane name="CanvasPane" layout="50.0,80.0,1100.0,670.0" viewSize="1100.0,670.0" halign="left" valign="top">
+        <Line name="Line" stroke="#acacac" geom="10.0,60.0 1150.0,60.0"/>
 
-        <IdBinding name="IdBinding" id="canvasEtage"/>
+        <CanvasPane name="CanvasPane" layout="50.0,80.0,1100.0,1200.0" viewSize="1100.0,1200.0" halign="left" valign="top" background="image( source(file:^images/plans/Vinci_Plaza_Pieces_ V11.jpg) halign(left) valign(top) )">
+
+          <IdBinding name="IdBinding" id="canvasEtage"/>
+
+        </CanvasPane>
+
+        <OverBorderPane name="OverBorderPane" layout="10.0,10.0,160.0,40.0" fill="#4db6ac" overFill="#009688">
+
+          <Label name="content" text="Recloisonnement" font="16.0pt Calibri Light" foreground="white"/>
+
+          <ValueBinding name="ValueBinding" hyperlink="slot:Recloisonnement"/>
+
+        </OverBorderPane>
 
       </CanvasPane>
 
-      <OverBorderPane name="OverBorderPane" layout="10.0,10.0,160.0,40.0" fill="#4db6ac" overFill="#009688">
-
-        <Label name="content" text="Recloisonnement" font="16.0pt Calibri Light" foreground="white"/>
-
-        <ValueBinding name="ValueBinding" hyperlink="slot:Recloisonnement"/>
-
-      </OverBorderPane>
-
-    </CanvasPane>
+    </ScrollPane>
 
   </EdgePane>
 

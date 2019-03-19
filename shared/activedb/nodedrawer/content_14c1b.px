@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibStructure"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<content>
+<CanvasPane layout="50.0,80.0,1100.0,1200.0" viewSize="1100.0,1200.0" halign="left" valign="top" background="image( source(file:^images/plans/Vinci_Plaza_Pieces_ V11.jpg) halign(left) valign(top) )">
+
+  <IdBinding id="canvasEtage"/>
+
+  <GridPane layout="300.0,300.0,30.0,40.0" columnCount="1" valign="top" halign="left" columnAlign="center" rowGap="0.0">
+
+    <Label image="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+      <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_01|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
+      <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_01/master"/>
+    </Label>
+
+    <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+      <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_01/points/Space$20Temp">
+        <ObjectToString name="text" format="%out.value%"/>
+      </ValueBinding>
+    </Label>
+
+    <SourceBinding ord="station:|slot:/Drivers/LonNetwork/FCU_01"/>
+
+    <IdBinding id="VC"/>
+
+    <String name="id" value="widget_8c8f_6a76_0"/>
+
+  </GridPane>
+
+  <GridPane layout="200.0,300.0,30.0,40.0" columnCount="1" valign="top" halign="left" columnAlign="center" rowGap="0.0">
+
+    <Label image="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+      <PopupBinding ord="station:|slot:/Drivers/LonNetwork/FCU_02|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
+      <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_02/master"/>
+    </Label>
+
+    <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+      <ValueBinding ord="station:|slot:/Drivers/LonNetwork/FCU_02/points/Space$20Temp">
+        <ObjectToString name="text" format="%out.value%"/>
+      </ValueBinding>
+    </Label>
+
+    <SourceBinding ord="station:|slot:/Drivers/LonNetwork/FCU_02"/>
+
+    <IdBinding id="VC"/>
+
+    <String name="id" value="widget_d4ca_6a76_0"/>
+
+  </GridPane>
+
+</CanvasPane>
+</content>
+</px>

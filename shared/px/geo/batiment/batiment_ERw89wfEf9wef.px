@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0" media="workbench:WbPxMedia">
+<px version="1.0">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
   <module name="btibCore"/>
   <module name="btibVision"/>
-  <module name="converters"/>
   <module name="gx"/>
-  <module name="kitPx"/>
-  <module name="vykonPro"/>
   <module name="workbench"/>
 </import>
 <properties>
@@ -85,23 +82,29 @@
 
   <PxInclude name="left" ord="file:^px/menus/gauche.px"/>
 
-  <BorderPane name="center" padding="0.0" fill="image( source(file:^images/arriere_plans/lePlaza.jpg) valign(top) )">
+  <BorderPane name="center" padding="0.0" fill="image( source(file:^images/arriere_plans/batiment.jpg) valign(top) )">
 
     <GridPane name="content" columnCount="1" valign="fill" halign="fill" rowAlign="fill" columnAlign="fill" rowGap="30.0" stretchRow="1" stretchColumn="0">
 
-      <BorderPane name="BorderPane" fill="#80f2f2f2">
+      <BorderPane fill="#80f2f2f2">
 
         <GridPane name="content" columnCount="10" halign="left" stretchColumn="0">
 
-          <Label name="Label" text="$(nomBatiment) /" font="18.0pt Calibri Light" foreground="#3c3c3c">
-            <ValueBinding name="ValueBinding" hyperlink="$(ordBatiment)"/>
+          <Label text="La Factory /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
+            <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/ERw89wfEf9wef"/>
           </Label>
 
         </GridPane>
 
       </BorderPane>
 
-      <IdBinding name="IdBinding" id="gridBatiment"/>
+      <IdBinding id="gridBatiment"/>
+
+      <BqlToWidgetsView>
+        <WbViewBinding ord="slot:Menu$20des$20$e9tages"/>
+        <IdBinding id="menuEtage"/>
+        <String name="id" value="widget_14c02_13b41_0"/>
+      </BqlToWidgetsView>
 
     </GridPane>
 
