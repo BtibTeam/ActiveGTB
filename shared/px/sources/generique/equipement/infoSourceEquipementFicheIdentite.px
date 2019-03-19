@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<content>
+<CanvasPane viewSize="600.0,400.0" minScaleFactor="0.5" maxScaleFactor="1.0">
+
+  <Picture layout="0.0,0.0,270.0,210.0" scale="fitRatio">
+    <ValueBinding ord="slot:InfoSource/photoEquipement">
+      <OrdToImage name="image"/>
+    </ValueBinding>
+  </Picture>
+
+</CanvasPane>
+</content>
+</px>

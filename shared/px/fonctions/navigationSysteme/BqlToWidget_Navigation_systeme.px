@@ -29,12 +29,12 @@
 
     <CanvasPane viewSize="150.0,140.0" minScaleFactor="0.5" maxScaleFactor="1.0">
 
-      <Label layout="0.0,0.0,150.0,20.0" text="ISMA-4I4O-H-IP" image="" font="bold 14.0pt Calibri" wordWrapEnabled="true"/>
+      <Label layout="0.0,0.0,150.0,20.0" text="ISMA-FCU-HH" image="" font="bold 14.0pt Calibri" wordWrapEnabled="true"/>
 
-      <Label layout="0.0,20.0,150.0,20.0" text="Module E/S" image="" font="12.0pt Calibri"/>
+      <Label layout="0.0,20.0,150.0,20.0" text="Automate configurable" image="" font="12.0pt Calibri"/>
 
       <Picture layout="30.0,50.0,90.0,90.0" image="" scale="fitRatio">
-        <ValueBinding ord="module://btibProducts/ISMA/MINI/4I4O_H_IP.jpg">
+        <ValueBinding ord="module://btibProducts/ISMA/FCU/FCU_HH.png">
           <OrdToImage name="image"/>
         </ValueBinding>
       </Picture>
@@ -46,7 +46,7 @@
       <CanvasPane viewSize="120.0,30.0" minScaleFactor="0.5" maxScaleFactor="1.0">
 
         <Label layout="0.0,0.0,50.0,30.0" image="" font="bold 18.0pt Calibri" halign="right">
-          <ValueBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$201/ISMA$2d4I4O$2dH$2dIP/BqlSizeHorsCom/size">
+          <ValueBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$201/ISMA$2dFCU$2dHH/BqlSizeHorsCom/size">
             <ObjectToString name="text" format="%.% "/>
             <INumericToSimple name="foreground" map="gx:Brush 0.0:0.5=black;0.5:+inf=red;default=null;"/>
             <INumericToSimple name="blink" map="baja:Boolean 0.0:0.5=false;0.5:+inf=true;default=false;"/>
@@ -54,13 +54,13 @@
         </Label>
 
         <Label layout="50.0,0.0,70.0,30.0" image="" font="bold 18.0pt Calibri" foreground="black" halign="left">
-          <ValueBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$201/ISMA$2d4I4O$2dH$2dIP/BqlSize/size">
+          <ValueBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$201/ISMA$2dFCU$2dHH/BqlSize/size">
             <ObjectToString name="text" format="/ %.%"/>
           </ValueBinding>
         </Label>
 
         <Label layout="0.0,0.0,120.0,30.0" image="">
-          <PopupBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$201/ISMA$2d4I4O$2dH$2dIP" title="Informations" position="10.0,10.0" size="900.0,700.0"/>
+          <PopupBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$201/ISMA$2dFCU$2dHH" title="Informations" position="10.0,10.0" size="900.0,700.0"/>
         </Label>
 
       </CanvasPane>
@@ -69,12 +69,12 @@
 
     <CanvasPane viewSize="150.0,140.0" minScaleFactor="0.5" maxScaleFactor="1.0">
 
-      <Label layout="0.0,0.0,150.0,20.0" text="ISMA-AAC20" image="" font="bold 14.0pt Calibri" wordWrapEnabled="true"/>
+      <Label layout="0.0,0.0,150.0,20.0" text="ISMA-FCU-HL" image="" font="bold 14.0pt Calibri" wordWrapEnabled="true"/>
 
-      <Label layout="0.0,20.0,150.0,20.0" text="Automate programmable" image="" font="12.0pt Calibri"/>
+      <Label layout="0.0,20.0,150.0,20.0" text="Automate configurable" image="" font="12.0pt Calibri"/>
 
       <Picture layout="30.0,50.0,90.0,90.0" image="" scale="fitRatio">
-        <ValueBinding ord="module://btibProducts/ISMA/AAC20/AAC20.jpg">
+        <ValueBinding ord="module://btibProducts/ISMA/FCU/FCU_HL.png">
           <OrdToImage name="image"/>
         </ValueBinding>
       </Picture>
@@ -86,7 +86,7 @@
       <CanvasPane viewSize="120.0,30.0" minScaleFactor="0.5" maxScaleFactor="1.0">
 
         <Label layout="0.0,0.0,50.0,30.0" image="" font="bold 18.0pt Calibri" halign="right">
-          <ValueBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$201/ISMA$2dAAC20/BqlSizeHorsCom/size">
+          <ValueBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$201/ISMA$2dFCU$2dHL/BqlSizeHorsCom/size">
             <ObjectToString name="text" format="%.% "/>
             <INumericToSimple name="foreground" map="gx:Brush 0.0:0.5=black;0.5:+inf=red;default=null;"/>
             <INumericToSimple name="blink" map="baja:Boolean 0.0:0.5=false;0.5:+inf=true;default=false;"/>
@@ -94,53 +94,13 @@
         </Label>
 
         <Label layout="50.0,0.0,70.0,30.0" image="" font="bold 18.0pt Calibri" foreground="black" halign="left">
-          <ValueBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$201/ISMA$2dAAC20/BqlSize/size">
+          <ValueBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$201/ISMA$2dFCU$2dHL/BqlSize/size">
             <ObjectToString name="text" format="/ %.%"/>
           </ValueBinding>
         </Label>
 
         <Label layout="0.0,0.0,120.0,30.0" image="">
-          <PopupBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$201/ISMA$2dAAC20" title="Informations" position="10.0,10.0" size="900.0,700.0"/>
-        </Label>
-
-      </CanvasPane>
-
-    </GridPane>
-
-    <CanvasPane viewSize="150.0,140.0" minScaleFactor="0.5" maxScaleFactor="1.0">
-
-      <Label layout="0.0,0.0,150.0,20.0" text="ISMA-MIX18" image="" font="bold 14.0pt Calibri" wordWrapEnabled="true"/>
-
-      <Label layout="0.0,20.0,150.0,20.0" text="Module E/S" image="" font="12.0pt Calibri"/>
-
-      <Picture layout="30.0,50.0,90.0,90.0" image="" scale="fitRatio">
-        <ValueBinding ord="module://btibProducts/ISMA/MIX/MIX18.jpg">
-          <OrdToImage name="image"/>
-        </ValueBinding>
-      </Picture>
-
-    </CanvasPane>
-
-    <GridPane columnCount="1">
-
-      <CanvasPane viewSize="120.0,30.0" minScaleFactor="0.5" maxScaleFactor="1.0">
-
-        <Label layout="0.0,0.0,50.0,30.0" image="" font="bold 18.0pt Calibri" halign="right">
-          <ValueBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$201/ISMA$2dMIX18/BqlSizeHorsCom/size">
-            <ObjectToString name="text" format="%.% "/>
-            <INumericToSimple name="foreground" map="gx:Brush 0.0:0.5=black;0.5:+inf=red;default=null;"/>
-            <INumericToSimple name="blink" map="baja:Boolean 0.0:0.5=false;0.5:+inf=true;default=false;"/>
-          </ValueBinding>
-        </Label>
-
-        <Label layout="50.0,0.0,70.0,30.0" image="" font="bold 18.0pt Calibri" foreground="black" halign="left">
-          <ValueBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$201/ISMA$2dMIX18/BqlSize/size">
-            <ObjectToString name="text" format="/ %.%"/>
-          </ValueBinding>
-        </Label>
-
-        <Label layout="0.0,0.0,120.0,30.0" image="">
-          <PopupBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$201/ISMA$2dMIX18" title="Informations" position="10.0,10.0" size="900.0,700.0"/>
+          <PopupBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$201/ISMA$2dFCU$2dHL" title="Informations" position="10.0,10.0" size="900.0,700.0"/>
         </Label>
 
       </CanvasPane>
