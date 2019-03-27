@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0">
+<px version="1.0" media="workbench:WbPxMedia">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
-  <module name="btibCore"/>
-  <module name="btibVision"/>
+  <module name="converters"/>
   <module name="gx"/>
+  <module name="jxBrowser"/>
+  <module name="kitPx"/>
+  <module name="vykonPro"/>
   <module name="workbench"/>
 </import>
 <properties>
@@ -82,47 +84,9 @@
 
   <PxInclude name="left" ord="file:^px/menus/gauche.px"/>
 
-  <BorderPane name="center" padding="20.0" fill="#eceff1">
-
-    <GridPane name="content" columnCount="1" halign="fill" rowAlign="fill" columnAlign="fill" rowGap="0.0" stretchRow="1" stretchColumn="0">
-
-      <BorderPane padding="0.0" fill="#02669c">
-
-        <GridPane name="content" columnCount="4" halign="left" columnGap="0.0">
-
-          <OverBorderPane border="bottom(4.0 solid white)" overFill="#039be5" shadow="0.0px 0.0px 0.0px 1.0px rgba(255,255,255,0.09803921568627451)">
-
-            <Label name="content" text="Console par m&#xe9;tier" image="module://themeBtib/image/x20/alarm_w.png" font="18.0pt Calibri" foreground="white"/>
-
-            <ValueBinding ord="station:|slot:/Accueil" hyperlink="station:|slot:/Accueil/Alarmes/Consoles$20par$20m$e9tier"/>
-
-          </OverBorderPane>
-
-          <OverBorderPane overFill="#02669c" shadow="0.0px 0.0px 0.0px 1.0px rgba(255,255,255,0.09803921568627451)">
-
-            <Label name="content" text="Console g&#xe9;n&#xe9;rale" image="module://themeBtib/image/x20/alarm_w.png" font="18.0pt Calibri" foreground="white"/>
-
-            <ValueBinding ord="station:|slot:/Accueil" hyperlink="station:|slot:/Accueil/Alarmes"/>
-
-          </OverBorderPane>
-
-        </GridPane>
-
-      </BorderPane>
-
-      <CanvasPane viewSize="1600.0,800.0" valign="top" background="white">
-
-        <BqlToWidgetsView layout="50.0,220.0,1550.0,580.0">
-          <WbViewBinding ord="station:|slot:/Accueil/Alarmes/Consoles$20par$20m$e9tier/Listes$20des$20consoles"/>
-        </BqlToWidgetsView>
-
-        <Label layout="50.0,120.0,460.0,50.0" text="Vous trouverez ici les consoles d&#x27;alarme par m&#xe9;tier" font="22.0pt Calibri Light" foreground="#1a1a1a" halign="left"/>
-
-      </CanvasPane>
-
-    </GridPane>
-
-  </BorderPane>
+  <WebWidget name="center" js="view:btibVision:FlexPane">
+    <WbViewBinding name="WbViewBinding" ord="slot:"/>
+  </WebWidget>
 
 </EdgePane>
 </content>
