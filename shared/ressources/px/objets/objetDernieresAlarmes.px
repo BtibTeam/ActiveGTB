@@ -88,7 +88,7 @@
     </BoundLabel>
 
     <Picture name="Picture" layout="10.0,2.0,16.0,16.0" scale="fitRatio">
-      <ValueBinding name="ValueBinding" ord="$(lien)/icon">
+      <ValueBinding name="ValueBinding" ord="$(lien)/lightIcon">
         <OrdToImage name="image"/>
       </ValueBinding>
     </Picture>
@@ -97,7 +97,7 @@
       <ActionBinding name="ActionBinding" ord="$(lien)/ack" widgetEvent="actionPerformed"/>
     </ImageButton>
 
-    <BoundLabel name="BoundLabel1" layout="10.0,20.0,210.0,20.0" foreground="white" halign="left">
+    <BoundLabel name="BoundLabel1" layout="10.0,20.0,210.0,20.0" font="bold 12.0pt SansSerif" foreground="white" halign="left">
       <BoundLabelBinding name="BoundLabelBinding" ord="$(lien)" statusEffect="none">
         <ObjectToString name="text" format="%source%"/>
       </BoundLabelBinding>

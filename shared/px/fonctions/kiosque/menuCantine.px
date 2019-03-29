@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibVision"/>
+  <module name="converters"/>
+  <module name="gx"/>
+</import>
+<content>
+<BorderPane padding="10.0 0.0" fill="image( source(file:^images/arriere_plans/cantine.jpg) )">
+
+  <GridPane name="content" columnCount="1" halign="fill" columnAlign="center" rowGap="30.0" columnGap="0.0" stretchColumn="0" bandBrush="white">
+
+    <OverBorderPane padding="20.0" fill="#e6ffffff" radius="8.0px 8.0px 8.0px 8.0px">
+
+      <GridPane name="content" columnCount="1" columnAlign="center" rowGap="20.0" bandBrush="white">
+
+        <Label text="Entr&#xe9;es du jour" font="45.0pt Calibri" foreground="#484848"/>
+
+        <Label font="22.0pt Calibri" foreground="#484848">
+          <ValueBinding ord="slot:">
+            <ObjectToString name="text" format="%entree%"/>
+          </ValueBinding>
+        </Label>
+
+      </GridPane>
+
+    </OverBorderPane>
+
+    <CanvasPane viewSize="500.0,1.0" background="white"/>
+
+    <Label/>
+
+    <GridPane columnCount="1" columnAlign="center" rowGap="50.0">
+
+      <GridPane columnCount="4" rowGap="100.0" columnGap="40.0">
+
+        <GridPane columnCount="1" columnAlign="center" rowGap="15.0">
+
+          <CanvasPane viewSize="190.0,70.0" background="#303030">
+
+            <Label layout="0.0,10.0,190.0,60.0" text="En forme !" font="27.0pt Calibri" foreground="white"/>
+
+            <Rect fill="#66bb6a" stroke="black" pen="0.0" geom="0.0,0.0,190.0,10.0"/>
+
+          </CanvasPane>
+
+          <OverCanvasPane viewSize="300.0,100.0" background="#e6ffffff" radius="8.0px 8.0px 8.0px 8.0px">
+
+            <Label font="22.0pt Calibri" foreground="#484848" background="white" wordWrapEnabled="true">
+              <ValueBinding ord="slot:">
+                <ObjectToString name="text" format="%enForme%"/>
+              </ValueBinding>
+            </Label>
+
+          </OverCanvasPane>
+
+        </GridPane>
+
+        <GridPane columnCount="1" columnAlign="center" rowGap="15.0">
+
+          <CanvasPane viewSize="190.0,70.0" background="#303030">
+
+            <Label layout="0.0,10.0,190.0,60.0" text="Cosmopolite" font="27.0pt Calibri" foreground="white"/>
+
+            <Rect fill="#9c27b0" stroke="black" pen="0.0" geom="0.0,0.0,190.0,10.0"/>
+
+          </CanvasPane>
+
+          <OverCanvasPane viewSize="300.0,100.0" background="#e6ffffff" radius="8.0px 8.0px 8.0px 8.0px">
+
+            <Label font="22.0pt Calibri" foreground="#484848" background="white" wordWrapEnabled="true">
+              <ValueBinding ord="slot:">
+                <ObjectToString name="text" format="%cosmopolite%"/>
+              </ValueBinding>
+            </Label>
+
+          </OverCanvasPane>
+
+        </GridPane>
+
+        <GridPane columnCount="1" columnAlign="center" rowGap="15.0">
+
+          <CanvasPane viewSize="190.0,70.0" background="#303030">
+
+            <Label layout="0.0,10.0,190.0,60.0" text="Italien" font="27.0pt Calibri" foreground="white"/>
+
+            <Rect fill="#2196f3" stroke="black" pen="0.0" geom="0.0,0.0,190.0,10.0"/>
+
+          </CanvasPane>
+
+          <OverCanvasPane viewSize="300.0,100.0" background="#e6ffffff" radius="8.0px 8.0px 8.0px 8.0px">
+
+            <Label font="22.0pt Calibri" foreground="#484848" background="white" wordWrapEnabled="true">
+              <ValueBinding ord="slot:">
+                <ObjectToString name="text" format="%italien%"/>
+              </ValueBinding>
+            </Label>
+
+          </OverCanvasPane>
+
+        </GridPane>
+
+        <GridPane columnCount="1" columnAlign="center" rowGap="15.0">
+
+          <CanvasPane viewSize="190.0,70.0" background="#303030">
+
+            <Label layout="0.0,10.0,190.0,60.0" text="Grill" font="27.0pt Calibri" foreground="white"/>
+
+            <Rect fill="#009688" stroke="black" pen="0.0" geom="0.0,0.0,190.0,10.0"/>
+
+          </CanvasPane>
+
+          <OverCanvasPane viewSize="300.0,100.0" background="#e6ffffff" radius="8.0px 8.0px 8.0px 8.0px">
+
+            <Label font="22.0pt Calibri" foreground="#484848" background="white" wordWrapEnabled="true">
+              <ValueBinding ord="slot:">
+                <ObjectToString name="text" format="%grill%"/>
+              </ValueBinding>
+            </Label>
+
+          </OverCanvasPane>
+
+        </GridPane>
+
+      </GridPane>
+
+    </GridPane>
+
+    <CanvasPane viewSize="500.0,1.0" background="white"/>
+
+    <OverBorderPane padding="20.0" fill="#e6ffffff" radius="8.0px 8.0px 8.0px 8.0px">
+
+      <GridPane name="content" columnCount="1" columnAlign="center" rowGap="20.0">
+
+        <Label text="Desserts" font="45.0pt Calibri" foreground="#484848"/>
+
+        <Label font="22.0pt Calibri" foreground="#484848">
+          <ValueBinding ord="slot:">
+            <ObjectToString name="text" format="%dessert%"/>
+          </ValueBinding>
+        </Label>
+
+      </GridPane>
+
+    </OverBorderPane>
+
+  </GridPane>
+
+</BorderPane>
+</content>
+</px>
