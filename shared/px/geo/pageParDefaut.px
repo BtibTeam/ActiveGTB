@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibVision"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+  <module name="vykonPro"/>
+  <module name="workbench"/>
+</import>
+<content>
+<EdgePane>
+
+  <PxInclude name="top" ord="file:^px/menus/haut.px"/>
+
+  <PxInclude name="left" ord="file:^px/menus/gauche.px"/>
+
+  <GridPane name="center" columnCount="1" valign="top" halign="fill" rowAlign="fill" columnAlign="fill" rowGap="0.0" columnGap="0.0" stretchRow="1" stretchColumn="0">
+
+    <CanvasPane viewSize="1400.0,200.0" halign="fill" background="#eceff1">
+
+      <Label layout="30.0,50.0,490.0,90.0" text="Pas de b&#xe2;timent disponible" image="module://themeBtib/image/svg/sad_b.svg" font="28.0pt Calibri" foreground="#37474f" halign="left" textIconGap="16.0"/>
+
+      <ImageButton layout="160.0,130.0,150.0,30.0" text="Cr&#xe9;er un b&#xe2;timent">
+        <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation"/>
+        <WsAnnotation name="wsAnnotation" value="10,10,8"/>
+      </ImageButton>
+
+    </CanvasPane>
+
+    <BorderPane padding="20.0" border="1.0 solid null">
+
+      <CanvasPane name="content" viewSize="1400.0,200.0" halign="fill" background="white"/>
+
+    </BorderPane>
+
+  </GridPane>
+
+  <PxInclude name="right" ord="file:^px/menus/droite.px"/>
+
+</EdgePane>
+</content>
+</px>

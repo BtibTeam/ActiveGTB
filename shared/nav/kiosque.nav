@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nav version='1.0'>
+<node name='Home' ord='station:|slot:/Accueil/Kiosque' icon='module://icons/x16/home.png'/>
+</nav>

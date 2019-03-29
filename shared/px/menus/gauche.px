@@ -57,6 +57,7 @@
     <target ord="slot:BorderPane2/content/Label2/foreground"/>
     <target ord="slot:BorderPane2/content/Label4/foreground"/>
     <target ord="slot:BorderPane1/content/Label5/foreground"/>
+    <target ord="slot:BorderPane2/content/Label3/foreground"/>
   </property>
 
   <property name="gaucheBackgroundCouleurClaire" type="gx:Brush" value="#616161">
@@ -163,6 +164,12 @@
 
       <Label name="Label4" image="module://themeBtib/image/x16/pie-chart_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
         <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil/Donn$e9es/Tableau$20de$20bord">
+          <ObjectToString name="text" format="%displayName%"/>
+        </ValueBinding>
+      </Label>
+
+      <Label name="Label3" image="module://themeBtib/image/x16/graphicPannel_w.png" font="16.0pt Calibri" foreground="white" halign="left" textIconGap="10.0">
+        <ValueBinding name="ValueBinding" ord="station:|slot:/Accueil/Kiosque" hyperlink="station:|slot:/Accueil/Kiosque">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>
       </Label>

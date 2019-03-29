@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="converters"/>
+  <module name="gx"/>
+</import>
+<content>
+<ScrollPane>
+
+  <CanvasPane name="content" viewSize="1920.0,100.0" scale="fitRatio" minScaleFactor="0.5" maxScaleFactor="1.0" background="#2196f3">
+
+    <Label layout="30.0,0.0,125.0,95.0">
+      <ValueBinding ord="station:|slot:/Accueil/M$e9teo/DarkSkyWeather/currently/weatherIcon">
+        <IEnumToSimple name="image" map="gx:Image 5=file:^images/weather/wind.png;0=file:^images/weather/clearDay.png;9=file:^images/weather/partlyCloudyNight.png;4=file:^images/weather/hail.png;7=file:^images/weather/cloudy.png;3=file:^images/weather/sleet.png;6=file:^images/weather/fog.png;1=file:^images/weather/clearNight.png;2=file:^images/weather/rain.png;8=file:^images/weather/partlyCloudyDay.png;default=null;"/>
+      </ValueBinding>
+    </Label>
+
+    <Label layout="170.0,0.0,1430.0,100.0" font="36.0pt Roboto" foreground="white" halign="left">
+      <ValueBinding ord="station:|slot:/Accueil/M$e9teo/DarkSkyWeather/currently/summary/value">
+        <ObjectToString name="text"/>
+      </ValueBinding>
+    </Label>
+
+    <Label layout="1740.0,0.0,179.99999999999977,100.0" font="48.0pt Roboto" foreground="white" halign="left">
+      <ValueBinding ord="station:|slot:/Accueil/M$e9teo/DarkSkyWeather/currently/temperature">
+        <ObjectToString name="text" format="%value%"/>
+      </ValueBinding>
+    </Label>
+
+  </CanvasPane>
+
+</ScrollPane>
+</content>
+</px>

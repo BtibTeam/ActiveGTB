@@ -84,7 +84,7 @@
 
   <ValueBinding name="ValueBinding" ord="station:|slot:/" hyperlink="station:|slot:/Services/AlarmService/$(escapedDisplayName)"/>
 
-  <Picture name="Picture" layout="75.0,85.0,100.0,100.0" scale="fitRatio">
+  <Picture name="Picture" layout="85.0,90.0,85.0,85.0" scale="fitRatio">
     <ValueBinding name="ValueBinding" ord="$(iconMetier)" hyperlink="station:|slot:/Services/AlarmService/$(escapedDisplayName)">
       <OrdToImage name="image"/>
     </ValueBinding>

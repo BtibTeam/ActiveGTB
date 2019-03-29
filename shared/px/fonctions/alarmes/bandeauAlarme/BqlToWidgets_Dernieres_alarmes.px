@@ -32,7 +32,7 @@
         </BoundLabel>
 
         <Picture layout="10.0,2.0,16.0,16.0" image="" scale="fitRatio">
-          <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem1/icon">
+          <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem1/lightIcon">
             <OrdToImage name="image"/>
           </ValueBinding>
         </Picture>
@@ -41,7 +41,7 @@
           <ActionBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem1/ack" widgetEvent="actionPerformed"/>
         </ImageButton>
 
-        <BoundLabel layout="10.0,20.0,210.0,20.0" image="" foreground="white" halign="left">
+        <BoundLabel layout="10.0,20.0,210.0,20.0" image="" font="bold 12.0pt SansSerif" foreground="white" halign="left">
           <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem1" statusEffect="none">
             <ObjectToString name="text" format="%source%"/>
           </BoundLabelBinding>
@@ -76,7 +76,7 @@
         </BoundLabel>
 
         <Picture layout="10.0,2.0,16.0,16.0" image="" scale="fitRatio">
-          <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem2/icon">
+          <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem2/lightIcon">
             <OrdToImage name="image"/>
           </ValueBinding>
         </Picture>
@@ -85,7 +85,7 @@
           <ActionBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem2/ack" widgetEvent="actionPerformed"/>
         </ImageButton>
 
-        <BoundLabel layout="10.0,20.0,210.0,20.0" image="" foreground="white" halign="left">
+        <BoundLabel layout="10.0,20.0,210.0,20.0" image="" font="bold 12.0pt SansSerif" foreground="white" halign="left">
           <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem2" statusEffect="none">
             <ObjectToString name="text" format="%source%"/>
           </BoundLabelBinding>
@@ -120,7 +120,7 @@
         </BoundLabel>
 
         <Picture layout="10.0,2.0,16.0,16.0" image="" scale="fitRatio">
-          <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem3/icon">
+          <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem3/lightIcon">
             <OrdToImage name="image"/>
           </ValueBinding>
         </Picture>
@@ -129,7 +129,7 @@
           <ActionBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem3/ack" widgetEvent="actionPerformed"/>
         </ImageButton>
 
-        <BoundLabel layout="10.0,20.0,210.0,20.0" image="" foreground="white" halign="left">
+        <BoundLabel layout="10.0,20.0,210.0,20.0" image="" font="bold 12.0pt SansSerif" foreground="white" halign="left">
           <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem3" statusEffect="none">
             <ObjectToString name="text" format="%source%"/>
           </BoundLabelBinding>
@@ -164,7 +164,7 @@
         </BoundLabel>
 
         <Picture layout="10.0,2.0,16.0,16.0" image="" scale="fitRatio">
-          <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem4/icon">
+          <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem4/lightIcon">
             <OrdToImage name="image"/>
           </ValueBinding>
         </Picture>
@@ -173,7 +173,7 @@
           <ActionBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem4/ack" widgetEvent="actionPerformed"/>
         </ImageButton>
 
-        <BoundLabel layout="10.0,20.0,210.0,20.0" image="" foreground="white" halign="left">
+        <BoundLabel layout="10.0,20.0,210.0,20.0" image="" font="bold 12.0pt SansSerif" foreground="white" halign="left">
           <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem4" statusEffect="none">
             <ObjectToString name="text" format="%source%"/>
           </BoundLabelBinding>
@@ -208,7 +208,7 @@
         </BoundLabel>
 
         <Picture layout="10.0,2.0,16.0,16.0" image="" scale="fitRatio">
-          <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem5/icon">
+          <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem5/lightIcon">
             <OrdToImage name="image"/>
           </ValueBinding>
         </Picture>
@@ -217,7 +217,7 @@
           <ActionBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem5/ack" widgetEvent="actionPerformed"/>
         </ImageButton>
 
-        <BoundLabel layout="10.0,20.0,210.0,20.0" image="" foreground="white" halign="left">
+        <BoundLabel layout="10.0,20.0,210.0,20.0" image="" font="bold 12.0pt SansSerif" foreground="white" halign="left">
           <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem5" statusEffect="none">
             <ObjectToString name="text" format="%source%"/>
           </BoundLabelBinding>

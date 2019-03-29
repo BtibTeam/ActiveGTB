@@ -112,17 +112,22 @@
       <SourceBinding name="SourceBinding" ord="station:|$(slotPathOrd)"/>
     </Label>
 
-    <GridPane name="GridPane" layout="90.0,350.0,80.0,60.0" columnCount="1" columnAlign="center" rowGap="4.0">
+    <GridPane name="GridPane" layout="90.0,350.0,30.0,40.0" columnCount="1" valign="top" halign="left" columnAlign="center" rowGap="0.0">
 
-      <Label name="Label" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
-        <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/points/Space$20Temp">
-          <ObjectToString name="text" format="%out.value%"/>
+      <Label name="Label" image="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+        <PopupBinding name="PopupBinding" ord="station:|$(slotPathOrd)|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
+        <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/b$3amaitre">
+          <IBooleanToSimple name="image">
+            <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
+            <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
+          </IBooleanToSimple>
         </ValueBinding>
       </Label>
 
-      <Label name="Label1" image="module://themeBtib/image/x30/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
-        <PopupBinding name="PopupBinding" ord="station:|$(slotPathOrd)|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
-        <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/master"/>
+      <Label name="Label1" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+        <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)/points/Temp$e9rature$20ambiante">
+          <ObjectToString name="text" format="%out.value%"/>
+        </ValueBinding>
       </Label>
 
       <SourceBinding name="SourceBinding" ord="station:|$(slotPathOrd)"/>
@@ -202,14 +207,22 @@
 
     <Label name="Label8" layout="90.0,320.0,220.0,20.0" text="Widget repr&#xe9;sentant des &#xe9;quipements" background="#f7f7f7" halign="left"/>
 
-    <Polygon name="Polygon1" fill="#8023b82c" stroke="white" pen="0.0" geom="860.0,170.0 870.0,230.0 930.0,230.0 1010.0,240.0 1010.0,150.0 910.0,150.0 ">
+    <Polygon name="Polygon1" fill="#8023b82c" stroke="white" pen="0.0" geom="855.0,195.0 865.0,255.0 925.0,255.0 1005.0,265.0 1005.0,175.0 905.0,175.0 ">
       <ValueBinding name="ValueBinding" hyperlink="$(ordEtage)"/>
       <String name="id" value="widget83a7"/>
       <IdBinding name="IdBinding" id="zoneDansEtage"/>
       <LayerTag name="LayerTag" layerName="fondDePlan"/>
     </Polygon>
 
-    <Label name="Label9" layout="860.0,110.0,200.0,20.0" text="Polygone repr&#xe9;sentant une zone" background="#f7f7f7" halign="left"/>
+    <Label name="Label9" layout="855.0,135.0,200.0,20.0" text="Polygone repr&#xe9;sentant une zone" background="#f7f7f7" halign="left"/>
+
+    <CanvasPane name="CanvasPane" layout="850.0,45.0,100.0,50.0" viewSize="1200.0,800.0">
+
+      <IdBinding name="IdBinding" id="canvasBatiment"/>
+
+    </CanvasPane>
+
+    <Label name="Label10" layout="850.0,10.0,200.0,20.0" text="Canvas pour placer des polygones" background="#f7f7f7" halign="left"/>
 
   </CanvasPane>
 
