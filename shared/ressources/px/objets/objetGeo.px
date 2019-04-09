@@ -86,7 +86,7 @@
 
   <CanvasPane name="content" viewSize="1100.0,800.0" scale="fitRatio" minScaleFactor="0.5" maxScaleFactor="1.0">
 
-    <Polygon name="Polygon" fill="#b32326b8" stroke="white" pen="0.0" geom="320.0,180.0 300.0,250.0 430.0,240.0 550.0,240.0 550.0,170.0 450.0,150.0 ">
+    <Polygon name="Polygon" fill="#b32326b8" stroke="white" pen="0.0" geom="310.0,170.0 290.0,240.0 420.0,230.0 540.0,230.0 540.0,160.0 440.0,140.0 ">
       <ValueBinding name="ValueBinding" hyperlink="$(ordEtage)"/>
       <String name="id" value="widget83a7"/>
       <IdBinding name="IdBinding" id="etageDansBatiment"/>
@@ -208,7 +208,7 @@
     <Label name="Label8" layout="90.0,320.0,220.0,20.0" text="Widget repr&#xe9;sentant des &#xe9;quipements" background="#f7f7f7" halign="left"/>
 
     <Polygon name="Polygon1" fill="#8023b82c" stroke="white" pen="0.0" geom="855.0,195.0 865.0,255.0 925.0,255.0 1005.0,265.0 1005.0,175.0 905.0,175.0 ">
-      <ValueBinding name="ValueBinding" hyperlink="$(ordEtage)"/>
+      <ValueBinding name="ValueBinding" hyperlink="station:|$(ordZone)"/>
       <String name="id" value="widget83a7"/>
       <IdBinding name="IdBinding" id="zoneDansEtage"/>
       <LayerTag name="LayerTag" layerName="fondDePlan"/>

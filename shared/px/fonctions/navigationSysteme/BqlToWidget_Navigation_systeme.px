@@ -17,159 +17,15 @@
 <content>
 <ScrollPane borderPolicy="never">
 
-  <GridPane name="content" columnCount="4" valign="top" halign="left" colorRows="true" bandBrush="#eceff1">
+  <GridPane name="content" valign="top" halign="left" colorRows="true" bandBrush="#eceff1">
 
     <NullWidget/>
 
     <CanvasPane viewSize="120.0,30.0" minScaleFactor="0.5" maxScaleFactor="1.0">
 
-      <Label layout="0.0,0.0,120.0,30.0" text="Etage 4" image="" font="bold 16.0pt Calibri"/>
+      <Label layout="0.0,0.0,120.0,30.0" text="Rdc" image="" font="bold 16.0pt Calibri"/>
 
     </CanvasPane>
-
-    <CanvasPane viewSize="120.0,30.0" minScaleFactor="0.5" maxScaleFactor="1.0">
-
-      <Label layout="0.0,0.0,120.0,30.0" text="Etage A" image="" font="bold 16.0pt Calibri"/>
-
-    </CanvasPane>
-
-    <CanvasPane viewSize="120.0,30.0" minScaleFactor="0.5" maxScaleFactor="1.0">
-
-      <Label layout="0.0,0.0,120.0,30.0" text="Etage A1" image="" font="bold 16.0pt Calibri"/>
-
-    </CanvasPane>
-
-    <CanvasPane viewSize="150.0,140.0" minScaleFactor="0.5" maxScaleFactor="1.0">
-
-      <Label layout="0.0,0.0,150.0,20.0" text="ISMA-2D" image="" font="bold 14.0pt Calibri" wordWrapEnabled="true"/>
-
-      <Label layout="0.0,20.0,150.0,20.0" text="Automate configurable" image="" font="12.0pt Calibri"/>
-
-      <Picture layout="30.0,50.0,90.0,90.0" image="" scale="fitRatio">
-        <ValueBinding ord="module://btibProducts/ISMA/2D1B/2D1B.png">
-          <OrdToImage name="image"/>
-        </ValueBinding>
-      </Picture>
-
-    </CanvasPane>
-
-    <NullWidget/>
-
-    <NullWidget/>
-
-    <GridPane columnCount="1">
-
-      <CanvasPane viewSize="120.0,30.0" minScaleFactor="0.5" maxScaleFactor="1.0">
-
-        <Label layout="0.0,0.0,50.0,30.0" image="" font="bold 18.0pt Calibri" halign="right">
-          <ValueBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$20A1/ISMA$2d2D/BqlSizeHorsCom/size">
-            <ObjectToString name="text" format="%.% "/>
-            <INumericToSimple name="foreground" map="gx:Brush 0.0:0.5=black;0.5:+inf=red;default=null;"/>
-            <INumericToSimple name="blink" map="baja:Boolean 0.0:0.5=false;0.5:+inf=true;default=false;"/>
-          </ValueBinding>
-        </Label>
-
-        <Label layout="50.0,0.0,70.0,30.0" image="" font="bold 18.0pt Calibri" foreground="black" halign="left">
-          <ValueBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$20A1/ISMA$2d2D/BqlSize/size">
-            <ObjectToString name="text" format="/ %.%"/>
-          </ValueBinding>
-        </Label>
-
-        <Label layout="0.0,0.0,120.0,30.0" image="">
-          <PopupBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$20A1/ISMA$2d2D" title="Informations" position="10.0,10.0" size="900.0,700.0"/>
-        </Label>
-
-      </CanvasPane>
-
-    </GridPane>
-
-    <CanvasPane viewSize="150.0,140.0" minScaleFactor="0.5" maxScaleFactor="1.0">
-
-      <Label layout="0.0,0.0,150.0,20.0" text="ISMA-AAC20" image="" font="bold 14.0pt Calibri" wordWrapEnabled="true"/>
-
-      <Label layout="0.0,20.0,150.0,20.0" text="Automate programmable" image="" font="12.0pt Calibri"/>
-
-      <Picture layout="30.0,50.0,90.0,90.0" image="" scale="fitRatio">
-        <ValueBinding ord="module://btibProducts/ISMA/AAC20/AAC20.jpg">
-          <OrdToImage name="image"/>
-        </ValueBinding>
-      </Picture>
-
-    </CanvasPane>
-
-    <NullWidget/>
-
-    <GridPane columnCount="1">
-
-      <CanvasPane viewSize="120.0,30.0" minScaleFactor="0.5" maxScaleFactor="1.0">
-
-        <Label layout="0.0,0.0,50.0,30.0" image="" font="bold 18.0pt Calibri" halign="right">
-          <ValueBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$20A/ISMA$2dAAC20/BqlSizeHorsCom/size">
-            <ObjectToString name="text" format="%.% "/>
-            <INumericToSimple name="foreground" map="gx:Brush 0.0:0.5=black;0.5:+inf=red;default=null;"/>
-            <INumericToSimple name="blink" map="baja:Boolean 0.0:0.5=false;0.5:+inf=true;default=false;"/>
-          </ValueBinding>
-        </Label>
-
-        <Label layout="50.0,0.0,70.0,30.0" image="" font="bold 18.0pt Calibri" foreground="black" halign="left">
-          <ValueBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$20A/ISMA$2dAAC20/BqlSize/size">
-            <ObjectToString name="text" format="/ %.%"/>
-          </ValueBinding>
-        </Label>
-
-        <Label layout="0.0,0.0,120.0,30.0" image="">
-          <PopupBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$20A/ISMA$2dAAC20" title="Informations" position="10.0,10.0" size="900.0,700.0"/>
-        </Label>
-
-      </CanvasPane>
-
-    </GridPane>
-
-    <NullWidget/>
-
-    <CanvasPane viewSize="150.0,140.0" minScaleFactor="0.5" maxScaleFactor="1.0">
-
-      <Label layout="0.0,0.0,150.0,20.0" text="ISMA-FCU-HH" image="" font="bold 14.0pt Calibri" wordWrapEnabled="true"/>
-
-      <Label layout="0.0,20.0,150.0,20.0" text="Automate configurable" image="" font="12.0pt Calibri"/>
-
-      <Picture layout="30.0,50.0,90.0,90.0" image="" scale="fitRatio">
-        <ValueBinding ord="module://btibProducts/ISMA/FCU/FCU_HH.png">
-          <OrdToImage name="image"/>
-        </ValueBinding>
-      </Picture>
-
-    </CanvasPane>
-
-    <GridPane columnCount="1">
-
-      <CanvasPane viewSize="120.0,30.0" minScaleFactor="0.5" maxScaleFactor="1.0">
-
-        <Label layout="0.0,0.0,50.0,30.0" image="" font="bold 18.0pt Calibri" halign="right">
-          <ValueBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$204/ISMA$2dFCU$2dHH/BqlSizeHorsCom/size">
-            <ObjectToString name="text" format="%.% "/>
-            <INumericToSimple name="foreground" map="gx:Brush 0.0:0.5=black;0.5:+inf=red;default=null;"/>
-            <INumericToSimple name="blink" map="baja:Boolean 0.0:0.5=false;0.5:+inf=true;default=false;"/>
-          </ValueBinding>
-        </Label>
-
-        <Label layout="50.0,0.0,70.0,30.0" image="" font="bold 18.0pt Calibri" foreground="black" halign="left">
-          <ValueBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$204/ISMA$2dFCU$2dHH/BqlSize/size">
-            <ObjectToString name="text" format="/ %.%"/>
-          </ValueBinding>
-        </Label>
-
-        <Label layout="0.0,0.0,120.0,30.0" image="">
-          <PopupBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$204/ISMA$2dFCU$2dHH" title="Informations" position="10.0,10.0" size="900.0,700.0"/>
-        </Label>
-
-      </CanvasPane>
-
-    </GridPane>
-
-    <NullWidget/>
-
-    <NullWidget/>
 
     <CanvasPane viewSize="150.0,140.0" minScaleFactor="0.5" maxScaleFactor="1.0">
 
@@ -185,16 +41,12 @@
 
     </CanvasPane>
 
-    <NullWidget/>
-
-    <NullWidget/>
-
     <GridPane columnCount="1">
 
       <CanvasPane viewSize="120.0,30.0" minScaleFactor="0.5" maxScaleFactor="1.0">
 
         <Label layout="0.0,0.0,50.0,30.0" image="" font="bold 18.0pt Calibri" halign="right">
-          <ValueBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$20A1/Xl10/BqlSizeHorsCom/size">
+          <ValueBinding ord="slot:/Accueil/Navigation$20syst$e8me/Rdc/Xl10/BqlSizeHorsCom/size">
             <ObjectToString name="text" format="%.% "/>
             <INumericToSimple name="foreground" map="gx:Brush 0.0:0.5=black;0.5:+inf=red;default=null;"/>
             <INumericToSimple name="blink" map="baja:Boolean 0.0:0.5=false;0.5:+inf=true;default=false;"/>
@@ -202,13 +54,13 @@
         </Label>
 
         <Label layout="50.0,0.0,70.0,30.0" image="" font="bold 18.0pt Calibri" foreground="black" halign="left">
-          <ValueBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$20A1/Xl10/BqlSize/size">
+          <ValueBinding ord="slot:/Accueil/Navigation$20syst$e8me/Rdc/Xl10/BqlSize/size">
             <ObjectToString name="text" format="/ %.%"/>
           </ValueBinding>
         </Label>
 
         <Label layout="0.0,0.0,120.0,30.0" image="">
-          <PopupBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$20A1/Xl10" title="Informations" position="10.0,10.0" size="900.0,700.0"/>
+          <PopupBinding ord="slot:/Accueil/Navigation$20syst$e8me/Rdc/Xl10" title="Informations" position="10.0,10.0" size="900.0,700.0"/>
         </Label>
 
       </CanvasPane>

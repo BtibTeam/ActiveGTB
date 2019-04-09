@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0">
+<px version="1.0" media="workbench:WbPxMedia">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
   <module name="btibCore"/>
   <module name="btibVision"/>
+  <module name="converters"/>
   <module name="gx"/>
+  <module name="kitPx"/>
+  <module name="vykonPro"/>
   <module name="workbench"/>
 </import>
 <properties>
@@ -86,25 +89,45 @@
 
     <GridPane name="content" columnCount="1" valign="fill" halign="fill" rowAlign="fill" columnAlign="fill" rowGap="30.0" stretchRow="1" stretchColumn="0">
 
-      <BorderPane fill="#80f2f2f2">
+      <BorderPane name="BorderPane" fill="#80f2f2f2">
 
         <GridPane name="content" columnCount="10" halign="left" stretchColumn="0">
 
-          <Label text="B&#xe2;timent1 /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
-            <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/o1E0WWI2akUH"/>
+          <Label name="Label" text="QG /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
+            <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/h1EJV75C3hPA"/>
           </Label>
 
         </GridPane>
 
       </BorderPane>
 
-      <IdBinding id="gridBatiment"/>
+      <IdBinding name="IdBinding" id="gridBatiment"/>
 
-      <BqlToWidgetsView>
-        <WbViewBinding ord="slot:Menu$20des$20$e9tages"/>
-        <IdBinding id="menuEtage"/>
-        <String name="id" value="widget_1833f_13b41_0"/>
-      </BqlToWidgetsView>
+      <CanvasPane name="CanvasPane" viewSize="1200.0,800.0">
+
+        <IdBinding name="IdBinding" id="canvasBatiment"/>
+
+        <String name="id" value="widget_1964f_14c33_0"/>
+
+        <Polygon name="Polygon" fill="#b32326b8" stroke="white" pen="0.0" geom="390.0,480.0 370.0,550.0 500.0,540.0 620.0,540.0 620.0,470.0 520.0,450.0 ">
+          <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/K1EJV8xX4vLf"/>
+          <String name="id" value="widget_1964c_dbff_0"/>
+          <IdBinding name="IdBinding" id="etageDansBatiment"/>
+        </Polygon>
+
+        <Polygon name="Polygon1" fill="#b32326b8" stroke="white" pen="0.0" geom="390.0,300.0 370.0,370.0 500.0,360.0 620.0,360.0 620.0,290.0 520.0,270.0 ">
+          <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/b1EJVb4yMEd8"/>
+          <String name="id" value="widget_19652_dbff_0"/>
+          <IdBinding name="IdBinding" id="etageDansBatiment"/>
+        </Polygon>
+
+        <Polygon name="Polygon2" fill="#b32326b8" stroke="white" pen="0.0" geom="390.0,390.0 370.0,460.0 500.0,450.0 620.0,450.0 620.0,380.0 520.0,360.0 ">
+          <ValueBinding name="ValueBinding" hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/Q1EJV9Gc5bwh"/>
+          <String name="id" value="widget_19655_dbff_0"/>
+          <IdBinding name="IdBinding" id="etageDansBatiment"/>
+        </Polygon>
+
+      </CanvasPane>
 
     </GridPane>
 
