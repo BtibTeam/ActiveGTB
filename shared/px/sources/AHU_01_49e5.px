@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibVision"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+  <module name="vykonPro"/>
+</import>
+<properties>
+
+  <property name="nomSite" type="baja:String" value="Le rabelais">
+  </property>
+
+  <property name="ordSite" type="baja:Ord" value="station:|slot:/Accueil/Navigation$20G$e9ographique">
+  </property>
+
+  <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="gaucheBackgroundCouleurClaire" type="gx:Brush" value="#616161">
+  </property>
+
+  <property name="gaucheBackgroundCouleur" type="gx:Brush" value="#424242">
+  </property>
+
+  <property name="gaucheBackgroundCouleurSombre" type="gx:Brush" value="#212121">
+  </property>
+
+  <property name="enTeteForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="enTeteBackgroundCouleurClaire" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="enTeteBackgroundCouleur" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="enTeteBackgroundCouleurSombre" type="gx:Brush" value="#0277bd">
+  </property>
+
+  <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
+  </property>
+
+  <property name="vueCentraleBackgroundBlanc" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleurClaire" type="gx:Brush" value="#546e7a">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleur" type="gx:Brush" value="#455a64">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleurSombre" type="gx:Brush" value="#37474f">
+  </property>
+
+  <property name="vueCentraleElementForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleurClaire" type="gx:Brush" value="#1e88e5">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleur" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleurSombre" type="gx:Brush" value="#1565c0">
+  </property>
+
+  <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  </property>
+
+</properties>
+<content>
+<EdgePane>
+
+  <PxInclude name="top" ord="file:^px/menus/haut.px"/>
+
+  <PxInclude name="left" ord="file:^px/menus/gauche.px"/>
+
+  <ScrollPane name="center" borderPolicy="never">
+
+    <GridPane name="content" columnCount="1" valign="top" halign="fill" rowAlign="fill" columnAlign="fill" rowGap="0.0" stretchRow="1" stretchColumn="0">
+
+      <GridPane name="GridPane" columnCount="4" halign="left" columnGap="64.0" colorRows="true" bandBrush="#039be5">
+
+        <CanvasPane name="CanvasPane" viewSize="0.0,100.0"/>
+
+        <OverCanvasPane name="OverCanvasPane" viewSize="150.0,120.0">
+
+          <Ellipse name="Ellipse" stroke="white" pen="3.0" geom="45.0,5.0,60.0,60.0"/>
+
+          <Picture name="Picture" layout="60.0,20.0,30.0,30.0" image="module://themeBtib/image/svg/timePlanning_w.svg" scale="fitRatio">
+            <PopupBinding name="PopupBinding" ord="slot:schedules/ProgrammeHoraireBool$e9en" title="Schedule" size="1200.0,800.0"/>
+          </Picture>
+
+          <Label name="Label" layout="0.0,80.0,150.0,20.0" text="Schedule" image="" font="16.0pt Trebuchet MS" foreground="white" wordWrapEnabled="true">
+            <PopupBinding name="PopupBinding" ord="slot:schedules/ProgrammeHoraireBool$e9en" title="Schedule" size="1200.0,800.0"/>
+          </Label>
+
+          <PopupBinding name="PopupBinding" ord="slot:schedules/ProgrammeHoraireBool$e9en" title="Schedule" size="1200.0,800.0"/>
+
+        </OverCanvasPane>
+
+        <OverCanvasPane name="OverCanvasPane1" viewSize="150.0,120.0">
+
+          <Ellipse name="Ellipse" stroke="white" pen="3.0" geom="45.0,5.0,60.0,60.0"/>
+
+          <Picture name="Picture" layout="60.0,20.0,30.0,30.0" image="module://themeBtib/image/svg/settings_w.svg" scale="fitRatio"/>
+
+          <Label name="Label" layout="0.0,80.0,150.0,20.0" text="Parameters" image="" font="16.0pt Trebuchet MS" foreground="white" wordWrapEnabled="true"/>
+
+        </OverCanvasPane>
+
+        <OverCanvasPane name="OverCanvasPane2" visible="false" viewSize="150.0,120.0">
+
+          <Ellipse name="Ellipse" stroke="white" pen="3.0" geom="45.0,5.0,60.0,60.0"/>
+
+          <Picture name="Picture" layout="60.0,20.0,30.0,30.0" image="module://themeBtib/image/svg/day_w.svg" scale="fitRatio">
+            <PopupBinding name="PopupBinding" ord="slot:points/Setpoint/TemperatureReset" title="Temperature Reset" size="1200.0,800.0"/>
+          </Picture>
+
+          <Label name="Label" layout="0.0,80.0,150.0,20.0" text="Heat law" image="" font="16.0pt Trebuchet MS" foreground="white" wordWrapEnabled="true"/>
+
+          <PopupBinding name="PopupBinding" ord="slot:points/Setpoint/TemperatureReset" degradeBehavior="hide" title="Heat law" size="1200.0,800.0"/>
+
+        </OverCanvasPane>
+
+      </GridPane>
+
+      <BorderPane name="BorderPane" padding="20.0" fill="#eceff1">
+
+        <CanvasPane name="content" viewSize="1150.0,450.0" halign="left" valign="top">
+
+          <BoundLabel name="BoundLabel" layout="130.0,90.0,510.0,249.0" image="file:^px/kitPxGraphics/Ductwork/Duct_Horz_Dual_Long.png"/>
+
+          <BoundLabel name="BoundLabel1" layout="330.0,90.0,510.0,249.0" image="file:^px/kitPxGraphics/Ductwork/Duct_Horz_Dual_Long.png"/>
+
+          <BoundLabel name="BoundLabel2" layout="390.0,210.0,150.0,129.0" image="file:^px/kitPxGraphics/Ductwork/Duct_Connector_T_Up.png"/>
+
+          <BoundLabel name="BoundLabel3" layout="390.0,90.0,150.0,130.0" image="file:^px/kitPxGraphics/Ductwork/Duct_Connector_T_Down.png"/>
+
+          <BoundLabel name="BoundLabel4" layout="80.0,90.0,120.0,99.0" image="file:^px/kitPxGraphics/Ductwork/Duct_Horz_End_Left.png"/>
+
+          <BoundLabel name="BoundLabel5" layout="80.0,240.0,120.0,99.0" image="file:^px/kitPxGraphics/Ductwork/Duct_Horz_End_Left.png"/>
+
+          <BoundLabel name="BoundLabel6" layout="940.0,90.0,119.0,99.0" image="file:^px/kitPxGraphics/Ductwork/Duct_Horz_End_Right.png"/>
+
+          <BoundLabel name="BoundLabel7" layout="520.0,90.0,510.0,249.0" image="file:^px/kitPxGraphics/Ductwork/Duct_Horz_Dual_Long.png"/>
+
+          <BoundLabel name="BoundLabel8" layout="940.0,240.0,119.0,99.0" image="file:^px/kitPxGraphics/Ductwork/Duct_Horz_End_Right.png"/>
+
+          <IdBinding name="IdBinding" id="Synoptique"/>
+
+          <GridPane name="GridPane" layout="260.0,25.0,100.0,190.0" columnCount="1" columnAlign="center">
+
+            <Label name="Label" image="" font="bold underline 12.0pt SansSerif" halign="fill">
+              <ValueBinding name="ValueBinding" ord="station:|slot:/Drivers/BacnetNetwork/AHU$2001/points/Outside$20air$20temp" hyperlink="station:|slot:/Drivers/BacnetNetwork/AHU$2001/points/Outside$20air$20temp">
+                <ObjectToString name="text" format="%displayName% : "/>
+              </ValueBinding>
+            </Label>
+
+            <Label name="Label1" image="" font="12.0pt SansSerif" halign="fill">
+              <ValueBinding name="ValueBinding" ord="station:|slot:/Drivers/BacnetNetwork/AHU$2001/points/Outside$20air$20temp" hyperlink="station:|slot:/Drivers/BacnetNetwork/AHU$2001/points/Outside$20air$20temp">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <BoundLabel name="BoundLabel" image="file:^px/kitPxGraphics/Sensors/sensor_duct_bulbtemp_top.png"/>
+
+            <IdBinding name="IdBinding" id="capteurGaineTemperature"/>
+
+            <String name="id" value="widget_19dd2_dc35_0"/>
+
+          </GridPane>
+
+        </CanvasPane>
+
+      </BorderPane>
+
+    </GridPane>
+
+  </ScrollPane>
+
+</EdgePane>
+</content>
+</px>

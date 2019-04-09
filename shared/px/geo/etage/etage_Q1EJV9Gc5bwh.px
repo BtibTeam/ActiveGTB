@@ -90,12 +90,12 @@
 
       <GridPane layout="10.0,0.0,640.0,40.0" columnCount="10" halign="left">
 
-        <Label text="B&#xe2;timent1 /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
-          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/o1E0WWI2akUH"/>
+        <Label text="QG /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
+          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/h1EJV75C3hPA"/>
         </Label>
 
-        <Label text="Etage A /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
-          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/c1E0WWI2Ejnb"/>
+        <Label text="Etage 1 /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
+          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/Q1EJV9Gc5bwh"/>
         </Label>
 
       </GridPane>
@@ -111,11 +111,6 @@
         <CanvasPane layout="50.0,80.0,1100.0,1200.0" viewSize="1100.0,1200.0" halign="left" valign="top" background="image( source(file:^images/plans/Vinci_Plaza_Pieces_ V11.jpg) halign(left) valign(top) )">
 
           <IdBinding id="canvasEtage"/>
-
-          <Label layout="0.0,0.0,70.0,60.0" text="?" image="" font="bold 22.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
-            <ValueBinding ord="station:|slot:/Accueil/NumericWritable1" hyperlink="station:|slot:/Accueil/NumericWritable1"/>
-            <String name="id" value="widget_18770_6a76_0"/>
-          </Label>
 
         </CanvasPane>
 
