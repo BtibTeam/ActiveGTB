@@ -88,7 +88,6 @@
 
     <Polygon name="Polygon" fill="#b32326b8" stroke="white" pen="0.0" geom="310.0,170.0 290.0,240.0 420.0,230.0 540.0,230.0 540.0,160.0 440.0,140.0 ">
       <ValueBinding name="ValueBinding" hyperlink="$(ordEtage)"/>
-      <String name="id" value="widget83a7"/>
       <IdBinding name="IdBinding" id="etageDansBatiment"/>
     </Polygon>
 
@@ -209,7 +208,6 @@
 
     <Polygon name="Polygon1" fill="#8023b82c" stroke="white" pen="0.0" geom="855.0,195.0 865.0,255.0 925.0,255.0 1005.0,265.0 1005.0,175.0 905.0,175.0 ">
       <ValueBinding name="ValueBinding" hyperlink="station:|$(ordZone)"/>
-      <String name="id" value="widget83a7"/>
       <IdBinding name="IdBinding" id="zoneDansEtage"/>
       <LayerTag name="LayerTag" layerName="fondDePlan"/>
     </Polygon>
