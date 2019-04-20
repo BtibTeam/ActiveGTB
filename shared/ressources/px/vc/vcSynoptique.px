@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0">
+<px version="1.0" media="workbench:WbPxMedia">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
@@ -76,26 +76,26 @@
 <content>
 <CanvasPane viewSize="500.0,400.0">
 
-  <Picture layout="160.0,70.0,170.0,90.0" image="module://kitPxN4svg/Ductwork/Duct_Horz_Short.svg"/>
+  <Picture name="Picture" layout="160.0,70.0,170.0,90.0" image="module://kitPxN4svg/Ductwork/Duct_Horz_Short.svg"/>
 
-  <Picture layout="40.0,70.0,120.0,90.0" image="module://kitPxN4svg/Ductwork/Duct_Horz_End_Left.svg"/>
+  <Picture name="Picture1" layout="40.0,70.0,120.0,90.0" image="module://kitPxN4svg/Ductwork/Duct_Horz_End_Left.svg"/>
 
-  <Picture layout="330.0,70.0,130.0,90.0" image="module://kitPxN4svg/Ductwork/Duct_Horz_End_Right.svg"/>
+  <Picture name="Picture2" layout="330.0,70.0,130.0,90.0" image="module://kitPxN4svg/Ductwork/Duct_Horz_End_Right.svg"/>
 
-  <Picture layout="120.0,70.0,80.0,120.0">
-    <ValueBinding ord="slot:points/Cool$20output">
+  <Picture name="Picture3" layout="120.0,70.0,80.0,120.0">
+    <ValueBinding name="ValueBinding" ord="slot:points/Vanne$20chaud">
       <INumericToSimple name="image" map="gx:Image -inf:20.0=module://kitPxN4svg/Coils/Coils_Cooling_2Way_Bottom/Coils_Cooling_2Way_Bottom_0.svg;20.0:40.0=module://kitPxN4svg/Coils/Coils_Cooling_2Way_Bottom/Coils_Cooling_2Way_Bottom_1.svg;40.0:60.0=module://kitPxN4svg/Coils/Coils_Cooling_2Way_Bottom/Coils_Cooling_2Way_Bottom_2.svg;60.0:80.0=module://kitPxN4svg/Coils/Coils_Cooling_2Way_Bottom/Coils_Cooling_2Way_Bottom_3.svg;80.0:+inf=module://kitPxN4svg/Coils/Coils_Cooling_2Way_Bottom/Coils_Cooling_2Way_Bottom_4.svg;default=module://kitPxN4svg/Coils/Coils_Cooling_2Way_Bottom/Coils_Cooling_2Way_Bottom_0.svg;"/>
     </ValueBinding>
   </Picture>
 
-  <Picture layout="190.0,70.0,80.0,120.0">
-    <ValueBinding ord="slot:points/Heat$20output">
+  <Picture name="Picture4" layout="190.0,70.0,80.0,120.0">
+    <ValueBinding name="ValueBinding" ord="slot:points/Vanne$20froid">
       <INumericToSimple name="image" map="gx:Image -inf:20.0=module://kitPxN4svg/Coils/Coils_Heating_2Way_Bottom/Coils_Heating_2Way_Bottom_0.svg;20.0:40.0=module://kitPxN4svg/Coils/Coils_Heating_2Way_Bottom/Coils_Heating_2Way_Bottom_1.svg;40.0:60.0=module://kitPxN4svg/Coils/Coils_Heating_2Way_Bottom/Coils_Heating_2Way_Bottom_2.svg;60.0:80.0=module://kitPxN4svg/Coils/Coils_Heating_2Way_Bottom/Coils_Heating_2Way_Bottom_3.svg;80.0:+inf=module://kitPxN4svg/Coils/Coils_Heating_2Way_Bottom/Coils_Heating_2Way_Bottom_4.svg;default=module://kitPxN4svg/Coils/Coils_Heating_2Way_Bottom/Coils_Heating_2Way_Bottom_0.svg;"/>
     </ValueBinding>
   </Picture>
 
-  <Picture layout="270.0,70.0,130.0,90.0">
-    <ValueBinding ord="slot:points/Fan$20state">
+  <Picture name="Picture5" layout="270.0,70.0,130.0,90.0">
+    <ValueBinding name="ValueBinding" ord="slot:points/Etat$20Ventilo$2dconvecteur">
       <IBooleanToSimple name="image">
         <Image name="trueValue" value="module://kitPxN4svg/Fans/Fans_Horz/Fans_Horz_Right/Fans_Horz_Right_On.svg"/>
         <Image name="falseValue" value="module://kitPxN4svg/Fans/Fans_Horz/Fans_Horz_Right/Fans_Horz_Right_Off.svg"/>
@@ -103,20 +103,20 @@
     </ValueBinding>
   </Picture>
 
-  <Label layout="300.0,190.0,190.0,20.0" font="12.0pt Trebuchet MS" foreground="white" background="#37474f">
-    <ValueBinding ord="slot:points/Space$20Temp">
+  <Label name="Label" layout="300.0,190.0,190.0,20.0" font="12.0pt Trebuchet MS" foreground="white" background="#37474f">
+    <ValueBinding name="ValueBinding" ord="slot:points/Temp$e9rature$20ambiante">
       <ObjectToString name="text" format="Temp&#xe9;rature ambiante %out.value%"/>
     </ValueBinding>
   </Label>
 
-  <Label layout="300.0,220.0,190.0,20.0" font="12.0pt Trebuchet MS" foreground="white" background="#37474f">
-    <ValueBinding ord="slot:points/Zone$20relative$20humidity">
+  <Label name="Label1" layout="300.0,220.0,190.0,20.0" font="12.0pt Trebuchet MS" foreground="white" background="#37474f">
+    <ValueBinding name="ValueBinding" ord="slot:points/Humidit$e9$20ambiante">
       <ObjectToString name="text" format="Humidit&#xe9; relative %out.value%"/>
     </ValueBinding>
   </Label>
 
-  <Picture layout="390.0,250.0,100.0,100.0" scale="fitRatio">
-    <ValueBinding ord="slot:points/Window$20contact$20state">
+  <Picture name="Picture6" layout="390.0,250.0,100.0,100.0" scale="fitRatio">
+    <ValueBinding name="ValueBinding" ord="slot:points/Etat$20contact$20de$20fen$eatre">
       <IBooleanToSimple name="image">
         <Image name="trueValue" value="file:^images/images/Fen&#xea;treOuverte_60x60.png"/>
         <Image name="falseValue" value="file:^images/images/Fen&#xea;treFermee_60x60.png"/>
@@ -124,8 +124,8 @@
     </ValueBinding>
   </Picture>
 
-  <Label layout="40.0,10.0,190.0,30.0" font="bold 16.0pt Trebuchet MS" foreground="#484747" background="#ededed">
-    <ValueBinding ord="slot:">
+  <Label name="Label2" layout="40.0,10.0,190.0,30.0" font="bold 16.0pt Trebuchet MS" foreground="#484747" background="#ededed">
+    <ValueBinding name="ValueBinding" ord="slot:">
       <ObjectToString name="text" format="%displayName%"/>
     </ValueBinding>
   </Label>

@@ -4,10 +4,10 @@
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
-  <module name="btibCore"/>
-  <module name="btibVision"/>
   <module name="converters"/>
   <module name="gx"/>
+  <module name="kitPx"/>
+  <module name="workbench"/>
 </import>
 <properties>
 
@@ -42,6 +42,7 @@
   </property>
 
   <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
+    <target ord="slot:Label/foreground"/>
   </property>
 
   <property name="vueCentraleBackgroundBlanc" type="gx:Brush" value="white">
@@ -76,21 +77,44 @@
 
 </properties>
 <content>
-<OverCanvasPane viewSize="250.0,200.0" background="#1976d2" overBackground="#1565c0" radius="8.0px 8.0px 8.0px 8.0px">
+<CanvasPane viewSize="300.0,200.0" background="white">
 
-  <Label name="Label" layout="20.0,30.0,210.0,40.0" text="$(escapedDisplayName)" font="18.0pt Calibri" foreground="white" wordWrapEnabled="true">
-    <ValueBinding name="ValueBinding" ord="$(lien)" hyperlink="$(lien)"/>
+  <GridPane name="GridPane" layout="10.0,95.0,280.0,80.0" columnGap="6.0">
+
+    <Label name="Label" text="LowRate" font="bold 12.0pt SansSerif" foreground="black" halign="left"/>
+
+    <GenericFieldEditor name="GenericFieldEditor">
+      <WbFieldEditorBinding name="WbFieldEditorBinding" ord="station:|$(slotPathOrd)/lowRate"/>
+    </GenericFieldEditor>
+
+    <Label name="Label1" text="NormalRate" font="bold 12.0pt SansSerif" foreground="black" halign="left"/>
+
+    <GenericFieldEditor name="GenericFieldEditor1">
+      <WbFieldEditorBinding name="WbFieldEditorBinding" ord="station:|$(slotPathOrd)/normalRate"/>
+    </GenericFieldEditor>
+
+    <Label name="Label2" text="FastRate" font="bold 12.0pt SansSerif" foreground="black" halign="left"/>
+
+    <GenericFieldEditor name="GenericFieldEditor2">
+      <WbFieldEditorBinding name="WbFieldEditorBinding" ord="station:|$(slotPathOrd)/fastRate"/>
+    </GenericFieldEditor>
+
+    <Label name="Label3" text="Ex&#xe9;cuter au d&#xe9;marrage" font="bold 12.0pt SansSerif" foreground="black" halign="left"/>
+
+    <GenericFieldEditor name="GenericFieldEditor3">
+      <WbFieldEditorBinding name="WbFieldEditorBinding" ord="station:|$(slotPathOrd)/executeOnStart"/>
+    </GenericFieldEditor>
+
+  </GridPane>
+
+  <Label name="Label" layout="20.0,20.0,250.0,50.0" font="bold 16.0pt SansSerif" foreground="black" wordWrapEnabled="true">
+    <ValueBinding name="ValueBinding" ord="station:|$(slotPathOrd)">
+      <ObjectToString name="text" format="%description%"/>
+    </ValueBinding>
   </Label>
 
-  <Picture name="Picture" layout="100.0,90.0,50.0,50.0" scale="fitRatio">
-    <ValueBinding name="ValueBinding" ord="$(lien)" hyperlink="$(lien)"/>
-    <ValueBinding name="ValueBinding1" ord="$(lien)/lightIcon">
-      <PassThrough name="image"/>
-    </ValueBinding>
-  </Picture>
+  <Line name="Line" stroke="#9d9d9d" geom="20.0,80.0 280.0,80.0"/>
 
-  <ValueBinding name="ValueBinding" ord="$(lien)" hyperlink="$(lien)"/>
-
-</OverCanvasPane>
+</CanvasPane>
 </content>
 </px>

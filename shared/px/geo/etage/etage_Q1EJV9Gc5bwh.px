@@ -113,8 +113,8 @@
           <IdBinding id="canvasEtage"/>
 
           <Label layout="0.0,0.0,70.0,60.0" text="?" image="" font="bold 22.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
-            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$202" hyperlink="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$202"/>
-            <String name="id" value="widget_18b3e_6a76_0"/>
+            <ValueBinding ord="station:|slot:/Accueil/Point$20Test" hyperlink="station:|slot:/Accueil/Point$20Test"/>
+            <String name="id" value="widget_10c2c_6a76_0"/>
           </Label>
 
         </CanvasPane>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+  <module name="workbench"/>
+</import>
+<properties>
+
+  <property name="bqlToWidgetsHandle" type="baja:String" value="1b23a">
+  </property>
+
+</properties>
+<content>
+<ScrollPane viewportBackground="#37474f" borderPolicy="never">
+
+  <GridPane name="content" columnCount="5" valign="top" rowAlign="top" columnGap="30.0">
+
+    <CanvasPane viewSize="300.0,200.0" background="white">
+
+      <GridPane layout="10.0,95.0,280.0,80.0" columnGap="6.0">
+
+        <Label text="LowRate" image="" font="bold 12.0pt SansSerif" foreground="black" halign="left"/>
+
+        <GenericFieldEditor>
+          <WbFieldEditorBinding ord="station:|slot:/Accueil/Alarmes/Statistiques/Mise$20$e0$20jour/lowRate"/>
+        </GenericFieldEditor>
+
+        <Label text="NormalRate" image="" font="bold 12.0pt SansSerif" foreground="black" halign="left"/>
+
+        <GenericFieldEditor>
+          <WbFieldEditorBinding ord="station:|slot:/Accueil/Alarmes/Statistiques/Mise$20$e0$20jour/normalRate"/>
+        </GenericFieldEditor>
+
+        <Label text="FastRate" image="" font="bold 12.0pt SansSerif" foreground="black" halign="left"/>
+
+        <GenericFieldEditor>
+          <WbFieldEditorBinding ord="station:|slot:/Accueil/Alarmes/Statistiques/Mise$20$e0$20jour/fastRate"/>
+        </GenericFieldEditor>
+
+        <Label text="Ex&#xe9;cuter au d&#xe9;marrage" image="" font="bold 12.0pt SansSerif" foreground="black" halign="left"/>
+
+        <GenericFieldEditor>
+          <WbFieldEditorBinding ord="station:|slot:/Accueil/Alarmes/Statistiques/Mise$20$e0$20jour/executeOnStart"/>
+        </GenericFieldEditor>
+
+      </GridPane>
+
+      <Label layout="20.0,20.0,250.0,50.0" image="" font="bold 16.0pt SansSerif" foreground="black" wordWrapEnabled="true">
+        <ValueBinding ord="station:|slot:/Accueil/Alarmes/Statistiques/Mise$20$e0$20jour">
+          <ObjectToString name="text" format="%description%"/>
+        </ValueBinding>
+      </Label>
+
+      <Line stroke="#9d9d9d" geom="20.0,80.0 280.0,80.0"/>
+
+    </CanvasPane>
+
+    <CanvasPane viewSize="300.0,200.0" background="white">
+
+      <GridPane layout="10.0,95.0,280.0,80.0" columnGap="6.0">
+
+        <Label text="LowRate" image="" font="bold 12.0pt SansSerif" foreground="black" halign="left"/>
+
+        <GenericFieldEditor>
+          <WbFieldEditorBinding ord="station:|slot:/Accueil/Navigation$20syst$e8me/Mise$20$e0$20jour/lowRate"/>
+        </GenericFieldEditor>
+
+        <Label text="NormalRate" image="" font="bold 12.0pt SansSerif" foreground="black" halign="left"/>
+
+        <GenericFieldEditor>
+          <WbFieldEditorBinding ord="station:|slot:/Accueil/Navigation$20syst$e8me/Mise$20$e0$20jour/normalRate"/>
+        </GenericFieldEditor>
+
+        <Label text="FastRate" image="" font="bold 12.0pt SansSerif" foreground="black" halign="left"/>
+
+        <GenericFieldEditor>
+          <WbFieldEditorBinding ord="station:|slot:/Accueil/Navigation$20syst$e8me/Mise$20$e0$20jour/fastRate"/>
+        </GenericFieldEditor>
+
+        <Label text="Ex&#xe9;cuter au d&#xe9;marrage" image="" font="bold 12.0pt SansSerif" foreground="black" halign="left"/>
+
+        <GenericFieldEditor>
+          <WbFieldEditorBinding ord="station:|slot:/Accueil/Navigation$20syst$e8me/Mise$20$e0$20jour/executeOnStart"/>
+        </GenericFieldEditor>
+
+      </GridPane>
+
+      <Label layout="20.0,20.0,250.0,50.0" image="" font="bold 16.0pt SansSerif" foreground="black" wordWrapEnabled="true">
+        <ValueBinding ord="station:|slot:/Accueil/Navigation$20syst$e8me/Mise$20$e0$20jour">
+          <ObjectToString name="text" format="%description%"/>
+        </ValueBinding>
+      </Label>
+
+      <Line stroke="#9d9d9d" geom="20.0,80.0 280.0,80.0"/>
+
+    </CanvasPane>
+
+    <CanvasPane viewSize="300.0,200.0" background="white">
+
+      <GridPane layout="10.0,95.0,280.0,80.0" columnGap="6.0">
+
+        <Label text="LowRate" image="" font="bold 12.0pt SansSerif" foreground="black" halign="left"/>
+
+        <GenericFieldEditor>
+          <WbFieldEditorBinding ord="station:|slot:/Accueil/Bilans$20d$27exploitation/Mise$20$e0$20jour/lowRate"/>
+        </GenericFieldEditor>
+
+        <Label text="NormalRate" image="" font="bold 12.0pt SansSerif" foreground="black" halign="left"/>
+
+        <GenericFieldEditor>
+          <WbFieldEditorBinding ord="station:|slot:/Accueil/Bilans$20d$27exploitation/Mise$20$e0$20jour/normalRate"/>
+        </GenericFieldEditor>
+
+        <Label text="FastRate" image="" font="bold 12.0pt SansSerif" foreground="black" halign="left"/>
+
+        <GenericFieldEditor>
+          <WbFieldEditorBinding ord="station:|slot:/Accueil/Bilans$20d$27exploitation/Mise$20$e0$20jour/fastRate"/>
+        </GenericFieldEditor>
+
+        <Label text="Ex&#xe9;cuter au d&#xe9;marrage" image="" font="bold 12.0pt SansSerif" foreground="black" halign="left"/>
+
+        <GenericFieldEditor>
+          <WbFieldEditorBinding ord="station:|slot:/Accueil/Bilans$20d$27exploitation/Mise$20$e0$20jour/executeOnStart"/>
+        </GenericFieldEditor>
+
+      </GridPane>
+
+      <Label layout="20.0,20.0,250.0,50.0" image="" font="bold 16.0pt SansSerif" foreground="black" wordWrapEnabled="true">
+        <ValueBinding ord="station:|slot:/Accueil/Bilans$20d$27exploitation/Mise$20$e0$20jour">
+          <ObjectToString name="text" format="%description%"/>
+        </ValueBinding>
+      </Label>
+
+      <Line stroke="#9d9d9d" geom="20.0,80.0 280.0,80.0"/>
+
+    </CanvasPane>
+
+  </GridPane>
+
+</ScrollPane>
+</content>
+</px>

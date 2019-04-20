@@ -83,20 +83,24 @@
     <GridPane name="GridPane" layout="80.0,100.0,100.0,190.0" columnCount="1" columnAlign="center">
 
       <Label name="Label" font="bold underline 12.0pt SansSerif" halign="fill">
-        <ValueBinding name="ValueBinding" ord="$(slotPathOrd)" hyperlink="$(slotPathOrd)">
+        <ValueBinding name="ValueBinding" ord="$(slotPathOrd)">
           <ObjectToString name="text" format="%displayName% : "/>
         </ValueBinding>
+        <PopupBinding name="PopupBinding" ord="station:|$(slotPathOrd)" title="D&#xe9;tails" size="1200.0,800.0"/>
       </Label>
 
       <Label name="Label1" font="12.0pt SansSerif" halign="fill">
-        <ValueBinding name="ValueBinding" ord="$(slotPathOrd)" hyperlink="$(slotPathOrd)">
+        <ValueBinding name="ValueBinding" ord="$(slotPathOrd)">
           <ObjectToString name="text" format="%out.value%"/>
         </ValueBinding>
+        <PopupBinding name="PopupBinding" ord="station:|$(slotPathOrd)" title="D&#xe9;tails" size="1200.0,800.0"/>
       </Label>
 
       <BoundLabel name="BoundLabel" image="file:^px/kitPxGraphics/Sensors/sensor_duct_bulbtemp_top.png"/>
 
       <IdBinding name="IdBinding" id="capteurGaineTemperature"/>
+
+      <PopupBinding name="PopupBinding" ord="station:|$(slotPathOrd)" title="D&#xe9;tails" size="1200.0,800.0"/>
 
     </GridPane>
 

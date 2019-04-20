@@ -6,58 +6,68 @@
   <module name="bajaui"/>
   <module name="btibCore"/>
   <module name="btibVision"/>
+  <module name="converters"/>
   <module name="gx"/>
 </import>
 <properties>
 
-  <property name="nomSite" type="baja:String" value="Le rabelais">
+  <property name="bqlToWidgetsHandle" type="baja:String" value="fb3b">
   </property>
 
 </properties>
 <content>
-<ScrollPane viewportBackground="#455a64" borderPolicy="never">
+<ScrollPane viewportBackground="#37474f" borderPolicy="never">
 
-  <GridPane name="content" columnCount="5" valign="top" rowAlign="top" columnGap="30.0">
+  <GridPane name="content" columnCount="5" valign="top" halign="left" rowAlign="top" columnGap="30.0">
 
-    <OverCanvasPane viewSize="250.0,200.0" background="#1976d2" overBackground="#1565c0">
+    <OverCanvasPane viewSize="250.0,200.0" background="#1976d2" overBackground="#1565c0" radius="8.0px 8.0px 8.0px 8.0px">
 
-      <Label layout="0.0,30.0,250.0,40.0" text="Param&#xe8;tres utilisateurs" image="" font="20.0pt Calibri" foreground="white" wordWrapEnabled="true">
-        <ValueBinding ord="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20utilisateurs" hyperlink="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20utilisateurs"/>
-      </Label>
-
-      <Picture layout="100.0,90.0,50.0,50.0" image="module://themeBtib/image/svg/system_w.svg" scale="fitRatio">
-        <ValueBinding ord="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20utilisateurs" hyperlink="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20utilisateurs"/>
-      </Picture>
-
-      <ValueBinding ord="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20utilisateurs" hyperlink="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20utilisateurs"/>
-
-    </OverCanvasPane>
-
-    <OverCanvasPane viewSize="250.0,200.0" background="#1976d2" overBackground="#1565c0">
-
-      <Label layout="0.0,30.0,250.0,40.0" text="Param&#xe8;tres classe d&#x27;alarmes" image="" font="20.0pt Calibri" foreground="white" wordWrapEnabled="true">
+      <Label layout="20.0,30.0,210.0,40.0" text="Param&#xe8;tres classe d&#x27;alarmes" image="" font="18.0pt Calibri" foreground="white" wordWrapEnabled="true">
         <ValueBinding ord="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20classe$20d$27alarmes" hyperlink="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20classe$20d$27alarmes"/>
       </Label>
 
-      <Picture layout="100.0,90.0,50.0,50.0" image="module://themeBtib/image/svg/system_w.svg" scale="fitRatio">
+      <Picture layout="100.0,90.0,50.0,50.0" image="" scale="fitRatio">
         <ValueBinding ord="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20classe$20d$27alarmes" hyperlink="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20classe$20d$27alarmes"/>
+        <ValueBinding ord="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20classe$20d$27alarmes/lightIcon">
+          <PassThrough name="image"/>
+        </ValueBinding>
       </Picture>
 
       <ValueBinding ord="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20classe$20d$27alarmes" hyperlink="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20classe$20d$27alarmes"/>
 
     </OverCanvasPane>
 
-    <OverCanvasPane viewSize="250.0,200.0" background="#1976d2" overBackground="#1565c0">
+    <OverCanvasPane viewSize="250.0,200.0" background="#1976d2" overBackground="#1565c0" radius="8.0px 8.0px 8.0px 8.0px">
 
-      <Label layout="0.0,30.0,250.0,40.0" text="Param&#xe8;tres g&#xe9;n&#xe9;raux" image="" font="20.0pt Calibri" foreground="white" wordWrapEnabled="true">
+      <Label layout="20.0,30.0,210.0,40.0" text="Param&#xe8;tres g&#xe9;n&#xe9;raux" image="" font="18.0pt Calibri" foreground="white" wordWrapEnabled="true">
         <ValueBinding ord="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20g$e9n$e9raux" hyperlink="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20g$e9n$e9raux"/>
       </Label>
 
-      <Picture layout="100.0,90.0,50.0,50.0" image="module://themeBtib/image/svg/system_w.svg" scale="fitRatio">
+      <Picture layout="100.0,90.0,50.0,50.0" image="" scale="fitRatio">
         <ValueBinding ord="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20g$e9n$e9raux" hyperlink="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20g$e9n$e9raux"/>
+        <ValueBinding ord="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20g$e9n$e9raux/lightIcon">
+          <PassThrough name="image"/>
+        </ValueBinding>
       </Picture>
 
       <ValueBinding ord="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20g$e9n$e9raux" hyperlink="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20g$e9n$e9raux"/>
+
+    </OverCanvasPane>
+
+    <OverCanvasPane viewSize="250.0,200.0" background="#1976d2" overBackground="#1565c0" radius="8.0px 8.0px 8.0px 8.0px">
+
+      <Label layout="20.0,30.0,210.0,40.0" text="Param&#xe8;tres ex&#xe9;cution" image="" font="18.0pt Calibri" foreground="white" wordWrapEnabled="true">
+        <ValueBinding ord="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20ex$e9cution" hyperlink="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20ex$e9cution"/>
+      </Label>
+
+      <Picture layout="100.0,90.0,50.0,50.0" image="" scale="fitRatio">
+        <ValueBinding ord="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20ex$e9cution" hyperlink="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20ex$e9cution"/>
+        <ValueBinding ord="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20ex$e9cution/lightIcon">
+          <PassThrough name="image"/>
+        </ValueBinding>
+      </Picture>
+
+      <ValueBinding ord="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20ex$e9cution" hyperlink="slot:/Accueil/Param$e8tres$20stations/Param$e8tres$20ex$e9cution"/>
 
     </OverCanvasPane>
 

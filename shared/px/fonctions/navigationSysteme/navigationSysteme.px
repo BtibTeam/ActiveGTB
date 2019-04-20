@@ -21,13 +21,17 @@
 
     <PxInclude name="left" ord="file:^px/menus/gauche.px"/>
 
-    <CanvasPane name="center" viewSize="1300.0,800.0" minScaleFactor="0.5" maxScaleFactor="1.0" valign="top">
+    <BorderPane name="center" padding="20.0" border="1.0 solid black">
 
-      <BqlToWidgetsView layout="0.0,0.0,1300.0,800.0">
-        <WbViewBinding ord="slot:Navigation$20syst$e8me"/>
-      </BqlToWidgetsView>
+      <CanvasPane name="content" viewSize="1300.0,800.0" minScaleFactor="0.5" maxScaleFactor="1.0" valign="top">
 
-    </CanvasPane>
+        <BqlToWidgetsView layout="0.0,0.0,1300.0,800.0">
+          <WbViewBinding ord="slot:Navigation$20syst$e8me"/>
+        </BqlToWidgetsView>
+
+      </CanvasPane>
+
+    </BorderPane>
 
     <PxInclude name="right" ord="file:^px/menus/droite.px"/>
 
