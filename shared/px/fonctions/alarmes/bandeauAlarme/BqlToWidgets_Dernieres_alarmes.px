@@ -37,10 +37,6 @@
           </ValueBinding>
         </Picture>
 
-        <ImageButton layout="170.0,0.0,50.0,20.0" text="Acq." image="" background="white" valign="fill" disabled="">
-          <ActionBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem1/ack" widgetEvent="actionPerformed"/>
-        </ImageButton>
-
         <BoundLabel layout="10.0,20.0,210.0,20.0" image="" font="bold 12.0pt SansSerif" foreground="white" halign="left">
           <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem1" statusEffect="none">
             <ObjectToString name="text" format="%source%"/>
@@ -60,6 +56,13 @@
         </BoundLabel>
 
         <PxTemplateInfo name="templateInfo" templateName="BandeauAlarmesVert" vendor="B.tib" version="1.0"/>
+
+        <ImageButton layout="175.0,0.0,50.0,20.0" text="Acq." image="" background="white" valign="fill" disabled="">
+          <ActionBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem1/ack" widgetEvent="actionPerformed"/>
+          <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem1/ackState">
+            <IEnumToSimple name="visible" map="baja:Boolean 0,2=false;default=true;"/>
+          </ValueBinding>
+        </ImageButton>
 
       </OverCanvasPane>
 
@@ -81,10 +84,6 @@
           </ValueBinding>
         </Picture>
 
-        <ImageButton layout="170.0,0.0,50.0,20.0" text="Acq." image="" background="white" valign="fill" disabled="">
-          <ActionBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem2/ack" widgetEvent="actionPerformed"/>
-        </ImageButton>
-
         <BoundLabel layout="10.0,20.0,210.0,20.0" image="" font="bold 12.0pt SansSerif" foreground="white" halign="left">
           <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem2" statusEffect="none">
             <ObjectToString name="text" format="%source%"/>
@@ -104,6 +103,13 @@
         </BoundLabel>
 
         <PxTemplateInfo name="templateInfo" templateName="BandeauAlarmesVert" vendor="B.tib" version="1.0"/>
+
+        <ImageButton layout="175.0,0.0,50.0,20.0" text="Acq." image="" background="white" valign="fill" disabled="">
+          <ActionBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem2/ack" widgetEvent="actionPerformed"/>
+          <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem2/ackState">
+            <IEnumToSimple name="visible" map="baja:Boolean 0,2=false;default=true;"/>
+          </ValueBinding>
+        </ImageButton>
 
       </OverCanvasPane>
 
@@ -125,10 +131,6 @@
           </ValueBinding>
         </Picture>
 
-        <ImageButton layout="170.0,0.0,50.0,20.0" text="Acq." image="" background="white" valign="fill" disabled="">
-          <ActionBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem3/ack" widgetEvent="actionPerformed"/>
-        </ImageButton>
-
         <BoundLabel layout="10.0,20.0,210.0,20.0" image="" font="bold 12.0pt SansSerif" foreground="white" halign="left">
           <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem3" statusEffect="none">
             <ObjectToString name="text" format="%source%"/>
@@ -148,6 +150,13 @@
         </BoundLabel>
 
         <PxTemplateInfo name="templateInfo" templateName="BandeauAlarmesVert" vendor="B.tib" version="1.0"/>
+
+        <ImageButton layout="175.0,0.0,50.0,20.0" text="Acq." image="" background="white" valign="fill" disabled="">
+          <ActionBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem3/ack" widgetEvent="actionPerformed"/>
+          <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem3/ackState">
+            <IEnumToSimple name="visible" map="baja:Boolean 0,2=false;default=true;"/>
+          </ValueBinding>
+        </ImageButton>
 
       </OverCanvasPane>
 
@@ -169,10 +178,6 @@
           </ValueBinding>
         </Picture>
 
-        <ImageButton layout="170.0,0.0,50.0,20.0" text="Acq." image="" background="white" valign="fill" disabled="">
-          <ActionBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem4/ack" widgetEvent="actionPerformed"/>
-        </ImageButton>
-
         <BoundLabel layout="10.0,20.0,210.0,20.0" image="" font="bold 12.0pt SansSerif" foreground="white" halign="left">
           <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem4" statusEffect="none">
             <ObjectToString name="text" format="%source%"/>
@@ -192,6 +197,13 @@
         </BoundLabel>
 
         <PxTemplateInfo name="templateInfo" templateName="BandeauAlarmesVert" vendor="B.tib" version="1.0"/>
+
+        <ImageButton layout="175.0,0.0,50.0,20.0" text="Acq." image="" background="white" valign="fill" disabled="">
+          <ActionBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem4/ack" widgetEvent="actionPerformed"/>
+          <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem4/ackState">
+            <IEnumToSimple name="visible" map="baja:Boolean 0,2=false;default=true;"/>
+          </ValueBinding>
+        </ImageButton>
 
       </OverCanvasPane>
 
@@ -213,10 +225,6 @@
           </ValueBinding>
         </Picture>
 
-        <ImageButton layout="170.0,0.0,50.0,20.0" text="Acq." image="" background="white" valign="fill" disabled="">
-          <ActionBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem5/ack" widgetEvent="actionPerformed"/>
-        </ImageButton>
-
         <BoundLabel layout="10.0,20.0,210.0,20.0" image="" font="bold 12.0pt SansSerif" foreground="white" halign="left">
           <BoundLabelBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem5" statusEffect="none">
             <ObjectToString name="text" format="%source%"/>
@@ -236,6 +244,13 @@
         </BoundLabel>
 
         <PxTemplateInfo name="templateInfo" templateName="BandeauAlarmesVert" vendor="B.tib" version="1.0"/>
+
+        <ImageButton layout="175.0,0.0,50.0,20.0" text="Acq." image="" background="white" valign="fill" disabled="">
+          <ActionBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem5/ack" widgetEvent="actionPerformed"/>
+          <ValueBinding ord="slot:/Services/AlarmService/Last$20Alarm/lastAlarmItem5/ackState">
+            <IEnumToSimple name="visible" map="baja:Boolean 0,2=false;default=true;"/>
+          </ValueBinding>
+        </ImageButton>
 
       </OverCanvasPane>
 

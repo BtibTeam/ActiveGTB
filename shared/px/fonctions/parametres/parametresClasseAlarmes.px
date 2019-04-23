@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0">
+<px version="1.0" media="workbench:WbPxMedia">
 <import>
+  <module name="alarm"/>
   <module name="baja"/>
   <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibVision"/>
+  <module name="converters"/>
   <module name="gx"/>
+  <module name="kitPx"/>
+  <module name="vykonPro"/>
+  <module name="workbench"/>
 </import>
 <properties>
 
@@ -54,10 +61,10 @@
   </property>
 
   <property name="vueCentraleBackgroundCouleur" type="gx:Brush" value="#455a64">
-    <target ord="slot:content/center/background"/>
   </property>
 
   <property name="vueCentraleBackgroundCouleurSombre" type="gx:Brush" value="#37474f">
+    <target ord="slot:content/center/background"/>
   </property>
 
   <property name="vueCentraleElementForegroundCouleur" type="gx:Brush" value="white">
@@ -82,11 +89,11 @@
 
     <PxInclude name="left" ord="file:^px/menus/gauche.px"/>
 
-    <CanvasPane name="center" viewSize="1300.0,800.0" minScaleFactor="0.5" maxScaleFactor="1.0" valign="top" background="#455a64">
+    <CanvasPane name="center" viewSize="1300.0,800.0" minScaleFactor="0.5" maxScaleFactor="1.0" valign="top" background="#37474f">
 
-      <Label layout="150.0,40.0,670.0,20.0" text="D&#xe9;finissez ici les priorit&#xe9;s pour chaque classe d&#x27;alarmes et chaque transition" foreground="white" halign="left"/>
+      <Label name="Label" layout="150.0,40.0,670.0,20.0" text="D&#xe9;finissez ici les priorit&#xe9;s pour chaque classe d&#x27;alarmes et chaque transition" foreground="white" halign="left"/>
 
-      <PxInclude layout="50.0,80.0,910.0,650.0" ord="file:^px/fonctions/parametres/Liste_classe_d_alarmes.px"/>
+      <PxInclude name="PxInclude" layout="50.0,80.0,910.0,650.0" ord="file:^px/fonctions/parametres/Liste_classe_d_alarmes.px"/>
 
     </CanvasPane>
 

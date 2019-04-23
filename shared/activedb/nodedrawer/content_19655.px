@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="gx"/>
+</import>
+<content>
+<CanvasPane layout="50.0,80.0,1100.0,1200.0" viewSize="1100.0,1200.0" halign="left" valign="top" background="image( source(file:^images/plans/Vinci_Plaza_Pieces_ V11.jpg) halign(left) valign(top) )">
+
+  <IdBinding id="canvasEtage"/>
+
+  <Label layout="0.0,0.0,70.0,60.0" text="?" image="" font="bold 22.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+    <ValueBinding ord="station:|slot:/Accueil/Point$20Test" hyperlink="station:|slot:/Accueil/Point$20Test"/>
+    <String name="id" value="widget_10c2c_6a76_0"/>
+  </Label>
+
+</CanvasPane>
+</content>
+</px>

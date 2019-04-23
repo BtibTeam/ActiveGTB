@@ -93,10 +93,6 @@
       </ValueBinding>
     </Picture>
 
-    <ImageButton name="ImageButton" layout="170.0,0.0,50.0,20.0" text="Acq." background="white" valign="fill">
-      <ActionBinding name="ActionBinding" ord="$(lien)/ack" widgetEvent="actionPerformed"/>
-    </ImageButton>
-
     <BoundLabel name="BoundLabel1" layout="10.0,20.0,210.0,20.0" font="bold 12.0pt SansSerif" foreground="white" halign="left">
       <BoundLabelBinding name="BoundLabelBinding" ord="$(lien)" statusEffect="none">
         <ObjectToString name="text" format="%source%"/>
@@ -116,6 +112,13 @@
     </BoundLabel>
 
     <PxTemplateInfo name="templateInfo" templateName="BandeauAlarmesVert" vendor="B.tib" version="1.0"/>
+
+    <ImageButton name="ImageButton" layout="175.0,0.0,50.0,20.0" text="Acq." image="" background="white" valign="fill" disabled="">
+      <ActionBinding name="ActionBinding" ord="$(lien)/ack" widgetEvent="actionPerformed"/>
+      <ValueBinding name="ValueBinding" ord="$(lien)/ackState">
+        <IEnumToSimple name="visible" map="baja:Boolean 0,2=false;default=true;"/>
+      </ValueBinding>
+    </ImageButton>
 
   </OverCanvasPane>
 

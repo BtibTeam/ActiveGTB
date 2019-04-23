@@ -5,8 +5,11 @@
   <module name="baja"/>
   <module name="bajaui"/>
   <module name="btibCore"/>
+  <module name="btibStructure"/>
   <module name="btibVision"/>
+  <module name="converters"/>
   <module name="gx"/>
+  <module name="kitPx"/>
 </import>
 <properties>
 
@@ -112,10 +115,83 @@
 
           <IdBinding id="canvasEtage"/>
 
-          <Label layout="0.0,0.0,70.0,60.0" text="?" image="" font="bold 22.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
-            <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$203" hyperlink="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$203"/>
+          <GridPane layout="210.0,140.0,30.0,40.0" columnCount="1" valign="top" halign="left" columnAlign="center" rowGap="0.0">
+
+            <Label font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+              <PopupBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$202|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$202/b$3amaitre">
+                <IBooleanToSimple name="image">
+                  <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
+                  <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
+                </IBooleanToSimple>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$202/points/Temp$e9rature$20ambiante">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$202"/>
+
+            <IdBinding id="VC"/>
+
+            <String name="id" value="widget_18b3e_6a76_0"/>
+
+          </GridPane>
+
+          <GridPane layout="180.0,200.0,30.0,40.0" columnCount="1" valign="top" halign="left" columnAlign="center" rowGap="0.0">
+
+            <Label font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+              <PopupBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$203|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$203/b$3amaitre">
+                <IBooleanToSimple name="image">
+                  <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
+                  <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
+                </IBooleanToSimple>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$203/points/Temp$e9rature$20ambiante">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$203"/>
+
+            <IdBinding id="VC"/>
+
             <String name="id" value="widget_18b98_6a76_0"/>
-          </Label>
+
+          </GridPane>
+
+          <GridPane layout="250.0,200.0,30.0,40.0" columnCount="1" valign="top" halign="left" columnAlign="center" rowGap="0.0">
+
+            <Label font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+              <PopupBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$204|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$204/b$3amaitre">
+                <IBooleanToSimple name="image">
+                  <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
+                  <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
+                </IBooleanToSimple>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$204/points/Temp$e9rature$20ambiante">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$204"/>
+
+            <IdBinding id="VC"/>
+
+            <String name="id" value="widget_18bf2_6a76_0"/>
+
+          </GridPane>
 
         </CanvasPane>
 

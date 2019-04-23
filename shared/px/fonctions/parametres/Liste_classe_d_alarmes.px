@@ -16,11 +16,11 @@
 
 </properties>
 <content>
-<ScrollPane viewportBackground="#455a64" borderPolicy="never">
+<ScrollPane viewportBackground="#37474f" borderPolicy="never">
 
   <GridPane name="content" columnCount="1" valign="top" rowAlign="top">
 
-    <CanvasPane viewSize="720.0,40.0" background="#546e7a">
+    <CanvasPane viewSize="720.0,40.0" background="#37474f">
 
       <GenericFieldEditor layout="220.0,10.0,500.0,20.0" foreground="white">
         <WbFieldEditorBinding ord="slot:/Services/AlarmService/defaultAlarmClass/priority"/>
@@ -28,7 +28,7 @@
 
       <Picture layout="0.0,5.0,32.0,30.0" image="module://themeBtib/image/x30/status/alarm_w.png" scale="fitRatio"/>
 
-      <Label layout="35.0,5.0,175.0,30.0" image="" font="14.0pt Calibri" foreground="white" background="#546e7a">
+      <Label layout="35.0,5.0,175.0,30.0" image="" font="14.0pt Calibri" foreground="white" background="#37474f">
         <ValueBinding ord="slot:/Services/AlarmService/defaultAlarmClass">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>
@@ -40,16 +40,16 @@
 
     </CanvasPane>
 
-    <CanvasPane viewSize="720.0,40.0" background="#546e7a">
+    <CanvasPane viewSize="720.0,40.0" background="#37474f">
 
       <GenericFieldEditor layout="220.0,10.0,500.0,20.0" foreground="white">
-        <WbFieldEditorBinding ord="slot:/Services/AlarmService/Plomberie_Niveau1/priority"/>
+        <WbFieldEditorBinding ord="slot:/Services/AlarmService/Electricite_Niveau1/priority"/>
       </GenericFieldEditor>
 
       <Picture layout="0.0,5.0,32.0,30.0" image="module://themeBtib/image/x30/status/alarm_w.png" scale="fitRatio"/>
 
-      <Label layout="35.0,5.0,175.0,30.0" image="" font="14.0pt Calibri" foreground="white" background="#546e7a">
-        <ValueBinding ord="slot:/Services/AlarmService/Plomberie_Niveau1">
+      <Label layout="35.0,5.0,175.0,30.0" image="" font="14.0pt Calibri" foreground="white" background="#37474f">
+        <ValueBinding ord="slot:/Services/AlarmService/Electricite_Niveau1">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>
       </Label>
@@ -60,87 +60,7 @@
 
     </CanvasPane>
 
-    <CanvasPane viewSize="720.0,40.0" background="#546e7a">
-
-      <GenericFieldEditor layout="220.0,10.0,500.0,20.0" foreground="white">
-        <WbFieldEditorBinding ord="slot:/Services/AlarmService/Eclairage_Niveau1/priority"/>
-      </GenericFieldEditor>
-
-      <Picture layout="0.0,5.0,32.0,30.0" image="module://themeBtib/image/x30/status/alarm_w.png" scale="fitRatio"/>
-
-      <Label layout="35.0,5.0,175.0,30.0" image="" font="14.0pt Calibri" foreground="white" background="#546e7a">
-        <ValueBinding ord="slot:/Services/AlarmService/Eclairage_Niveau1">
-          <ObjectToString name="text" format="%displayName%"/>
-        </ValueBinding>
-      </Label>
-
-      <SaveButton layout="670.0,10.0,40.0,20.0" image="module://icons/x16/save.png" font="16.0pt Calibri" halign="left" textIconGap="0.0" textOverride=" ">
-        <WsAnnotation name="wsAnnotation" value="14,14,8"/>
-      </SaveButton>
-
-    </CanvasPane>
-
-    <CanvasPane viewSize="720.0,40.0" background="#546e7a">
-
-      <GenericFieldEditor layout="220.0,10.0,500.0,20.0" foreground="white">
-        <WbFieldEditorBinding ord="slot:/Services/AlarmService/Fluides_Medicaux_Niveau1/priority"/>
-      </GenericFieldEditor>
-
-      <Picture layout="0.0,5.0,32.0,30.0" image="module://themeBtib/image/x30/status/alarm_w.png" scale="fitRatio"/>
-
-      <Label layout="35.0,5.0,175.0,30.0" image="" font="14.0pt Calibri" foreground="white" background="#546e7a">
-        <ValueBinding ord="slot:/Services/AlarmService/Fluides_Medicaux_Niveau1">
-          <ObjectToString name="text" format="%displayName%"/>
-        </ValueBinding>
-      </Label>
-
-      <SaveButton layout="670.0,10.0,40.0,20.0" image="module://icons/x16/save.png" font="16.0pt Calibri" halign="left" textIconGap="0.0" textOverride=" ">
-        <WsAnnotation name="wsAnnotation" value="14,14,8"/>
-      </SaveButton>
-
-    </CanvasPane>
-
-    <CanvasPane viewSize="720.0,40.0" background="#546e7a">
-
-      <GenericFieldEditor layout="220.0,10.0,500.0,20.0" foreground="white">
-        <WbFieldEditorBinding ord="slot:/Services/AlarmService/Fluides_Medicaux_Niveau2/priority"/>
-      </GenericFieldEditor>
-
-      <Picture layout="0.0,5.0,32.0,30.0" image="module://themeBtib/image/x30/status/alarm_w.png" scale="fitRatio"/>
-
-      <Label layout="35.0,5.0,175.0,30.0" image="" font="14.0pt Calibri" foreground="white" background="#546e7a">
-        <ValueBinding ord="slot:/Services/AlarmService/Fluides_Medicaux_Niveau2">
-          <ObjectToString name="text" format="%displayName%"/>
-        </ValueBinding>
-      </Label>
-
-      <SaveButton layout="670.0,10.0,40.0,20.0" image="module://icons/x16/save.png" font="16.0pt Calibri" halign="left" textIconGap="0.0" textOverride=" ">
-        <WsAnnotation name="wsAnnotation" value="14,14,8"/>
-      </SaveButton>
-
-    </CanvasPane>
-
-    <CanvasPane viewSize="720.0,40.0" background="#546e7a">
-
-      <GenericFieldEditor layout="220.0,10.0,500.0,20.0" foreground="white">
-        <WbFieldEditorBinding ord="slot:/Services/AlarmService/Fluides_Medicaux_Niveau3/priority"/>
-      </GenericFieldEditor>
-
-      <Picture layout="0.0,5.0,32.0,30.0" image="module://themeBtib/image/x30/status/alarm_w.png" scale="fitRatio"/>
-
-      <Label layout="35.0,5.0,175.0,30.0" image="" font="14.0pt Calibri" foreground="white" background="#546e7a">
-        <ValueBinding ord="slot:/Services/AlarmService/Fluides_Medicaux_Niveau3">
-          <ObjectToString name="text" format="%displayName%"/>
-        </ValueBinding>
-      </Label>
-
-      <SaveButton layout="670.0,10.0,40.0,20.0" image="module://icons/x16/save.png" font="16.0pt Calibri" halign="left" textIconGap="0.0" textOverride=" ">
-        <WsAnnotation name="wsAnnotation" value="14,14,8"/>
-      </SaveButton>
-
-    </CanvasPane>
-
-    <CanvasPane viewSize="720.0,40.0" background="#546e7a">
+    <CanvasPane viewSize="720.0,40.0" background="#37474f">
 
       <GenericFieldEditor layout="220.0,10.0,500.0,20.0" foreground="white">
         <WbFieldEditorBinding ord="slot:/Services/AlarmService/CVC_Niveau1/priority"/>
@@ -148,7 +68,7 @@
 
       <Picture layout="0.0,5.0,32.0,30.0" image="module://themeBtib/image/x30/status/alarm_w.png" scale="fitRatio"/>
 
-      <Label layout="35.0,5.0,175.0,30.0" image="" font="14.0pt Calibri" foreground="white" background="#546e7a">
+      <Label layout="35.0,5.0,175.0,30.0" image="" font="14.0pt Calibri" foreground="white" background="#37474f">
         <ValueBinding ord="slot:/Services/AlarmService/CVC_Niveau1">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>
@@ -160,16 +80,16 @@
 
     </CanvasPane>
 
-    <CanvasPane viewSize="720.0,40.0" background="#546e7a">
+    <CanvasPane viewSize="720.0,40.0" background="#37474f">
 
       <GenericFieldEditor layout="220.0,10.0,500.0,20.0" foreground="white">
-        <WbFieldEditorBinding ord="slot:/Services/AlarmService/CVC_Niveau2/priority"/>
+        <WbFieldEditorBinding ord="slot:/Services/AlarmService/Plomberie_Niveau1/priority"/>
       </GenericFieldEditor>
 
       <Picture layout="0.0,5.0,32.0,30.0" image="module://themeBtib/image/x30/status/alarm_w.png" scale="fitRatio"/>
 
-      <Label layout="35.0,5.0,175.0,30.0" image="" font="14.0pt Calibri" foreground="white" background="#546e7a">
-        <ValueBinding ord="slot:/Services/AlarmService/CVC_Niveau2">
+      <Label layout="35.0,5.0,175.0,30.0" image="" font="14.0pt Calibri" foreground="white" background="#37474f">
+        <ValueBinding ord="slot:/Services/AlarmService/Plomberie_Niveau1">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>
       </Label>
@@ -180,16 +100,36 @@
 
     </CanvasPane>
 
-    <CanvasPane viewSize="720.0,40.0" background="#546e7a">
+    <CanvasPane viewSize="720.0,40.0" background="#37474f">
 
       <GenericFieldEditor layout="220.0,10.0,500.0,20.0" foreground="white">
-        <WbFieldEditorBinding ord="slot:/Services/AlarmService/Cuisine_Niveau1/priority"/>
+        <WbFieldEditorBinding ord="slot:/Services/AlarmService/Eclairage_Niveau1/priority"/>
       </GenericFieldEditor>
 
       <Picture layout="0.0,5.0,32.0,30.0" image="module://themeBtib/image/x30/status/alarm_w.png" scale="fitRatio"/>
 
-      <Label layout="35.0,5.0,175.0,30.0" image="" font="14.0pt Calibri" foreground="white" background="#546e7a">
-        <ValueBinding ord="slot:/Services/AlarmService/Cuisine_Niveau1">
+      <Label layout="35.0,5.0,175.0,30.0" image="" font="14.0pt Calibri" foreground="white" background="#37474f">
+        <ValueBinding ord="slot:/Services/AlarmService/Eclairage_Niveau1">
+          <ObjectToString name="text" format="%displayName%"/>
+        </ValueBinding>
+      </Label>
+
+      <SaveButton layout="670.0,10.0,40.0,20.0" image="module://icons/x16/save.png" font="16.0pt Calibri" halign="left" textIconGap="0.0" textOverride=" ">
+        <WsAnnotation name="wsAnnotation" value="14,14,8"/>
+      </SaveButton>
+
+    </CanvasPane>
+
+    <CanvasPane viewSize="720.0,40.0" background="#37474f">
+
+      <GenericFieldEditor layout="220.0,10.0,500.0,20.0" foreground="white">
+        <WbFieldEditorBinding ord="slot:/Services/AlarmService/tete_Niveau1/priority"/>
+      </GenericFieldEditor>
+
+      <Picture layout="0.0,5.0,32.0,30.0" image="module://themeBtib/image/x30/status/alarm_w.png" scale="fitRatio"/>
+
+      <Label layout="35.0,5.0,175.0,30.0" image="" font="14.0pt Calibri" foreground="white" background="#37474f">
+        <ValueBinding ord="slot:/Services/AlarmService/tete_Niveau1">
           <ObjectToString name="text" format="%displayName%"/>
         </ValueBinding>
       </Label>

@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0">
+<px version="1.0" media="workbench:WbPxMedia">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
+  <module name="btibCore"/>
   <module name="btibVision"/>
+  <module name="converters"/>
   <module name="gx"/>
+  <module name="kitPx"/>
+  <module name="vykonPro"/>
   <module name="workbench"/>
 </import>
 <properties>
@@ -56,10 +60,10 @@
   </property>
 
   <property name="vueCentraleBackgroundCouleur" type="gx:Brush" value="#455a64">
-    <target ord="slot:content/center/fill"/>
   </property>
 
   <property name="vueCentraleBackgroundCouleurSombre" type="gx:Brush" value="#37474f">
+    <target ord="slot:content/center/fill"/>
   </property>
 
   <property name="vueCentraleElementForegroundCouleur" type="gx:Brush" value="white">
@@ -84,11 +88,21 @@
 
     <PxInclude name="left" ord="file:^px/menus/gauche.px"/>
 
-    <BorderPane name="center" padding="30.0" fill="#455a64">
+    <BorderPane name="center" padding="30.0" fill="#37474f">
 
-      <BqlToWidgetsView name="content">
-        <WbViewBinding ord="station:|slot:/Accueil/Param$e8tres$20stations/Liste$20des$20param$e8tres"/>
-      </BqlToWidgetsView>
+      <GridPane name="content" columnCount="1" valign="top" halign="fill" columnAlign="fill" rowGap="20.0" stretchColumn="0">
+
+        <BqlToWidgetsView name="BqlToWidgetsView">
+          <WbViewBinding name="WbViewBinding" ord="station:|slot:/Accueil/Param$e8tres$20stations/Liste$20des$20param$e8tres"/>
+        </BqlToWidgetsView>
+
+        <Line name="Line" stroke="white" pen="0.5" geom="0.0,0.0 1600.0,0.0"/>
+
+        <BqlToWidgetsView name="BqlToWidgetsView1">
+          <WbViewBinding name="WbViewBinding" ord="station:|slot:/Accueil/Param$e8tres$20stations/Liste$20des$20aspects"/>
+        </BqlToWidgetsView>
+
+      </GridPane>
 
     </BorderPane>
 
