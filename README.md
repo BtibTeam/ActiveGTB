@@ -11,18 +11,14 @@ Station de démonstration Active. Cette station vous permettra de démarrer votr
  - Un kiosque
  - Des fonction de tagging avancées sur la Nature en intégrant le projet [BSO](https://bso-project.org) (Building Semantic Ontology) basé sur [Haystack](https://project-haystack.org)
 
- L'ensemble est bien entendu personnalisable et entièrement personnalisable. Les couleurs peuvent être facilement modifiées grâce à un système de thème.
+ L'ensemble est bien entendu entièrement personnalisable et adaptable. Les couleurs peuvent être facilement modifiées grâce à un système de thème.
 
 ## Installation
 
-Pour profiter de la station
-```
-Installer les derniers modules Active (version minimum 46.10.0)
-```
+Pour profiter de la station :
+- Installer les derniers modules Active (version minimum 46.10.0)
+- Télécharger la station [ici](http://modules:modulesB.tib@modules.btib.fr/Stations/ActiveStandAloneFr-47.2.0.zip)
 
-```
-Télécharger la station [ici](http://modules:modulesB.tib@modules.btib.fr/Stations/ActiveStandAloneFr-47.2.0.zip)
-```
 
 ## Captures d'écran
 
