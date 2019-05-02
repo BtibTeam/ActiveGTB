@@ -1,4 +1,4 @@
-# Active-StandAlone-Fr
+# Active-GTB
 Station de démonstration Active. Cette station vous permettra de démarrer votre projet de GTB. Elle offre de manière entièrement automatisée :
  - La gestion des navigations géographique et système
  - La gestion des alarmes par métier
