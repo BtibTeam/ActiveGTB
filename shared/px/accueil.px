@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Niagara Presentation XML -->
-<px version="1.0">
+<px version="1.0" media="workbench:WbPxMedia">
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibVision"/>
+  <module name="converters"/>
   <module name="gx"/>
+  <module name="jxBrowser"/>
   <module name="kitPx"/>
+  <module name="vykonPro"/>
+  <module name="workbench"/>
 </import>
 <properties>
 
@@ -46,7 +52,6 @@
   </property>
 
   <property name="vueCentraleBackgroundBlanc" type="gx:Brush" value="white">
-    <target ord="slot:center/background"/>
   </property>
 
   <property name="vueCentraleForegroundCouleur" type="gx:Brush" value="white">
@@ -81,43 +86,9 @@
 
   <PxInclude name="left" ord="file:^px/menus/gauche.px"/>
 
-  <CanvasPane name="center" viewSize="1400.0,800.0" halign="left" valign="top" background="white">
-
-    <CanvasPane layout="0.0,0.0,1400.0,420.0" viewSize="1400.0,420.0" halign="fill" background="#455a64">
-
-      <Label layout="120.0,80.0,460.0,50.0" text="Bienvenue dans Active Framework &#x2665;" font="22.0pt Calibri" foreground="white" halign="left"/>
-
-      <Label layout="120.0,120.0,460.0,50.0" text="D&#xe9;marrons!" font="bold 48.0pt Calibri" foreground="white" halign="left"/>
-
-      <Ellipse stroke="white" pen="3.0" geom="125.0,215.0,100.0,100.0"/>
-
-      <Label layout="120.0,320.0,110.0,50.0" text="Cr&#xe9;ez votre mod&#xe8;le" font="16.0pt Trebuchet MS" foreground="white" wordWrapEnabled="true">
-        <PopupBinding ord="slot:schedules/ProgrammeHoraireBool$e9en" title="Schedule" size="1200.0,800.0"/>
-      </Label>
-
-      <Ellipse stroke="white" pen="3.0" geom="460.0,215.0,100.0,100.0"/>
-
-      <Ellipse stroke="white" pen="3.0" geom="295.0,215.0,100.0,100.0"/>
-
-      <Picture layout="150.0,245.0,50.0,40.0" image="file:^images/icones/hierarchie.svg" scale="fitRatio">
-        <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer"/>
-      </Picture>
-
-      <Label layout="290.0,320.0,110.0,50.0" text="Affectez vos &#xe9;quipements" font="16.0pt Trebuchet MS" foreground="white" wordWrapEnabled="true">
-        <PopupBinding ord="slot:schedules/ProgrammeHoraireBool$e9en" title="Schedule" size="1200.0,800.0"/>
-      </Label>
-
-      <Picture layout="320.0,245.0,50.0,40.0" image="file:^images/icones/equipement.svg" scale="fitRatio"/>
-
-      <Label layout="460.0,320.0,110.0,60.0" text="D&#xe9;ployez vos fonctions avanc&#xe9;es" font="16.0pt Trebuchet MS" foreground="white" wordWrapEnabled="true">
-        <PopupBinding ord="slot:schedules/ProgrammeHoraireBool$e9en" title="Schedule" size="1200.0,800.0"/>
-      </Label>
-
-      <Picture layout="485.0,245.0,50.0,40.0" image="file:^images/icones/moteur.svg" scale="fitRatio"/>
-
-    </CanvasPane>
-
-  </CanvasPane>
+  <WebWidget name="center" js="view:btibVision:FlexPane">
+    <WbViewBinding name="WbViewBinding" ord="station:|slot:/Accueil"/>
+  </WebWidget>
 
   <PxInclude name="right" ord="file:^px/menus/droite.px"/>
 

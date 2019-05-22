@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="converters"/>
+  <module name="gx"/>
+</import>
+<content>
+<ScrollPane>
+
+  <CanvasPane name="content" viewSize="1920.0,100.0" scale="fitRatio" minScaleFactor="0.5" maxScaleFactor="1.0" background="image( source(file:^images/arriere_plans/batiment.jpg) )">
+
+    <Label layout="60.0,0.0,1540.0,100.0" font="80.0pt Calibri" foreground="white" halign="left">
+      <ValueBinding ord="station:|slot:/Services/BtibService/pxProperties/nomSite/propertyValue">
+        <ObjectToString name="text"/>
+      </ValueBinding>
+    </Label>
+
+  </CanvasPane>
+
+</ScrollPane>
+</content>
+</px>

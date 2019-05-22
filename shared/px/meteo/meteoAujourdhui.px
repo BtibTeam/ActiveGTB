@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="converters"/>
+  <module name="gx"/>
+</import>
+<content>
+<GridPane halign="fill" rowAlign="fill" columnAlign="fill" rowGap="0.0" columnGap="0.0" stretchRow="0" stretchColumn="0">
+
+  <BorderPane padding="24.0" fill="white">
+
+    <GridPane name="content" columnCount="1" halign="fill" columnGap="0.0" stretchColumn="0">
+
+      <BorderPane>
+
+        <Label name="content" font="42.0pt Calibri" foreground="#1976d2">
+          <ValueBinding ord="slot:">
+            <ObjectToString name="text" format="%time().weekday%"/>
+          </ValueBinding>
+        </Label>
+
+      </BorderPane>
+
+      <GridPane halign="fill" columnGap="0.0" uniformRowHeight="true" stretchColumn="0">
+
+        <Picture scale="fitRatio">
+          <ValueBinding ord="slot:currently/weatherIcon">
+            <IEnumToSimple name="image" map="gx:Image 4=file:^images/weather/hail128.png;3=file:^images/weather/snow128.png;8=file:^images/weather/partlyCloudyDay128.png;0=file:^images/weather/clearDay128.png;1=file:^images/weather/clearNight128.png;2=file:^images/weather/rain128.png;7=file:^images/weather/cloudy128.png;9=file:^images/weather/partlyCloudyNight128.png;6=file:^images/weather/fog128.png;5=file:^images/weather/wind128.png;default=file:^images/weather/clearDay128.png;"/>
+          </ValueBinding>
+        </Picture>
+
+        <Label font="90.0pt Calibri" foreground="#393939">
+          <ValueBinding ord="station:|slot:/Accueil/M$e9teo/DarkSkyWeather/Temp$e9rature">
+            <ObjectToString name="text" format="%out.value%"/>
+          </ValueBinding>
+        </Label>
+
+      </GridPane>
+
+      <BorderPane>
+
+        <Label name="content" font="22.0pt Calibri" foreground="#828282" wordWrapEnabled="true">
+          <ValueBinding ord="slot:currently/summary">
+            <ObjectToString name="text" format="%value%"/>
+          </ValueBinding>
+        </Label>
+
+      </BorderPane>
+
+    </GridPane>
+
+  </BorderPane>
+
+  <BorderPane padding="24.0" fill="#1976d2">
+
+    <GridPane name="content" halign="fill" columnGap="30.0" stretchColumn="0">
+
+      <CanvasPane viewSize="54.0,54.0">
+
+        <Picture image="file:^images/weather/rain.svg" scale="fitRatio"/>
+
+      </CanvasPane>
+
+      <Label font="54.0pt Calibri" foreground="white" valign="top">
+        <ValueBinding ord="slot:currently/precipitationProbability">
+          <ObjectToString name="text" format="%value%"/>
+        </ValueBinding>
+      </Label>
+
+      <CanvasPane viewSize="54.0,54.0">
+
+        <Picture image="file:^images/weather/humidity.svg" scale="fitRatio"/>
+
+      </CanvasPane>
+
+      <Label font="54.0pt Calibri" foreground="white" valign="top">
+        <ValueBinding ord="slot:currently/humidity">
+          <ObjectToString name="text" format="%value%"/>
+        </ValueBinding>
+      </Label>
+
+      <CanvasPane viewSize="54.0,54.0">
+
+        <Picture image="file:^images/weather/wind.svg" scale="fitRatio"/>
+
+      </CanvasPane>
+
+      <Label font="54.0pt Calibri" foreground="white" valign="top">
+        <ValueBinding ord="station:|slot:/Accueil/M$e9teo/DarkSkyWeather/Vitesse$20du$20vent">
+          <ObjectToString name="text" format="%out.value%"/>
+        </ValueBinding>
+      </Label>
+
+    </GridPane>
+
+  </BorderPane>
+
+</GridPane>
+</content>
+</px>

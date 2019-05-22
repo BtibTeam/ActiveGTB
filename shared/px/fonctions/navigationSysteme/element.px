@@ -26,7 +26,7 @@
   </Label>
 
   <Label layout="0.0,0.0,120.0,30.0">
-    <PopupBinding ord="$(Lien)" title="Informations" position="10.0,10.0" size="900.0,700.0"/>
+    <PopupBinding ord="$(Lien)" title="Informations" position="10.0,10.0" size="1200.0,900.0"/>
   </Label>
 
 </CanvasPane>

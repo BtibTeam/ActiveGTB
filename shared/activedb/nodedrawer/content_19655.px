@@ -8,7 +8,7 @@
   <module name="gx"/>
 </import>
 <content>
-<CanvasPane layout="50.0,80.0,1100.0,1200.0" viewSize="1100.0,1200.0" halign="left" valign="top" background="image( source(file:^images/plans/Vinci_Plaza_Pieces_ V11.jpg) halign(left) valign(top) )">
+<CanvasPane layout="50.0,80.0,1100.0,1200.0" viewSize="1100.0,1200.0" halign="left" valign="top" background="image( source(file:^images/plans/bureauBtib.PNG) halign(left) valign(top) )">
 
   <IdBinding id="canvasEtage"/>
 

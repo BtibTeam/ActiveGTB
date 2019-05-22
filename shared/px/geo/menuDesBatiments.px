@@ -38,7 +38,7 @@
 
             <CanvasPane viewSize="220.0,100.0" background="#039be5">
 
-              <Label layout="10.0,10.0,200.0,50.0" text="QG" image="" font="20.0pt Calibri" foreground="white" halign="left" wordWrapEnabled="true">
+              <Label layout="10.0,10.0,200.0,50.0" text="Le Rabelais" image="" font="20.0pt Calibri" foreground="white" halign="left" wordWrapEnabled="true">
                 <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/h1EJV75C3hPA"/>
               </Label>
 

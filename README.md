@@ -22,6 +22,10 @@ Pour profiter de la station :
 
 ## Captures d'écran
 
+### Accueil
+Tableau de bord configurable facilement
+![Navigation géographique](https://user-images.githubusercontent.com/24372104/57014550-e512c580-6c10-11e9-9e22-e99fe6d21a19.PNG)
+
 ### Navigation géographique
 ![Navigation géographique](https://user-images.githubusercontent.com/24372104/56462338-24941300-63c2-11e9-9bcc-28ecfae38450.PNG)
 
