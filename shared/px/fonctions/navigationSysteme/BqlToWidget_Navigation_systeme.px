@@ -23,7 +23,7 @@
 
     <CanvasPane viewSize="120.0,30.0" minScaleFactor="0.5" maxScaleFactor="1.0">
 
-      <Label layout="0.0,0.0,120.0,30.0" text="Etage 2" image="" font="bold 16.0pt Calibri"/>
+      <Label layout="0.0,0.0,120.0,30.0" text="Etage 1" image="" font="bold 16.0pt Calibri"/>
 
     </CanvasPane>
 
@@ -46,7 +46,7 @@
       <CanvasPane viewSize="120.0,30.0" minScaleFactor="0.5" maxScaleFactor="1.0">
 
         <Label layout="0.0,0.0,50.0,30.0" image="" font="bold 18.0pt Calibri" halign="right">
-          <ValueBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$202/EXCEL$2010/BqlSizeHorsCom/size">
+          <ValueBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$201/EXCEL$2010/BqlSizeHorsCom/size">
             <ObjectToString name="text" format="%.% "/>
             <INumericToSimple name="foreground" map="gx:Brush 0.0:0.5=black;0.5:+inf=red;default=null;"/>
             <INumericToSimple name="blink" map="baja:Boolean 0.0:0.5=false;0.5:+inf=true;default=false;"/>
@@ -54,13 +54,13 @@
         </Label>
 
         <Label layout="50.0,0.0,70.0,30.0" image="" font="bold 18.0pt Calibri" foreground="black" halign="left">
-          <ValueBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$202/EXCEL$2010/BqlSize/size">
+          <ValueBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$201/EXCEL$2010/BqlSize/size">
             <ObjectToString name="text" format="/ %.%"/>
           </ValueBinding>
         </Label>
 
         <Label layout="0.0,0.0,120.0,30.0" image="">
-          <PopupBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$202/EXCEL$2010" title="Informations" position="10.0,10.0" size="1200.0,900.0"/>
+          <PopupBinding ord="slot:/Accueil/Navigation$20syst$e8me/Etage$201/EXCEL$2010" title="Informations" position="10.0,10.0" size="1200.0,900.0"/>
         </Label>
 
       </CanvasPane>
