@@ -1,4 +1,4 @@
-# Active-GTB
+# Active-StandAlone-Fr
 Station de démonstration Active. Cette station vous permettra de démarrer votre projet de GTB. Elle offre de manière entièrement automatisée :
  - La gestion des navigations géographique et système
  - La gestion des alarmes par métier
@@ -17,7 +17,7 @@ Station de démonstration Active. Cette station vous permettra de démarrer votr
 
 Pour profiter de la station :
 - Installer les derniers modules Active (version minimum 46.10.0)
-- Télécharger la station [ici](https://github.com/BtibTeam/ActiveGTB/archive/master.zip)
+- Télécharger la station [ici](http://modules:modulesB.tib@modules.btib.fr/Stations/ActiveStandAloneFr-47.2.0.zip)
 
 
 ## Captures d'écran
