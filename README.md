@@ -17,7 +17,7 @@ Station de démonstration Active. Cette station vous permettra de démarrer votr
 
 Pour profiter de la station :
 - Installer les derniers modules Active (version minimum 46.10.0)
-- Télécharger la station [ici](http://modules:modulesB.tib@modules.btib.fr/Stations/ActiveStandAloneFr-47.2.0.zip)
+- Télécharger la station [ici](http://doc.active-framework.com/pages/viewpage.action?pageId=984894)
 
 
 ## Captures d'écran
