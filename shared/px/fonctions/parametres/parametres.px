@@ -98,9 +98,7 @@
 
         <Line name="Line" stroke="white" pen="0.5" geom="0.0,0.0 1600.0,0.0"/>
 
-        <BqlToWidgetsView name="BqlToWidgetsView1">
-          <WbViewBinding name="WbViewBinding" ord="station:|slot:/Accueil/Param$e8tres$20stations/Liste$20des$20aspects"/>
-        </BqlToWidgetsView>
+        <PxInclude name="PxInclude" ord="file:^px/fonctions/parametres/Parametres_stations.px"/>
 
       </GridPane>
 

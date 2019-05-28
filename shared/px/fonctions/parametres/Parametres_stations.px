@@ -18,7 +18,7 @@
 <content>
 <ScrollPane viewportBackground="#37474f" borderPolicy="never">
 
-  <GridPane name="content" columnCount="4" halign="left" columnGap="30.0">
+  <FlowPane name="content" hgap="30" vgap="30">
 
     <OverCanvasPane viewSize="250.0,200.0" background="#6a1b9a" overBackground="#632588" radius="8.0px 8.0px 8.0px 8.0px">
 
@@ -88,7 +88,7 @@
 
     </OverCanvasPane>
 
-  </GridPane>
+  </FlowPane>
 
 </ScrollPane>
 </content>

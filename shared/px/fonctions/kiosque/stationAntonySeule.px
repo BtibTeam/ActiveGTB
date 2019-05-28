@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<content>
+<ScrollPane>
+
+  <CanvasPane name="content" viewSize="1140.0,800.0" valign="top">
+
+    <Label layout="10.0,515.0,550.0,30.0" background="white"/>
+
+    <Label layout="10.0,695.0,550.0,50.0" background="#7fb9fb"/>
+
+    <BoundLabel layout="15.0,695.0,135.0,50.0" font="bold 14.0pt Tahoma" wordWrapEnabled="true">
+      <BoundLabelBinding ord="slot:rerBStatus/points/traffic/state" statusEffect="none">
+        <ObjectToString name="text" format="%out.value% :"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="170.0,695.0,390.0,50.0" font="bold 12.0pt Tahoma" halign="left" wordWrapEnabled="true">
+      <BoundLabelBinding ord="slot:rerBStatus/points/traffic/message" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="10.0,545.0,550.0,30.0" background="#a0cbf5"/>
+
+    <Label layout="10.0,575.0,550.0,30.0" background="white"/>
+
+    <Label layout="10.0,605.0,550.0,30.0" background="#a0cbf5"/>
+
+    <Label layout="10.0,635.0,550.0,30.0" background="white"/>
+
+    <Label layout="165.0,465.0,230.0,45.0" text="Mitry-Claye&#xa;A&#xe9;roport Ch. de Gaulle" font="bold 16.0pt Tahoma" foreground="#1e239e"/>
+
+    <PxInclude layout="15.0,520.0,540.0,20.0" ord="file:^px/fonctions/kiosque/includes/stationMassyInclude.px" variables="train=s:slot$3arerMassy$2fpoints$2fdirParis$2ftrainN"/>
+
+    <Label layout="10.0,665.0,550.0,30.0" background="#a0cbf5"/>
+
+    <BoundLabel layout="425.0,475.0,110.0,20.0" font="bold 14.0pt Tahoma">
+      <BoundLabelBinding ord="station:|slot:/Drivers/Paris$20RER$20Schedule$28RestNetwork$29/CurrentTime/out" statusEffect="none">
+        <ObjectToString name="text" format="%time%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="120.0,10.0,900.0,380.0" image="file:^images/arriere_plans/stationDeTrain.jpg"/>
+
+    <PxInclude layout="15.0,550.0,540.0,20.0" ord="file:^px/fonctions/kiosque/includes/stationMassyInclude.px" variables="train=s:slot$3arerMassy$2fpoints$2fdirParis$2ftrainN$242b1"/>
+
+    <PxInclude layout="15.0,580.0,540.0,20.0" ord="file:^px/fonctions/kiosque/includes/stationMassyInclude.px" variables="train=s:slot$3arerMassy$2fpoints$2fdirParis$2ftrainN$242b2"/>
+
+    <PxInclude layout="15.0,610.0,540.0,20.0" ord="file:^px/fonctions/kiosque/includes/stationMassyInclude.px" variables="train=s:slot$3arerMassy$2fpoints$2fdirParis$2ftrainN$242b3"/>
+
+    <PxInclude layout="15.0,640.0,540.0,20.0" ord="file:^px/fonctions/kiosque/includes/stationMassyInclude.px" variables="train=s:slot$3arerMassy$2fpoints$2fdirParis$2ftrainN$242b4"/>
+
+    <PxInclude layout="15.0,670.0,540.0,20.0" ord="file:^px/fonctions/kiosque/includes/stationMassyInclude.px" variables="train=s:slot$3arerMassy$2fpoints$2fdirParis$2ftrainN$242b5"/>
+
+    <Label layout="580.0,515.0,550.0,30.0" background="white"/>
+
+    <Label layout="580.0,695.0,550.0,50.0" background="#7fb9fb"/>
+
+    <BoundLabel layout="585.0,695.0,135.0,50.0" font="bold 14.0pt Tahoma" wordWrapEnabled="true">
+      <BoundLabelBinding ord="slot:rerBStatus/points/traffic/state" statusEffect="none">
+        <ObjectToString name="text" format="%out.value% :"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="760.0,695.0,370.0,50.0" font="bold 12.0pt Tahoma" halign="left" wordWrapEnabled="true">
+      <BoundLabelBinding ord="slot:rerBStatus/points/traffic/message" statusEffect="none">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="580.0,545.0,550.0,30.0" background="#a0cbf5"/>
+
+    <Label layout="580.0,575.0,550.0,30.0" background="white"/>
+
+    <Label layout="580.0,605.0,550.0,30.0" background="#a0cbf5"/>
+
+    <Label layout="580.0,635.0,550.0,30.0" background="white"/>
+
+    <Label layout="735.0,465.0,230.0,45.0" text="Saint-R&#xe9;my-les-Chevreuses" font="bold 16.0pt Tahoma" foreground="#1e239e"/>
+
+    <PxInclude layout="585.0,520.0,540.0,20.0" ord="file:^px/fonctions/kiosque/includes/stationMassyInclude.px" variables="train=s:slot$3arerMassy$2fpoints$2fdirStRemy$2ftrainN"/>
+
+    <Label layout="580.0,665.0,550.0,30.0" background="#a0cbf5"/>
+
+    <BoundLabel layout="995.0,475.0,110.0,20.0" font="bold 14.0pt Tahoma">
+      <BoundLabelBinding ord="station:|slot:/Drivers/Paris$20RER$20Schedule$28RestNetwork$29/CurrentTime/out" statusEffect="none">
+        <ObjectToString name="text" format="%time%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <PxInclude layout="585.0,550.0,540.0,20.0" ord="file:^px/fonctions/kiosque/includes/stationMassyInclude.px" variables="train=s:slot$3arerMassy$2fpoints$2fdirStRemy$2ftrainN$242b1"/>
+
+    <PxInclude layout="585.0,580.0,540.0,20.0" ord="file:^px/fonctions/kiosque/includes/stationMassyInclude.px" variables="train=s:slot$3arerMassy$2fpoints$2fdirStRemy$2ftrainN$242b2"/>
+
+    <PxInclude layout="585.0,610.0,540.0,20.0" ord="file:^px/fonctions/kiosque/includes/stationMassyInclude.px" variables="train=s:slot$3arerMassy$2fpoints$2fdirStRemy$2ftrainN$242b3"/>
+
+    <PxInclude layout="585.0,640.0,540.0,20.0" ord="file:^px/fonctions/kiosque/includes/stationMassyInclude.px" variables="train=s:slot$3arerMassy$2fpoints$2fdirStRemy$2ftrainN$242b4"/>
+
+    <PxInclude layout="585.0,670.0,540.0,20.0" ord="file:^px/fonctions/kiosque/includes/stationMassyInclude.px" variables="train=s:slot$3arerMassy$2fpoints$2fdirStRemy$2ftrainN$242b5"/>
+
+    <Label layout="390.0,405.0,360.0,40.0" text="ANTONY" font="bold 20.0pt Tahoma" foreground="white" background="#3251e6"/>
+
+    <Line stroke="#51b9f6" pen="3.0" geom="560.0,515.0 10.0,515.0"/>
+
+    <Line stroke="#51b9f6" pen="3.0" geom="580.0,515.0 1130.0,515.0"/>
+
+    <Picture layout="10.0,465.0,100.0,40.0" image="file:^images/icones/Logo_RER_B.svg" scale="fitRatio" halign="left"/>
+
+    <Picture layout="580.0,465.0,100.0,40.0" image="file:^images/icones/Logo_RER_B.svg" scale="fitRatio" halign="left"/>
+
+  </CanvasPane>
+
+</ScrollPane>
+</content>
+</px>

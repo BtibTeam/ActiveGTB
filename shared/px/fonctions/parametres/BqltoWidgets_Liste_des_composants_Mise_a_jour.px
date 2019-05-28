@@ -18,7 +18,7 @@
 <content>
 <ScrollPane viewportBackground="#37474f" borderPolicy="never">
 
-  <GridPane name="content" columnCount="5" valign="top" rowAlign="top" columnGap="30.0">
+  <FlowPane name="content" align="center" rowAlign="top" hgap="30" vgap="3">
 
     <CanvasPane viewSize="300.0,200.0" background="white">
 
@@ -140,7 +140,7 @@
 
     </CanvasPane>
 
-  </GridPane>
+  </FlowPane>
 
 </ScrollPane>
 </content>

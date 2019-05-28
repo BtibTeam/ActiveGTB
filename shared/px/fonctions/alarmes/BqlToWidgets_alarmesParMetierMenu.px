@@ -18,7 +18,7 @@
 <content>
 <ScrollPane viewportBackground="white" borderPolicy="never">
 
-  <GridPane name="content" columnCount="4" valign="top" rowGap="24.0" columnGap="24.0">
+  <FlowPane name="content" align="center" rowAlign="top" hgap="24" vgap="24">
 
     <OverCanvasPane viewSize="250.0,200.0" background="#039be5" overBackground="#02669c">
 
@@ -68,23 +68,7 @@
 
     </OverCanvasPane>
 
-    <OverCanvasPane viewSize="250.0,200.0" background="#039be5" overBackground="#02669c">
-
-      <Label layout="0.0,30.0,250.0,40.0" text="Console_Eclairage" image="" font="20.0pt Calibri" foreground="#f2f2f2">
-        <ValueBinding ord="slot:" hyperlink="station:|slot:/Services/AlarmService/Console_Eclairage"/>
-      </Label>
-
-      <ValueBinding ord="station:|slot:/" hyperlink="station:|slot:/Services/AlarmService/Console_Eclairage"/>
-
-      <Picture layout="85.0,90.0,85.0,85.0" image="" scale="fitRatio">
-        <ValueBinding ord="module://themeBtib/image/svg/subsystem/lighting_w.svg" hyperlink="station:|slot:/Services/AlarmService/Console_Eclairage">
-          <OrdToImage name="image"/>
-        </ValueBinding>
-      </Picture>
-
-    </OverCanvasPane>
-
-  </GridPane>
+  </FlowPane>
 
 </ScrollPane>
 </content>

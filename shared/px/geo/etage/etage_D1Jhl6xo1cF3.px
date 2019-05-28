@@ -129,32 +129,6 @@
 
           <IdBinding id="canvasEtage"/>
 
-          <GridPane layout="270.0,150.0,30.0,40.0" columnCount="1" valign="top" halign="left" columnAlign="center" rowGap="0.0">
-
-            <Label font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
-              <PopupBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$204|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$204/b$3amaitre">
-                <IBooleanToSimple name="image">
-                  <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
-                  <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
-                </IBooleanToSimple>
-              </ValueBinding>
-            </Label>
-
-            <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$204/points/Temp$e9rature$20ambiante">
-                <ObjectToString name="text" format="%out.value%"/>
-              </ValueBinding>
-            </Label>
-
-            <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$204"/>
-
-            <IdBinding id="VC"/>
-
-            <String name="id" value="widget_1d119_6a76_0"/>
-
-          </GridPane>
-
           <GridPane layout="190.0,170.0,30.0,40.0" columnCount="1" valign="top" halign="left" columnAlign="center" rowGap="0.0">
 
             <Label font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
@@ -178,84 +152,6 @@
             <IdBinding id="VC"/>
 
             <String name="id" value="widget_1d233_6a76_0"/>
-
-          </GridPane>
-
-          <GridPane layout="360.0,160.0,30.0,40.0" columnCount="1" valign="top" halign="left" columnAlign="center" rowGap="0.0">
-
-            <Label font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
-              <PopupBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$201|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$201/b$3amaitre">
-                <IBooleanToSimple name="image">
-                  <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
-                  <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
-                </IBooleanToSimple>
-              </ValueBinding>
-            </Label>
-
-            <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$201/points/Temp$e9rature$20ambiante">
-                <ObjectToString name="text" format="%out.value%"/>
-              </ValueBinding>
-            </Label>
-
-            <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$201"/>
-
-            <IdBinding id="VC"/>
-
-            <String name="id" value="widget_150ab_6a76_0"/>
-
-          </GridPane>
-
-          <GridPane layout="530.0,120.0,30.0,40.0" columnCount="1" valign="top" halign="left" columnAlign="center" rowGap="0.0">
-
-            <Label font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
-              <PopupBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$202|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$202/b$3amaitre">
-                <IBooleanToSimple name="image">
-                  <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
-                  <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
-                </IBooleanToSimple>
-              </ValueBinding>
-            </Label>
-
-            <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$202/points/Temp$e9rature$20ambiante">
-                <ObjectToString name="text" format="%out.value%"/>
-              </ValueBinding>
-            </Label>
-
-            <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$202"/>
-
-            <IdBinding id="VC"/>
-
-            <String name="id" value="widget_1c395_6a76_0"/>
-
-          </GridPane>
-
-          <GridPane layout="600.0,100.0,30.0,40.0" columnCount="1" valign="top" halign="left" columnAlign="center" rowGap="0.0">
-
-            <Label font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
-              <PopupBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$203|view:btibVision:FlexPane" title="D&#xe9;tails" size="1200.0,800.0"/>
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$203/b$3amaitre">
-                <IBooleanToSimple name="image">
-                  <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
-                  <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
-                </IBooleanToSimple>
-              </ValueBinding>
-            </Label>
-
-            <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
-              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$203/points/Temp$e9rature$20ambiante">
-                <ObjectToString name="text" format="%out.value%"/>
-              </ValueBinding>
-            </Label>
-
-            <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$203"/>
-
-            <IdBinding id="VC"/>
-
-            <String name="id" value="widget_1d08c_6a76_0"/>
 
           </GridPane>
 
