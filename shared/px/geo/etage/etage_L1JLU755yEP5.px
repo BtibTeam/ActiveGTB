@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibStructure"/>
+  <module name="btibVision"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<properties>
+
+  <property name="nomSite" type="baja:String" value="Le rabelais">
+  </property>
+
+  <property name="ordSite" type="baja:Ord" value="station:|slot:/Accueil/Navigation$20G$e9ographique">
+  </property>
+
+  <property name="gaucheForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="gaucheBackgroundCouleurClaire" type="gx:Brush" value="#616161">
+  </property>
+
+  <property name="gaucheBackgroundCouleur" type="gx:Brush" value="#424242">
+  </property>
+
+  <property name="gaucheBackgroundCouleurSombre" type="gx:Brush" value="#212121">
+  </property>
+
+  <property name="enTeteForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="enTeteBackgroundCouleurClaire" type="gx:Brush" value="#039be5">
+  </property>
+
+  <property name="enTeteBackgroundCouleur" type="gx:Brush" value="#0288d1">
+  </property>
+
+  <property name="enTeteBackgroundCouleurSombre" type="gx:Brush" value="#0277bd">
+  </property>
+
+  <property name="vueCentraleForegroundNoire" type="gx:Brush" value="black">
+  </property>
+
+  <property name="vueCentraleBackgroundBlanc" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleurClaire" type="gx:Brush" value="#546e7a">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleur" type="gx:Brush" value="#455a64">
+  </property>
+
+  <property name="vueCentraleBackgroundCouleurSombre" type="gx:Brush" value="#37474f">
+  </property>
+
+  <property name="vueCentraleElementForegroundCouleur" type="gx:Brush" value="white">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleurClaire" type="gx:Brush" value="#1e88e5">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleur" type="gx:Brush" value="#1976d2">
+  </property>
+
+  <property name="vueCentraleElementBackgroundCouleurSombre" type="gx:Brush" value="#1565c0">
+  </property>
+
+  <property name="logoWhite" type="gx:Image" value="file:^images/logos/logo_w.svg">
+  </property>
+
+</properties>
+<layers>
+  <layer name="fondDePlan" status="locked"/>
+</layers>
+<content>
+<EdgePane>
+
+  <PxInclude name="top" ord="file:^px/menus/haut.px"/>
+
+  <PxInclude name="left" ord="file:^px/menus/gauche.px"/>
+
+  <EdgePane name="center">
+
+    <CanvasPane name="top" viewSize="1000.0,40.0" halign="left" background="#f2f2f2">
+
+      <GridPane layout="10.0,0.0,640.0,40.0" columnCount="10" halign="left">
+
+        <Label text="Le Rabelais /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
+          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/h1JLU59mVIOU"/>
+        </Label>
+
+        <Label text="Rez de chauss&#xe9;e /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
+          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/L1JLU755yEP5"/>
+        </Label>
+
+      </GridPane>
+
+    </CanvasPane>
+
+    <ScrollPane name="center">
+
+      <CanvasPane name="content" viewSize="1200.0,1400.0" halign="left" valign="top" background="white">
+
+        <Line stroke="#acacac" geom="10.0,60.0 1150.0,60.0"/>
+
+        <CanvasPane layout="50.0,80.0,1100.0,1200.0" viewSize="1100.0,1200.0" halign="left" valign="top" background="image( source(file:^images/plans/bureauBtib.PNG) halign(left) valign(top) )">
+
+          <Polygon fill="#2800aabb" stroke="white" pen="0.0" geom="132.0,355.0 381.0,302.0 435.0,441.0 127.0,515.0 ">
+            <ValueBinding/>
+            <IdBinding id="zoneDansEtage"/>
+            <LayerTag name="LayerTag" layerName="fondDePlan"/>
+            <String name="id" value="widget_1e8e4_13d27_0"/>
+          </Polygon>
+
+          <IdBinding id="canvasEtage"/>
+
+          <GridPane layout="460.0,330.0,30.0,40.0" columnCount="1" valign="top" halign="left" columnAlign="center" rowGap="0.0">
+
+            <Label image="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+              <PopupBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo_Demo|view:btibVision:FlexPane" title="D&#xe9;tails" size="1280.0,800.0"/>
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo_Demo/b$3amaitre">
+                <IBooleanToSimple name="image">
+                  <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
+                  <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
+                </IBooleanToSimple>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo_Demo/points/Temp$e9rature$20ambiante">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo_Demo"/>
+
+            <IdBinding id="VC"/>
+
+            <String name="id" value="widget_1cab0_6a76_0"/>
+
+          </GridPane>
+
+          <GridPane layout="330.0,370.0,30.0,40.0" columnCount="1" valign="top" halign="left" columnAlign="center" rowGap="0.0">
+
+            <Label image="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+              <PopupBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$201|view:btibVision:FlexPane" title="D&#xe9;tails" size="1280.0,800.0"/>
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$201/b$3amaitre">
+                <IBooleanToSimple name="image">
+                  <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
+                  <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
+                </IBooleanToSimple>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$201/points/Temp$e9rature$20ambiante">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$201"/>
+
+            <IdBinding id="VC"/>
+
+            <String name="id" value="widget_150ab_6a76_0"/>
+
+          </GridPane>
+
+          <GridPane layout="250.0,380.0,30.0,40.0" columnCount="1" valign="top" halign="left" columnAlign="center" rowGap="0.0">
+
+            <Label image="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+              <PopupBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$202|view:btibVision:FlexPane" title="D&#xe9;tails" size="1280.0,800.0"/>
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$202/b$3amaitre">
+                <IBooleanToSimple name="image">
+                  <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
+                  <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
+                </IBooleanToSimple>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$202/points/Temp$e9rature$20ambiante">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$202"/>
+
+            <IdBinding id="VC"/>
+
+            <String name="id" value="widget_1c395_6a76_0"/>
+
+          </GridPane>
+
+          <GridPane layout="190.0,400.0,30.0,40.0" columnCount="1" valign="top" halign="left" columnAlign="center" rowGap="0.0">
+
+            <Label image="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png" font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+              <PopupBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$203|view:btibVision:FlexPane" title="D&#xe9;tails" size="1280.0,800.0"/>
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$203/b$3amaitre">
+                <IBooleanToSimple name="image">
+                  <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
+                  <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
+                </IBooleanToSimple>
+              </ValueBinding>
+            </Label>
+
+            <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+              <ValueBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$203/points/Temp$e9rature$20ambiante">
+                <ObjectToString name="text" format="%out.value%"/>
+              </ValueBinding>
+            </Label>
+
+            <SourceBinding ord="station:|slot:/Drivers/LonNetwork/Ventilo$2dConvecteur$203"/>
+
+            <IdBinding id="VC"/>
+
+            <String name="id" value="widget_1d08c_6a76_0"/>
+
+          </GridPane>
+
+        </CanvasPane>
+
+        <OverBorderPane layout="10.0,10.0,160.0,40.0" fill="#4db6ac" overFill="#009688">
+
+          <Label name="content" text="Recloisonnement" image="" font="16.0pt Calibri Light" foreground="white"/>
+
+          <ValueBinding hyperlink="slot:Recloisonnement"/>
+
+        </OverBorderPane>
+
+      </CanvasPane>
+
+    </ScrollPane>
+
+  </EdgePane>
+
+</EdgePane>
+</content>
+</px>

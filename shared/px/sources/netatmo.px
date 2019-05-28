@@ -4,8 +4,13 @@
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibVision"/>
   <module name="converters"/>
   <module name="gx"/>
+  <module name="kitPx"/>
+  <module name="vykonPro"/>
+  <module name="workbench"/>
 </import>
 <properties>
 
@@ -74,52 +79,62 @@
 
 </properties>
 <content>
-<ScrollPane>
+<EdgePane>
 
-  <CanvasPane name="content" viewSize="1000.0,800.0" minScaleFactor="0.5" maxScaleFactor="1.0" background="image( source(file:^images/arriere_plans/netatmoWeatherCoach.png) )">
+  <PxInclude name="top" ord="file:^px/menus/haut.px"/>
 
-    <Line name="Line" stroke="white" geom="455.0,345.0 235.0,265.0"/>
+  <PxInclude name="left" ord="file:^px/menus/gauche.px"/>
 
-    <Label name="Label" layout="90.0,270.0,140.0,60.0" font="36.0pt Pristina" foreground="#161616">
-      <ValueBinding name="ValueBinding" ord="slot:StationData/points/CO2">
-        <ObjectToString name="text" format="%out.value%"/>
-      </ValueBinding>
-    </Label>
+  <ScrollPane name="center" viewportBackground="black" borderPolicy="never">
 
-    <Picture name="Picture" layout="110.0,170.0,100.0,100.0" image="file:^images/icones/co2.png" scale="fitRatio"/>
+    <CanvasPane name="content" viewSize="1000.0,800.0" minScaleFactor="0.5" maxScaleFactor="1.0" valign="top" background="image( source(file:^images/arriere_plans/netatmoWeatherCoach.png) )">
 
-    <Picture name="Picture1" layout="130.0,490.0,100.0,100.0" image="file:^images/icones/humidite.png" scale="fitRatio"/>
+      <Line name="Line" stroke="white" geom="455.0,345.0 235.0,265.0"/>
 
-    <Label name="Label1" layout="120.0,600.0,120.0,50.0" font="36.0pt Pristina" foreground="#161616">
-      <ValueBinding name="ValueBinding" ord="slot:StationData/points/Humidity">
-        <ObjectToString name="text" format="%out.value%"/>
-      </ValueBinding>
-    </Label>
+      <Label name="Label" layout="90.0,270.0,140.0,60.0" font="36.0pt Pristina" foreground="#161616">
+        <ValueBinding name="ValueBinding" ord="slot:StationData/points/CO2">
+          <ObjectToString name="text" format="%out.value%"/>
+        </ValueBinding>
+      </Label>
 
-    <Line name="Line1" stroke="white" geom="455.0,445.0 245.0,545.0"/>
+      <Picture name="Picture" layout="110.0,170.0,100.0,100.0" image="file:^images/icones/co2.png" scale="fitRatio"/>
 
-    <Picture name="Picture2" layout="810.0,140.0,100.0,100.0" image="file:^images/icones/temperature.png" scale="fitRatio"/>
+      <Picture name="Picture1" layout="130.0,490.0,100.0,100.0" image="file:^images/icones/humidite.png" scale="fitRatio"/>
 
-    <Label name="Label2" layout="800.0,250.0,120.0,50.0" font="36.0pt Pristina" foreground="#161616">
-      <ValueBinding name="ValueBinding" ord="slot:StationData/points/Temperature">
-        <ObjectToString name="text" format="%out.value%"/>
-      </ValueBinding>
-    </Label>
+      <Label name="Label1" layout="120.0,600.0,120.0,50.0" font="36.0pt Pristina" foreground="#161616">
+        <ValueBinding name="ValueBinding" ord="slot:StationData/points/Humidity">
+          <ObjectToString name="text" format="%out.value%"/>
+        </ValueBinding>
+      </Label>
 
-    <Line name="Line2" stroke="white" geom="800.0,245.0 600.0,395.0"/>
+      <Line name="Line1" stroke="white" geom="455.0,445.0 245.0,545.0"/>
 
-    <Line name="Line3" stroke="white" geom="810.0,520.0 600.0,460.0"/>
+      <Picture name="Picture2" layout="810.0,140.0,100.0,100.0" image="file:^images/icones/temperature.png" scale="fitRatio"/>
 
-    <Picture name="Picture3" layout="820.0,460.0,100.0,100.0" image="file:^images/icones/protegeOreille.png" scale="fitRatio"/>
+      <Label name="Label2" layout="800.0,250.0,120.0,50.0" font="36.0pt Pristina" foreground="#161616">
+        <ValueBinding name="ValueBinding" ord="slot:StationData/points/Temperature">
+          <ObjectToString name="text" format="%out.value%"/>
+        </ValueBinding>
+      </Label>
 
-    <Label name="Label3" layout="810.0,570.0,120.0,50.0" font="36.0pt Pristina" foreground="#161616">
-      <ValueBinding name="ValueBinding" ord="slot:StationData/points/Noise">
-        <ObjectToString name="text" format="%out.value%"/>
-      </ValueBinding>
-    </Label>
+      <Line name="Line2" stroke="white" geom="800.0,245.0 600.0,395.0"/>
 
-  </CanvasPane>
+      <Line name="Line3" stroke="white" geom="810.0,520.0 600.0,460.0"/>
 
-</ScrollPane>
+      <Picture name="Picture3" layout="820.0,460.0,100.0,100.0" image="file:^images/icones/protegeOreille.png" scale="fitRatio"/>
+
+      <Label name="Label3" layout="810.0,570.0,120.0,50.0" font="36.0pt Pristina" foreground="#161616">
+        <ValueBinding name="ValueBinding" ord="slot:StationData/points/Noise">
+          <ObjectToString name="text" format="%out.value%"/>
+        </ValueBinding>
+      </Label>
+
+    </CanvasPane>
+
+  </ScrollPane>
+
+  <PxInclude name="right" ord="file:^px/menus/droite.px"/>
+
+</EdgePane>
 </content>
 </px>

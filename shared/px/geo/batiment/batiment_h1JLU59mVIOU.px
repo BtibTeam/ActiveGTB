@@ -7,6 +7,7 @@
   <module name="btibCore"/>
   <module name="btibVision"/>
   <module name="gx"/>
+  <module name="workbench"/>
 </import>
 <properties>
 
@@ -74,9 +75,6 @@
   </property>
 
 </properties>
-<layers>
-  <layer name="fondDePlan" status="locked"/>
-</layers>
 <content>
 <EdgePane>
 
@@ -84,49 +82,35 @@
 
   <PxInclude name="left" ord="file:^px/menus/gauche.px"/>
 
-  <EdgePane name="center">
+  <BorderPane name="center" padding="0.0" fill="image( source(file:^images/arriere_plans/lePlaza.jpg) valign(top) )">
 
-    <CanvasPane name="top" viewSize="1000.0,40.0" halign="left" background="#f2f2f2">
+    <GridPane name="content" columnCount="1" valign="fill" halign="fill" rowAlign="fill" columnAlign="fill" rowGap="30.0" stretchRow="1" stretchColumn="0">
 
-      <GridPane layout="10.0,0.0,640.0,40.0" columnCount="10" halign="left">
+      <BorderPane fill="#80f2f2f2">
 
-        <Label text="QG /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
-          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/h1EJV75C3hPA"/>
-        </Label>
+        <GridPane name="content" columnCount="10" halign="left" stretchColumn="0">
 
-        <Label text="Etage 1 /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
-          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/Q1EJV9Gc5bwh"/>
-        </Label>
+          <Label text="Le Rabelais /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
+            <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/h1JLU59mVIOU"/>
+          </Label>
 
-      </GridPane>
+        </GridPane>
 
-    </CanvasPane>
+      </BorderPane>
 
-    <ScrollPane name="center">
+      <IdBinding id="gridBatiment"/>
 
-      <CanvasPane name="content" viewSize="1200.0,1400.0" halign="left" valign="top" background="white">
+      <BqlToWidgetsView>
+        <WbViewBinding ord="slot:Menu$20des$20$e9tages"/>
+        <IdBinding id="menuEtage"/>
+        <String name="id" value="widget_1e882_13b41_0"/>
+      </BqlToWidgetsView>
 
-        <Line stroke="#acacac" geom="10.0,60.0 1150.0,60.0"/>
+    </GridPane>
 
-        <CanvasPane layout="50.0,80.0,1100.0,1200.0" viewSize="1100.0,1200.0" halign="left" valign="top" background="image( source(file:^images/plans/bureauBtib.PNG) halign(left) valign(top) )">
+  </BorderPane>
 
-          <IdBinding id="canvasEtage"/>
-
-        </CanvasPane>
-
-        <OverBorderPane layout="10.0,10.0,160.0,40.0" fill="#4db6ac" overFill="#009688">
-
-          <Label name="content" text="Recloisonnement" image="" font="16.0pt Calibri Light" foreground="white"/>
-
-          <ValueBinding hyperlink="slot:Recloisonnement"/>
-
-        </OverBorderPane>
-
-      </CanvasPane>
-
-    </ScrollPane>
-
-  </EdgePane>
+  <PxInclude name="right" ord="file:^px/menus/droite.px"/>
 
 </EdgePane>
 </content>

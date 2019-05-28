@@ -4,9 +4,8 @@
 <import>
   <module name="baja"/>
   <module name="bajaui"/>
-  <module name="btibCore"/>
-  <module name="btibVision"/>
   <module name="gx"/>
+  <module name="workbench"/>
 </import>
 <properties>
 
@@ -74,9 +73,6 @@
   </property>
 
 </properties>
-<layers>
-  <layer name="fondDePlan" status="locked"/>
-</layers>
 <content>
 <EdgePane>
 
@@ -84,49 +80,9 @@
 
   <PxInclude name="left" ord="file:^px/menus/gauche.px"/>
 
-  <EdgePane name="center">
-
-    <CanvasPane name="top" viewSize="1000.0,40.0" halign="left" background="#f2f2f2">
-
-      <GridPane layout="10.0,0.0,640.0,40.0" columnCount="10" halign="left">
-
-        <Label text="QG /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
-          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/batiment/h1EJV75C3hPA"/>
-        </Label>
-
-        <Label text="Etage 1 /" image="" font="18.0pt Calibri Light" foreground="#3c3c3c">
-          <ValueBinding hyperlink="station:|slot:/Services/BtibService/aspectContainer/Localisation/etage/Q1EJV9Gc5bwh"/>
-        </Label>
-
-      </GridPane>
-
-    </CanvasPane>
-
-    <ScrollPane name="center">
-
-      <CanvasPane name="content" viewSize="1200.0,1400.0" halign="left" valign="top" background="white">
-
-        <Line stroke="#acacac" geom="10.0,60.0 1150.0,60.0"/>
-
-        <CanvasPane layout="50.0,80.0,1100.0,1200.0" viewSize="1100.0,1200.0" halign="left" valign="top" background="image( source(file:^images/plans/bureauBtib.PNG) halign(left) valign(top) )">
-
-          <IdBinding id="canvasEtage"/>
-
-        </CanvasPane>
-
-        <OverBorderPane layout="10.0,10.0,160.0,40.0" fill="#4db6ac" overFill="#009688">
-
-          <Label name="content" text="Recloisonnement" image="" font="16.0pt Calibri Light" foreground="white"/>
-
-          <ValueBinding hyperlink="slot:Recloisonnement"/>
-
-        </OverBorderPane>
-
-      </CanvasPane>
-
-    </ScrollPane>
-
-  </EdgePane>
+  <WebWidget name="center" js="view:btibVision:NodeDrawerView">
+    <WbViewBinding ord="slot:"/>
+  </WebWidget>
 
 </EdgePane>
 </content>
