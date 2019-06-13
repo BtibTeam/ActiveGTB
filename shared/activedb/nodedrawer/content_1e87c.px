@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="btibCore"/>
+  <module name="btibStructure"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<content>
+<CanvasPane layout="50.0,80.0,1100.0,1200.0" viewSize="1100.0,1200.0" halign="left" valign="top" background="image( source(file:^images/plans/bureauBtib.PNG) halign(left) valign(top) )">
+
+  <IdBinding id="canvasEtage"/>
+
+  <GridPane layout="0.0,0.0,30.0,40.0" columnCount="1" valign="top" halign="left" columnAlign="center" rowGap="0.0">
+
+    <Label font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+      <PopupBinding ord="station:|slot:/Drivers/LonNetwork/VC1|view:btibVision:FlexPane" title="D&#xe9;tails" size="1280.0,800.0"/>
+      <ValueBinding ord="station:|slot:/Drivers/LonNetwork/VC1/b$3amaitre">
+        <IBooleanToSimple name="image">
+          <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
+          <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
+        </IBooleanToSimple>
+      </ValueBinding>
+    </Label>
+
+    <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+      <ValueBinding ord="station:|slot:/Drivers/LonNetwork/VC1/points/Temp$e9rature$20ambiante">
+        <ObjectToString name="text" format="%out.value%"/>
+      </ValueBinding>
+    </Label>
+
+    <SourceBinding ord="station:|slot:/Drivers/LonNetwork/VC1"/>
+
+    <IdBinding id="VC"/>
+
+    <String name="id" value="widget_1ebc7_6a76_0"/>
+
+  </GridPane>
+
+  <GridPane layout="10.0,10.0,30.0,40.0" columnCount="1" valign="top" halign="left" columnAlign="center" rowGap="0.0">
+
+    <Label font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+      <PopupBinding ord="station:|slot:/Drivers/LonNetwork/VC2|view:btibVision:FlexPane" title="D&#xe9;tails" size="1280.0,800.0"/>
+      <ValueBinding ord="station:|slot:/Drivers/LonNetwork/VC2/b$3amaitre">
+        <IBooleanToSimple name="image">
+          <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
+          <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
+        </IBooleanToSimple>
+      </ValueBinding>
+    </Label>
+
+    <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+      <ValueBinding ord="station:|slot:/Drivers/LonNetwork/VC2/points/Temp$e9rature$20ambiante">
+        <ObjectToString name="text" format="%out.value%"/>
+      </ValueBinding>
+    </Label>
+
+    <SourceBinding ord="station:|slot:/Drivers/LonNetwork/VC2"/>
+
+    <IdBinding id="VC"/>
+
+    <String name="id" value="widget_1ec5a_6a76_0"/>
+
+  </GridPane>
+
+  <GridPane layout="530.0,110.0,30.0,40.0" columnCount="1" valign="top" halign="left" columnAlign="center" rowGap="0.0">
+
+    <Label font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+      <PopupBinding ord="station:|slot:/Drivers/LonNetwork/VC3|view:btibVision:FlexPane" title="D&#xe9;tails" size="1280.0,800.0"/>
+      <ValueBinding ord="station:|slot:/Drivers/LonNetwork/VC3/b$3amaitre">
+        <IBooleanToSimple name="image">
+          <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
+          <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
+        </IBooleanToSimple>
+      </ValueBinding>
+    </Label>
+
+    <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+      <ValueBinding ord="station:|slot:/Drivers/LonNetwork/VC3/points/Temp$e9rature$20ambiante">
+        <ObjectToString name="text" format="%out.value%"/>
+      </ValueBinding>
+    </Label>
+
+    <SourceBinding ord="station:|slot:/Drivers/LonNetwork/VC3"/>
+
+    <IdBinding id="VC"/>
+
+    <String name="id" value="widget_1ecec_6a76_0"/>
+
+  </GridPane>
+
+  <GridPane layout="440.0,130.0,30.0,40.0" columnCount="1" valign="top" halign="left" columnAlign="center" rowGap="0.0">
+
+    <Label font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+      <PopupBinding ord="station:|slot:/Drivers/LonNetwork/VC4|view:btibVision:FlexPane" title="D&#xe9;tails" size="1280.0,800.0"/>
+      <ValueBinding ord="station:|slot:/Drivers/LonNetwork/VC4/b$3amaitre">
+        <IBooleanToSimple name="image">
+          <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
+          <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
+        </IBooleanToSimple>
+      </ValueBinding>
+    </Label>
+
+    <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+      <ValueBinding ord="station:|slot:/Drivers/LonNetwork/VC4/points/Temp$e9rature$20ambiante">
+        <ObjectToString name="text" format="%out.value%"/>
+      </ValueBinding>
+    </Label>
+
+    <SourceBinding ord="station:|slot:/Drivers/LonNetwork/VC4"/>
+
+    <IdBinding id="VC"/>
+
+    <String name="id" value="widget_1ed7e_6a76_0"/>
+
+  </GridPane>
+
+  <GridPane layout="350.0,150.0,30.0,40.0" columnCount="1" valign="top" halign="left" columnAlign="center" rowGap="0.0">
+
+    <Label font="14.0pt Calibri Light" textToIconAlign="bottom" textIconGap="0.0">
+      <PopupBinding ord="station:|slot:/Drivers/LonNetwork/VC5|view:btibVision:FlexPane" title="D&#xe9;tails" size="1280.0,800.0"/>
+      <ValueBinding ord="station:|slot:/Drivers/LonNetwork/VC5/b$3amaitre">
+        <IBooleanToSimple name="image">
+          <Image name="trueValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_ok.png"/>
+          <Image name="falseValue" value="module://themeBtib/image/x20/devices/hvac/fanCoilUnit_disabled.png"/>
+        </IBooleanToSimple>
+      </ValueBinding>
+    </Label>
+
+    <Label image="" font="10.0pt Calibri" textToIconAlign="bottom" textIconGap="0.0">
+      <ValueBinding ord="station:|slot:/Drivers/LonNetwork/VC5/points/Temp$e9rature$20ambiante">
+        <ObjectToString name="text" format="%out.value%"/>
+      </ValueBinding>
+    </Label>
+
+    <SourceBinding ord="station:|slot:/Drivers/LonNetwork/VC5"/>
+
+    <IdBinding id="VC"/>
+
+    <String name="id" value="widget_1ee10_6a76_0"/>
+
+  </GridPane>
+
+</CanvasPane>
+</content>
+</px>
